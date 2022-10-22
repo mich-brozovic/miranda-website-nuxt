@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+	target: 'static',
 	css: ['normalize.css/normalize.css'],
 	modules: ['@nuxt/image-edge'],
 	vite: {

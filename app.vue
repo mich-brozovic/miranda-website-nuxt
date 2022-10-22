@@ -42,9 +42,12 @@
 	.text-center {
 		text-align: center;
 	}
+	h2,
+	h3 {
+		line-height: 1.5em;
+	}
 	h2 {
 		font-size: 3rem;
-		line-height: 1.5em;
 	}
 	.buttons-center {
 		display: flex;
