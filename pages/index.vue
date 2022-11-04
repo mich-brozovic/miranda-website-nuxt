@@ -43,7 +43,7 @@
 						<BtnSecondary url="/o-nas" text="Více o nás" />
 					</div>
 					<div class="column">
-						<NuxtPicture src="/img/proc-miranda-grid.webp" :imgAttrs="{ style: 'width: 100%; height: 100%; object-fit: cover; display: block;' }" />
+						<NuxtPicture src="/proc-miranda-grid.webp" :imgAttrs="{ style: 'width: 100%; height: 100%; object-fit: cover; display: block;' }" />
 					</div>
 				</div>
 			</div>
