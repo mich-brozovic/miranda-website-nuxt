@@ -26,7 +26,38 @@
 					</p>
 				</div>
 				<SluzbyBlock></SluzbyBlock>
+				<div class="buttons-center">
+					<BtnSecondary url="/kontakty#kontakt" text="Poptat službu" />
+				</div>
+			</div>
+		</section>
+		<section class="proc-miranda">
+			<div class="container">
+				<div class="columns col-4-6 align-center">
+					<div class="column">
+						<h2>Proč si začít s Mirandou?</h2>
+						<p>
+							Protože tahle agenturní dáma umí být věrná a spolehlivá každým coulem. Pro svého zákazníka udělá, co mu na očích vidí a nikdy
+							nenechá ležet kdejakou pořádnou výzvu bokem.
+						</p>
+						<BtnSecondary url="/o-nas" text="Více o nás" />
+					</div>
+					<div class="column">
+						<NuxtPicture src="/img/proc-miranda-grid.webp" :imgAttrs="{ style: 'width: 100%; height: 100%; object-fit: cover; display: block;' }" />
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
 </template>
+
+<style lang="scss" scoped>
+	.proc-miranda {
+		.columns {
+			gap: 60px;
+		}
+		p {
+			line-height: 1.8em;
+		}
+	}
+</style>

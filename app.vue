@@ -55,4 +55,21 @@
 		gap: 20px;
 		justify-content: center;
 	}
+	.columns {
+		display: flex;
+		flex-wrap: wrap;
+		&.align-center {
+			align-items: center;
+		}
+		&.col-4-6 {
+			.column {
+				&:first-of-type {
+					flex: 1 1 300px;
+				}
+				&:last-of-type {
+					flex: 1 1 500px;
+				}
+			}
+		}
+	}
 </style>
