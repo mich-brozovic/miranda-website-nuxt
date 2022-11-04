@@ -2,7 +2,7 @@ const client_manifest = {
   "node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
-    "file": "entry.a61123c5.js",
+    "file": "entry.1ee22c13.js",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -18,7 +18,7 @@ const client_manifest = {
   "virtual:nuxt:/Users/elplamendo/Documents/CODE/Miranda/MirandaMedia/miranda-website-nuxt/.nuxt/error-component.mjs": {
     "resourceType": "script",
     "module": true,
-    "file": "error-component.c70576c1.js",
+    "file": "error-component.99177190.js",
     "src": "virtual:nuxt:/Users/elplamendo/Documents/CODE/Miranda/MirandaMedia/miranda-website-nuxt/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -39,7 +39,7 @@ const client_manifest = {
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.dbfaeb2b.js",
+    "file": "index.841ee131.js",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -96,7 +96,7 @@ const client_manifest = {
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "error-404.d727574f.js",
+    "file": "error-404.a6653a99.js",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -111,7 +111,7 @@ const client_manifest = {
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "error-500.adfff452.js",
+    "file": "error-500.70a22def.js",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -122,11 +122,6 @@ const client_manifest = {
   "error-500.e60962de.css": {
     "file": "error-500.e60962de.css",
     "resourceType": "style"
-  },
-  "node_modules/nuxt/dist/app/entry.css": {
-    "resourceType": "style",
-    "file": "entry.2c2a5515.css",
-    "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.css": {
     "resourceType": "style",
@@ -142,6 +137,11 @@ const client_manifest = {
     "resourceType": "style",
     "file": "index.b850ecb3.css",
     "src": "pages/index.css"
+  },
+  "node_modules/nuxt/dist/app/entry.css": {
+    "resourceType": "style",
+    "file": "entry.2c2a5515.css",
+    "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/nuxt/dist/app/entry.mjs-css": {
     "file": "",

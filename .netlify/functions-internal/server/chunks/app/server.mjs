@@ -4,14 +4,13 @@ import { joinURL, hasProtocol, isEqual, encodeParam, withLeadingSlash, parseURL,
 import { createHooks } from 'hookable';
 import { getContext, executeAsync } from 'unctx';
 import { RouterView, createMemoryHistory, createRouter } from 'vue-router';
-import { createError as createError$1, sendRedirect } from 'h3';
+import { a as useRuntimeConfig$1, c as createError$1, s as sendRedirect } from '../nitro/aws-lambda.mjs';
 import defu, { defuFn, defu as defu$1 } from 'defu';
 import { isFunction } from '@vue/shared';
 import { ssrRenderAttrs, ssrRenderAttr, ssrRenderList, ssrRenderClass, ssrRenderComponent, ssrInterpolate, ssrRenderStyle, ssrRenderSuspense } from 'vue/server-renderer';
-import { a as useRuntimeConfig$1 } from '../nitro/aws-lambda.mjs';
 import 'node-fetch-native/polyfill';
-import 'destr';
 import 'radix3';
+import 'destr';
 import 'unenv/runtime/fetch/index';
 import 'scule';
 import 'ohash';

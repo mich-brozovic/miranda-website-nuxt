@@ -18,12 +18,12 @@ const styles = {
   "app.vue": () => import('./_nuxt/app-styles.c9435e8a.mjs').then(interopDefault),
   "components/MainHeader.vue": () => import('./_nuxt/MainHeader-styles.c8456859.mjs').then(interopDefault),
   "pages/index.vue": () => import('./_nuxt/index-styles.cdd0afce.mjs').then(interopDefault),
-  "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": () => import('./_nuxt/error-404-styles.3db9fdd2.mjs').then(interopDefault),
-  "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": () => import('./_nuxt/error-500-styles.ad145178.mjs').then(interopDefault),
   "components/HeroBig.vue": () => import('./_nuxt/HeroBig-styles.a8148c14.mjs').then(interopDefault),
   "components/ReferenceGrid.vue": () => import('./_nuxt/ReferenceGrid-styles.b54b972f.mjs').then(interopDefault),
+  "components/BtnSecondary.vue": () => import('./_nuxt/BtnSecondary-styles.852d66c3.mjs').then(interopDefault),
   "components/SluzbyBlock.vue": () => import('./_nuxt/SluzbyBlock-styles.149a1709.mjs').then(interopDefault),
-  "components/BtnSecondary.vue": () => import('./_nuxt/BtnSecondary-styles.852d66c3.mjs').then(interopDefault)
+  "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": () => import('./_nuxt/error-404-styles.3db9fdd2.mjs').then(interopDefault),
+  "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": () => import('./_nuxt/error-500-styles.ad145178.mjs').then(interopDefault)
 };
 
 const styles$1 = /*#__PURE__*/Object.freeze({

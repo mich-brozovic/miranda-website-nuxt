@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27769790.4b27db3",
+    "netlify-cli": "^12.0.11",
     "nuxt": "3.0.0-rc.11",
     "sass": "^1.55.0",
     "sass-loader": "^10.3.1"

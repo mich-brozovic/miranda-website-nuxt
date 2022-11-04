@@ -6,19 +6,18 @@ import 'ufo';
 import 'hookable';
 import 'unctx';
 import 'vue-router';
-import 'h3';
-import 'defu';
-import '@vue/shared';
 import '../../nitro/aws-lambda.mjs';
 import 'node-fetch-native/polyfill';
-import 'destr';
 import 'radix3';
+import 'destr';
 import 'unenv/runtime/fetch/index';
 import 'scule';
 import 'ohash';
 import 'unstorage';
 import 'node:url';
 import 'ipx';
+import 'defu';
+import '@vue/shared';
 
 const _sfc_main = {
   __name: "error-404",

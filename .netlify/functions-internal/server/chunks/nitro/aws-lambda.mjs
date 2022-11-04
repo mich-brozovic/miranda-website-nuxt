@@ -1,9 +1,8 @@
 globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import 'node-fetch-native/polyfill';
-import { parseURL, withQuery, withLeadingSlash } from 'ufo';
-import { defineEventHandler, handleCacheHeaders, createEvent, lazyEventHandler, eventHandler, createApp, createRouter } from 'h3';
+import { withoutTrailingSlash, getQuery as getQuery$1, parseURL, withQuery, withLeadingSlash } from 'ufo';
+import { createRouter as createRouter$1 } from 'radix3';
 import { createFetch as createFetch$1, Headers } from 'ohmyfetch';
 import destr from 'destr';
-import { createRouter as createRouter$1 } from 'radix3';
 import { createCall, createFetch } from 'unenv/runtime/fetch/index';
 import { createHooks } from 'hookable';
 import { snakeCase } from 'scule';
@@ -11,6 +10,504 @@ import { hash } from 'ohash';
 import { createStorage } from 'unstorage';
 import { fileURLToPath } from 'node:url';
 import { createIPX, createIPXMiddleware } from 'ipx';
+
+class H3Error extends Error {
+  constructor() {
+    super(...arguments);
+    this.statusCode = 500;
+    this.fatal = false;
+    this.unhandled = false;
+    this.statusMessage = "Internal Server Error";
+  }
+}
+H3Error.__h3_error__ = true;
+function createError(input) {
+  if (typeof input === "string") {
+    return new H3Error(input);
+  }
+  if (isError(input)) {
+    return input;
+  }
+  const err = new H3Error(input.message ?? input.statusMessage, input.cause ? { cause: input.cause } : void 0);
+  if ("stack" in input) {
+    try {
+      Object.defineProperty(err, "stack", { get() {
+        return input.stack;
+      } });
+    } catch {
+      try {
+        err.stack = input.stack;
+      } catch {
+      }
+    }
+  }
+  if (input.statusCode) {
+    err.statusCode = input.statusCode;
+  }
+  if (input.statusMessage) {
+    err.statusMessage = input.statusMessage;
+  }
+  if (input.data) {
+    err.data = input.data;
+  }
+  if (input.fatal !== void 0) {
+    err.fatal = input.fatal;
+  }
+  if (input.unhandled !== void 0) {
+    err.unhandled = input.unhandled;
+  }
+  return err;
+}
+function sendError(event, error, debug) {
+  if (event.res.writableEnded) {
+    return;
+  }
+  const h3Error = isError(error) ? error : createError(error);
+  const responseBody = {
+    statusCode: h3Error.statusCode,
+    statusMessage: h3Error.statusMessage,
+    stack: [],
+    data: h3Error.data
+  };
+  if (debug) {
+    responseBody.stack = (h3Error.stack || "").split("\n").map((l) => l.trim());
+  }
+  if (event.res.writableEnded) {
+    return;
+  }
+  event.res.statusCode = h3Error.statusCode;
+  event.res.statusMessage = h3Error.statusMessage;
+  event.res.setHeader("Content-Type", MIMES.json);
+  event.res.end(JSON.stringify(responseBody, null, 2));
+}
+function isError(input) {
+  return input?.constructor?.__h3_error__ === true;
+}
+
+function getQuery(event) {
+  return getQuery$1(event.req.url || "");
+}
+
+function handleCacheHeaders(event, opts) {
+  const cacheControls = ["public"].concat(opts.cacheControls || []);
+  let cacheMatched = false;
+  if (opts.maxAge !== void 0) {
+    cacheControls.push(`max-age=${+opts.maxAge}`, `s-maxage=${+opts.maxAge}`);
+  }
+  if (opts.modifiedTime) {
+    const modifiedTime = new Date(opts.modifiedTime);
+    const ifModifiedSince = event.req.headers["if-modified-since"];
+    event.res.setHeader("Last-Modified", modifiedTime.toUTCString());
+    if (ifModifiedSince) {
+      if (new Date(ifModifiedSince) >= opts.modifiedTime) {
+        cacheMatched = true;
+      }
+    }
+  }
+  if (opts.etag) {
+    event.res.setHeader("Etag", opts.etag);
+    const ifNonMatch = event.req.headers["if-none-match"];
+    if (ifNonMatch === opts.etag) {
+      cacheMatched = true;
+    }
+  }
+  event.res.setHeader("Cache-Control", cacheControls.join(", "));
+  if (cacheMatched) {
+    event.res.statusCode = 304;
+    event.res.end("");
+    return true;
+  }
+  return false;
+}
+
+const MIMES = {
+  html: "text/html",
+  json: "application/json"
+};
+
+const defer = typeof setImmediate !== "undefined" ? setImmediate : (fn) => fn();
+function send(event, data, type) {
+  if (type) {
+    defaultContentType(event, type);
+  }
+  return new Promise((resolve) => {
+    defer(() => {
+      event.res.end(data);
+      resolve(void 0);
+    });
+  });
+}
+function defaultContentType(event, type) {
+  if (type && !event.res.getHeader("Content-Type")) {
+    event.res.setHeader("Content-Type", type);
+  }
+}
+function sendRedirect(event, location, code = 302) {
+  event.res.statusCode = code;
+  event.res.setHeader("Location", location);
+  const encodedLoc = location.replace(/"/g, "%22");
+  const html = `<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=${encodedLoc}"></head></html>`;
+  return send(event, html, MIMES.html);
+}
+function isStream(data) {
+  return data && typeof data === "object" && typeof data.pipe === "function" && typeof data.on === "function";
+}
+function sendStream(event, data) {
+  return new Promise((resolve, reject) => {
+    data.pipe(event.res);
+    data.on("end", () => resolve(void 0));
+    data.on("error", (error) => reject(createError(error)));
+  });
+}
+
+class H3Headers {
+  constructor(init) {
+    if (!init) {
+      this._headers = {};
+    } else if (Array.isArray(init)) {
+      this._headers = Object.fromEntries(init.map(([key, value]) => [key.toLowerCase(), value]));
+    } else if (init && "append" in init) {
+      this._headers = Object.fromEntries([...init.entries()]);
+    } else {
+      this._headers = Object.fromEntries(Object.entries(init).map(([key, value]) => [key.toLowerCase(), value]));
+    }
+  }
+  append(name, value) {
+    const _name = name.toLowerCase();
+    this.set(_name, [this.get(_name), value].filter(Boolean).join(", "));
+  }
+  delete(name) {
+    delete this._headers[name.toLowerCase()];
+  }
+  get(name) {
+    return this._headers[name.toLowerCase()];
+  }
+  has(name) {
+    return name.toLowerCase() in this._headers;
+  }
+  set(name, value) {
+    this._headers[name.toLowerCase()] = String(value);
+  }
+  forEach(callbackfn) {
+    Object.entries(this._headers).forEach(([key, value]) => callbackfn(value, key, this));
+  }
+}
+
+class H3Response {
+  constructor(body = null, init = {}) {
+    this.body = null;
+    this.type = "default";
+    this.bodyUsed = false;
+    this.headers = new H3Headers(init.headers);
+    this.status = init.status ?? 200;
+    this.statusText = init.statusText || "";
+    this.redirected = !!init.status && [301, 302, 307, 308].includes(init.status);
+    this._body = body;
+    this.url = "";
+    this.ok = this.status < 300 && this.status > 199;
+  }
+  clone() {
+    return new H3Response(this.body, {
+      headers: this.headers,
+      status: this.status,
+      statusText: this.statusText
+    });
+  }
+  arrayBuffer() {
+    return Promise.resolve(this._body);
+  }
+  blob() {
+    return Promise.resolve(this._body);
+  }
+  formData() {
+    return Promise.resolve(this._body);
+  }
+  json() {
+    return Promise.resolve(this._body);
+  }
+  text() {
+    return Promise.resolve(this._body);
+  }
+}
+
+class H3Event {
+  constructor(req, res) {
+    this["__is_event__"] = true;
+    this.context = {};
+    this.req = req;
+    this.res = res;
+    this.event = this;
+    req.event = this;
+    req.context = this.context;
+    req.req = req;
+    req.res = res;
+    res.event = this;
+    res.res = res;
+    res.req = res.req || {};
+    res.req.res = res;
+    res.req.req = req;
+  }
+  respondWith(r) {
+    Promise.resolve(r).then((_response) => {
+      if (this.res.writableEnded) {
+        return;
+      }
+      const response = _response instanceof H3Response ? _response : new H3Response(_response);
+      response.headers.forEach((value, key) => {
+        this.res.setHeader(key, value);
+      });
+      if (response.status) {
+        this.res.statusCode = response.status;
+      }
+      if (response.statusText) {
+        this.res.statusMessage = response.statusText;
+      }
+      if (response.redirected) {
+        this.res.setHeader("Location", response.url);
+      }
+      if (!response._body) {
+        return this.res.end();
+      }
+      if (typeof response._body === "string" || "buffer" in response._body || "byteLength" in response._body) {
+        return this.res.end(response._body);
+      }
+      if (!response.headers.has("content-type")) {
+        response.headers.set("content-type", MIMES.json);
+      }
+      this.res.end(JSON.stringify(response._body));
+    });
+  }
+}
+function createEvent(req, res) {
+  return new H3Event(req, res);
+}
+function callHandler(handler, req, res) {
+  const isMiddleware = handler.length > 2;
+  return new Promise((resolve, reject) => {
+    const next = (err) => {
+      if (isMiddleware) {
+        res.off("close", next);
+        res.off("error", next);
+      }
+      return err ? reject(createError(err)) : resolve(void 0);
+    };
+    try {
+      const returned = handler(req, res, next);
+      if (isMiddleware && returned === void 0) {
+        res.once("close", next);
+        res.once("error", next);
+      } else {
+        resolve(returned);
+      }
+    } catch (err) {
+      next(err);
+    }
+  });
+}
+
+function defineEventHandler(handler) {
+  handler.__is_handler__ = true;
+  return handler;
+}
+const eventHandler = defineEventHandler;
+function isEventHandler(input) {
+  return "__is_handler__" in input;
+}
+function toEventHandler(handler) {
+  if (isEventHandler(handler)) {
+    return handler;
+  }
+  if (typeof handler !== "function") {
+    throw new TypeError("Invalid handler. It should be a function:", handler);
+  }
+  return eventHandler((event) => {
+    return callHandler(handler, event.req, event.res);
+  });
+}
+function defineLazyEventHandler(factory) {
+  let _promise;
+  let _resolved;
+  const resolveHandler = () => {
+    if (_resolved) {
+      return Promise.resolve(_resolved);
+    }
+    if (!_promise) {
+      _promise = Promise.resolve(factory()).then((r) => {
+        const handler = r.default || r;
+        if (typeof handler !== "function") {
+          throw new TypeError("Invalid lazy handler result. It should be a function:", handler);
+        }
+        _resolved = toEventHandler(r.default || r);
+        return _resolved;
+      });
+    }
+    return _promise;
+  };
+  return eventHandler((event) => {
+    if (_resolved) {
+      return _resolved(event);
+    }
+    return resolveHandler().then((handler) => handler(event));
+  });
+}
+const lazyEventHandler = defineLazyEventHandler;
+
+function createApp(options = {}) {
+  const stack = [];
+  const handler = createAppEventHandler(stack, options);
+  const nodeHandler = async function(req, res) {
+    const event = createEvent(req, res);
+    try {
+      await handler(event);
+    } catch (_error) {
+      const error = createError(_error);
+      if (!isError(_error)) {
+        error.unhandled = true;
+      }
+      if (options.onError) {
+        await options.onError(error, event);
+      } else {
+        if (error.unhandled || error.fatal) {
+          console.error("[h3]", error.fatal ? "[fatal]" : "[unhandled]", error);
+        }
+        await sendError(event, error, !!options.debug);
+      }
+    }
+  };
+  const app = nodeHandler;
+  app.nodeHandler = nodeHandler;
+  app.stack = stack;
+  app.handler = handler;
+  app.use = (arg1, arg2, arg3) => use(app, arg1, arg2, arg3);
+  return app;
+}
+function use(app, arg1, arg2, arg3) {
+  if (Array.isArray(arg1)) {
+    arg1.forEach((i) => use(app, i, arg2, arg3));
+  } else if (Array.isArray(arg2)) {
+    arg2.forEach((i) => use(app, arg1, i, arg3));
+  } else if (typeof arg1 === "string") {
+    app.stack.push(normalizeLayer({ ...arg3, route: arg1, handler: arg2 }));
+  } else if (typeof arg1 === "function") {
+    app.stack.push(normalizeLayer({ ...arg2, route: "/", handler: arg1 }));
+  } else {
+    app.stack.push(normalizeLayer({ ...arg1 }));
+  }
+  return app;
+}
+function createAppEventHandler(stack, options) {
+  const spacing = options.debug ? 2 : void 0;
+  return eventHandler(async (event) => {
+    event.req.originalUrl = event.req.originalUrl || event.req.url || "/";
+    const reqUrl = event.req.url || "/";
+    for (const layer of stack) {
+      if (layer.route.length > 1) {
+        if (!reqUrl.startsWith(layer.route)) {
+          continue;
+        }
+        event.req.url = reqUrl.slice(layer.route.length) || "/";
+      } else {
+        event.req.url = reqUrl;
+      }
+      if (layer.match && !layer.match(event.req.url, event)) {
+        continue;
+      }
+      const val = await layer.handler(event);
+      if (event.res.writableEnded) {
+        return;
+      }
+      const type = typeof val;
+      if (type === "string") {
+        return send(event, val, MIMES.html);
+      } else if (isStream(val)) {
+        return sendStream(event, val);
+      } else if (val === null) {
+        event.res.statusCode = 204;
+        return send(event);
+      } else if (type === "object" || type === "boolean" || type === "number") {
+        if (val.buffer) {
+          return send(event, val);
+        } else if (val instanceof Error) {
+          throw createError(val);
+        } else {
+          return send(event, JSON.stringify(val, null, spacing), MIMES.json);
+        }
+      }
+    }
+    if (!event.res.writableEnded) {
+      throw createError({ statusCode: 404, statusMessage: "Not Found" });
+    }
+  });
+}
+function normalizeLayer(input) {
+  let handler = input.handler || input.handle;
+  if (handler.handler) {
+    handler = handler.handler;
+  }
+  if (input.lazy) {
+    handler = lazyEventHandler(handler);
+  } else if (!isEventHandler(handler)) {
+    handler = toEventHandler(handler);
+  }
+  return {
+    route: withoutTrailingSlash(input.route),
+    match: input.match,
+    handler
+  };
+}
+
+const RouterMethods = ["connect", "delete", "get", "head", "options", "post", "put", "trace", "patch"];
+function createRouter() {
+  const _router = createRouter$1({});
+  const routes = {};
+  const router = {};
+  const addRoute = (path, handler, method) => {
+    let route = routes[path];
+    if (!route) {
+      routes[path] = route = { handlers: {} };
+      _router.insert(path, route);
+    }
+    if (Array.isArray(method)) {
+      method.forEach((m) => addRoute(path, handler, m));
+    } else {
+      route.handlers[method] = toEventHandler(handler);
+    }
+    return router;
+  };
+  router.use = router.add = (path, handler, method) => addRoute(path, handler, method || "all");
+  for (const method of RouterMethods) {
+    router[method] = (path, handle) => router.add(path, handle, method);
+  }
+  router.handler = eventHandler((event) => {
+    let path = event.req.url || "/";
+    const queryUrlIndex = path.lastIndexOf("?");
+    if (queryUrlIndex > -1) {
+      path = path.substring(0, queryUrlIndex);
+    }
+    const matched = _router.lookup(path);
+    if (!matched) {
+      throw createError({
+        statusCode: 404,
+        name: "Not Found",
+        statusMessage: `Cannot find any route matching ${event.req.url || "/"}.`
+      });
+    }
+    const method = (event.req.method || "get").toLowerCase();
+    const handler = matched.handlers[method] || matched.handlers.all;
+    if (!handler) {
+      throw createError({
+        statusCode: 405,
+        name: "Method Not Allowed",
+        statusMessage: `Method ${method} is not allowed on this route.`
+      });
+    }
+    const params = matched.params || {};
+    event.event.context.params = params;
+    event.req.context.params = params;
+    return handler(event);
+  });
+  return router;
+}
 
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{},"ipx":{"dir":"","domains":[],"sharp":{},"alias":{}}};
 const ENV_PREFIX = "NITRO_";
@@ -433,5 +930,5 @@ function normalizeOutgoingHeaders(headers) {
   return Object.fromEntries(Object.entries(headers).filter(([key]) => !["set-cookie"].includes(key)).map(([k, v]) => [k, Array.isArray(v) ? v.join(",") : v]));
 }
 
-export { useRuntimeConfig as a, handler as h, useNitroApp as u };
+export { useRuntimeConfig as a, createError as c, eventHandler as e, getQuery as g, handler as h, sendRedirect as s, useNitroApp as u };
 //# sourceMappingURL=aws-lambda.mjs.map

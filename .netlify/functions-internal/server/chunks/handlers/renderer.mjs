@@ -1,12 +1,11 @@
 import { createRenderer } from 'vue-bundle-renderer/runtime';
-import { eventHandler, getQuery } from 'h3';
+import { e as eventHandler, u as useNitroApp, a as useRuntimeConfig, g as getQuery } from '../nitro/aws-lambda.mjs';
 import { renderToString } from 'vue/server-renderer';
 import { joinURL } from 'ufo';
-import { u as useNitroApp, a as useRuntimeConfig } from '../nitro/aws-lambda.mjs';
 import 'node-fetch-native/polyfill';
+import 'radix3';
 import 'ohmyfetch';
 import 'destr';
-import 'radix3';
 import 'unenv/runtime/fetch/index';
 import 'hookable';
 import 'scule';
