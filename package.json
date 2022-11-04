@@ -15,6 +15,7 @@
     "sass-loader": "^10.3.1"
   },
   "dependencies": {
+    "ipx": "^0.9.11",
     "normalize.css": "^8.0.1"
   }
 }
