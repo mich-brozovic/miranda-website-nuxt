@@ -111,19 +111,19 @@
 				<small>Miranda</small>
 				<h3>PPC kampaně</h3>
 			</div>
-			<div class="option" ref="eshopy" @mouseenter="activeRef = eshopy">
+			<div class="option" @mouseenter="activeRef = eshopy">
 				<small>Miranda</small>
 				<h3>Weby & e-shopy</h3>
 			</div>
-			<div class="option" ref="social" @mouseenter="activeRef = social">
+			<div class="option" @mouseenter="activeRef = social">
 				<small>Miranda</small>
 				<h3>Sociální sítě</h3>
 			</div>
-			<div class="option" ref="kreativa" @mouseenter="activeRef = kreativa">
+			<div class="option" @mouseenter="activeRef = kreativa">
 				<small>Miranda</small>
 				<h3>Kreativa</h3>
 			</div>
-			<div class="option" ref="influencing" @mouseenter="activeRef = influencing">
+			<div class="option" @mouseenter="activeRef = influencing">
 				<small>Miranda</small>
 				<h3>Influencing</h3>
 			</div>
