@@ -7,13 +7,13 @@ export default defineNuxtConfig({
 			preprocessorOptions: {
 				scss: {
 					additionalData: `@import "@/assets/_mixins.scss";
-                        @import "@/assets/_variables.scss";
+					    @import "@/assets/_variables.scss";
 						@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');`,
 				},
 			},
 		},
 	},
-	nitro: {
-		preset: 'netlify',
+	image: {
+		dir: 'assets/images',
 	},
 })
