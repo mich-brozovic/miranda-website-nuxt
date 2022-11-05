@@ -23,6 +23,10 @@
 	a {
 		transition: all 0.3s ease-in-out;
 	}
+	img {
+		width: 100%;
+		height: auto;
+	}
 	.container {
 		max-width: calc(1440px + 4rem);
 		padding-left: 2rem;

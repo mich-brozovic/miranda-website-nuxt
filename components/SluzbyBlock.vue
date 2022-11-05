@@ -3,7 +3,7 @@
 		<div class="image-wrapper">
 			<div ref="kampane" v-show="activeRef == kampane">
 				<div class="bg-img">
-					<NuxtPicture src="/kampane.webp" :imgAttrs="{ style: 'width: 100%; height: 100%; object-fit: cover; display: block;' }"></NuxtPicture>
+					<img src="/img/kampane.webp" />
 				</div>
 				<div class="texts">
 					<p>
@@ -24,7 +24,7 @@
 			</div>
 			<div ref="ehopy" v-show="activeRef == eshopy">
 				<div class="bg-img">
-					<NuxtPicture src="/weby_eshopy.webp" :imgAttrs="{ style: 'width: 100%; height: 100%; object-fit: cover; display: block;' }"></NuxtPicture>
+					<img src="/img/weby_eshopy.webp" />
 				</div>
 				<div class="texts">
 					<p>
@@ -48,7 +48,7 @@
 			</div>
 			<div ref="social" v-show="activeRef == social">
 				<div class="bg-img">
-					<NuxtPicture src="/social.webp" :imgAttrs="{ style: 'width: 100%; height: 100%; object-fit: cover; display: block;' }"></NuxtPicture>
+					<img src="/img/social.webp" />
 				</div>
 				<div class="texts">
 					<p>
@@ -69,7 +69,7 @@
 			</div>
 			<div ref="kreativa" v-show="activeRef == kreativa">
 				<div class="bg-img">
-					<NuxtPicture src="/kreativa.webp" :imgAttrs="{ style: 'width: 100%; height: 100%; object-fit: cover; display: block;' }"></NuxtPicture>
+					<img src="/img/kreativa.webp" />
 				</div>
 				<div class="texts">
 					<p>
@@ -88,7 +88,7 @@
 			</div>
 			<div ref="influencing" v-show="activeRef == influencing">
 				<div class="bg-img">
-					<NuxtPicture src="/influencing.webp" :imgAttrs="{ style: 'width: 100%; height: 100%; object-fit: cover; display: block;' }"></NuxtPicture>
+					<img src="/img/influencing.webp" />
 				</div>
 				<div class="texts">
 					<p>
@@ -174,6 +174,11 @@
 			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.4);
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 	.texts {
