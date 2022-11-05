@@ -1,7 +1,7 @@
 <template>
 	<section class="hero">
-		<video poster="/img/blank-black.jpg" autoplay playsinline muted>
-			<source src="/img/intro-hp-nove.mp4" type="video/mp4" />
+		<video poster="/blank-black.jpg" autoplay playsinline muted>
+			<source src="/intro-hp-nove.mp4" type="video/mp4" />
 		</video>
 		<div class="container">
 			<div class="texts">
