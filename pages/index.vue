@@ -43,7 +43,7 @@
 						<BtnSecondary url="/o-nas" text="Více o nás" />
 					</div>
 					<div class="column">
-						<NuxtImg src="/img/proc-miranda-grid.webp" />
+						<NuxtImg src="/proc-miranda-grid.webp" />
 					</div>
 				</div>
 			</div>
