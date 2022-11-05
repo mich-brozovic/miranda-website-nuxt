@@ -26,7 +26,7 @@
 			transform: translateY(-50%);
 		}
 		&::after {
-			content: url(/img/icon/btn-arrow.svg);
+			content: url(/icon/btn-arrow.svg);
 			display: inline-block;
 			line-height: 0;
 			position: absolute;

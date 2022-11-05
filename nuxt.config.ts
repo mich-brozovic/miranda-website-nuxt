@@ -13,5 +13,7 @@ export default defineNuxtConfig({
 			},
 		},
 	},
-	ssr: false,
+	image: {
+		provider: 'netlify',
+	},
 })
