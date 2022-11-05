@@ -15,5 +15,7 @@ export default defineNuxtConfig({
 	},
 	image: {
 		provider: 'netlify',
+		domains: ['backend.mirandamedia.cz'],
+		strapi: {},
 	},
 })
