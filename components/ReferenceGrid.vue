@@ -1,9 +1,9 @@
 <template>
 	<div class="reference-grid">
 		<div class="item" v-for="(item, index) in data.data" :key="index" :class="{ large: index == 2 || index == 3 }">
-			<img class="bg-img" :src="bgImageURL(item)" />
+			<NuxtPicture class="bg-img" :src="bgImageURL(item)" />
 			<div class="logo">
-				<img :src="logoURL(item)" />
+				<NuxtPicture :src="logoURL(item)" />
 			</div>
 		</div>
 	</div>
