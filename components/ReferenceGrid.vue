@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-	const data = await fetchAPI('/references', { populate: '*', sort: 'priorita', 'pagination[page]': 1, 'pagination[pageSize]': 6 })
+	const data = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita', 'pagination[page]': 1, 'pagination[pageSize]': 6 })
 
 	const logoURL = (item) => {
 		return getStrapiMedia(item.attributes.logo)

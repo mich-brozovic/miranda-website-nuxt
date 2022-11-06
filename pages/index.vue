@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<HeroBig></HeroBig>
+		<HeroBig />
 		<section id="scroll" class="reference">
 			<div class="container">
 				<h2 class="text-center">Na co jsme hrdí</h2>
@@ -10,7 +10,7 @@
 						Stojíme za vznikem nových značek a produktů, které hýbou trhem.
 					</p>
 				</div>
-				<ReferenceGrid></ReferenceGrid>
+				<ReferenceGrid />
 				<div class="buttons-center">
 					<BtnSecondary url="/reference" text="Objevit další projekty" />
 				</div>
@@ -25,7 +25,7 @@
 						přidáte pár nadšených profíků, může z toho vzniknout něco, na co budete právem pyšní!
 					</p>
 				</div>
-				<SluzbyBlock></SluzbyBlock>
+				<SluzbyBlock />
 				<div class="buttons-center">
 					<BtnSecondary url="/kontakty#kontakt" text="Poptat službu" />
 				</div>
@@ -46,6 +46,18 @@
 						<NuxtPicture src="/proc-miranda-grid.webp" />
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="commentary">
+			<div class="container">
+				<h2 class="text-center">Co říkáte na Mirandu?</h2>
+				<div class="text-center container narrow">
+					<p>
+						I ten slavnej českej šéfík z televize, co zatopil nejednomu gastru, pustil pár slov o Mirandě. No a jak jsme dopadli s jeho novým,
+						parádně vymazleným e-shopem a co na nás říkají další vybraní klienti...
+					</p>
+				</div>
+				<CoONasRikaji />
 			</div>
 		</section>
 	</main>
