@@ -1,7 +1,7 @@
 <template>
 	<div class="columns col-4-6">
 		<div class="column image">
-			<img :src="imageURL(data.data[activeData])" alt="" />
+			<NuxtPicture provider="strapi" :src="imageURL(data.data[activeData])" alt="" width="620" height="595" />
 			<div class="tiles">
 				<div v-for="(item, index) in tiles" :key="index" class="tile"></div>
 			</div>
