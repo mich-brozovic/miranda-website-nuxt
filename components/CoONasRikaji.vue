@@ -21,7 +21,9 @@
 			</div>
 		</div>
 		<div class="column texts">
-			<Markdown :source="data.data[activeData].attributes.text" />
+			<ClientOnly fallback-tag="div" fallback="Načítám...">
+				<Markdown :source="data.data[activeData].attributes.text" />
+			</ClientOnly>
 			<div class="author">
 				<strong>{{ data.data[activeData].attributes.jmeno }}</strong>
 				<span class="position">{{ data.data[activeData].attributes.pozice }}</span>
@@ -34,9 +36,7 @@
 
 	const tiles = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 	const data = await fetchAPI('onasData', '/co-o-nas-rikajis', { populate: '*', sort: 'id' })
-	const activeData = useState('activeData', () => {
-		return 0
-	})
+	const activeData = useState('activeData', () => 0)
 	const dataLength = data.value.data.length - 1
 
 	const prevData = () => {
@@ -53,7 +53,6 @@
 			activeData.value = 0
 		}
 	}
-
 	const imageURL = (item) => {
 		return getStrapiMedia(item.attributes.obrazek)
 	}
