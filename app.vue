@@ -1,9 +1,13 @@
 <template>
 	<div>
+		<LoadingBar />
 		<MainHeader />
 		<NuxtPage />
 	</div>
 </template>
+<script>
+	import 'vue3-lottie/dist/style.css'
+</script>
 <style lang="scss">
 	*,
 	*::before,

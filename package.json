@@ -16,6 +16,7 @@
 	},
 	"dependencies": {
 		"normalize.css": "^8.0.1",
+		"vue3-lottie": "^2.4.0",
 		"vue3-markdown-it": "^1.0.10"
 	}
 }
