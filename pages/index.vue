@@ -92,7 +92,7 @@
 	</main>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	.proc-miranda {
 		.columns {
 			gap: 60px;

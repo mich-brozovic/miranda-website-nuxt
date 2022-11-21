@@ -121,7 +121,7 @@
 	</footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	footer {
 		padding: 100px 0 30px;
 		background-color: $color-font;

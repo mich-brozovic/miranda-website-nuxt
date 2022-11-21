@@ -1,5 +1,5 @@
 <template>
-	<div class="columns col-4-6">
+	<div class="columns col-4-6 co-o-nas">
 		<div class="column image">
 			<NuxtPicture provider="strapi" :src="imageURL(data.data[activeData])" alt="" width="620" height="595" />
 			<div class="tiles">
@@ -57,116 +57,117 @@
 		return getStrapiMedia(item.attributes.obrazek)
 	}
 </script>
-<style lang="scss" scoped>
-	.columns {
-		margin: 60px 0 200px;
-	}
-	.image {
-		position: relative;
-	}
-	.arrows {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		display: flex;
-		.arrow {
-			background-color: $color-white;
-			width: 74px;
-			height: 74px;
+<style lang="scss">
+	.co-o-nas {
+		.columns {
+			margin: 60px 0 200px;
+		}
+		.image {
+			position: relative;
+		}
+		.arrows {
+			position: absolute;
+			bottom: 0;
+			left: 0;
 			display: flex;
-			align-items: center;
-			justify-content: center;
-			svg {
-				fill: $color-font;
-			}
-			&.prev {
+			.arrow {
+				background-color: $color-white;
+				width: 74px;
+				height: 74px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				svg {
-					transform: rotate(180deg);
+					fill: $color-font;
+				}
+				&.prev {
+					svg {
+						transform: rotate(180deg);
+					}
+				}
+				&.next {
 				}
 			}
-			&.next {
+		}
+		.tiles {
+			display: grid;
+			grid-template-columns: repeat(4, 50px);
+			grid-template-rows: repeat(4, 50px);
+			gap: 10px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+			transform: translate(calc(50% + 5px), calc(50% + 5px));
+			.tile {
+				background-color: $color-accent;
+				animation: 10s pulse ease-in infinite;
+				&:nth-of-type(1),
+				&:nth-of-type(2),
+				&:nth-of-type(5),
+				&:nth-of-type(6),
+				&:nth-of-type(4),
+				&:nth-of-type(13),
+				&:nth-of-type(16) {
+					visibility: hidden;
+				}
+				&:nth-of-type(3) {
+					opacity: 1;
+					animation-delay: 0;
+				}
+				&:nth-of-type(7) {
+					opacity: 1;
+					animation-delay: 200ms;
+				}
+				&:nth-of-type(8) {
+					opacity: 1;
+					animation-delay: 1.3s;
+				}
+				&:nth-of-type(9) {
+					opacity: 1;
+					animation-delay: 2.4s;
+				}
+				&:nth-of-type(10) {
+					opacity: 1;
+					animation-delay: 1s;
+				}
+				&:nth-of-type(11) {
+					opacity: 1;
+					animation-delay: 3.5s;
+				}
+				&:nth-of-type(12) {
+					opacity: 1;
+					animation-delay: 500ms;
+				}
+				&:nth-of-type(14) {
+					opacity: 1;
+					animation-delay: 2.8s;
+				}
+				&:nth-of-type(15) {
+					opacity: 1;
+					animation-delay: 1.8s;
+				}
 			}
 		}
-	}
-	.tiles {
-		display: grid;
-		grid-template-columns: repeat(4, 50px);
-		grid-template-rows: repeat(4, 50px);
-		gap: 10px;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		z-index: 1;
-		transform: translate(calc(50% + 5px), calc(50% + 5px));
-		.tile {
-			background-color: $color-accent;
-			animation: 10s pulse ease-in infinite;
-			&:nth-of-type(1),
-			&:nth-of-type(2),
-			&:nth-of-type(5),
-			&:nth-of-type(6),
-			&:nth-of-type(4),
-			&:nth-of-type(13),
-			&:nth-of-type(16) {
-				visibility: hidden;
-			}
-			&:nth-of-type(3) {
-				opacity: 1;
-				animation-delay: 0;
-			}
-			&:nth-of-type(7) {
-				opacity: 1;
-				animation-delay: 200ms;
-			}
-			&:nth-of-type(8) {
-				opacity: 1;
-				animation-delay: 1.3s;
-			}
-			&:nth-of-type(9) {
-				opacity: 1;
-				animation-delay: 2.4s;
-			}
-			&:nth-of-type(10) {
-				opacity: 1;
-				animation-delay: 1s;
-			}
-			&:nth-of-type(11) {
-				opacity: 1;
-				animation-delay: 3.5s;
-			}
-			&:nth-of-type(12) {
-				opacity: 1;
-				animation-delay: 500ms;
-			}
-			&:nth-of-type(14) {
-				opacity: 1;
-				animation-delay: 2.8s;
-			}
-			&:nth-of-type(15) {
-				opacity: 1;
-				animation-delay: 1.8s;
-			}
-		}
-	}
 
-	.texts {
-		line-height: 2em;
-		padding: 50px 0 50px 90px;
-		display: flex;
-		flex-direction: column;
-		background: url(/icon/quotes.svg) center 80px no-repeat;
-		.author {
-			margin-top: auto;
-			align-self: flex-end;
-			text-align: right;
-			strong {
-				display: block;
-				color: $color-accent;
-				font-size: rem(32);
+		.texts {
+			line-height: 2em;
+			padding: 50px 0 50px 90px;
+			display: flex;
+			flex-direction: column;
+			background: url(/icon/quotes.svg) center 80px no-repeat;
+			.author {
+				margin-top: auto;
+				align-self: flex-end;
+				text-align: right;
+				strong {
+					display: block;
+					color: $color-accent;
+					font-size: rem(32);
+				}
 			}
 		}
 	}
-
 	@keyframes pulse {
 		0% {
 			opacity: 0.1;
