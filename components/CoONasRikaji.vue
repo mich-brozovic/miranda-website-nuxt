@@ -59,7 +59,7 @@
 </script>
 <style lang="scss">
 	.co-o-nas {
-		.columns {
+		&.columns {
 			margin: 60px 0 200px;
 		}
 		.image {

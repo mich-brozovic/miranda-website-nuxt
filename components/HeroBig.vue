@@ -1,7 +1,10 @@
 <template>
 	<section class="hero">
-		<video poster="/blank-black.jpg" autoplay playsinline muted>
+		<video v-if="!videoPlayed" poster="/blank-black.jpg" autoplay playsinline muted @ended="switchVideo">
 			<source src="/intro-hp-nove.mp4" type="video/mp4" />
+		</video>
+		<video v-show="videoPlayed" poster="/intro-loop-poster.jpg" preload playsinline muted loop ref="videoRef">
+			<source src="/intro-hp-loop.mp4" type="video/mp4" />
 		</video>
 		<div class="container">
 			<div class="texts">
@@ -21,7 +24,21 @@
 		</div>
 	</section>
 </template>
+<script setup>
+	const videoRef = ref(null)
+	const videoPlayed = useState('videoPlayed', () => false)
 
+	const switchVideo = () => {
+		// console.log(sourceRef)
+		// const newVideoSource = '/intro-hp-loop.mp4'
+		// sourceRef.value.src = newVideoSource
+		// posterRef.value.load()
+		// posterRef.value.setAttribute('loop', true)
+		// posterRef.value.play()
+		videoPlayed.value = true
+		videoRef.value.play()
+	}
+</script>
 <style lang="scss" scoped>
 	.hero {
 		width: 100%;
