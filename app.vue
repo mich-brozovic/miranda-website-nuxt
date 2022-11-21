@@ -3,6 +3,7 @@
 		<LoadingBar />
 		<MainHeader />
 		<NuxtPage />
+		<MainFooter />
 	</div>
 </template>
 <script>
@@ -21,11 +22,14 @@
 		font-family: 'Poppins', sans-serif;
 		color: $color-font;
 	}
-	section {
+	section:not(.no-margin) {
 		margin-bottom: 100px;
 	}
 	a {
 		transition: all 0.3s ease-in-out;
+	}
+	p {
+		line-height: 1.5em;
 	}
 	img {
 		width: 100%;
@@ -68,6 +72,11 @@
 		flex-wrap: wrap;
 		&.align-center {
 			align-items: center;
+		}
+		&.col-2 {
+			.column {
+				flex: 1 1 460px;
+			}
 		}
 		&.col-4-6 {
 			.column {
