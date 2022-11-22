@@ -58,7 +58,8 @@
 	h3 {
 		line-height: 1.5em;
 	}
-	h2 {
+	h2,
+	h3 {
 		font-size: 3rem;
 	}
 	.buttons-center {
@@ -88,5 +89,10 @@
 				}
 			}
 		}
+	}
+	header nav ul a.router-link-active {
+		color: $color-accent;
+		border-color: $color-accent;
+		box-shadow: 0 0 15px rgba($color-accent, 0.3);
 	}
 </style>

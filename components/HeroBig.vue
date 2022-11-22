@@ -1,15 +1,20 @@
 <template>
 	<section class="hero">
-		<video v-if="!videoPlayed" poster="/blank-black.jpg" autoplay playsinline muted @ended="switchVideo">
-			<source src="/intro-hp-nove.mp4" type="video/mp4" />
-		</video>
-		<video v-show="videoPlayed" poster="/intro-loop-poster.jpg" preload playsinline muted loop ref="videoRef">
-			<source src="/intro-hp-loop.mp4" type="video/mp4" />
-		</video>
+		<div class="video-wrapper" v-if="props.video">
+			<video v-if="!videoPlayed" poster="/blank-black.jpg" autoplay playsinline muted @ended="switchVideo">
+				<source src="/intro-hp-nove.mp4" type="video/mp4" />
+			</video>
+			<video v-show="videoPlayed" poster="/intro-loop-poster.jpg" preload playsinline muted loop ref="videoRef">
+				<source src="/intro-hp-loop.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<div class="image-wrapper" v-else>
+			<NuxtPicture :src="props.imgUrl" :imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover;' }" />
+		</div>
 		<div class="container">
 			<div class="texts">
-				<h1>Marketingová digitální agentura</h1>
-				<h2>Tvoříme ziskové e-shopy a weby, navrhujeme design produktů a značek, staráme se o výkon kampaní, ctíme fair play</h2>
+				<h1>{{ props.heading }}</h1>
+				<h2>{{ props.subheading }}</h2>
 			</div>
 			<div class="scroll">
 				<a href="#scroll">
@@ -25,6 +30,12 @@
 	</section>
 </template>
 <script setup>
+	const props = defineProps({
+		video: Boolean,
+		imgUrl: String,
+		heading: String,
+		subheading: String,
+	})
 	const videoRef = ref(null)
 	const videoPlayed = useState('videoPlayed', () => false)
 
@@ -44,10 +55,15 @@
 		width: 100%;
 		height: 100vh;
 		position: relative;
-		video {
+		.video-wrapper,
+		.image-wrapper {
 			width: 100%;
 			height: 100%;
-			object-fit: cover;
+			video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 	.container {
