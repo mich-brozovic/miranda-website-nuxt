@@ -13,7 +13,7 @@
 						Stojíme za vznikem nových značek a produktů, které hýbou trhem.
 					</p>
 				</div>
-				<ReferenceGrid />
+				<ReferenceGrid :isHP="true" />
 				<div class="buttons-center">
 					<BtnSecondary url="/reference" text="Objevit další projekty" />
 				</div>

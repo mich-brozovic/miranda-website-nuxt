@@ -1,6 +1,6 @@
 <template>
 	<div class="reference-grid">
-		<div class="item" v-for="(item, index) in data.data" :key="index" :class="{ large: index == 2 || index == 3 }">
+		<div class="item" v-for="(item, index) in data.data" :key="index" :class="{ large: (index == 2 || index == 3) && props.isHP }">
 			<NuxtPicture class="bg-img" provider="strapi" :src="bgImageURL(item)" />
 			<div class="logo">
 				<NuxtPicture provider="strapi" :src="logoURL(item)" />
@@ -10,7 +10,16 @@
 </template>
 
 <script setup>
-	const data = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita', 'pagination[page]': 1, 'pagination[pageSize]': 6 })
+	const props = defineProps({
+		isHP: Boolean,
+	})
+
+	let data = null
+	if (props.isHP) {
+		data = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita', 'pagination[page]': 1, 'pagination[pageSize]': 6 })
+	} else {
+		data = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita' })
+	}
 
 	const logoURL = (item) => {
 		return getStrapiMedia(item.attributes.logo)
