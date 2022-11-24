@@ -14,11 +14,11 @@
 		isHP: Boolean,
 	})
 
-	let data = null
+	const data = useState('referenceData', () => null)
 	if (props.isHP) {
-		data = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita', 'pagination[page]': 1, 'pagination[pageSize]': 6 })
+		data.value = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita', 'pagination[page]': 1, 'pagination[pageSize]': 6 })
 	} else {
-		data = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita' })
+		data.value = await fetchAPI('referencePage', '/references', { populate: '*', sort: 'priorita' })
 	}
 
 	const logoURL = (item) => {
