@@ -26,7 +26,7 @@
 	nuxtApp.hook('page:finish', finish)
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	.loading {
 		background-color: #000;
 		position: fixed;
