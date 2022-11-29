@@ -99,4 +99,21 @@
 		box-shadow: none;
 		border: none;
 	}
+	input[type='text'],
+	input[type='email'],
+	input[type='phone'],
+	textarea {
+		background-color: rgba($color-accent, 0.8);
+		border: 1px solid $color-accent;
+		padding: 0.625em 1.25em;
+		width: 100%;
+		color: $color-white;
+		&::placeholder {
+			color: $color-white;
+			opacity: 1;
+		}
+	}
+	.form-row {
+		margin-bottom: 10px;
+	}
 </style>

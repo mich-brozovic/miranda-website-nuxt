@@ -4,3 +4,26 @@
 @function rem($size, $context: 16) {
 	@return calc($size / $context) * 1rem;
 }
+@mixin overlay {
+	position: relative;
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(34, 46, 39, 0.4);
+	}
+}
+@mixin sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
