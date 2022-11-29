@@ -68,7 +68,7 @@
 	}
 	.container {
 		position: absolute;
-		top: 0;
+		top: 130px;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);

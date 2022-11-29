@@ -23,7 +23,7 @@
 		text-align: center;
 		.container {
 			position: absolute;
-			top: 0;
+			top: 130px;
 			bottom: 0;
 			left: 50%;
 			transform: translateX(-50%);
@@ -33,6 +33,9 @@
 		}
 		h1 {
 			font-size: rem(62);
+		}
+		.image-wrapper {
+			height: 100%;
 		}
 	}
 </style>

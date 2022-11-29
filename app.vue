@@ -95,4 +95,8 @@
 		border-color: $color-accent;
 		box-shadow: 0 0 15px rgba($color-accent, 0.3);
 	}
+	button {
+		box-shadow: none;
+		border: none;
+	}
 </style>
