@@ -30,18 +30,20 @@
 				</a>
 			</div>
 			<div class="column form-col">
-				<form>
+				<div v-if="formSending">Odesílám...</div>
+				<div v-else-if="formSent">Formulář byl v pořádku odeslán, naši accounti se Vám co nejdříve ozvou.</div>
+				<form v-else @submit="sendForm">
 					<div class="form-row">
-						<input type="text" id="jemno" name="jmeno" placeholder="Jméno a příjmení" />
+						<input type="text" id="jemno" name="jmeno" placeholder="Jméno a příjmení" :ref="form.jmeno" />
 					</div>
 					<div class="form-row">
-						<input type="email" id="email" name="email" placeholder="E-mail*" required />
+						<input type="email" id="email" name="email" placeholder="E-mail*" :ref="form.email" />
 					</div>
 					<div class="form-row">
-						<input type="phone" id="phone" name="phone" placeholder="Telefon" />
+						<input type="phone" id="phone" name="phone" placeholder="Telefon" :ref="form.phone" />
 					</div>
 					<div class="form-row">
-						<textarea id="message" name="message" placeholder="Váš vzkaz" rows="5"></textarea>
+						<textarea id="message" name="message" placeholder="Váš vzkaz" rows="5" :ref="form.message"></textarea>
 					</div>
 					<div class="form-row">
 						<input type="checkbox" name="consent" id="consent" readonly checked required />
@@ -57,8 +59,37 @@
 		</div>
 	</div>
 </template>
-<script>
-	export default {}
+<script setup>
+	const form = {
+		jmeno: ref(null),
+		email: ref(null),
+		phone: ref(null),
+		message: ref(null),
+	}
+	const formSending = useState('formSending', () => false)
+	const formSent = useState('formSent', () => false)
+
+	const sendForm = async (e) => {
+		e.preventDefault()
+		try {
+			formSending.value = true
+			const response = await $fetch(getStrapiURL('/api/ezforms/submit'), {
+				method: 'POST',
+				body: JSON.stringify({
+					formData: {
+						jmeno: form.jmeno.value.value,
+						email: form.email.value.value,
+						phone: form.phone.value.value,
+						message: form.message.value.value,
+					},
+				}),
+			})
+			formSending.value = false
+			formSent.value = true
+		} catch (e) {
+			console.log(e)
+		}
+	}
 </script>
 <style lang="scss" scoped>
 	.form-wrapper {
@@ -82,6 +113,9 @@
 		}
 		p {
 			margin-top: 0;
+		}
+		button {
+			cursor: pointer;
 		}
 	}
 	#consent {
