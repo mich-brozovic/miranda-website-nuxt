@@ -98,6 +98,7 @@
 	button {
 		box-shadow: none;
 		border: none;
+		background-color: transparent;
 	}
 	input[type='text'],
 	input[type='email'],

@@ -84,6 +84,7 @@
 		font-size: 62px;
 		line-height: 82px;
 		margin-bottom: 20px;
+		margin-top: 0;
 	}
 	h2 {
 		font-size: rem(24);

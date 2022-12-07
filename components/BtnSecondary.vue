@@ -7,13 +7,15 @@
 		text: String,
 	})
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 	.btn-secondary {
 		text-decoration: none;
 		display: inline-block;
 		position: relative;
 		padding: 0.625em 1.25em 0.625em 57px;
 		color: $color-font;
+		font-size: 1rem;
+		line-height: 1em;
 		&::before {
 			content: '';
 			display: inline-block;

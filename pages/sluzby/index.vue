@@ -25,7 +25,7 @@
 							fanoušky, zbožové vyhledávače, e-mailing, webovou analytiku a další neodmyslitelný marketovky pro váš do maxima vyladěný onlajnový
 							flow.
 						</p>
-						<BtnSecondary url="#kontakt" text="Spojit se s Mirandou" />
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 				</div>
 				<div class="sluzba columns col-2 align-center">
@@ -37,7 +37,7 @@
 							starost. Zajistíme návrh UX/UI, pořádně vymazlenou grafiku, programování a kódování. Pak to celé otestujeme, napojíme na kdejaký
 							měřící nástroje a přivedeme tam plnotučnej trafiic, to dá přeci rozum.
 						</p>
-						<BtnSecondary url="#kontakt" text="Spojit se s Mirandou" />
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 					<div class="column image">
 						<NuxtImg src="/weby_eshopy.webp" />
@@ -76,7 +76,7 @@
 							Mirandiny digitální pavučiny se nebezpečně rozvíjej napříč tímhle sociálním prostorem a pochytávaj kdejakého fanouška. Přidělenej
 							stratég sociálních mega-sítí, co tuní obsah, četuje a ladí vizuály s grafikem, bude měsíc co měsíc sedět nad vaším profilem.
 						</p>
-						<BtnSecondary url="#kontakt" text="Spojit se s Mirandou" />
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 				</div>
 				<div class="sluzba columns col-2 align-center">
@@ -87,7 +87,7 @@
 							Vyladěná grafika od Mirandy, co má hlavu plnou nápadů a hýří kreativitou, to je pane kumšt. Obzvlášť, když přijde na takovou
 							korporátní identitu, to se pak jeden zapotí, než to začne lícovat. Všechny tyhle bannery, tiskoviny, letáky a loga.
 						</p>
-						<BtnSecondary url="#kontakt" text="Spojit se s Mirandou" />
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 					<div class="column image">
 						<NuxtImg src="/kreativa.webp" />
@@ -116,12 +116,12 @@
 							Zajistíme ty správný influencery pro tvý vymazlený kampaně. Disponujeme top databází těch nejvlivnějších týpků, co pozvednou tvůj
 							brand na úplně jinej level.
 						</p>
-						<BtnSecondary url="#kontakt" text="Spojit se s Mirandou" />
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="no-margin">
+		<section id="kontakt" class="no-margin">
 			<ContactForm />
 		</section>
 	</main>

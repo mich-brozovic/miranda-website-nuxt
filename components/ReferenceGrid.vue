@@ -1,22 +1,29 @@
 <template>
-	<div class="reference-grid">
-		<div class="item" v-for="(item, index) in data.data" :key="index" :class="{ large: (index == 2 || index == 3) && props.isHP }">
+	<div class="reference-grid" :class="{ hidden: props.type == 'shop' && !visibleAll }">
+		<div class="item" v-for="(item, index) in data.data" :key="index" :class="{ large: (index == 2 || index == 3) && props.type == 'hp' }">
 			<NuxtPicture class="bg-img" provider="strapi" :src="bgImageURL(item)" />
 			<div class="logo">
 				<NuxtPicture provider="strapi" :src="logoURL(item)" />
 			</div>
 		</div>
 	</div>
+	<div v-if="props.type == 'shop'">
+		<div class="buttons-center">
+			<button v-if="!visibleAll" class="btn-secondary" @click="visibleAll = true">Zobrazit všechny Shoptet reference</button>
+			<button v-else class="btn-secondary" @click="visibleAll = false">Skrýt reference</button>
+		</div>
+	</div>
 </template>
 
 <script setup>
-	const props = defineProps({
-		isHP: Boolean,
-	})
+	const props = defineProps(['type'])
+	const visibleAll = useState('visibleAllRefs', () => false)
 
 	const data = useState('referenceData', () => null)
-	if (props.isHP) {
+	if (props.type == 'hp') {
 		data.value = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita', 'pagination[page]': 1, 'pagination[pageSize]': 6 })
+	} else if (props.type == 'shop') {
+		data.value = await fetchAPI('referenceShoptet', '/references', { populate: '*', sort: 'priorita', 'filters[kategorie][nazev]': 'E-shop' })
 	} else {
 		data.value = await fetchAPI('referencePage', '/references', { populate: '*', sort: 'priorita' })
 	}
@@ -35,6 +42,11 @@
 		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 		gap: 20px;
 		margin: 60px 0;
+		&.hidden {
+			.item:nth-of-type(n + 9) {
+				display: none;
+			}
+		}
 	}
 	.item {
 		overflow: hidden;
