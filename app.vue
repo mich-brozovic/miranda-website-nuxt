@@ -117,4 +117,32 @@
 	.form-row {
 		margin-bottom: 10px;
 	}
+	.anchors-wrapper {
+		position: sticky;
+		top: 0;
+		background-color: $color-white;
+		z-index: 2;
+		nav {
+			overflow-x: auto;
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				white-space: nowrap;
+				a {
+					display: inline-block;
+					padding: 0.625em 1.25em;
+					text-decoration: none;
+					color: $color-font;
+					&:hover,
+					&:focus {
+						color: $color-white;
+						background-color: $color-font;
+					}
+				}
+			}
+		}
+	}
 </style>
