@@ -33,7 +33,7 @@
 						Postavíme celý e-shop na klíč, zaškolíme vás v práci s administrací a posuneme výkon vašich kampaní na zcela jinou
 						úroveň.
 					</p>
-					<ul>
+					<ul class="checked">
 						<li>Napojení jakéhokoliv systému pomocí API</li>
 						<li>Možnost programovat vlastní funkce</li>
 						<li>Neomezený počet produktů, uživatelů, e-mailů</li>
@@ -243,6 +243,80 @@
 				</div>
 			</div>
 		</section>
+		<section class="container">
+			<NuxtLink
+				class="banner-link"
+				to="/reference/expresmenu">
+				<div
+					class="banner"
+					style="background-color: rgb(247, 244, 213)">
+					<div class="banner__logo">
+						<NuxtPicture src="/expresmenu-logo.webp" />
+					</div>
+					<div class="banner__info">
+						<strong>o 3278%</strong>
+						nárůst tržeb
+					</div>
+					<div class="banner__mockup">
+						<NuxtPicture src="/expresmenu-mockup.webp" />
+					</div>
+					<div class="banner__arrow">
+						<svg
+							width="52"
+							height="24"
+							viewBox="0 0 52 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807615 39.9792 0.807615 39.3934 1.3934C38.8076 1.97919 38.8076 2.92894 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM-1.31134e-07 13.5L50 13.5L50 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z"></path>
+						</svg>
+					</div>
+				</div>
+			</NuxtLink>
+		</section>
+		<section class="proc-shoptet container">
+			<div class="columns col-1-2">
+				<div class="column">
+					<NuxtPicture src="/proc-shoptet.webp" />
+				</div>
+				<div class="column">
+					<h2>Proč zvolit Shoptet?</h2>
+					<p class="large">
+						Jednička mezi e-commerce platformami v Česku a na na Slovensku s obrovskou podporou a minimálními náklady na provoz.
+					</p>
+					<ol class="vyhody">
+						<li>
+							Shoptet je na českém trhu <strong>TOP on-line platforma</strong> určená pro provozování e-shopu.
+							<strong>S Mirandou dokážete</strong> krabicové řešení posunout na úroveň <strong>řešení na míru!</strong>
+						</li>
+						<li>
+							<strong>Shoptet na míru znamená vlastní e-shop</strong> s možností individuálních a téměř neomezených úprav
+							grafiky, struktury a funkcionalit.
+						</li>
+						<li><strong>Řešení na míru od Mirandy</strong> vám pomůže vystoupit z davu a odlišit se od konkurence.</li>
+						<li>
+							<strong>Intuitivní a jednoduchá obsluha</strong>, kterou zvládne každý a hlavně vám vše vysvětlíme a do
+							administrace <strong>zaškolíme</strong>.
+						</li>
+					</ol>
+					<h3>Napojíme váš Shoptet na podkladní, informační, účetní a podnikové systémy ERP a CRM</h3>
+					<ul class="checked">
+						<li>Synchronizace dat v reálném čase</li>
+						<li>Možnost doprogramovat vlastní funkcionality</li>
+					</ul>
+				</div>
+			</div>
+			<div class="systemy">
+				<NuxtPicture src="/eso9.webp" />
+				<NuxtPicture src="/money.webp" />
+				<NuxtPicture src="/helios.webp" />
+				<NuxtPicture src="/abra.webp" />
+				<NuxtPicture src="/pohoda.webp" />
+				<NuxtPicture src="/k2.webp" />
+				<NuxtPicture src="/nevim.webp" />
+			</div>
+			<div class="buttons-center">a.btn-seconda</div>
+		</section>
 		<section
 			id="kontakt"
 			class="no-margin">
@@ -252,6 +326,20 @@
 </template>
 <script setup></script>
 <style lang="scss" scoped>
+	ul.checked {
+		padding: 0;
+		margin: 0 0 20px;
+		list-style: none;
+		li {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: 0.4em;
+			&::before {
+				content: url(/list-marker.svg);
+			}
+		}
+	}
 	.shoptet-sluzby-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -273,20 +361,6 @@
 				p {
 					font-size: 1.5rem;
 					margin-top: 0;
-				}
-				ul {
-					padding: 0;
-					margin: 0 0 20px;
-					list-style: none;
-					li {
-						display: flex;
-						align-items: center;
-						gap: 10px;
-						margin-bottom: 0.4em;
-						&::before {
-							content: url(/list-marker.svg);
-						}
-					}
 				}
 			}
 			&:not(.image):not(.large) {
@@ -336,6 +410,94 @@
 			&:nth-of-type(3),
 			&:nth-of-type(9) {
 				background-color: rgba($color-font, 0.1);
+			}
+		}
+	}
+	.banner-link {
+		color: $color-font;
+		text-decoration: none;
+	}
+	.banner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 50px;
+		padding: 40px 100px;
+		& > div {
+			flex: 0 1 auto;
+		}
+		.banner__logo {
+			max-width: 175px;
+		}
+		.banner__info {
+			font-size: rem(24);
+			position: relative;
+			z-index: 1;
+			strong {
+				display: block;
+				font-size: rem(56);
+			}
+		}
+		.banner__arrow {
+			svg {
+				fill: $color-font;
+			}
+		}
+		.banner__mockup {
+			margin: -30px 0 -30px -100px;
+			background: radial-gradient(at center, #fff 0, transparent 80%);
+			transition: all 0.15s ease-in-out;
+		}
+		&:hover,
+		&:focus {
+			.banner__mockup {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.proc-shoptet {
+		h2 {
+			margin-top: 0;
+			margin-bottom: em(10, 48);
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
+	}
+	.vyhody {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 70px 50px;
+		margin: 40px 0 80px;
+		padding: 0;
+		list-style: none;
+		counter-reset: vyhody;
+		li {
+			counter-increment: vyhody;
+			line-height: 1.75em;
+			&::before {
+				content: '0' counter(vyhody);
+				display: block;
+				color: $color-accent;
+				font-size: 2rem;
+				line-height: 1.5em;
+				font-weight: 700;
+			}
+		}
+	}
+	.systemy {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		gap: 20px;
+		flex-wrap: wrap;
+		margin: 40px 0;
+		picture {
+			filter: grayscale(1);
+			transition: all 0.15s ease-in-out;
+			&:hover,
+			&:focus {
+				filter: none;
 			}
 		}
 	}

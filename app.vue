@@ -30,6 +30,10 @@
 	}
 	p {
 		line-height: 1.5em;
+		&.large {
+			font-size: 1.5rem;
+			color: rgba($color-font, 0.7);
+		}
 	}
 	img {
 		width: 100%;
@@ -86,6 +90,16 @@
 				}
 				&:last-of-type {
 					flex: 1 1 500px;
+				}
+			}
+		}
+		&.col-1-2 {
+			.column {
+				&:first-of-type {
+					flex: 1 1 200px;
+				}
+				&:last-of-type {
+					flex: 1 1 400px;
 				}
 			}
 		}
