@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 	css: ['normalize.css/normalize.css'],
-	modules: ['@nuxt/image-edge'],
+	modules: ['@nuxt/image-edge', '@nuxtjs/strapi'],
 	vite: {
 		css: {
 			preprocessorOptions: {
@@ -17,5 +17,12 @@ export default defineNuxtConfig({
 		provider: 'netlify',
 		domains: ['backend.mirandamedia.cz'],
 		strapi: {},
+	},
+	strapi: {
+		url: 'https://backend.mirandamedia.cz',
+		prefix: '/api',
+		version: 'v4',
+		cookie: {},
+		cookieName: 'strapi_jwt',
 	},
 })

@@ -7,7 +7,10 @@
 			<div class="sluzby-wrapper">
 				<div class="sluzba columns col-2 align-center">
 					<div class="column image">
-						<NuxtImg src="/kampane.webp" />
+						<NuxtPicture
+							src="/kampane.webp"
+							loading="lazy"
+							:imgAttrs="{ style: 'display: block' }" />
 						<div class="hashtags">
 							<span>Google Ads</span>
 							<span>Sklik</span>
@@ -50,7 +53,10 @@
 						>
 					</div>
 					<div class="column image">
-						<NuxtImg src="/weby_eshopy.webp" />
+						<NuxtPicture
+							src="/weby_eshopy.webp"
+							loading="lazy"
+							:imgAttrs="{ style: 'display: block' }" />
 						<div class="hashtags">
 							<span>Shoptet</span>
 							<span>Shoptet PREMIUM</span>
@@ -67,7 +73,10 @@
 				</div>
 				<div class="sluzba columns col-2 align-center">
 					<div class="column image">
-						<NuxtImg src="/social.webp" />
+						<NuxtPicture
+							src="/social.webp"
+							loading="lazy"
+							:imgAttrs="{ style: 'display: block' }" />
 						<div class="hashtags">
 							<span>Facebook</span>
 							<span>Instagram</span>
@@ -110,7 +119,10 @@
 						>
 					</div>
 					<div class="column image">
-						<NuxtImg src="/kreativa.webp" />
+						<NuxtPicture
+							src="/kreativa.webp"
+							loading="lazy"
+							:imgAttrs="{ style: 'display: block' }" />
 						<div class="hashtags">
 							<span>Produktové fotografie</span>
 							<span>Webdesign</span>
@@ -123,7 +135,10 @@
 				</div>
 				<div class="sluzba columns col-2 align-center">
 					<div class="column image">
-						<NuxtImg src="/influencing.webp" />
+						<NuxtPicture
+							src="/influencing.webp"
+							loading="lazy"
+							:imgAttrs="{ style: 'display: block' }" />
 						<div class="hashtags">
 							<span>Influencer marketing</span>
 							<span>Microinfluencing</span>

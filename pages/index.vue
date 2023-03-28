@@ -73,6 +73,11 @@
 		</section>
 		<section class="container">
 			<div class="podcast">
+				<NuxtPicture
+					class="background-image"
+					src="/podcast-bg.jpg"
+					:imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover;' }"
+					loading="lazy" />
 				<div class="pripravujeme">
 					<svg
 						width="214"
@@ -122,8 +127,6 @@
 		}
 	}
 	.podcast {
-		background: url(/podcast-bg.jpg) center no-repeat;
-		background-size: cover;
 		color: $color-white;
 		position: relative;
 		min-height: 574px;
@@ -139,6 +142,16 @@
 		h3 {
 			font-size: 3rem;
 			margin: 0 0 em(10, 48);
+		}
+		& > div {
+			position: relative;
+		}
+		.background-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
 	}
 </style>
