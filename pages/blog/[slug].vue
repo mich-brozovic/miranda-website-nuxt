@@ -46,7 +46,8 @@
 									:imgAttrs="{ style: 'display:block;' }"
 									:width="authorData.data.attributes.avatar.data.attributes.width"
 									:height="authorData.data.attributes.avatar.data.attributes.height"
-									:alt="authorData.data.attributes.jmeno" />
+									:alt="authorData.data.attributes.jmeno"
+									provider="strapi" />
 							</div>
 							<div class="article__author--info">
 								<h5>{{ authorData.data.attributes.jmeno }}</h5>
