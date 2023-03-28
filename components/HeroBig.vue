@@ -1,15 +1,39 @@
 <template>
 	<section class="hero">
-		<div class="video-wrapper" v-if="props.video">
-			<video v-if="!videoPlayed" poster="/blank-black.jpg" autoplay playsinline muted @ended="switchVideo">
-				<source src="/intro-hp-nove.mp4" type="video/mp4" />
+		<div
+			class="video-wrapper"
+			v-if="props.video">
+			<video
+				v-if="!videoPlayed"
+				poster="/blank-black.jpg"
+				autoplay
+				playsinline
+				muted
+				preload
+				@ended="switchVideo">
+				<source
+					src="/intro-hp-nove.mp4"
+					type="video/mp4" />
 			</video>
-			<video v-show="videoPlayed" poster="/intro-loop-poster.jpg" preload playsinline muted loop ref="videoRef">
-				<source src="/intro-hp-loop.mp4" type="video/mp4" />
+			<video
+				v-show="videoPlayed"
+				poster="/intro-loop-poster.jpg"
+				preload
+				playsinline
+				muted
+				loop
+				ref="videoRef">
+				<source
+					src="/intro-hp-loop.mp4"
+					type="video/mp4" />
 			</video>
 		</div>
-		<div class="image-wrapper" v-else>
-			<NuxtPicture :src="props.imgUrl" :imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover;' }" />
+		<div
+			class="image-wrapper"
+			v-else>
+			<NuxtPicture
+				:src="props.imgUrl"
+				:imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover;' }" />
 		</div>
 		<div class="container">
 			<div class="texts">
@@ -18,7 +42,12 @@
 			</div>
 			<div class="scroll">
 				<a href="#scroll">
-					<svg width="24" height="155" viewBox="0 0 24 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg
+						width="24"
+						height="155"
+						viewBox="0 0 24 155"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M10.9393 154.061C11.5251 154.646 12.4749 154.646 13.0607 154.061L22.6066 144.515C23.1924 143.929 23.1924 142.979 22.6066 142.393C22.0208 141.808 21.0711 141.808 20.4853 142.393L12 150.879L3.51472 142.393C2.92893 141.808 1.97918 141.808 1.3934 142.393C0.80761 142.979 0.80761 143.929 1.3934 144.515L10.9393 154.061ZM10.5 -1.78873e-08L10.5 153L13.5 153L13.5 1.78873e-08L10.5 -1.78873e-08Z"
 							fill="white"></path>

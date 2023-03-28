@@ -1,15 +1,20 @@
 <template>
 	<div class="sluzby-wrapper">
 		<div class="image-wrapper">
-			<div ref="kampane" v-show="activeRef == kampane">
+			<div
+				ref="kampane"
+				v-show="activeRef == kampane">
 				<div class="bg-img">
-					<NuxtImg src="/kampane.webp" />
+					<NuxtImg
+						src="/kampane.webp"
+						loading="lazy" />
 				</div>
 				<div class="texts">
 					<p>
-						Mirandina partička nápadama vyzbrojenejch markeťáků poskytuje komplexní služby internetového marketingu. Onlinový PPC kampaně, co
-						podávaj solidní výkon, SEO vychytávky pro tučnej traffic z organicu, správu sociálních sítí Facebook & Instagram pro hladový fanoušky,
-						zbožové vyhledávače, e-mailing, webovou analytiku a další neodmyslitelný marketovky pro váš do maxima vyladěný onlajnový flow.
+						Mirandina partička nápadama vyzbrojenejch markeťáků poskytuje komplexní služby internetového marketingu. Onlinový
+						PPC kampaně, co podávaj solidní výkon, SEO vychytávky pro tučnej traffic z organicu, správu sociálních sítí Facebook
+						& Instagram pro hladový fanoušky, zbožové vyhledávače, e-mailing, webovou analytiku a další neodmyslitelný
+						marketovky pro váš do maxima vyladěný onlajnový flow.
 					</p>
 					<div class="hashtags">
 						<span>Google Ads</span>
@@ -22,15 +27,19 @@
 					</div>
 				</div>
 			</div>
-			<div ref="ehopy" v-show="activeRef == eshopy">
+			<div
+				ref="ehopy"
+				v-show="activeRef == eshopy">
 				<div class="bg-img">
-					<NuxtImg src="/weby_eshopy.webp" />
+					<NuxtImg
+						src="/weby_eshopy.webp"
+						loading="lazy" />
 				</div>
 				<div class="texts">
 					<p>
-						Vytuněný webovky a nabušenej e-shop je naše specializace a opus magnum. Vaši onlajnovou výkladní skříň podnikání si vezmeme celou na
-						starost. Zajistíme návrh UX/UI, pořádně vymazlenou grafiku, programování a kódování. Pak to celé otestujeme, napojíme na kdejaký měřící
-						nástroje a přivedeme tam plnotučnej trafiic, to dá přeci rozum.
+						Vytuněný webovky a nabušenej e-shop je naše specializace a opus magnum. Vaši onlajnovou výkladní skříň podnikání si
+						vezmeme celou na starost. Zajistíme návrh UX/UI, pořádně vymazlenou grafiku, programování a kódování. Pak to celé
+						otestujeme, napojíme na kdejaký měřící nástroje a přivedeme tam plnotučnej trafiic, to dá přeci rozum.
 					</p>
 					<div class="hashtags">
 						<span>Shoptet</span>
@@ -46,14 +55,19 @@
 					</div>
 				</div>
 			</div>
-			<div ref="social" v-show="activeRef == social">
+			<div
+				ref="social"
+				v-show="activeRef == social">
 				<div class="bg-img">
-					<NuxtImg src="/social.webp" />
+					<NuxtImg
+						src="/social.webp"
+						loading="lazy" />
 				</div>
 				<div class="texts">
 					<p>
-						Mirandiny digitální pavučiny se nebezpečně rozvíjej napříč tímhle sociálním prostorem a pochytávaj kdejakého fanouška. Přidělenej
-						stratég sociálních mega-sítí, co tuní obsah, četuje a ladí vizuály s grafikem, bude měsíc co měsíc sedět nad vaším profilem.
+						Mirandiny digitální pavučiny se nebezpečně rozvíjej napříč tímhle sociálním prostorem a pochytávaj kdejakého
+						fanouška. Přidělenej stratég sociálních mega-sítí, co tuní obsah, četuje a ladí vizuály s grafikem, bude měsíc co
+						měsíc sedět nad vaším profilem.
 					</p>
 					<div class="hashtags">
 						<span>Facebook</span>
@@ -67,14 +81,19 @@
 					</div>
 				</div>
 			</div>
-			<div ref="kreativa" v-show="activeRef == kreativa">
+			<div
+				ref="kreativa"
+				v-show="activeRef == kreativa">
 				<div class="bg-img">
-					<NuxtImg src="/kreativa.webp" />
+					<NuxtImg
+						src="/kreativa.webp"
+						loading="lazy" />
 				</div>
 				<div class="texts">
 					<p>
-						Vyladěná grafika od Mirandy, co má hlavu plnou nápadů a hýří kreativitou, to je pane kumšt. Obzvlášť, když přijde na takovou korporátní
-						identitu, to se pak jeden zapotí, než to začne lícovat. Všechny tyhle bannery, tiskoviny, letáky a loga.
+						Vyladěná grafika od Mirandy, co má hlavu plnou nápadů a hýří kreativitou, to je pane kumšt. Obzvlášť, když přijde na
+						takovou korporátní identitu, to se pak jeden zapotí, než to začne lícovat. Všechny tyhle bannery, tiskoviny, letáky
+						a loga.
 					</p>
 					<div class="hashtags">
 						<span>Produktové fotografie</span>
@@ -86,14 +105,18 @@
 					</div>
 				</div>
 			</div>
-			<div ref="influencing" v-show="activeRef == influencing">
+			<div
+				ref="influencing"
+				v-show="activeRef == influencing">
 				<div class="bg-img">
-					<NuxtImg src="/influencing.webp" />
+					<NuxtImg
+						src="/influencing.webp"
+						loading="lazy" />
 				</div>
 				<div class="texts">
 					<p>
-						Zajistíme ty správný influencery pro tvý vymazlený kampaně. Disponujeme top databází těch nejvlivnějších týpků, co pozvednou tvůj brand
-						na úplně jinej level.
+						Zajistíme ty správný influencery pro tvý vymazlený kampaně. Disponujeme top databází těch nejvlivnějších týpků, co
+						pozvednou tvůj brand na úplně jinej level.
 					</p>
 					<div class="hashtags">
 						<span>Influencer marketing</span>
@@ -103,23 +126,33 @@
 			</div>
 		</div>
 		<div class="options-wrapper">
-			<div class="option" @mouseenter="activeRef = kampane">
+			<div
+				class="option"
+				@mouseenter="activeRef = kampane">
 				<small>Miranda</small>
 				<h3>PPC kampaně</h3>
 			</div>
-			<div class="option" @mouseenter="activeRef = eshopy">
+			<div
+				class="option"
+				@mouseenter="activeRef = eshopy">
 				<small>Miranda</small>
 				<h3>Weby & e-shopy</h3>
 			</div>
-			<div class="option" @mouseenter="activeRef = social">
+			<div
+				class="option"
+				@mouseenter="activeRef = social">
 				<small>Miranda</small>
 				<h3>Sociální sítě</h3>
 			</div>
-			<div class="option" @mouseenter="activeRef = kreativa">
+			<div
+				class="option"
+				@mouseenter="activeRef = kreativa">
 				<small>Miranda</small>
 				<h3>Kreativa</h3>
 			</div>
-			<div class="option" @mouseenter="activeRef = influencing">
+			<div
+				class="option"
+				@mouseenter="activeRef = influencing">
 				<small>Miranda</small>
 				<h3>Influencing</h3>
 			</div>

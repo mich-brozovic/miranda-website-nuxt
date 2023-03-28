@@ -1,13 +1,12 @@
 <template>
-	<NuxtLink :to="props.url" class="btn-primary">
+	<NuxtLink
+		:to="props.url"
+		class="btn-primary">
 		<span>{{ props.text }}</span>
 	</NuxtLink>
 </template>
 <script setup>
-	const props = defineProps({
-		url: String,
-		text: String,
-	})
+	const props = defineProps(['url', 'text'])
 </script>
 <style lang="scss">
 	.btn-primary {

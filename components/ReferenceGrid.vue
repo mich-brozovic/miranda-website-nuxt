@@ -1,16 +1,39 @@
 <template>
-	<div class="reference-grid" :class="{ hidden: props.type == 'shop' && !visibleAll }">
-		<div class="item" v-for="(item, index) in data.data" :key="index" :class="{ large: (index == 2 || index == 3) && props.type == 'hp' }">
-			<NuxtPicture class="bg-img" provider="strapi" :src="bgImageURL(item)" />
+	<div
+		class="reference-grid"
+		:class="{ hidden: props.type == 'shop' && !visibleAll }">
+		<div
+			class="item"
+			v-for="(item, index) in data.data"
+			:key="index"
+			:class="{ large: (index == 2 || index == 3) && props.type == 'hp' }">
+			<NuxtPicture
+				class="bg-img"
+				provider="strapi"
+				:src="bgImageURL(item)"
+				loading="lazy" />
 			<div class="logo">
-				<NuxtPicture provider="strapi" :src="logoURL(item)" />
+				<NuxtPicture
+					provider="strapi"
+					:src="logoURL(item)"
+					loading="lazy" />
 			</div>
 		</div>
 	</div>
 	<div v-if="props.type == 'shop'">
 		<div class="buttons-center">
-			<button v-if="!visibleAll" class="btn-secondary" @click="visibleAll = true">Zobrazit všechny Shoptet reference</button>
-			<button v-else class="btn-secondary" @click="visibleAll = false">Skrýt reference</button>
+			<button
+				v-if="!visibleAll"
+				class="btn-secondary"
+				@click="visibleAll = true">
+				Zobrazit všechny Shoptet reference
+			</button>
+			<button
+				v-else
+				class="btn-secondary"
+				@click="visibleAll = false">
+				Skrýt reference
+			</button>
 		</div>
 	</div>
 </template>
@@ -21,9 +44,18 @@
 
 	const data = useState('referenceData', () => null)
 	if (props.type == 'hp') {
-		data.value = await fetchAPI('referenceHP', '/references', { populate: '*', sort: 'priorita', 'pagination[page]': 1, 'pagination[pageSize]': 6 })
+		data.value = await fetchAPI('referenceHP', '/references', {
+			populate: '*',
+			sort: 'priorita',
+			'pagination[page]': 1,
+			'pagination[pageSize]': 6,
+		})
 	} else if (props.type == 'shop') {
-		data.value = await fetchAPI('referenceShoptet', '/references', { populate: '*', sort: 'priorita', 'filters[kategorie][nazev]': 'E-shop' })
+		data.value = await fetchAPI('referenceShoptet', '/references', {
+			populate: '*',
+			sort: 'priorita',
+			'filters[kategorie][nazev]': 'E-shop',
+		})
 	} else {
 		data.value = await fetchAPI('referencePage', '/references', { populate: '*', sort: 'priorita' })
 	}
