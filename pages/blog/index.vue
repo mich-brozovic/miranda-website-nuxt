@@ -18,7 +18,8 @@
 								:imgAttrs="{ style: 'display:block;' }"
 								width="467"
 								height="262"
-								:alt="item.attributes.nazev" />
+								:alt="item.attributes.nazev"
+								provider="strapi" />
 							<div class="post__tags">
 								<span
 									v-for="(tag, index) in item.attributes.kategorie_clankus.data"

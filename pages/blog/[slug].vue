@@ -8,7 +8,8 @@
 					:imgAttrs="{ style: 'display:block;' }"
 					:width="data.data[0].attributes.obrazek.data.attributes.width"
 					:height="data.data[0].attributes.obrazek.data.attributes.height"
-					:alt="data.data[0].attributes.nazev" />
+					:alt="data.data[0].attributes.nazev"
+					provider="strapi" />
 			</div>
 			<div class="article__content">
 				<main>
