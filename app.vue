@@ -9,6 +9,15 @@
 <script>
 	import 'vue3-lottie/dist/style.css'
 </script>
+<script setup>
+	const screenWidth = useState('screenWidth', () => 1920)
+	onMounted(() => {
+		screenWidth.value = window.innerWidth
+		window.addEventListener('resize', () => {
+			screenWidth.value = window.innerWidth
+		})
+	})
+</script>
 <style lang="scss">
 	*,
 	*::before,
@@ -162,5 +171,12 @@
 	.disabled {
 		opacity: 0.6;
 		cursor: not-allowed;
+	}
+
+	@media (max-width: 767px) {
+		.container {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 </style>

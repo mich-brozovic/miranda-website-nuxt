@@ -3,30 +3,58 @@
 		<div
 			class="video-wrapper"
 			v-if="props.video">
-			<video
-				v-if="!videoPlayed"
-				poster="/blank-black.jpg"
-				autoplay
-				playsinline
-				muted
-				preload
-				@ended="switchVideo">
-				<source
-					src="/intro-hp-nove.mp4"
-					type="video/mp4" />
-			</video>
-			<video
-				v-show="videoPlayed"
-				poster="/intro-loop-poster.jpg"
-				preload
-				playsinline
-				muted
-				loop
-				ref="videoRef">
-				<source
-					src="/intro-hp-loop.mp4"
-					type="video/mp4" />
-			</video>
+			<div v-if="screenWidth > 767">
+				<video
+					v-if="!videoPlayed"
+					poster="/blank-black.jpg"
+					autoplay
+					playsinline
+					muted
+					preload
+					@ended="switchVideo">
+					<source
+						src="/intro-hp-nove.mp4"
+						type="video/mp4" />
+				</video>
+				<video
+					v-show="videoPlayed"
+					poster="/intro-loop-poster.jpg"
+					preload
+					playsinline
+					muted
+					loop
+					ref="videoRef">
+					<source
+						src="/intro-hp-loop.mp4"
+						type="video/mp4" />
+				</video>
+			</div>
+			<div v-else>
+				<video
+					v-if="!videoPlayed"
+					poster="/intro-hp-mobile.jpg"
+					autoplay
+					playsinline
+					muted
+					preload
+					@ended="switchVideo">
+					<source
+						src="/intro-hp-mobile.mp4"
+						type="video/mp4" />
+				</video>
+				<video
+					v-show="videoPlayed"
+					poster="/intro-loop-poster-mobile.jpg"
+					preload
+					playsinline
+					muted
+					loop
+					ref="videoRef">
+					<source
+						src="/intro-loop-mobile.mp4"
+						type="video/mp4" />
+				</video>
+			</div>
 		</div>
 		<div
 			class="image-wrapper"
@@ -59,6 +87,7 @@
 	</section>
 </template>
 <script setup>
+	const screenWidth = useState('screenWidth')
 	const props = defineProps({
 		video: Boolean,
 		imgUrl: String,
@@ -88,6 +117,10 @@
 		.image-wrapper {
 			width: 100%;
 			height: 100%;
+			div {
+				width: 100%;
+				height: 100%;
+			}
 			video {
 				width: 100%;
 				height: 100%;
@@ -110,14 +143,15 @@
 		color: $color-white;
 	}
 	h1 {
-		font-size: 62px;
-		line-height: 82px;
+		font-size: clamp(2.375rem, 5.5vw, 3.875rem);
+		line-height: em(82, 62);
 		margin-bottom: 20px;
 		margin-top: 0;
 	}
 	h2 {
-		font-size: rem(24);
+		font-size: clamp(1rem, 2vw, 1.5rem);
 		line-height: em(40, 24);
+		font-weight: 400;
 	}
 	.scroll {
 		position: absolute;
@@ -132,6 +166,39 @@
 			position: absolute;
 			top: 16px;
 			left: 0;
+		}
+	}
+	@media (max-width: 767px) {
+		.hero {
+			.video-wrapper,
+			.image-wrapper,
+			.container {
+				position: relative;
+				height: 50vh;
+				top: unset;
+				left: unset;
+				right: unset;
+				bottom: unset;
+			}
+			.container {
+				background: linear-gradient(180deg, transparent 0, #000 50px);
+				transform: none;
+				margin-top: -50px;
+				height: calc(50vh + 50px);
+				text-align: center;
+			}
+			.scroll {
+				left: 50%;
+				transform: translateX(-50%);
+				a {
+					svg {
+						height: 50px;
+					}
+					span {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 </style>

@@ -108,9 +108,7 @@
 </template>
 <script setup>
 	const data = useState('blogArticles', () => null)
-
 	data.value = await fetchAPI('blogData', '/clanky', { populate: '*', sort: 'publishedAt:desc' })
-	console.log(data.value)
 </script>
 <style lang="scss">
 	.post-grid {

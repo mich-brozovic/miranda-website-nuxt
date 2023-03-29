@@ -30,6 +30,9 @@
 	const { findOne } = useStrapi()
 	const router = useRouter()
 	const { data, error } = await useAsyncData('career', () => findOne('careers', router.currentRoute.value.params.id, { populate: '*' }))
+	useHead({
+		title: data.value.data.attributes.Nazev + ' | MirandaMedia',
+	})
 </script>
 <style lang="scss">
 	.single-career {

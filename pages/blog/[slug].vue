@@ -115,14 +115,19 @@
 	import Markdown from 'vue3-markdown-it'
 	const { find, findOne } = useStrapi()
 	const router = useRouter()
-	console.log(router)
 	const { data, error } = await useAsyncData('article', () =>
 		find('clanky', { filters: { slug: router.currentRoute.value.params.slug }, populate: '*' })
 	)
 	const { data: authorData, error: authorError } = await useAsyncData('author', () =>
 		findOne('autors', data.value.data[0].attributes.autor.data.id, { populate: '*' })
 	)
-	console.log(data.value, error.value)
+	useHead({
+		title: data.value.data[0].attributes.nazev,
+		meta: {
+			name: 'description',
+			content: data.value.data[0].attributes.description,
+		},
+	})
 </script>
 <style lang="scss" scoped>
 	.article {
