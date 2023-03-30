@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 	css: ['normalize.css/normalize.css'],
-	modules: ['@nuxt/image-edge', '@nuxtjs/strapi'],
+	modules: ['@nuxt/image-edge', '@nuxtjs/strapi', 'nuxt-swiper'],
 	vite: {
 		css: {
 			preprocessorOptions: {
@@ -24,5 +24,9 @@ export default defineNuxtConfig({
 		version: 'v4',
 		cookie: {},
 		cookieName: 'strapi_jwt',
+	},
+	swiper: {
+		prefix: 'Swiper',
+		styleLang: 'css',
 	},
 })

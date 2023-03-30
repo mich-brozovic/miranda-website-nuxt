@@ -249,6 +249,7 @@
 		justify-content: center;
 		margin-top: 60px;
 		margin-bottom: 30px;
+		gap: 20px;
 		& > * {
 			flex: 0 1 350px;
 		}
@@ -287,6 +288,30 @@
 		p,
 		a {
 			color: rgba($color-white, 0.7);
+		}
+	}
+	@media (max-width: 767px) {
+		footer {
+			padding: 50px 0 30px;
+		}
+		.footer-top {
+			flex-direction: column;
+		}
+		.footer-menu-wrapper {
+			margin: 0;
+		}
+		.project-mail,
+		.project-phone {
+			font-size: 1rem;
+		}
+		.partneri-wrapper {
+			flex-basis: auto;
+		}
+		.partneri {
+			justify-content: center;
+			img {
+				max-width: 70px;
+			}
 		}
 	}
 </style>

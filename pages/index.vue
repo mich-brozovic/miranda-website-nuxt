@@ -154,4 +154,48 @@
 			height: 100%;
 		}
 	}
+	@media (max-width: 767px) {
+		.podcast {
+			margin-left: -20px;
+			margin-right: -20px;
+			margin-bottom: -50px;
+			flex-direction: column;
+			justify-content: flex-end;
+			.pripravujeme {
+				top: 0;
+				left: 0;
+				right: 0;
+				padding: em(15) em(20);
+				background-color: $color-accent;
+				text-align: center;
+				color: $color-font;
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: 0.2em;
+				&::before {
+					content: 'Připravujeme';
+				}
+				svg {
+					display: none;
+				}
+			}
+			p {
+				display: none;
+			}
+			h3 {
+				font-size: rem(28);
+			}
+			.columns {
+				flex-direction: column-reverse;
+				height: 100%;
+				.column {
+					flex-basis: auto;
+				}
+			}
+			.column:first-of-type {
+				padding: 0 0 50px;
+				text-align: center;
+			}
+		}
+	}
 </style>

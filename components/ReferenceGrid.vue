@@ -1,25 +1,52 @@
 <template>
-	<div
-		class="reference-grid"
-		:class="{ hidden: props.type == 'shop' && !visibleAll }">
-		<div
-			class="item"
-			v-for="(item, index) in data.data"
-			:key="index"
-			:class="{ large: (index == 2 || index == 3) && props.type == 'hp' }">
-			<NuxtPicture
-				class="bg-img"
-				provider="strapi"
-				:src="bgImageURL(item)"
-				loading="lazy" />
-			<div class="logo">
+	<div v-if="props.type === 'hp' && screenWidth <= 767">
+		<Swiper
+			:slides-per-view="1"
+			:loop="true"
+			:modules="[SwiperPagination]"
+			pagination>
+			<SwiperSlide
+				v-for="(item, index) in data.data"
+				:index="index"
+				class="item">
 				<NuxtPicture
+					class="bg-img"
 					provider="strapi"
-					:src="logoURL(item)"
+					:src="bgImageURL(item)"
 					loading="lazy" />
+				<div class="logo">
+					<NuxtPicture
+						provider="strapi"
+						:src="logoURL(item)"
+						loading="lazy" />
+				</div>
+			</SwiperSlide>
+		</Swiper>
+	</div>
+	<div v-else>
+		<div
+			class="reference-grid"
+			:class="{ hidden: props.type == 'shop' && !visibleAll }">
+			<div
+				class="item"
+				v-for="(item, index) in data.data"
+				:key="index"
+				:class="{ large: (index == 2 || index == 3) && props.type == 'hp' }">
+				<NuxtPicture
+					class="bg-img"
+					provider="strapi"
+					:src="bgImageURL(item)"
+					loading="lazy" />
+				<div class="logo">
+					<NuxtPicture
+						provider="strapi"
+						:src="logoURL(item)"
+						loading="lazy" />
+				</div>
 			</div>
 		</div>
 	</div>
+
 	<div v-if="props.type == 'shop'">
 		<div class="buttons-center">
 			<button
@@ -39,25 +66,38 @@
 </template>
 
 <script setup>
+	const { find } = useStrapi()
 	const props = defineProps(['type'])
 	const visibleAll = useState('visibleAllRefs', () => false)
-
+	const screenWidth = useState('screenWidth')
 	const data = useState('referenceData', () => null)
 	if (props.type == 'hp') {
-		data.value = await fetchAPI('referenceHP', '/references', {
-			populate: '*',
-			sort: 'priorita',
-			'pagination[page]': 1,
-			'pagination[pageSize]': 6,
-		})
+		const { data: referenceData, error: referenceError } = await useAsyncData('referenceHP', () =>
+			find('references', {
+				populate: '*',
+				sort: 'priorita',
+				'pagination[page]': 1,
+				'pagination[pageSize]': 6,
+			})
+		)
+		data.value = referenceData.value
 	} else if (props.type == 'shop') {
-		data.value = await fetchAPI('referenceShoptet', '/references', {
-			populate: '*',
-			sort: 'priorita',
-			'filters[kategorie][nazev]': 'E-shop',
-		})
+		const { data: referenceData, error: referenceError } = await useAsyncData('referenceShoptet', () =>
+			find('references', {
+				populate: '*',
+				sort: 'priorita',
+				'filters[kategorie][nazev]': 'E-shop',
+			})
+		)
+		data.value = referenceData.value
 	} else {
-		data.value = await fetchAPI('referencePage', '/references', { populate: '*', sort: 'priorita' })
+		const { data: referenceData, error: referenceError } = await useAsyncData('referencePage', () =>
+			find('references', {
+				populate: '*',
+				sort: 'priorita',
+			})
+		)
+		data.value = referenceData.value
 	}
 
 	const logoURL = (item) => {
