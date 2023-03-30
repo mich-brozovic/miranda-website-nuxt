@@ -14,7 +14,7 @@
 					provider="strapi"
 					:src="bgImageURL(item)"
 					loading="lazy"
-					:alt="item.nazev"
+					:alt="item.attributes.nazev"
 					:width="item.attributes.thumbnail.data.attributes.width"
 					:height="item.attributes.thumbnail.data.attributes.height" />
 				<div class="logo">
@@ -45,7 +45,7 @@
 					loading="lazy"
 					:width="item.attributes.thumbnail.data.attributes.width"
 					:height="item.attributes.thumbnail.data.attributes.height"
-					:alt="item.nazev" />
+					:alt="item.attributes.nazev" />
 				<div class="logo">
 					<NuxtPicture
 						provider="strapi"
