@@ -7,12 +7,13 @@
 				ref="kampane"
 				v-show="activeRef == kampane">
 				<div class="bg-img">
-					<NuxtImg
+					<NuxtPicture
 						src="/kampane.webp"
 						loading="lazy"
 						width="900"
 						height="900"
-						alt="" />
+						alt=""
+						:img-attrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 				</div>
 				<div class="texts">
 					<p>
@@ -36,12 +37,13 @@
 				ref="ehopy"
 				v-show="activeRef == eshopy">
 				<div class="bg-img">
-					<NuxtImg
+					<NuxtPicture
 						src="/weby_eshopy.webp"
 						loading="lazy"
 						width="900"
 						height="900"
-						alt="" />
+						alt=""
+						:img-attrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 				</div>
 				<div class="texts">
 					<p>
@@ -67,12 +69,13 @@
 				ref="social"
 				v-show="activeRef == social">
 				<div class="bg-img">
-					<NuxtImg
+					<NuxtPicture
 						src="/social.webp"
 						loading="lazy"
 						width="900"
 						height="900"
-						alt="" />
+						alt=""
+						:img-attrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 				</div>
 				<div class="texts">
 					<p>
@@ -96,12 +99,13 @@
 				ref="kreativa"
 				v-show="activeRef == kreativa">
 				<div class="bg-img">
-					<NuxtImg
+					<NuxtPicture
 						src="/kreativa.webp"
 						loading="lazy"
 						width="900"
 						height="900"
-						alt="" />
+						alt=""
+						:img-attrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 				</div>
 				<div class="texts">
 					<p>
@@ -123,12 +127,13 @@
 				ref="influencing"
 				v-show="activeRef == influencing">
 				<div class="bg-img">
-					<NuxtImg
+					<NuxtPicture
 						src="/influencing.webp"
 						loading="lazy"
 						width="900"
 						height="900"
-						alt="" />
+						alt=""
+						:img-attrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 				</div>
 				<div class="texts">
 					<p>
