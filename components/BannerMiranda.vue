@@ -4,7 +4,10 @@
 			class="background-image"
 			src="/banner-miranda.jpg"
 			:imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover;' }"
-			loading="lazy" />
+			loading="lazy"
+			alt=""
+			width="1920"
+			height="500" />
 		<div class="container">
 			<h2>Tady začínají nové příběhy</h2>
 			<p>
