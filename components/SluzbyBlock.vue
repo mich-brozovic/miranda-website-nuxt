@@ -9,7 +9,10 @@
 				<div class="bg-img">
 					<NuxtImg
 						src="/kampane.webp"
-						loading="lazy" />
+						loading="lazy"
+						width="900"
+						height="900"
+						alt="" />
 				</div>
 				<div class="texts">
 					<p>
@@ -35,7 +38,10 @@
 				<div class="bg-img">
 					<NuxtImg
 						src="/weby_eshopy.webp"
-						loading="lazy" />
+						loading="lazy"
+						width="900"
+						height="900"
+						alt="" />
 				</div>
 				<div class="texts">
 					<p>
@@ -63,7 +69,10 @@
 				<div class="bg-img">
 					<NuxtImg
 						src="/social.webp"
-						loading="lazy" />
+						loading="lazy"
+						width="900"
+						height="900"
+						alt="" />
 				</div>
 				<div class="texts">
 					<p>
@@ -89,7 +98,10 @@
 				<div class="bg-img">
 					<NuxtImg
 						src="/kreativa.webp"
-						loading="lazy" />
+						loading="lazy"
+						width="900"
+						height="900"
+						alt="" />
 				</div>
 				<div class="texts">
 					<p>
@@ -113,7 +125,10 @@
 				<div class="bg-img">
 					<NuxtImg
 						src="/influencing.webp"
-						loading="lazy" />
+						loading="lazy"
+						width="900"
+						height="900"
+						alt="" />
 				</div>
 				<div class="texts">
 					<p>
