@@ -6,7 +6,6 @@ node_modules
 .output
 .env
 dist
-.yarn
 tmp
 # Local Netlify folder
 .netlify
