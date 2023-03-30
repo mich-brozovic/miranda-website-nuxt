@@ -14,7 +14,7 @@
 					provider="strapi"
 					:src="bgImageURL(item)"
 					loading="lazy"
-					alt=""
+					:alt="item.nazev"
 					:width="item.attributes.thumbnail.data.attributes.width"
 					:height="item.attributes.thumbnail.data.attributes.height" />
 				<div class="logo">
@@ -24,7 +24,7 @@
 						loading="lazy"
 						:width="item.attributes.logo.data.attributes.width"
 						:height="item.attributes.logo.data.attributes.height"
-						:alt="item.nazev" />
+						alt="" />
 				</div>
 			</SwiperSlide>
 		</Swiper>
@@ -45,7 +45,7 @@
 					loading="lazy"
 					:width="item.attributes.thumbnail.data.attributes.width"
 					:height="item.attributes.thumbnail.data.attributes.height"
-					alt="" />
+					:alt="item.nazev" />
 				<div class="logo">
 					<NuxtPicture
 						provider="strapi"
@@ -53,7 +53,7 @@
 						loading="lazy"
 						:width="item.attributes.logo.data.attributes.width"
 						:height="item.attributes.logo.data.attributes.height"
-						:alt="item.nazev" />
+						alt="" />
 				</div>
 			</div>
 		</div>

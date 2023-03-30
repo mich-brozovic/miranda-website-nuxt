@@ -17,6 +17,11 @@
 			screenWidth.value = window.innerWidth
 		})
 	})
+	useHead({
+		htmlAttrs: {
+			lang: 'cs',
+		},
+	})
 </script>
 <style lang="scss">
 	*,

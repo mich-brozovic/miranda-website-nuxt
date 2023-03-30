@@ -124,7 +124,18 @@
 		</section>
 	</main>
 </template>
-
+<script setup>
+	useHead({
+		title: 'MirandaMedia | Digitální marketingová agentura',
+		meta: [
+			{
+				name: 'description',
+				content:
+					'MirandaMedia je digitální marketingová agentura, která se specializuje na tvorbu webových stránek, SEO, PPC, SMM, videa, grafiku a dalších marketingových služeb.',
+			},
+		],
+	})
+</script>
 <style lang="scss">
 	.proc-miranda {
 		.columns {
