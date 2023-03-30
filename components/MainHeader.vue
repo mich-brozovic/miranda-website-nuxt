@@ -64,6 +64,13 @@
 <script setup>
 	const screenWidth = useState('screenWidth')
 	const submenuVisible = useState('submenuVisible', () => false)
+
+	const router = useRouter()
+	router.beforeEach((to, from, next) => {
+		submenuVisible.value = false
+		next()
+	})
+
 	// HANDLE STATUS LIGHT
 	const actualHour = ref(0)
 	const isHoliday = ref(false)

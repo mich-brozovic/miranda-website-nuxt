@@ -54,7 +54,12 @@
 							text="Více o nás" />
 					</div>
 					<div class="column">
-						<NuxtPicture src="/proc-miranda-grid.webp" />
+						<NuxtPicture
+							src="/proc-miranda-grid.webp"
+							width="1612"
+							height="1272"
+							alt=""
+							loading="lazy" />
 					</div>
 				</div>
 			</div>
@@ -77,7 +82,10 @@
 					class="background-image"
 					src="/podcast-bg.jpg"
 					:imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover;' }"
-					loading="lazy" />
+					loading="lazy"
+					width="1441"
+					height="574"
+					alt="" />
 				<div class="pripravujeme">
 					<svg
 						width="214"

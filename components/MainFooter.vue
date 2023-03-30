@@ -63,22 +63,40 @@
 					<div class="partneri">
 						<NuxtImg
 							src="/icon/google-partner.svg"
-							loading="lazy" />
+							loading="lazy"
+							alt="Google Partner"
+							width="110"
+							height="80" />
 						<NuxtImg
 							src="/icon/sklik.svg"
-							loading="lazy" />
+							loading="lazy"
+							alt="Sklik"
+							width="110"
+							height="54.5" />
 						<NuxtImg
 							src="/icon/shoptet-partner.svg"
-							loading="lazy" />
+							loading="lazy"
+							alt="Zlatý Shoptet Partner"
+							width="110"
+							height="35.5" />
 						<NuxtImg
 							src="/icon/heureka.svg"
-							loading="lazy" />
+							loading="lazy"
+							alt="Heureka Partner"
+							width="110"
+							height="103" />
 						<NuxtImg
 							src="/icon/shoptet-premium.svg"
-							loading="lazy" />
+							loading="lazy"
+							alt="Shoptet Premium Partner"
+							width="110"
+							height="110" />
 						<NuxtImg
 							src="/icon/meta.webp"
-							loading="lazy" />
+							loading="lazy"
+							alt="Meta Business Partner"
+							width="110"
+							height="63" />
 					</div>
 				</div>
 			</div>
