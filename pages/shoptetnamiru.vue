@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<HeroBig
-			imgUrl="/shoptetnamiru-hero.jpg"
+			:imgUrl="screenWidth > 767 ? '/shoptetnamiru-hero.jpg' : '/shoptetnamiru-hero-mobile.jpg'"
 			heading="Postavíme vám Shoptet na míru"
 			subheading="Kompletní e-shopové řešení za nejkratší možnou dobu" />
 		<section class="container anchors-wrapper">
@@ -27,7 +27,7 @@
 				<div class="large item">
 					<NuxtPicture
 						src="/shoptet-premium-logo.webp"
-						:imgAttrs="{ style: 'max-width: 160px; width: auto;' }" />
+						:imgAttrs="{ style: `max-width: 160px; width: auto;` }" />
 					<h2>Služby, které nabízíme</h2>
 					<p class="large">
 						Postavíme celý e-shop na klíč, zaškolíme vás v práci s administrací a posuneme výkon vašich kampaní na zcela jinou
@@ -251,7 +251,9 @@
 					class="banner"
 					style="background-color: rgb(247, 244, 213)">
 					<div class="banner__logo">
-						<NuxtPicture src="/expresmenu-logo.webp" />
+						<NuxtPicture
+							src="/expresmenu-logo.webp"
+							:img-attrs="{ style: 'max-width: 100%; width: auto;' }" />
 					</div>
 					<div class="banner__info">
 						<strong>o 3278%</strong>
@@ -284,6 +286,9 @@
 					<p class="large">
 						Jednička mezi e-commerce platformami v Česku a na na Slovensku s obrovskou podporou a minimálními náklady na provoz.
 					</p>
+					<div class="mobile-mockup">
+						<NuxtPicture src="/mobil-mockup-mobile.jpg" />
+					</div>
 					<ol class="vyhody">
 						<li>
 							Shoptet je na českém trhu <strong>TOP on-line platforma</strong> určená pro provozování e-shopu.
@@ -329,7 +334,9 @@
 					class="banner"
 					style="background-color: rgb(244, 235, 228)">
 					<div class="banner__logo">
-						<NuxtPicture src="/epiderma-logo.png" />
+						<NuxtPicture
+							src="/epiderma-logo.png"
+							:img-attrs="{ style: 'max-width: 100%; width: auto;' }" />
 					</div>
 					<div class="banner__info">
 						<strong>305%</strong>
@@ -364,7 +371,7 @@
 				<CoONasRikaji />
 			</div>
 		</section>
-		<section>
+		<!-- <section>
 			<div class="container">
 				<div class="konfigurator">
 					<div class="pripravujeme">
@@ -410,7 +417,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section
 			id="kontakt"
 			class="no-margin">
@@ -418,7 +425,9 @@
 		</section>
 	</main>
 </template>
-<script setup></script>
+<script setup>
+	const screenWidth = useState('screenWidth')
+</script>
 <style lang="scss" scoped>
 	ul.checked {
 		padding: 0;
@@ -619,6 +628,147 @@
 			top: -12px;
 			left: -12px;
 			z-index: 1;
+		}
+	}
+	@media (min-width: 701px) {
+		.mobile-mockup {
+			display: none;
+		}
+	}
+	@media (max-width: 1360px) {
+		.banner {
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+			.banner__logo,
+			.banner__info,
+			.banner__mockup,
+			.banner__arrow {
+				flex-basis: calc(50% - 25px);
+				max-width: calc(50% - 25px);
+			}
+			.banner__mockup {
+				margin: 0;
+			}
+		}
+	}
+	@media (max-width: 991px) {
+		.konfigurator {
+			h2 {
+				font-size: rem(22);
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		.konfigurator {
+			padding: 40px 20px;
+			.pripravujeme {
+				display: none;
+			}
+		}
+	}
+	@media (max-width: 700px) {
+		.banner {
+			flex-direction: column;
+			padding: 40px 20px;
+			.banner__logo,
+			.banner__info,
+			.banner__mockup,
+			.banner__arrow {
+				flex-basis: 100%;
+				max-width: unset;
+			}
+		}
+		.proc-shoptet {
+			.columns .column:first-of-type {
+				display: none;
+			}
+			h2,
+			p.large {
+				text-align: center;
+			}
+		}
+		.vyhody {
+			gap: 20px;
+			margin: 30px 0;
+		}
+	}
+	@media (max-width: 680px) {
+		.shoptet-sluzby-grid {
+			grid-template-columns: repeat(2, minmax(1px, 1fr));
+			.item {
+				h3 {
+					font-size: 1rem;
+				}
+				svg {
+					max-width: 30px;
+					max-height: 30px;
+				}
+				.info {
+					padding: 0 20px;
+				}
+				&:not(.image):not(.large) {
+					padding: 20px;
+					&:hover,
+					&:focus {
+						.info {
+							padding: 20px;
+						}
+					}
+				}
+				&.large {
+					text-align: center;
+					.btn-secondary {
+						align-self: center;
+					}
+				}
+			}
+		}
+		.systemy {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(1px, 1fr));
+			background-color: rgba($color-font, 0.05);
+			padding: 20px;
+			picture:nth-of-type(n + 7) {
+				display: none;
+			}
+		}
+	}
+	@media (max-width: 580px) {
+		.shoptet-sluzby-grid {
+			grid-template-columns: minmax(1px, 1fr);
+			.item {
+				&.large {
+					grid-column-end: unset;
+				}
+				&.image {
+					display: none;
+				}
+				&:not(.large):not(.image) {
+					background-color: transparent;
+					aspect-ratio: unset;
+					flex-direction: column;
+					align-items: stretch;
+					padding: 0;
+					.init {
+						display: flex;
+						align-items: center;
+						gap: 10px;
+						padding: 10px 0;
+						h3 {
+							margin: 0;
+						}
+					}
+					.info {
+						position: initial;
+						text-align: left;
+						background-color: rgba($color-font, 0.05);
+						p {
+							margin: 0;
+						}
+					}
+				}
+			}
 		}
 	}
 </style>

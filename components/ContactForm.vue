@@ -183,4 +183,15 @@
 		font-weight: 700;
 		color: $color-white;
 	}
+	@media (max-width: 767px) {
+		.form-wrapper {
+			padding: 40px 0;
+			text-align: center;
+		}
+		.project-mail,
+		.project-phone {
+			justify-content: center;
+			font-size: 1.4rem;
+		}
+	}
 </style>

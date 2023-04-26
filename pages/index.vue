@@ -76,7 +76,7 @@
 				<CoONasRikaji />
 			</div>
 		</section>
-		<section class="container">
+		<!-- <section class="container">
 			<div class="podcast">
 				<NuxtPicture
 					class="background-image"
@@ -118,7 +118,7 @@
 					<div class="column"></div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section class="no-margin">
 			<BannerMiranda />
 		</section>

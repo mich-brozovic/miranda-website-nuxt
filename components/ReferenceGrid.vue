@@ -185,4 +185,11 @@
 			}
 		}
 	}
+	@media (max-width: 730px) {
+		.reference-grid {
+			grid-template-columns: repeat(2, minmax(1px, 1fr));
+			margin: 20px 0 15px;
+			gap: 15px;
+		}
+	}
 </style>

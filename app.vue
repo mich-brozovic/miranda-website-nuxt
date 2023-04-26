@@ -171,6 +171,26 @@
 					}
 				}
 			}
+			scrollbar-color: $color-accent transparent;
+			scrollbar-width: thin;
+			&::-webkit-scrollbar {
+				width: 5px;
+				height: 5px;
+				border-radius: 9999px;
+				background: transparent;
+			}
+			&::-webkit-scrollbar-thumb {
+				background: $color-accent;
+				border-radius: 9999px;
+			}
+			&::-webkit-scrollbar-track {
+				background: transparent;
+			}
+		}
+		@media (max-width: 860px) {
+			nav ul {
+				justify-content: flex-start;
+			}
 		}
 	}
 	.disabled {
