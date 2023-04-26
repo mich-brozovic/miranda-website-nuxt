@@ -34,7 +34,7 @@
 						alt=""
 						loading="lazy" />
 				</div>
-				<div class="item">
+				<div class="item mobile-wide">
 					<p>
 						Chcete-li poznat Mirandu a to, kým opravdu je, zastavte se za ní v holešovickém přístavu na Praze 7. Uvítá vás s
 						vřelostí sobě vlastní, a až si padnete do oka, už nikdy nebudete chtít jinou.
@@ -126,7 +126,7 @@
 						alt=""
 						loading="lazy" />
 				</div>
-				<div class="item center">
+				<div class="item center mobile-wide">
 					<p>
 						<strong>
 							Tomáš Cina
@@ -176,8 +176,17 @@
 		</section>
 	</main>
 </template>
-<script>
-	export default {}
+<script setup>
+	useHead({
+		title: 'O nás | MirandaMedia',
+		meta: [
+			{
+				name: 'description',
+				content:
+					'Miranda Media je dynamická marketingová agentura se sídlem v Praze. Specializujeme se na digitální marketing, tvorbu webových stránek a e-commerce. Naše tým tvoří odborníci v oblasti SEO, PPC, sociálních médií a dalších oblastí. Snažíme se pomoci našim klientům dosáhnout úspěchu v online prostředí. Navštivte naši stránku, abyste se dozvěděli více o našich službách a našem týmu.',
+			},
+		],
+	})
 </script>
 <style lang="scss" scoped>
 	.miranda-grid {
@@ -238,6 +247,39 @@
 			}
 			&:nth-of-type(19) {
 				background-color: rgba($color-font, 0.2);
+			}
+		}
+	}
+	@media (max-width: 1050px) {
+		.miranda-grid {
+			grid-template-columns: repeat(2, minmax(1px, 1fr));
+			grid-auto-flow: dense;
+			.item {
+				grid-column-end: unset;
+				&:not(.wide):not(.mobile-wide) {
+					aspect-ratio: 1;
+				}
+				&.large,
+				&.wide {
+					grid-column-end: span 2;
+				}
+				&.image.large,
+				&.image {
+					grid-column-end: unset;
+				}
+			}
+		}
+	}
+	@media (max-width: 930px) {
+		.miranda-grid {
+			.item:not(.image) {
+				padding: 20px;
+			}
+			.item.mobile-wide {
+				grid-column-end: span 2;
+			}
+			.item.center strong {
+				font-size: 2rem;
 			}
 		}
 	}
