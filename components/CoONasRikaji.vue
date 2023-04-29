@@ -21,13 +21,13 @@
 					:img-attrs="{ style: 'display: block; width:100%; height:100%; object-fit:cover' }" />
 				<div class="texts">
 					<div class="author">
-						<strong>{{ data.data[activeData].attributes.jmeno }}</strong>
-						<span class="position">{{ data.data[activeData].attributes.pozice }}</span>
+						<strong>{{ item.attributes.jmeno }}</strong>
+						<span class="position">{{ item.attributes.pozice }}</span>
 					</div>
 					<ClientOnly
 						fallback-tag="div"
 						fallback="Načítám...">
-						<Markdown :source="data.data[activeData].attributes.text" />
+						<Markdown :source="item.attributes.text" />
 					</ClientOnly>
 				</div>
 			</SwiperSlide>
@@ -240,6 +240,7 @@
 	@media (max-width: 767px) {
 		.co-o-nas .texts {
 			padding: 20px 0 0;
+			height: 100%;
 			.author {
 				line-height: 1.2em;
 				.position {
