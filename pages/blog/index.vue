@@ -19,7 +19,8 @@
 								width="467"
 								height="262"
 								:alt="item.attributes.nazev"
-								provider="strapi" />
+								provider="strapi"
+								loading="lazy" />
 							<div class="post__tags">
 								<span
 									v-for="(tag, index) in item.attributes.kategorie_clankus.data"
@@ -151,6 +152,7 @@
 		}
 		&__meta {
 			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			gap: 10px;
 			font-size: rem(12);
@@ -175,6 +177,14 @@
 		.read-more svg {
 			transition: all 0.15s ease-in-out;
 			fill: rgba($color-font, 0.3);
+		}
+	}
+	@media (max-width: 767px) {
+		.post-grid {
+			grid-template-columns: minmax(1px, 1fr);
+		}
+		.post__title {
+			font-size: rem(20);
 		}
 	}
 </style>

@@ -143,7 +143,7 @@
 			position: relative;
 			margin-top: -440px;
 			h1 {
-				font-size: rem(64);
+				font-size: clamp(2.375rem, 5vw, 3.875rem);
 				line-height: em(85, 64);
 				margin-top: 0;
 			}
@@ -200,6 +200,22 @@
 			align-items: center;
 			justify-content: center;
 			border: 1px solid $color-accent;
+		}
+	}
+	@media (max-width: 1300px) {
+		.article__content main {
+			padding: 75px 30px;
+		}
+	}
+	@media (max-width: 767px) {
+		.article__wrapper {
+			margin-top: -150px;
+		}
+		.article__content main {
+			padding: 20px;
+		}
+		.article__content aside {
+			padding: 20px;
 		}
 	}
 </style>

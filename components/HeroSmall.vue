@@ -1,7 +1,9 @@
 <template>
 	<section class="hero">
 		<div class="image-wrapper">
-			<NuxtPicture :src="props.imgUrl" :imgAttrs="{ style: 'display: block;width:100%;height:100%;object-fit:cover;' }" />
+			<NuxtPicture
+				:src="props.imgUrl"
+				:imgAttrs="{ style: 'display: block;width:100%;height:100%;object-fit:cover;' }" />
 		</div>
 		<div class="container">
 			<h1>{{ props.heading }}</h1>
@@ -32,10 +34,18 @@
 			justify-content: center;
 		}
 		h1 {
-			font-size: rem(62);
+			font-size: clamp(2.375rem, 5.5vw, 3.875rem);
 		}
 		.image-wrapper {
 			height: 100%;
+		}
+	}
+	@media (max-width: 767px) {
+		.hero {
+			max-height: 200px;
+			.container {
+				top: 90px;
+			}
 		}
 	}
 </style>
