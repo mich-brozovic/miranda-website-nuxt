@@ -5,12 +5,12 @@
 			imgUrl="/sluzby-hero.webp" />
 		<section class="container">
 			<div class="sluzby-wrapper">
-				<div class="sluzba columns col-2 align-center">
+				<div class="sluzba columns col-2">
 					<div class="column image">
 						<NuxtPicture
 							src="/kampane.webp"
 							loading="lazy"
-							:imgAttrs="{ style: 'display: block' }" />
+							:imgAttrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 						<div class="hashtags">
 							<span>Google Ads</span>
 							<span>Sklik</span>
@@ -37,7 +37,7 @@
 						>
 					</div>
 				</div>
-				<div class="sluzba columns col-2 align-center">
+				<div class="sluzba columns col-2">
 					<div class="column texts">
 						<span class="subheading">Miranda</span>
 						<h2>Weby & e-shopy</h2>
@@ -56,7 +56,7 @@
 						<NuxtPicture
 							src="/weby_eshopy.webp"
 							loading="lazy"
-							:imgAttrs="{ style: 'display: block' }" />
+							:imgAttrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 						<div class="hashtags">
 							<span>Shoptet</span>
 							<span>Shoptet PREMIUM</span>
@@ -71,12 +71,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="sluzba columns col-2 align-center">
+				<div class="sluzba columns col-2">
 					<div class="column image">
 						<NuxtPicture
 							src="/social.webp"
 							loading="lazy"
-							:imgAttrs="{ style: 'display: block' }" />
+							:imgAttrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 						<div class="hashtags">
 							<span>Facebook</span>
 							<span>Instagram</span>
@@ -103,7 +103,7 @@
 						>
 					</div>
 				</div>
-				<div class="sluzba columns col-2 align-center">
+				<div class="sluzba columns col-2">
 					<div class="column texts">
 						<span class="subheading">Miranda</span>
 						<h2>Kreativa</h2>
@@ -122,7 +122,7 @@
 						<NuxtPicture
 							src="/kreativa.webp"
 							loading="lazy"
-							:imgAttrs="{ style: 'display: block' }" />
+							:imgAttrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 						<div class="hashtags">
 							<span>Produktové fotografie</span>
 							<span>Webdesign</span>
@@ -133,12 +133,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="sluzba columns col-2 align-center">
+				<div class="sluzba columns col-2">
 					<div class="column image">
 						<NuxtPicture
 							src="/influencing.webp"
 							loading="lazy"
-							:imgAttrs="{ style: 'display: block' }" />
+							:imgAttrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
 						<div class="hashtags">
 							<span>Influencer marketing</span>
 							<span>Microinfluencing</span>
@@ -167,15 +167,17 @@
 		</section>
 	</main>
 </template>
-<script>
-	export default {}
-</script>
+<script setup></script>
 <style lang="scss" scoped>
 	.image {
 		position: relative;
 		color: $color-white;
-		img {
+		img,
+		picture {
 			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 		&::after {
 			content: '';
@@ -212,6 +214,7 @@
 		}
 	}
 	.texts {
+		align-self: center;
 		padding: 100px;
 		h2 {
 			margin: 0;
@@ -219,5 +222,29 @@
 	}
 	.sluzba {
 		background-color: rgba($color-font, 0.05);
+	}
+	@media (max-width: 1300px) {
+		.texts {
+			padding: 50px;
+		}
+	}
+	@media (max-width: 998px) {
+		.hashtags {
+			padding: 20px;
+		}
+		.sluzba.columns:nth-of-type(2n) {
+			flex-direction: column-reverse;
+		}
+		.sluzba.columns .column {
+			flex-basis: auto;
+		}
+	}
+	@media (max-width: 767px) {
+		.hashtags {
+			font-size: rem(12);
+		}
+		.texts {
+			padding: 20px;
+		}
 	}
 </style>
