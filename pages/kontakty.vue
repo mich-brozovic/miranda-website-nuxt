@@ -1,12 +1,14 @@
 <template>
 	<main>
 		<section class="no-margin hero">
-			<NuxtPicture
-				src="/kontakty-hero.jpg"
-				alt=""
-				width="1920"
-				height="1080"
-				:img-attrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
+			<div class="image-wrapper">
+				<NuxtPicture
+					src="/kontakty-hero.jpg"
+					alt=""
+					width="1920"
+					height="1080"
+					:img-attrs="{ style: 'display: block; width: 100%; height: 100%; object-fit: cover;' }" />
+			</div>
 			<div class="container">
 				<div class="columns col-2 align-center">
 					<div class="column">
@@ -133,6 +135,14 @@
 			font-size: rem(64);
 			margin-top: 0;
 		}
+		.image-wrapper {
+			width: 100%;
+			height: 100%;
+			div {
+				width: 100%;
+				height: 100%;
+			}
+		}
 	}
 	.tiles-grid {
 		display: grid;
@@ -177,6 +187,75 @@
 					margin-bottom: 10px;
 				}
 			}
+		}
+	}
+	@media (max-width: 1140px) {
+		.tiles-grid {
+			.email {
+				margin-bottom: -20px;
+			}
+			.phone {
+				margin-right: -20px;
+			}
+			.address {
+				margin-left: -20px;
+			}
+		}
+	}
+	@media (max-width: 998px) {
+		.hero {
+			.container {
+				position: relative;
+				top: unset;
+				left: unset;
+				transform: none;
+				height: calc(50vh + 50px);
+				margin-top: -50px;
+				background: linear-gradient(180deg, transparent 0, #000 50px);
+				padding-bottom: 2rem;
+				padding-top: 2rem;
+				display: flex;
+				align-items: flex-end;
+				.columns {
+					width: 100%;
+				}
+			}
+			.image-wrapper {
+				height: 50vh;
+			}
+		}
+		.tiles-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			.tile {
+				border: 0;
+				max-width: unset;
+				aspect-ratio: unset;
+				a {
+					flex-direction: row;
+					gap: 10px;
+					padding: 10px;
+					svg {
+						max-width: 32px;
+						max-height: 32px;
+						margin-bottom: 0;
+					}
+				}
+			}
+			.email,
+			.phone,
+			.address {
+				margin: 0;
+			}
+			.address {
+				display: none;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		.hero h1 {
+			font-size: rem(48);
 		}
 	}
 </style>

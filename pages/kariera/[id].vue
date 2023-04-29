@@ -80,4 +80,15 @@
 			text-align: center;
 		}
 	}
+	@media (max-width: 767px) {
+		.single-career {
+			&__content {
+				padding: 20px;
+				margin-top: -50px;
+				p:first-child {
+					font-size: rem(18);
+				}
+			}
+		}
+	}
 </style>

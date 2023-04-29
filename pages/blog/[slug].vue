@@ -210,9 +210,11 @@
 	@media (max-width: 767px) {
 		.article__wrapper {
 			margin-top: -150px;
+			background-position-y: 100px;
 		}
 		.article__content main {
 			padding: 20px;
+			margin-top: 0;
 		}
 		.article__content aside {
 			padding: 20px;

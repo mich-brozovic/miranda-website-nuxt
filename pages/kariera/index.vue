@@ -43,6 +43,17 @@
 			h1 {
 				font-size: rem(48);
 				margin-bottom: 1em;
+				margin-top: 0;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		.career {
+			gap: 20px;
+			&__content {
+				h1 {
+					font-size: rem(32);
+				}
 			}
 		}
 	}
