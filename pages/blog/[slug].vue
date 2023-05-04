@@ -128,6 +128,13 @@
 			content: data.value.data[0].attributes.description,
 		},
 	})
+	useSeoMeta({
+		title: data.value.data[0].attributes.nazev,
+		ogTitle: data.value.data[0].attributes.nazev,
+		description: data.value.data[0].attributes.description,
+		ogDescription: data.value.data[0].attributes.description,
+		ogImage: getStrapiMedia(data.value.data[0].attributes.obrazek),
+	})
 </script>
 <style lang="scss" scoped>
 	.article {
