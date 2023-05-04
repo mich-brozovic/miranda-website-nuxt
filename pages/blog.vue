@@ -10,7 +10,7 @@
 					v-for="(item, index) in data.data"
 					:key="index">
 					<NuxtLink
-						:to="`/blog/${item.attributes.slug}`"
+						:to="`/clanky/${item.attributes.slug}`"
 						class="post__link">
 						<div class="post__image">
 							<NuxtPicture
