@@ -256,7 +256,7 @@
       <h2 class="competition-rules__title">Pravidla soutěže</h2>
       <div class="competition-rules__text" :class="{ 'competition-rules__text--expanded': isExpanded }">
         <p><strong class="competition-rules__text-strong-large">Název soutěže:</strong> Grafický návrh e-shopu a další ceny</p>
-        <p><strong class="competition-rules__text-strong-large">Období soutěže:</strong> 5.–31. 5. 2023</p>
+        <p><strong class="competition-rules__text-strong-large">Období soutěže:</strong> 11.–31. 5. 2023</p>
         <strong class="competition-rules__text-strong-large">Účastníci soutěže:</strong>
         <p>
           Soutěže se mohou zúčastnit všichni zájemci starší 18 let s trvalým bydlištěm v České republice.
@@ -281,8 +281,13 @@
           </li>
         </ol>
         <strong class="competition-rules__text-strong-large">Další informace:</strong>
+        <br>
+        <strong>Unikátní grafický návrh</strong>
         <p>
           Výherce grafického návrhu bude mít možnost spolupracovat s firmou MirandaMedia při tvorbě grafického návrhu a navrhovaný design bude následně nakódován a implementován na míru pro výherce na jeho e-shop. Pořadatel si vyhrazuje právo na změnu pravidel soutěže.
+        </p>
+        <p>
+          Grafický návrh pro hlavní stranu, kategorie a detail produktu v desktopové a mobilní verzi společně s nakódováním na Shoptet nebo Shoptet Premium.
         </p>
       </div>
       <div class="competition-rules__buttons">
