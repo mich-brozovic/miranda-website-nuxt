@@ -28,25 +28,30 @@
 
     <section id="registration" class="registration">
       <div class="registration__wrapper container">
-        <form class="registration__form" id="registration-form" method="post">
+        <div v-if="formSending">Odesílám...</div>
+        <div v-else-if="formSent">Formulář byl v pořádku odeslán, naši accounti se Vám co nejdříve ozvou.</div>
+        <form
+            v-else
+            @submit.prevent="sendForm"
+            class="registration__form" id="registration-form" method="post">
           <fieldset class="registration__column registration__column--left">
             <label for="name">Jméno a příjmení <i>*</i></label>
-            <input type="text" id="name" name="name" placeholder="Zadejte Vaše jméno a příjmení" required />
+            <input type="text" id="name" name="name" :ref="form.jmeno" placeholder="Zadejte Vaše jméno a příjmení" required />
 
             <label for="company-name">Vaše firma <i>*</i></label>
-            <input type="text" id="company-name" name="company-name" placeholder="Název firmy / IČO" required />
+            <input type="text" id="company-name" name="company-name" :ref="form.companyName" placeholder="Název firmy / IČO" required />
 
             <label for="phone">Telefon <i>*</i></label>
             <div class="--phone">
-              <input type="tel" id="phone" name="phone" placeholder="Vaše telefonní číslo" required />
+              <input type="tel" id="phone" name="phone" :ref="form.phone" placeholder="Vaše telefonní číslo" required />
               <span>+420 | </span>
             </div>
 
             <label for="email">E-mail <i>*</i></label>
-            <input type="email" id="email" name="email" placeholder="Váš@email.cz" required />
+            <input type="email" id="email" name="email" :ref="form.email" placeholder="Váš@email.cz" required />
 
             <label for="eshop">Adresa Vašeho e-shopu</label>
-            <input type="text" id="eshop" name="eshop" placeholder="Adresa e-shopu" />
+            <input type="text" id="eshop" name="eshop" :ref="form.URLeshop" placeholder="Adresa e-shopu" />
           </fieldset>
           <fieldset class="registration__column registration__column--right">
             <span>Proč jste navštívili Reshoper?</span>
@@ -56,16 +61,18 @@
                 type="checkbox"
                 id="migration"
                 name="migration"
-                value="Migrace e-shopu z jiné platformy na Shoptet" />
+                value="Migrace e-shopu z jiné platformy na Shoptet"
+                :ref="form.ShoptetMigration"
+            />
             <label for="migration">Migrace e-shopu z jiné platformy na Shoptet</label>
 
-            <input class="visually-hidden" type="checkbox" id="development" name="development" value="Rozvoj e-shopu" />
+            <input class="visually-hidden" type="checkbox" id="development" name="development" value="Rozvoj e-shopu" :ref="form.EshopDevelopment" />
             <label for="development">Rozvoj e-shopu</label>
 
-            <input class="visually-hidden" type="checkbox" id="ppc" name="ppc" value="PPC kampaně" />
+            <input class="visually-hidden" type="checkbox" id="ppc" name="ppc" value="PPC kampaně" :ref="form.EshopPPC" />
             <label for="ppc">PPC kampaně</label>
 
-            <input class="visually-hidden" type="checkbox" id="design" name="design" value="Grafika a design" />
+            <input class="visually-hidden" type="checkbox" id="design" name="design" value="Grafika a design" :ref="form.graphicDesign" />
             <label for="design">Grafika a design</label>
 
             <input
@@ -73,19 +80,21 @@
                 type="checkbox"
                 id="connection"
                 name="connection"
-                value="Možnosti propojení e-shopu s ERP, CRM apod." />
+                value="Možnosti propojení e-shopu s ERP, CRM apod."
+                :ref="form.EshopConnection"
+            />
             <label for="connection">Možnosti propojení e-shopu s ERP, CRM apod.</label>
 
-            <input class="visually-hidden" type="checkbox" id="social-networks" name="social-networks" value="Sociální sítě" />
+            <input class="visually-hidden" type="checkbox" id="social-networks" name="social-networks" value="Sociální sítě" :ref="form.socialSite" />
             <label for="social-networks">Sociální sítě</label>
 
-            <input class="visually-hidden" type="checkbox" id="product-photos" name="product-photos" value="Produktové fotografie" />
+            <input class="visually-hidden" type="checkbox" id="product-photos" name="product-photos" value="Produktové fotografie" :ref="form.productPhotos" />
             <label for="product-photos">Produktové fotografie</label>
 
-            <input class="visually-hidden" type="checkbox" id="other" name="other" value="Ostatní" />
+            <input class="visually-hidden" type="checkbox" id="other" name="other" value="Ostatní" :ref="form.otherThings"/>
             <label for="other">Ostatní</label>
 
-            <textarea name="message" rows="3" placeholder="Popište, o co se zajímáte"></textarea>
+            <textarea name="message" rows="3" placeholder="Popište, o co se zajímáte" :ref="form.message"></textarea>
           </fieldset>
 
           <div class="registration__submit buttons-wrapper">
@@ -100,7 +109,7 @@
                 value="Souhlasím s  podmínkami soutěže a zpracování osobních údajů"
                 checked />
             <label for="personal-data-processing">
-              Souhlasím s <a href="#">podmínkami soutěže</a> a <a href="#">zpracování osobních údajů</a>
+              Souhlasím s <a href="/podminky-souteze">podmínkami soutěže</a> a <a href="/zpracovani-osobnich-udaju">zpracování osobních údajů</a>
             </label>
           </div>
         </form>
@@ -125,7 +134,7 @@
             </p>
             <div class="buttons-wrapper" style="margin-top: 20px">
               <BtnSecondary
-                  url="#"
+                  url="/reference"
                   text="Prohlédnout případové studie" />
             </div>
           </div>
@@ -139,7 +148,7 @@
             </p>
             <div class="buttons-wrapper" style="margin-top: 20px">
               <BtnSecondary
-                  url="#"
+                  url="/reference"
                   text="Prohlédnout případové studie" />
             </div>
           </div>
@@ -150,7 +159,7 @@
             </div>
             <div class="buttons-wrapper" style="margin-top: 20px">
               <BtnSecondary
-                  url="#"
+                  url="/reference"
                   text="Prohlédnout případové studie" />
             </div>
           </div>
@@ -323,6 +332,56 @@ onMounted(() => {
   });
 });
 
+const form = {
+  jmeno: ref(null),
+  companyName: ref(null),
+  email: ref(null),
+  URLeshop: ref(null),
+  phone: ref(null),
+  message: ref(null),
+  ShoptetMigration: ref(null),
+  EshopDevelopment: ref(null),
+  EshopPPC: ref(null),
+  graphicDesign: ref(null),
+  EshopConnection: ref(null),
+  socialSite: ref(null),
+  productPhotos: ref(null),
+  otherThings: ref(null),
+}
+const formSending = useState('formSending', () => false)
+const formSent = useState('formSent', () => false)
+
+const sendForm = async (e) => {
+  e.preventDefault()
+  try {
+    formSending.value = true
+    const response = await $fetch(getStrapiURL('/api/ezforms/submit'), {
+      method: 'POST',
+      body: JSON.stringify({
+        formData: {
+          jmeno: form.jmeno.value.value,
+          companyName: form.companyName.value.value,
+          email: form.email.value.value,
+          URLeshop: form.URLeshop.value.value,
+          phone: form.phone.value.value,
+          message: form.message.value.value,
+          ShoptetMigration: form.ShoptetMigration.value.checked,
+          EshopDevelopment: form.EshopDevelopment.value.checked,
+          EshopPPC: form.EshopPPC.value.checked,
+          graphicDesign: form.graphicDesign.value.checked,
+          EshopConnection: form.EshopConnection.value.checked,
+          socialSite: form.socialSite.value.checked,
+          productPhotos: form.productPhotos.value.checked,
+          otherThings: form.otherThings.value.checked,
+        },
+      }),
+    })
+    formSending.value = false
+    formSent.value = true
+  } catch (e) {
+    console.log(e)
+  }
+}
 
 // -- Competition-rules -- //
 import MainHeader from "../components/MainHeader";
@@ -612,6 +671,10 @@ header.fade-in ~ main .page-nav {
         background-color: #222e27;
       }
     }
+}
+.form-info {
+  text-align: center;
+  margin-top: 20px;
 }
 /* -------------------- */
 /* --O co se soutěží -- */
