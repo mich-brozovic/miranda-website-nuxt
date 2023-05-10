@@ -1,11 +1,15 @@
 <template>
   <main>
     <HeroBig
-        :imgUrl="'/soutez-hero.jpg'"
-        heading="Soutěž o GRAFICKÝ NÁVRH Vašeho e-shopu na Shoptetu v hodnotě 100.000 Kč"/>
-    <section ref="pageNavBar" class="page-nav">
+        :imgUrl="'/soutez-hero.jpg'">
+        <h1>Soutěž o<br />
+          <i>GRAFICKÝ NÁVRH</i> Vašeho e-shopu<br />
+          na shoptetu<br />
+          v hodnotě <i>100.000 Kč</i>
+        </h1>
+    </HeroBig>
+    <section id="scroll" ref="pageNavBar" class="page-nav">
       <div class="page-nav__wrapper container">
-        <h2>Jaká témata vás zajimají:</h2>
         <ul>
           <li>
             <a href="#registration" :class="{ '--active': activeSection === 'registration' }">Registrace do soutěže</a>
@@ -54,7 +58,7 @@
             <input type="text" id="eshop" name="eshop" :ref="form.URLeshop" placeholder="Adresa e-shopu" />
           </fieldset>
           <fieldset class="registration__column registration__column--right">
-            <span>Proč jste navštívili Reshoper?</span>
+            <span>Jaká témata v e-commerce Vás zajímají</span>
 
             <input
                 class="visually-hidden"
@@ -392,7 +396,22 @@ const isExpanded = ref(false);
 // -------------
 // --- CUBES ---
 // -------------
+.hero .texts {
+  h1 {
+    color: $color-green;
+    font-weight: 500;
+    @media ($mobile-responsive) {
+      font-size: rem(32);
+      line-height: em(48, 32);
+    }
+  }
+  i {
+    color: $color-white;
+    font-weight: 700;
+    font-style: normal;
+  }
 
+}
 body {
   background: url("../public/background-cubes-3.png"), url("../public/background-cubes-4.png"), url("../public/background-cubes-5.png");
   background-position: top 1618px left 0, top 3714px right 0, top 4540px left 0;
@@ -499,6 +518,7 @@ header.fade-in ~ main .page-nav {
 // --------------------
 
 .registration {
+  scroll-margin-top: 12rem;
   position: relative;
   margin-bottom: 100px;
 
@@ -546,6 +566,7 @@ header.fade-in ~ main .page-nav {
       border-bottom: 1px solid $color-grey-secondary;
       width: 100%;
       color: $color-font;
+      line-height: 1;
       transition: all 0.15s ease-out;
 
       &:focus {
@@ -679,6 +700,9 @@ header.fade-in ~ main .page-nav {
 /* -------------------- */
 /* --O co se soutěží -- */
 /* -------------------- */
+#rewards {
+  scroll-margin-top: 13rem;
+}
 .rewards__title {
   text-align: center;
   margin-bottom: 40px;
@@ -786,6 +810,7 @@ header.fade-in ~ main .page-nav {
 /* -- Vyhlášení vítězů -- */
 /* ---------------------- */
 .announcement {
+  scroll-margin-top: 7rem;
   @include container(920px);
   margin-bottom: 100px;
   @media ($mobile-responsive) {
@@ -872,6 +897,7 @@ header.fade-in ~ main .page-nav {
 /* -- Pravidla soutěže -- */
 /* ---------------------- */
 .competition-rules {
+  scroll-margin-top: 7rem;
   @include container(920px);
   margin-bottom: 100px;
   @media ($mobile-responsive) {

@@ -1,9 +1,9 @@
 <template>
 	<main>
-		<HeroBig
-			imgUrl="/o-nas-hero.webp"
-			heading="Miranda"
-			subheading="Digitální marketingová agentura s citem pro design a perspektivu" />
+		<HeroBig imgUrl="/o-nas-hero.webp">
+      <h1>Miranda</h1>
+      <h2>Digitální marketingová agentura s citem pro design a perspektivu</h2>
+    </HeroBig>
 		<section
 			id="scroll"
 			class="container">

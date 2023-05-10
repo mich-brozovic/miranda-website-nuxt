@@ -65,8 +65,7 @@
 		</div>
 		<div class="container">
 			<div class="texts">
-				<h1>{{ props.heading }}</h1>
-				<h2>{{ props.subheading }}</h2>
+				<slot/>
 			</div>
 			<div class="scroll">
 				<a href="#scroll">
@@ -143,16 +142,16 @@
 		max-width: 680px;
 		color: $color-white;
 	}
-	h1 {
-		font-size: clamp(2.375rem, 5.5vw, 3.875rem);
-		line-height: em(82, 62);
-		margin-bottom: 20px;
-		margin-top: 0;
+	:slotted(h1) {
+		font-size: clamp(2.375rem, 5.5vw, 3.875rem) !important;
+		line-height: em(82, 62) !important;
+		margin-bottom: 20px !important;
+		margin-top: 0 !important;
 	}
-	h2 {
-		font-size: clamp(1rem, 2vw, 1.5rem);
-		line-height: em(40, 24);
-		font-weight: 400;
+	:slotted(h2) {
+		font-size: clamp(1rem, 2vw, 1.5rem) !important;
+		line-height: em(40, 24) !important;
+		font-weight: 400 !important;
 	}
 	.scroll {
 		position: absolute;

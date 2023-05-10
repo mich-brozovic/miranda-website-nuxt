@@ -1,9 +1,10 @@
 <template>
 	<main>
 		<HeroBig
-			:video="true"
-			heading="Marketingová digitální agentura"
-			subheading="Tvoříme ziskové e-shopy a weby, navrhujeme design produktů a značek, staráme se o výkon kampaní, ctíme fair play" />
+			:video="true">
+      <h1>Marketingová digitální agentura</h1>
+      <h2>Tvoříme ziskové e-shopy a weby, navrhujeme design produktů a značek, staráme se o výkon kampaní, ctíme fair play</h2>
+    </HeroBig>
 		<section
 			id="scroll"
 			class="reference">

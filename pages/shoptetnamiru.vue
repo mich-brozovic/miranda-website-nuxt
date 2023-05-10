@@ -1,9 +1,10 @@
 <template>
 	<main>
 		<HeroBig
-			:imgUrl="screenWidth > 767 ? '/shoptetnamiru-hero.jpg' : '/shoptetnamiru-hero-mobile.jpg'"
-			heading="Postavíme vám Shoptet na míru"
-			subheading="Kompletní e-shopové řešení za nejkratší možnou dobu" />
+			:imgUrl="screenWidth > 767 ? '/shoptetnamiru-hero.jpg' : '/shoptetnamiru-hero-mobile.jpg'">
+      <h1>Postavíme vám Shoptet na míru</h1>
+      <h2>Kompletní e-shopové řešení za nejkratší možnou dobu</h2>
+    </HeroBig>
 		<section class="container anchors-wrapper">
 			<nav>
 				<ul>
