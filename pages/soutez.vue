@@ -58,7 +58,7 @@
             <input type="text" id="eshop" name="eshop" :ref="form.URLeshop" placeholder="Adresa e-shopu" />
           </fieldset>
           <fieldset class="registration__column registration__column--right">
-            <span>Jaká témata v e-commerce Vás zajímají</span>
+            <span>Jaká témata v e-commerce Vás zajímají?</span>
 
             <input
                 class="visually-hidden"
