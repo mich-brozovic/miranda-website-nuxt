@@ -24,7 +24,7 @@
             <a href="#announcement" :class="{ '--active': activeSection === 'announcement' }">Vyhlášení vítězů</a>
           </li>
           <li>
-            <a href="#competition-rules" :class="{ '--active': activeSection === 'competition-rules' }">Podmínky soutěže</a>
+            <a href="#competition-rules" :class="{ '--active': activeSection === 'competition-rules' }">Pravidla soutěže</a>
           </li>
         </ul>
       </div>
@@ -33,7 +33,7 @@
     <section id="registration" class="registration">
       <div class="registration__wrapper container">
         <div v-if="formSending">Odesílám...</div>
-        <div v-else-if="formSent">Formulář byl v pořádku odeslán, naši accounti se Vám co nejdříve ozvou.</div>
+        <div v-else-if="formSent">Formulář byl v pořádku odeslán, děkujeme za registraci do soutěže!</div>
         <form
             v-else
             @submit.prevent="sendForm"
@@ -138,7 +138,7 @@
             </p>
             <div class="buttons-wrapper" style="margin-top: 20px">
               <BtnSecondary
-                  url="/reference"
+                  url="/pripadove-studie"
                   text="Prohlédnout případové studie" />
             </div>
           </div>
@@ -152,7 +152,7 @@
             </p>
             <div class="buttons-wrapper" style="margin-top: 20px">
               <BtnSecondary
-                  url="/reference"
+                  url="/pripadove-studie"
                   text="Prohlédnout případové studie" />
             </div>
           </div>
@@ -163,8 +163,8 @@
             </div>
             <div class="buttons-wrapper" style="margin-top: 20px">
               <BtnSecondary
-                  url="/reference"
-                  text="Prohlédnout případové studie" />
+                  url="https://www.produktovefotografie.cz"
+                  text="www.produktovefotografie.cz"/>
             </div>
           </div>
         </div>
@@ -176,11 +176,11 @@
         <div class="participate__content">
           <div class="participate__card">
             <h3><span>01</span> Registrujte se na této stránce</h3>
-            <p>Stačí pouze registrace do soutěže a následně vyčkat na slosování, které proběhne XXXXX.</p>
+            <p>Stačí pouze registrace do soutěže a následně vyčkat na slosování, které proběhne od 17. 5. do 17. 6.</p>
           </div>
           <div class="participate__card">
             <h3><span>02</span> Registrace na Reshoper 2023</h3>
-            <p>Můžete se registrovat také na akci Reshoper 2023, kde najdete náš stánek.</p>
+            <p>Můžete se registrovat také na akci Reshoper 2023, kde najdete pod číslem stánku 49.</p>
           </div>
         </div>
       </div>
@@ -192,8 +192,8 @@
           <tr>
             <td>1.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
-            <td>Grafický návrh e-shopu v hodnotě 100.000 Kč. Design e-shopu bude navržen a nakódován firmou MirandaMedia.</td>
+            <td>Adresa e-shopu</td>
+            <td>Grafický návrh e-shopu v hodnotě 100&nbsp;000&nbsp;Kč.</td>
           </tr>
           <tr>
             <td>2.</td>
@@ -259,14 +259,18 @@
         <p><strong class="competition-rules__text-strong-large">Období soutěže:</strong> 11.–31. 5. 2023</p>
         <strong class="competition-rules__text-strong-large">Účastníci soutěže:</strong>
         <p>
-          Soutěže se mohou zúčastnit všichni zájemci starší 18 let s trvalým bydlištěm v České republice.
+          Soutěže se mohou zúčastnit všichni zájemci starší 18 let s trvalým bydlištěm v České republice a Slovenské republice.
         </p>
         <strong class="competition-rules__text-strong-large">Průběh soutěže:</strong>
         <br>
         <strong>Registrace do soutěže</strong>
-        <p>Účastníci soutěže se musí zaregistrovat prostřednictvím online formuláře na internetových stránkách soutěže. Registrace je otevřena od 11. 5. do 31. 5. Každý účastník se může zaregistrovat pouze jednou.</p>
+        <p>
+          Účastníci soutěže se musí zaregistrovat prostřednictvím online formuláře na internetových stránkách soutěže nebo na veletrhu Reshoper 2023. Registrace je otevřena od 17. 5. do 17. 6. Každý účastník se může zaregistrovat pouze jednou s jedním e-shopem.
+        </p>
         <strong>Slosování výherce</strong>
-        <p>Výherce bude vybrán prostřednictvím slosování. Slosování se uskuteční dne 14. 6. 2023 za účasti notáře. Výherce bude informován prostřednictvím e-mailu nejpozději do [30. 6. 2023].</p>
+        <p>
+          Výherce bude vybrán prostřednictvím slosování. Slosování se uskuteční dne 18. 7. 2023 za účasti notáře. Výherce bude informován prostřednictvím e-mailu nebo telefonu nejpozději do [31. 7. 2023].
+        </p>
         <br>
         <strong class="competition-rules__text-strong-large">Ceny:</strong>
         <ol>
@@ -280,14 +284,9 @@
             až 10. místo: Poukaz v hodnotě 3000 Kč na produktové fotografie.
           </li>
         </ol>
-        <strong class="competition-rules__text-strong-large">Další informace:</strong>
-        <br>
         <strong>Unikátní grafický návrh</strong>
         <p>
-          Výherce grafického návrhu bude mít možnost spolupracovat s firmou MirandaMedia při tvorbě grafického návrhu a navrhovaný design bude následně nakódován a implementován na míru pro výherce na jeho e-shop. Pořadatel si vyhrazuje právo na změnu pravidel soutěže.
-        </p>
-        <p>
-          Grafický návrh pro hlavní stranu, kategorie a detail produktu v desktopové a mobilní verzi společně s nakódováním na Shoptet nebo Shoptet Premium.
+          Výherce grafického návrhu bude mít možnost spolupracovat s firmou MirandaMedia při tvorbě grafického návrhu na míru pro jeho e-shop na platformě Shoptet nebo Shoptet Premium. Navrhovaný design se bude skládat z hlavní strany, kategorie a detailu produktu v mobilní a desktopové verzi. Výherce dostane k dispozici až 2 iterace s pro případné požadavky na změny a úpravy grafického návrhu. Grafický návrh bude následně nakódován v plně responzivní verzi na stránky výherního e-shopu.
         </p>
       </div>
       <div class="competition-rules__buttons">
