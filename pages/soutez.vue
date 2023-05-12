@@ -255,13 +255,12 @@
     <section id="competition-rules" class="competition-rules">
       <h2 class="competition-rules__title">Pravidla soutěže</h2>
       <div class="competition-rules__text" :class="{ 'competition-rules__text--expanded': isExpanded }">
-        <p><strong class="competition-rules__text-strong-large">Název soutěže:</strong> Grafický návrh e-shopu a další ceny</p>
-        <p><strong class="competition-rules__text-strong-large">Období soutěže:</strong> 11.–31. 5. 2023</p>
-        <strong class="competition-rules__text-strong-large">Účastníci soutěže:</strong>
+        <p><strong>Název soutěže:</strong> Grafický návrh e-shopu a další ceny</p>
+        <p><strong>Období soutěže:</strong> 17. 5. – 17. 6. 2023</p>
+        <strong>Účastníci soutěže:</strong>
         <p>
           Soutěže se mohou zúčastnit všichni zájemci starší 18 let s trvalým bydlištěm v České republice a Slovenské republice.
         </p>
-        <strong class="competition-rules__text-strong-large">Průběh soutěže:</strong>
         <br>
         <strong>Registrace do soutěže</strong>
         <p>
@@ -271,8 +270,7 @@
         <p>
           Výherce bude vybrán prostřednictvím slosování. Slosování se uskuteční dne 18. 7. 2023 za účasti notáře. Výherce bude informován prostřednictvím e-mailu nebo telefonu nejpozději do [31. 7. 2023].
         </p>
-        <br>
-        <strong class="competition-rules__text-strong-large">Ceny:</strong>
+        <strong>Ceny:</strong>
         <ol>
           <li>
             místo: Grafický návrh e-shopu v hodnotě 100.000 Kč. Design e-shopu bude navržen a nakódován firmou MirandaMedia.
@@ -928,11 +926,9 @@ header.fade-in ~ main .page-nav {
     pointer-events: none;
   }
   strong {
-    color: $color-black;
-  }
-  .competition-rules__text-strong-large {
     font-size: rem(20);
     line-height: em(36);
+    color: $color-black;
   }
   p {
     margin-bottom: 20px;
