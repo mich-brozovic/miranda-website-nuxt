@@ -261,7 +261,6 @@
         <p>
           Soutěže se mohou zúčastnit všichni zájemci starší 18 let s trvalým bydlištěm v České republice a Slovenské republice.
         </p>
-        <br>
         <strong>Registrace do soutěže</strong>
         <p>
           Účastníci soutěže se musí zaregistrovat prostřednictvím online formuláře na internetových stránkách soutěže nebo na veletrhu Reshoper 2023. Registrace je otevřena od 17. 5. do 17. 6. Každý účastník se může zaregistrovat pouze jednou s jedním e-shopem.
