@@ -950,6 +950,9 @@ header.fade-in ~ main .page-nav {
   &::after {
     display: none;
   }
+  ~ .competition-rules__buttons .competition-rules__button::after {
+    transform: rotate(-135deg);
+  }
 }
 .competition-rules__buttons {
   margin-top: 30px;
