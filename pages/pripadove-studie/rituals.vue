@@ -1099,6 +1099,12 @@
 			}
 		}
 	}
+	.intro__wrapper--text {
+		margin-bottom: 70px;
+	}
+	.intro__flex-container {
+		margin-top: -70px;
+	}
 	.intro__flex-item {
 		background-color: $color-intro-grid-background;
 		border: 1px solid $color-intro-grid-border;
