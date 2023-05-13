@@ -16,3 +16,4 @@ tmp
 !.yarn/versions
 # Local Netlify folder
 .netlify
+.tmp
