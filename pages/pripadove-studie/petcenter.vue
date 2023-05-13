@@ -707,7 +707,7 @@
 					height="720" />
 			</div>
 			<div class="banner-first__text-wrap">
-				<h3 class="section__banner-header">Moivující věrnostní program</h3>
+				<h3 class="section__banner-header">Motivující věrnostní program</h3>
 				<p class="section__banner-text">
 					Díky <strong>pet center klub</strong> a chytré aplikaci mají zákazníci přehled o veškerých nákupech, které v Pet Center
 					uskuteční, a to jak na e-shopu, tak v kamenné prodejně.

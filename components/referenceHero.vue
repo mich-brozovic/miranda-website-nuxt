@@ -19,6 +19,7 @@
 			</div>
 			<div
 				class="page"
+				:class="{ white: linkWhite }"
 				v-if="props.pageUrl">
 				<a
 					:href="'https://' + props.pageUrl"
@@ -31,13 +32,11 @@
 						xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-							stroke="#59DC8E"
 							stroke-width="1.5"
 							stroke-linecap="round"
 							stroke-linejoin="round" />
 						<path
 							d="M3 12H21M15.4615 12C15.2915 15.2912 14.0792 18.4431 12 21C9.92075 18.4431 8.70849 15.2912 8.53846 12C8.70849 8.70878 9.92075 5.5569 12 3C14.0792 5.5569 15.2915 8.70878 15.4615 12Z"
-							stroke="#59DC8E"
 							stroke-width="1.5"
 							stroke-linecap="round"
 							stroke-linejoin="round" />
@@ -103,6 +102,7 @@
 		pageUrl: String,
 		pageUrlAlt: String,
 		textWidth: String,
+		linkWhite: Boolean,
 	})
 	const videoRef = ref(null)
 	const videoPlayed = useState('videoPlayed', () => false)
@@ -199,6 +199,14 @@
 		& + .page {
 			margin-top: -20px;
 			margin-bottom: 20px;
+		}
+		&.white {
+			a {
+				color: $color-white;
+			}
+			svg {
+				stroke: $color-white;
+			}
 		}
 	}
 	h1 {
