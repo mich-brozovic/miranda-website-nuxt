@@ -6,7 +6,7 @@
 			heading="Postavili jsme e-shop pro Rituals.cz a Rituals-cosmetics.sk  na Shoptet Premium"
 			subheading="Od A do Z jsme v Mirandě navrhli a vytvořili český a slovenský e-shop pro společnost Rituals včetně napojení na informační systém Ventus. Oba e-shopy vznikly a přešly do ostrého provozu na platformě Shoptet Premium za necelé 4 měsíce!"
 			pageUrl="www.rituals.cz"
-			pageUrlAlt="www.rituals-cosmetics.cz" />
+			pageUrlAlt="www.rituals-cosmetics.sk" />
 		<referenceMainSlider
 			id="scroll"
 			:imgUrl="'pripadove-studie/rituals/image-slider.jpg'">

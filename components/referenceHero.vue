@@ -11,7 +11,9 @@
 				v-if="props.logoUrl">
 				<NuxtPicture :src="props.logoUrl" />
 			</div>
-			<div class="texts">
+			<div
+				class="texts"
+				:style="`max-width: ${props.textWidth}px`">
 				<h1>{{ props.heading }}</h1>
 				<h2 v-if="props.subheading">{{ props.subheading }}</h2>
 			</div>
@@ -100,6 +102,7 @@
 		logoUrl: String,
 		pageUrl: String,
 		pageUrlAlt: String,
+		textWidth: String,
 	})
 	const videoRef = ref(null)
 	const videoPlayed = useState('videoPlayed', () => false)
