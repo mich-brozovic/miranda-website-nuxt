@@ -200,6 +200,9 @@
 			margin-top: -20px;
 			margin-bottom: 20px;
 		}
+		svg {
+			stroke: $color-green;
+		}
 		&.white {
 			a {
 				color: $color-white;

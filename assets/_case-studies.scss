@@ -1002,6 +1002,18 @@ main {
 	display: block;
 	margin-bottom: 15px;
 	break-inside: avoid;
+	position: relative;
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 9px;
+		left: -20px;
+
+		width: 10px;
+		height: 10px;
+		line-height: 0;
+	}
 }
 
 .banner-first--reverse {
