@@ -150,6 +150,7 @@
 		transform: translateX(-50%);
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		.logo {
 			margin-bottom: 20px;
 			max-width: 150px;

@@ -1141,12 +1141,18 @@ main {
 	}
 }
 
-.banner-second--reverse .banner-second__wrapper--text {
-	&::before {
-		left: unset;
-		right: 0;
-		transform: unset;
-		transform: translate(100%, 100%);
+.banner-second--reverse {
+	grid-template-columns: minmax(1px, 4fr) minmax(1px, 3fr);
+	.banner-second__wrapper--text {
+		&::before {
+			left: unset;
+			right: 0;
+			transform: unset;
+			transform: translate(100%, 100%);
+		}
+	}
+	.banner-second__wrapper--image {
+		grid-column: 1 / 2;
 	}
 }
 
@@ -1189,6 +1195,9 @@ main {
 	@media (max-width: $width-mobile) {
 		flex-direction: column-reverse;
 		gap: 20px;
+	}
+	&.align-center {
+		align-items: center;
 	}
 }
 
