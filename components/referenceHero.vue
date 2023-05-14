@@ -1,9 +1,10 @@
 <template>
 	<section class="hero">
 		<div class="image-wrapper">
-			<NuxtPicture
+			<NuxtImg
 				:src="props.imgUrl"
-				:imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover; object-position: right; min-height: 865px' }" />
+        class="hero-image"
+      />
 		</div>
 		<div class="container">
 			<div
@@ -142,19 +143,32 @@
 			min-height: unset;
 		}
 	}
+  .hero .image-wrapper .hero-image {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: right;
+    max-height: 100vh;
+    min-height: 865px;
+    @media screen and ($mobile-responsive) {
+      min-height: unset;
+    }
+  }
 	.container {
 		position: absolute;
-		top: 200px;
+		top: 0;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
 		display: flex;
 		flex-direction: column;
+    justify-content: center;
 		.logo {
 			margin-bottom: 20px;
 			max-width: 150px;
 		}
 		@media screen and ($mobile-responsive) {
+      justify-content: flex-start;
 			.texts {
 				order: 1;
 			}
