@@ -92,9 +92,25 @@
 		&.align-center {
 			align-items: center;
 		}
+		&.row-reverse {
+			flex-direction: row-reverse;
+		}
 		&.col-2 {
 			.column {
 				flex: 1 1 460px;
+			}
+		}
+		.column {
+			&.padding {
+				padding: 50px;
+				@media (max-width: 1240px) {
+					padding: 20px;
+				}
+			}
+			&.center {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 			}
 		}
 		&.col-4-6 {
@@ -115,6 +131,12 @@
 				&:last-of-type {
 					flex: 1 1 400px;
 				}
+			}
+		}
+		&.gap50 {
+			gap: 50px;
+			@media (max-width: 767px) {
+				gap: 20px;
 			}
 		}
 	}

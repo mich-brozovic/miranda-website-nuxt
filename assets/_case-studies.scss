@@ -1163,6 +1163,15 @@ main {
 	.banner-second__wrapper--image {
 		grid-column: 1 / 2;
 	}
+	.banner-second__wrapper--image-wide {
+		img {
+			position: absolute;
+			width: 100%;
+			max-width: 70vw;
+			left: unset;
+			right: -60px;
+		}
+	}
 }
 
 .banner-second__image-nb {
