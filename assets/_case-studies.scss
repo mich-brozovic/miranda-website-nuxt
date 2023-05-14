@@ -309,6 +309,12 @@ main {
 	padding: 0;
 	background-color: transparent;
 	border: none;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: left;
+	}
 }
 .task-banner {
 	max-width: calc(1440px + 4rem);
@@ -1249,7 +1255,7 @@ main {
 	margin-right: calc(110 / 1440 * 100%);
 	position: relative;
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: -25px;
 		left: -25px;
@@ -1271,7 +1277,7 @@ main {
 .banner-third__text-container {
 	position: relative;
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		bottom: -50px;
 		right: -50px;
@@ -1279,7 +1285,7 @@ main {
 		height: 50px;
 	}
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		bottom: -75px;
 		right: 0;
@@ -1312,7 +1318,7 @@ main {
 	position: relative;
 
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		left: calc(210 / 350 * 100% - 10px);
@@ -1323,7 +1329,7 @@ main {
 		transform: translate(-100%, -100%);
 	}
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 
 		bottom: calc(70 / 350 * 100% - 10px);
