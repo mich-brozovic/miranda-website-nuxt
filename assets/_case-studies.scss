@@ -1105,6 +1105,7 @@ main {
 	grid-column: 2/3;
 }
 .banner-second__wrapper--image-wide {
+	min-height: 41vw;
 	img {
 		position: absolute;
 		width: 100%;
@@ -1484,6 +1485,7 @@ main {
 	flex: 1 1 460px;
 	@media (max-width: $width-mobile) {
 		width: 100%;
+		flex: unset;
 	}
 }
 
@@ -2099,9 +2101,13 @@ main {
 	padding: 0;
 	margin: 0;
 
-	font-size: rem(16);
-	line-height: em(28, 16);
+	font-size: rem(20);
+	line-height: em(36);
 	font-weight: 400;
+	@media screen and ($mobile-responsive) {
+		font-size: rem(16);
+		line-height: em(28);
+	}
 }
 // ------------------- //
 // -- Result review -- //
@@ -2121,7 +2127,7 @@ main {
 	align-items: center;
 	@media (max-width: $width-mobile) {
 		flex-direction: column;
-		gap: 80px;
+		gap: 40px;
 	}
 }
 
@@ -2129,7 +2135,7 @@ main {
 	flex-direction: row-reverse;
 	@media (max-width: $width-mobile) {
 		flex-direction: column;
-		gap: 80px;
+		gap: 40px;
 	}
 }
 
@@ -2198,6 +2204,9 @@ main {
 .extra-solutions {
 	@media (max-width: $width-mobile) {
 		margin-top: 120px;
+		.buttons-center {
+			display: none;
+		}
 	}
 }
 
@@ -2302,9 +2311,6 @@ main {
 		margin-bottom: 40px;
 		text-align: center;
 	}
-	@media screen and ($mobile-responsive) {
-		padding-block: 60px;
-	}
 	.tiles {
 		display: grid;
 		grid-template-columns: repeat(4, 50px);
@@ -2315,6 +2321,9 @@ main {
 		right: 0;
 		z-index: 1;
 		transform: translate(calc(50% + 5px), calc(50% + 5px));
+		@media screen and ($mobile-responsive) {
+			display: none;
+		}
 		.tile {
 			background-color: $color-white;
 			animation: 10s pulse ease-in infinite;
@@ -2365,6 +2374,9 @@ main {
 			}
 		}
 	}
+	@media screen and ($mobile-responsive) {
+		padding-block: 30px;
+	}
 }
 .client-review__content {
 	display: flex;
@@ -2378,6 +2390,10 @@ main {
 .client-review__image {
 	flex: 1 1 340px;
 	position: relative;
+	@media screen and ($mobile-responsive) {
+		max-width: 450px;
+		margin-inline: auto;
+	}
 }
 .client-review__text {
 	position: relative;

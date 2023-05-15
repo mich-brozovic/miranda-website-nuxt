@@ -720,6 +720,9 @@ $color-client-review-marks: #2F2F2F;
 
 :deep(.logo) {
   max-width: 90px !important;
+  @media screen and ($mobile-responsive) {
+    max-width: 45px !important;
+  }
 }
 :deep(.swiper-button-next),
 :deep(.swiper-button-prev) {

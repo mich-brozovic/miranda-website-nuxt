@@ -962,7 +962,7 @@ $color-client-review-marks: #F2FBFE;
   & h3 {
     color: $color-intro-grid-title;
   }
-  & p, {
+  & p {
     color: $color-intro-grid-text;
   }
   @media (max-width: $width-mobile) {

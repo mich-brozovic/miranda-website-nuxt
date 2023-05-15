@@ -10,6 +10,7 @@
 			:imgUrl="'pripadove-studie/svojtka/image-slider.jpg'">
 			<SwiperSlide class="slider__slide">
 				<svg
+            class="--color-fill"
 					width="57"
 					height="57"
 					viewBox="0 0 57 57"

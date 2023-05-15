@@ -23,8 +23,7 @@
 				<h4>Unikátní návrh wireframe</h4>
 				<div class="slider__slide-content">
 					<p>
-						Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-						online obchod přizpůsobený svým specifickým potřebám.
+            Naše unikátní wireframy jsou vizuálně působivé a funkční, přesně navržené pro potřeby uživatelů a splňují požadavky projektu.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -100,8 +99,7 @@
 				<h4>Kódování na Shoptet</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -120,8 +118,7 @@
 				<h4>Produktové fotografie</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Produktové fotografie jsou specializované fotografie, které mají za úkol přesně zachytit vzhled, detaily a vlastnosti daného produktu. Často se používají v obchodních katalozích, webových stránkách, reklamách nebo na sociálních médiích.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -146,8 +143,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-							profesionální online obchod přizpůsobený svým specifickým potřebám.
+              Naše unikátní wireframy jsou vizuálně působivé a funkční, přesně navržené pro potřeby uživatelů a splňují požadavky projektu.
 						</p>
 					</div>
 				</li>
@@ -230,8 +226,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
 						</p>
 					</div>
 				</li>
@@ -254,8 +249,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Produktové fotografie jsou specializované fotografie, které mají za úkol přesně zachytit vzhled, detaily a vlastnosti daného produktu. Často se používají v obchodních katalozích, webových stránkách, reklamách nebo na sociálních médiích.
 						</p>
 					</div>
 				</li>
@@ -684,17 +678,17 @@
 	$color-swiper-arrow: #222e27;
 	$color-swiper-arrow-hover: #222e27;
 
-	$color-benefits-background: #fed756;
-	$color-benefits-border: #fed756;
-	$color-benefits-text: #222e27;
+	$color-benefits-background: #33abf2;
+	$color-benefits-border: #33abf2;
+	$color-benefits-text: #fff;
 	$color-benefits-icon: #fed756;
 
 	$color-slider-background: #fed756;
 	$color-slider-border: #fed756;
 	$color-slider-text: #222e27;
 	$color-slider-icon: #fff;
-	$color-slider-content-background: #fed756;
-	$color-slider-content-text: #222e27;
+	$color-slider-content-background: #33abf2;
+	$color-slider-content-text: #fff;
 
 	$color-section-background: #efefef;
 
@@ -713,6 +707,7 @@
 	$color-intro-grid-background: #33abf2;
 	$color-intro-grid-border: transparent;
 	$color-intro-grid-icon: #fff;
+  $color-intro-grid-title: #FFFFFF;
 	$color-intro-grid-text: #222e27;
 
 	$color-task-banner-counter: transparent;
@@ -932,8 +927,10 @@
 				fill: $color-intro-grid-icon;
 			}
 		}
-		& p,
-		& h3 {
+    & h3 {
+      color: $color-intro-grid-title;
+    }
+		& p {
 			color: $color-intro-grid-text;
 		}
 		@media (max-width: $width-mobile) {

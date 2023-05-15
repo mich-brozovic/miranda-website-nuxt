@@ -13,78 +13,73 @@
 			</div>
 			<div
 				class="texts"
-				:style="`max-width: ${props.textWidth}px`">
+        :style="textWidth ? { maxWidth: `${textWidth}px` } : {}">
 				<h1>{{ props.heading }}</h1>
 				<h2 v-if="props.subheading">{{ props.subheading }}</h2>
 			</div>
-			<div
-				class="page"
-				:class="{ white: linkWhite }"
-				v-if="props.pageUrl">
-				<a
-					:href="'https://' + props.pageUrl"
-					target="_blank">
-					<svg
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-							stroke-width="1.5"
-							stroke-linecap="round"
-							stroke-linejoin="round" />
-						<path
-							d="M3 12H21M15.4615 12C15.2915 15.2912 14.0792 18.4431 12 21C9.92075 18.4431 8.70849 15.2912 8.53846 12C8.70849 8.70878 9.92075 5.5569 12 3C14.0792 5.5569 15.2915 8.70878 15.4615 12Z"
-							stroke-width="1.5"
-							stroke-linecap="round"
-							stroke-linejoin="round" />
-					</svg>
-					<span>{{ props.pageUrl }}</span>
-				</a>
-			</div>
-			<div
-				class="page"
-				v-if="props.pageUrlAlt">
-				<a
-					:href="'https://' + props.pageUrlAlt"
-					target="_blank">
-					<svg
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-							stroke="#59DC8E"
-							stroke-width="1.5"
-							stroke-linecap="round"
-							stroke-linejoin="round" />
-						<path
-							d="M3 12H21M15.4615 12C15.2915 15.2912 14.0792 18.4431 12 21C9.92075 18.4431 8.70849 15.2912 8.53846 12C8.70849 8.70878 9.92075 5.5569 12 3C14.0792 5.5569 15.2915 8.70878 15.4615 12Z"
-							stroke="#59DC8E"
-							stroke-width="1.5"
-							stroke-linecap="round"
-							stroke-linejoin="round" />
-					</svg>
-					<span>{{ props.pageUrlAlt }}</span>
-				</a>
-			</div>
+      <div class="pageUrl__wrapper">
+        <div
+            class="pageUrl"
+            :class="{ white: linkWhite }"
+            v-if="props.pageUrl">
+          <a
+              :href="'https://' + props.pageUrl"
+              target="_blank">
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              <path
+                  d="M3 12H21M15.4615 12C15.2915 15.2912 14.0792 18.4431 12 21C9.92075 18.4431 8.70849 15.2912 8.53846 12C8.70849 8.70878 9.92075 5.5569 12 3C14.0792 5.5569 15.2915 8.70878 15.4615 12Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+            </svg>
+            <span>{{ props.pageUrl }}</span>
+          </a>
+        </div>
+        <div
+            class="pageUrl"
+            v-if="props.pageUrlAlt">
+          <a
+              :href="'https://' + props.pageUrlAlt"
+              target="_blank">
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                  stroke="#59DC8E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              <path
+                  d="M3 12H21M15.4615 12C15.2915 15.2912 14.0792 18.4431 12 21C9.92075 18.4431 8.70849 15.2912 8.53846 12C8.70849 8.70878 9.92075 5.5569 12 3C14.0792 5.5569 15.2915 8.70878 15.4615 12Z"
+                  stroke="#59DC8E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+            </svg>
+            <span>{{ props.pageUrlAlt }}</span>
+          </a>
+        </div>
+      </div>
 			<div class="scroll">
 				<a href="#scroll">
-					<svg
-						width="24"
-						height="155"
-						viewBox="0 0 24 155"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<title>Scrolluj</title>
-						<path
-							d="M10.9393 154.061C11.5251 154.646 12.4749 154.646 13.0607 154.061L22.6066 144.515C23.1924 143.929 23.1924 142.979 22.6066 142.393C22.0208 141.808 21.0711 141.808 20.4853 142.393L12 150.879L3.51472 142.393C2.92893 141.808 1.97918 141.808 1.3934 142.393C0.80761 142.979 0.80761 143.929 1.3934 144.515L10.9393 154.061ZM10.5 -1.78873e-08L10.5 153L13.5 153L13.5 1.78873e-08L10.5 -1.78873e-08Z"
-							fill="white"></path>
-					</svg>
+          <svg width="24" height="112" viewBox="0 0 24 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>scrolluj</title>
+            <path d="M10.9393 111.061C11.5251 111.646 12.4749 111.646 13.0607 111.061L22.6066 101.515C23.1924 100.929 23.1924 99.9792 22.6066 99.3934C22.0208 98.8076 21.0711 98.8076 20.4853 99.3934L12 107.879L3.51472 99.3934C2.92893 98.8076 1.97918 98.8076 1.3934 99.3934C0.807611 99.9792 0.807611 100.929 1.3934 101.515L10.9393 111.061ZM10.5 -1.78873e-08L10.5 110L13.5 110L13.5 1.78873e-08L10.5 -1.78873e-08Z" fill="white"/>
+          </svg>
 					<span>Scrolluj</span>
 				</a>
 			</div>
@@ -171,7 +166,7 @@
 			.texts {
 				order: 1;
 			}
-			.page {
+			.pageUrl__wrapper {
 				order: 2;
 			}
 			.logo {
@@ -190,7 +185,7 @@
 		display: block;
 		text-align: left;
 	}
-	.page {
+	.pageUrl {
 		a {
 			display: flex;
 			align-items: center;
@@ -208,11 +203,9 @@
 				justify-content: center;
 			}
 		}
-		margin-bottom: 20px;
-		& + .page {
-			margin-top: -20px;
-			margin-bottom: 20px;
-		}
+		&:not(:last-child) {
+    margin-bottom: 10px;
+  }
 		svg {
 			stroke: $color-green;
 		}
@@ -273,8 +266,8 @@
 				padding-bottom: 30px;
 			}
 			.scroll {
-				left: 50%;
-				transform: translateX(-50%);
+        margin-top: 20px;
+				position: initial;
 				a {
 					svg {
 						height: 50px;
@@ -285,7 +278,8 @@
 				}
 			}
 			.logo {
-				margin-bottom: 0;
+				margin-bottom: -30px;
+        margin-top: 20px;
 				max-width: 100px;
 			}
 		}

@@ -5,7 +5,8 @@
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
 			heading="Jak vznikal e-shop pro společnost Philips na Shoptet  Premium"
 			subheading="Společnost Philips není třeba zdlouhavě představovat. Patří mezi  největší výrobce elektroniky a elektrotechniky na světě. Ve spolupráci s naší marketingovou & digitální agenturou MirandaMedia vznikl za necelých 14 týdnů e-shop na Shoptetu s napojením na systém K2, unikátním designem na míru a řadou nadstandardních funkcionalit a individuálních úprav."
-			pageUrl="www.philips-eshop.cz" />
+			pageUrl="www.philips-eshop.sk"
+      pageUrlAlt="www.philips-eshop.bg"/>
 		<referenceMainSlider
 			id="scroll"
 			:imgUrl="'pripadove-studie/philips/image-slider.jpg'">

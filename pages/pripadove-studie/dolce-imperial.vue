@@ -97,7 +97,8 @@
         <h4>Unikátní návrh wireframe</h4>
         <div class="slider__slide-content">
           <p>
-            Naše unikátní wireframy jsou vizuálně působivé a funkční, přesně navržené pro potřeby uživatelů a splňují požadavky projektu.          </p>
+            Naše unikátní wireframy jsou vizuálně působivé a funkční, přesně navržené pro potřeby uživatelů a splňují požadavky projektu.
+          </p>
         </div>
       </SwiperSlide>
       <SwiperSlide class="slider__slide">
@@ -185,13 +186,13 @@
             @click.prevent="toggleMenu"
             class="benefits__item">
           <div class="benefits__item-wrapper">
-            <svg class="--color-stroke --color-fill" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71484 7.14282H14.572V14.5714H7.71484V7.14282ZM9.42914 8.99996V12.7142H12.8577V8.99996H9.42914Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71484 17.4285H24.2863V24.2856H7.71484V17.4285ZM9.40581 19.1427V22.5713H22.5953V19.1427H9.40581Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.71484 3.71436H28.2863V28.2858H26.5057V5.56183H5.49538V28.2858H3.71484V3.71436Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8566 9.42864H16.2852V7.71436H24.8566V9.42864Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9994 12.2858H16.2852V10.5715H21.9994V12.2858Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1423 15.1428H16.2852V13.4285H23.1423V15.1428Z" fill="#CBA686"/>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71387 7.14258H14.571V14.5711H7.71387V7.14258ZM9.42816 8.99971V12.714H12.8567V8.99971H9.42816Z" fill="#CBA686"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71387 17.4277H24.2853V24.2849H7.71387V17.4277ZM9.40483 19.142V22.5706H22.5943V19.142H9.40483Z" fill="#CBA686"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.71387 3.71484H28.2853V28.2863H26.5048V5.56232H5.49441V28.2863H3.71387V3.71484Z" fill="#CBA686"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8576 9.42913H16.2861V7.71484H24.8576V9.42913Z" fill="#CBA686"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0004 12.2866H16.2861V10.5723H22.0004V12.2866Z" fill="#CBA686"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1433 15.142H16.2861V13.4277H23.1433V15.142Z" fill="#CBA686"/>
             </svg>
             <h3>Vývoj e-shopu na míru</h3>
           </div>
