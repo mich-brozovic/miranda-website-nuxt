@@ -1,103 +1,31 @@
 <template>
   <main>
     <referenceHero
-        :imgUrl="'/pripadove-studie/dolce-imperial/dolce-hero.jpg'"
-        heading="E-shop na Shoptetu pro Zdeňka Pohlreicha"
-        subheading="Zdeněk Pohlreich říká, že chce, aby za ním zůstávalo něco smysluplného. Nejen něco, co si budou lidé pamatovat, ale z čeho budou mít užitek. Se stejnou filozofií jsme přistoupili k tvorbě nového e-shopu na platformě Shoptet Core pro butikovou cukrárnu Cafe Imperial Dolce."
-        pageUrl="www.cafeimperialdolce.cz"/>
+        :imgUrl="'/pripadove-studie/rebel-bean/rebelBean-hero.jpg'"
+        heading="Navrhli jsme e-shop na Shoptetu pro kávové nadšence z Rebelbean.cz"
+        subheading="Vytvoření moderního a svěžího e-shopu bylo pro pražírnu kávy Rebelbean skvělým krokem směrem k zajištění lepšího uživatelského zážitku a zvýšení prodeje. E-shop vznikl za pár týdnů na platformě Shoptet Core."
+        pageUrl="www.rebelbean.cz"/>
     <referenceMainSlider
         id="scroll"
-        :imgUrl="'pripadove-studie/dolce-imperial/image-slider.jpg'">
+        :imgUrl="'pripadove-studie/rebel-bean/image-slider.jpg'">
       <SwiperSlide class="slider__slide">
         <svg
-            class="--color-stroke --color-fill"
+            class="--color-fill"
             width="57"
             height="57"
             viewBox="0 0 57 57"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
           <path
-              d="M17 14.75H15.5V16.25V22.7499V24.2499H17H23H24.5V22.7499V16.25V14.75H23H17ZM15.5 14.5H24.5V24.5H15.5V14.5Z"
-              stroke="#9A7B69"
-              stroke-width="3" />
-          <mask
-              id="path-2-inside-1_5576_6058"
-              fill="white">
-            <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z" />
-          </mask>
-          <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z"
-              fill="#9A7B69" />
-          <path
-              d="M14 31V28H11V31H14ZM43 31H46V28H43V31ZM43 43V46H46V43H43ZM14 43H11V46H14V43ZM16.9592 34V31H13.9592V34H16.9592ZM16.9592 40H13.9592V43H16.9592V40ZM40.0408 40V43H43.0408V40H40.0408ZM40.0408 34H43.0408V31H40.0408V34ZM14 34H43V28H14V34ZM40 31V43H46V31H40ZM43 40H14V46H43V40ZM17 43V31H11V43H17ZM13.9592 34V40H19.9592V34H13.9592ZM16.9592 43H40.0408V37H16.9592V43ZM43.0408 40V34H37.0408V40H43.0408ZM40.0408 31H16.9592V37H40.0408V31Z"
-              fill="#9A7B69"
-              mask="url(#path-2-inside-1_5576_6058)" />
-          <path
-              d="M8.61594 10.2331V48.5H8.5V8.5H48.5V48.5H48.384V10.2331V8.73308H46.884H10.1159H8.61594V10.2331Z"
-              fill="#9A7B69"
-              stroke="#9A7B69"
-              stroke-width="3" />
-          <mask
-              id="path-5-inside-2_5576_6058"
-              fill="white">
-            <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M44 17H29V14H44V17Z" />
-          </mask>
-          <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M44 17H29V14H44V17Z"
-              fill="#9A7B69" />
-          <path
-              d="M44 17V20H47V17H44ZM29 17H26V20H29V17ZM29 14V11H26V14H29ZM44 14H47V11H44V14ZM44 14H29V20H44V14ZM32 17V14H26V17H32ZM29 17H44V11H29V17ZM41 14V17H47V14H41Z"
-              fill="#9A7B69"
-              mask="url(#path-5-inside-2_5576_6058)" />
-          <mask
-              id="path-7-inside-3_5576_6058"
-              fill="white">
-            <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M39 22H29V19H39V22Z" />
-          </mask>
-          <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M39 22H29V19H39V22Z"
-              fill="#9A7B69" />
-          <path
-              d="M39 22V25H42V22H39ZM29 22H26V25H29V22ZM29 19V16H26V19H29ZM39 19H42V16H39V19ZM39 19H29V25H39V19ZM32 22V19H26V22H32ZM29 22H39V16H29V22ZM36 19V22H42V19H36Z"
-              fill="#9A7B69"
-              mask="url(#path-7-inside-3_5576_6058)" />
-          <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M41 27H29V24H41V27Z"
-              fill="#9A7B69" />
+              d="M47.75 11V19.75H30.25V11H47.75ZM47.75 7.5H30.25C29.3217 7.5 28.4315 7.86875 27.7751 8.52513C27.1187 9.1815 26.75 10.0717 26.75 11V19.75C26.75 20.6783 27.1187 21.5685 27.7751 22.2249C28.4315 22.8813 29.3217 23.25 30.25 23.25H47.75C48.6783 23.25 49.5685 22.8813 50.2249 22.2249C50.8812 21.5685 51.25 20.6783 51.25 19.75V11C51.25 10.0717 50.8812 9.1815 50.2249 8.52513C49.5685 7.86875 48.6783 7.5 47.75 7.5ZM21.5 44.25H11V30.25H21.5V26.75H11C10.0717 26.75 9.1815 27.1187 8.52513 27.7751C7.86875 28.4315 7.5 29.3217 7.5 30.25V44.25C7.5 45.1783 7.86875 46.0685 8.52513 46.7249C9.1815 47.3812 10.0717 47.75 11 47.75H21.5V44.25ZM53 35.5H29.949L34.4745 30.9745L32 28.5L23.25 37.25L32 46L34.4745 43.5255L29.949 39H53V35.5ZM19.75 11V19.75H11V11H19.75ZM19.75 7.5H11C10.0717 7.5 9.1815 7.86875 8.52513 8.52513C7.86875 9.1815 7.5 10.0717 7.5 11V19.75C7.5 20.6783 7.86875 21.5685 8.52513 22.2249C9.1815 22.8813 10.0717 23.25 11 23.25H19.75C20.6783 23.25 21.5685 22.8813 22.2249 22.2249C22.8813 21.5685 23.25 20.6783 23.25 19.75V11C23.25 10.0717 22.8813 9.1815 22.2249 8.52513C21.5685 7.86875 20.6783 7.5 19.75 7.5Z"
+              fill="white" />
         </svg>
-        <h4>Vývoj e-shopu na míru</h4>
+        <h4>Unikátní návrh wireframe</h4>
         <div class="slider__slide-content">
           <p>
             Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
             online obchod přizpůsobený svým specifickým potřebám.
           </p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide class="slider__slide">
-        <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M47.75 11V19.75H30.25V11H47.75ZM47.75 7.5H30.25C29.3217 7.5 28.4315 7.86875 27.7751 8.52513C27.1187 9.1815 26.75 10.0717 26.75 11V19.75C26.75 20.6783 27.1187 21.5685 27.7751 22.2249C28.4315 22.8813 29.3217 23.25 30.25 23.25H47.75C48.6783 23.25 49.5685 22.8813 50.2249 22.2249C50.8812 21.5685 51.25 20.6783 51.25 19.75V11C51.25 10.0717 50.8812 9.1815 50.2249 8.52513C49.5685 7.86875 48.6783 7.5 47.75 7.5ZM21.5 44.25H11V30.25H21.5V26.75H11C10.0717 26.75 9.1815 27.1187 8.52513 27.7751C7.86875 28.4315 7.5 29.3217 7.5 30.25V44.25C7.5 45.1783 7.86875 46.0685 8.52513 46.7249C9.1815 47.3812 10.0717 47.75 11 47.75H21.5V44.25ZM53 35.5H29.949L34.4745 30.9745L32 28.5L23.25 37.25L32 46L34.4745 43.5255L29.949 39H53V35.5ZM19.75 11V19.75H11V11H19.75ZM19.75 7.5H11C10.0717 7.5 9.1815 7.86875 8.52513 8.52513C7.86875 9.1815 7.5 10.0717 7.5 11V19.75C7.5 20.6783 7.86875 21.5685 8.52513 22.2249C9.1815 22.8813 10.0717 23.25 11 23.25H19.75C20.6783 23.25 21.5685 22.8813 22.2249 22.2249C22.8813 21.5685 23.25 20.6783 23.25 19.75V11C23.25 10.0717 22.8813 9.1815 22.2249 8.52513C21.5685 7.86875 20.6783 7.5 19.75 7.5Z" fill="#CBA686"/>
-        </svg>
-        <h4>Unikátní návrh wireframe</h4>
-        <div class="slider__slide-content">
-          <p>
-            Naše unikátní wireframy jsou vizuálně působivé a funkční, přesně navržené pro potřeby uživatelů a splňují požadavky projektu.          </p>
         </div>
       </SwiperSlide>
       <SwiperSlide class="slider__slide">
@@ -172,7 +100,28 @@
         <h4>Nakódování na Shoptet</h4>
         <div class="slider__slide-content">
           <p>
-            Kódování na Shoptet umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
+            Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
+            e-shopu podle přesných požadavků podnikatele.
+          </p>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide class="slider__slide">
+        <svg
+            class="--color-fill"
+            width="57"
+            height="57"
+            viewBox="0 0 57 57"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M39 4H18C16.6076 4 15.2723 4.55312 14.2877 5.53769C13.3031 6.52226 12.75 7.85761 12.75 9.25V47.75C12.75 49.1424 13.3031 50.4777 14.2877 51.4623C15.2723 52.4469 16.6076 53 18 53H39C40.3924 53 41.7277 52.4469 42.7123 51.4623C43.6969 50.4777 44.25 49.1424 44.25 47.75V9.25C44.25 7.85761 43.6969 6.52226 42.7123 5.53769C41.7277 4.55312 40.3924 4 39 4ZM40.75 47.75C40.75 48.2141 40.5656 48.6592 40.2374 48.9874C39.9093 49.3156 39.4641 49.5 39 49.5H18C17.5359 49.5 17.0908 49.3156 16.7626 48.9874C16.4344 48.6592 16.25 48.2141 16.25 47.75V9.25C16.25 8.78587 16.4344 8.34075 16.7626 8.01256C17.0908 7.68437 17.5359 7.5 18 7.5H39C39.4641 7.5 39.9093 7.68437 40.2374 8.01256C40.5656 8.34075 40.75 8.78587 40.75 9.25V47.75ZM31.125 13.625C31.125 14.1442 30.971 14.6517 30.6826 15.0834C30.3942 15.515 29.9842 15.8515 29.5045 16.0502C29.0249 16.2489 28.4971 16.3008 27.9879 16.1996C27.4787 16.0983 27.011 15.8483 26.6438 15.4812C26.2767 15.114 26.0267 14.6463 25.9254 14.1371C25.8242 13.6279 25.8761 13.1001 26.0748 12.6205C26.2735 12.1408 26.61 11.7308 27.0416 11.4424C27.4733 11.154 27.9808 11 28.5 11C29.1962 11 29.8639 11.2766 30.3562 11.7688C30.8484 12.2611 31.125 12.9288 31.125 13.625Z"
+              fill="#71B51F" />
+        </svg>
+
+        <h4>Responzivita webu</h4>
+        <div class="slider__slide-content">
+          <p>
+            Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
             e-shopu podle přesných požadavků podnikatele.
           </p>
         </div>
@@ -185,35 +134,21 @@
             @click.prevent="toggleMenu"
             class="benefits__item">
           <div class="benefits__item-wrapper">
-            <svg class="--color-stroke --color-fill" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71484 7.14282H14.572V14.5714H7.71484V7.14282ZM9.42914 8.99996V12.7142H12.8577V8.99996H9.42914Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71484 17.4285H24.2863V24.2856H7.71484V17.4285ZM9.40581 19.1427V22.5713H22.5953V19.1427H9.40581Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.71484 3.71436H28.2863V28.2858H26.5057V5.56183H5.49538V28.2858H3.71484V3.71436Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8566 9.42864H16.2852V7.71436H24.8566V9.42864Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9994 12.2858H16.2852V10.5715H21.9994V12.2858Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1423 15.1428H16.2852V13.4285H23.1423V15.1428Z" fill="#CBA686"/>
-            </svg>
-            <h3>Vývoj e-shopu na míru</h3>
-          </div>
-          <div class="benefits__item-text-wrapper">
-            <p class="benefits__item-text">
-              Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-              profesionální online obchod přizpůsobený svým specifickým potřebám.
-            </p>
-          </div>
-        </li>
-        <li
-            @click.prevent="toggleMenu"
-            class="benefits__item">
-          <div class="benefits__item-wrapper">
-            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M47.75 11V19.75H30.25V11H47.75ZM47.75 7.5H30.25C29.3217 7.5 28.4315 7.86875 27.7751 8.52513C27.1187 9.1815 26.75 10.0717 26.75 11V19.75C26.75 20.6783 27.1187 21.5685 27.7751 22.2249C28.4315 22.8813 29.3217 23.25 30.25 23.25H47.75C48.6783 23.25 49.5685 22.8813 50.2249 22.2249C50.8812 21.5685 51.25 20.6783 51.25 19.75V11C51.25 10.0717 50.8812 9.1815 50.2249 8.52513C49.5685 7.86875 48.6783 7.5 47.75 7.5ZM21.5 44.25H11V30.25H21.5V26.75H11C10.0717 26.75 9.1815 27.1187 8.52513 27.7751C7.86875 28.4315 7.5 29.3217 7.5 30.25V44.25C7.5 45.1783 7.86875 46.0685 8.52513 46.7249C9.1815 47.3812 10.0717 47.75 11 47.75H21.5V44.25ZM53 35.5H29.949L34.4745 30.9745L32 28.5L23.25 37.25L32 46L34.4745 43.5255L29.949 39H53V35.5ZM19.75 11V19.75H11V11H19.75ZM19.75 7.5H11C10.0717 7.5 9.1815 7.86875 8.52513 8.52513C7.86875 9.1815 7.5 10.0717 7.5 11V19.75C7.5 20.6783 7.86875 21.5685 8.52513 22.2249C9.1815 22.8813 10.0717 23.25 11 23.25H19.75C20.6783 23.25 21.5685 22.8813 22.2249 22.2249C22.8813 21.5685 23.25 20.6783 23.25 19.75V11C23.25 10.0717 22.8813 9.1815 22.2249 8.52513C21.5685 7.86875 20.6783 7.5 19.75 7.5Z" fill="#CBA686"/>
+            <svg
+                width="57"
+                height="57"
+                viewBox="0 0 57 57"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fed756">
+              <path
+                  d="M47.75 11V19.75H30.25V11H47.75ZM47.75 7.5H30.25C29.3217 7.5 28.4315 7.86875 27.7751 8.52513C27.1187 9.1815 26.75 10.0717 26.75 11V19.75C26.75 20.6783 27.1187 21.5685 27.7751 22.2249C28.4315 22.8813 29.3217 23.25 30.25 23.25H47.75C48.6783 23.25 49.5685 22.8813 50.2249 22.2249C50.8812 21.5685 51.25 20.6783 51.25 19.75V11C51.25 10.0717 50.8812 9.1815 50.2249 8.52513C49.5685 7.86875 48.6783 7.5 47.75 7.5ZM21.5 44.25H11V30.25H21.5V26.75H11C10.0717 26.75 9.1815 27.1187 8.52513 27.7751C7.86875 28.4315 7.5 29.3217 7.5 30.25V44.25C7.5 45.1783 7.86875 46.0685 8.52513 46.7249C9.1815 47.3812 10.0717 47.75 11 47.75H21.5V44.25ZM53 35.5H29.949L34.4745 30.9745L32 28.5L23.25 37.25L32 46L34.4745 43.5255L29.949 39H53V35.5ZM19.75 11V19.75H11V11H19.75ZM19.75 7.5H11C10.0717 7.5 9.1815 7.86875 8.52513 8.52513C7.86875 9.1815 7.5 10.0717 7.5 11V19.75C7.5 20.6783 7.86875 21.5685 8.52513 22.2249C9.1815 22.8813 10.0717 23.25 11 23.25H19.75C20.6783 23.25 21.5685 22.8813 22.2249 22.2249C22.8813 21.5685 23.25 20.6783 23.25 19.75V11C23.25 10.0717 22.8813 9.1815 22.2249 8.52513C21.5685 7.86875 20.6783 7.5 19.75 7.5Z" />
             </svg>
             <h3>Unikátní návrh wireframe</h3>
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Naše unikátní wireframy jsou vizuálně působivé a funkční, přesně navržené pro potřeby uživatelů a splňují požadavky projektu.
+              Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
+              profesionální online obchod přizpůsobený svým specifickým potřebám.
             </p>
           </div>
         </li>
@@ -292,11 +227,35 @@
                   stroke-linecap="round"
                   stroke-linejoin="round" />
             </svg>
-            <h3>Nakódování na Shoptet</h3>
+            <h3>Kódování na Shoptet</h3>
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Kódování na Shoptet umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
+              Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
+              e-shopu podle přesných požadavků podnikatele.
+            </p>
+          </div>
+        </li>
+
+        <li
+            @click.prevent="toggleMenu"
+            class="benefits__item">
+          <div class="benefits__item-wrapper">
+            <svg
+                width="57"
+                height="57"
+                viewBox="0 0 57 57"
+                fill="#fed756"
+                xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M35.4308 22.9393C36.1171 22.9394 36.7794 23.1916 37.2919 23.6479C37.8045 24.1042 38.1316 24.7329 38.2112 25.4145L38.2308 25.7393V37.9697C38.2491 40.5229 37.2657 42.9815 35.4916 44.8177C33.7176 46.654 31.2943 47.7215 28.7419 47.7912C26.1896 47.8608 23.7117 46.927 21.8402 45.1902C19.9686 43.4534 18.8526 41.0521 18.7316 38.5017L18.7176 37.9697V25.7393C18.7177 25.0534 18.9695 24.3915 19.4252 23.879C19.881 23.3665 20.5089 23.0391 21.19 22.9589L21.5176 22.9393H35.4308ZM35.4308 25.7393H21.5148V37.9697C21.4972 39.7864 22.191 41.5379 23.4481 42.8497C24.7052 44.1614 26.4256 44.9292 28.2414 44.9888C30.0573 45.0484 31.8244 44.3952 33.1648 43.1687C34.5052 41.9423 35.3125 40.24 35.414 38.4261L35.4308 37.9697V25.7393ZM16.668 22.9393C16.2607 23.6423 16.0122 24.426 15.94 25.2353L15.9176 25.7393H8.94564V36.2113C8.94534 37.0794 9.16252 37.9338 9.57736 38.6963C9.9922 39.4589 10.5915 40.1055 11.3204 40.5769C12.0494 41.0483 12.8849 41.3296 13.7505 41.395C14.6162 41.4605 15.4845 41.3081 16.276 40.9517C16.5 41.8729 16.8248 42.7549 17.2392 43.5837C16.0602 44.0788 14.7796 44.284 13.5049 44.182C12.2302 44.08 10.9985 43.6738 9.91322 42.9975C8.82793 42.3211 7.92067 41.3943 7.26755 40.2949C6.61443 39.1955 6.2345 37.9555 6.15964 36.6789L6.14844 36.2085V25.7393C6.14853 25.0534 6.40031 24.3915 6.85604 23.879C7.31177 23.3665 7.93973 23.0391 8.62084 22.9589L8.94844 22.9393H16.668ZM40.2804 22.9393H48.0756C48.7619 22.9394 49.4242 23.1916 49.9367 23.6479C50.4493 24.1042 50.7764 24.7329 50.856 25.4145L50.8756 25.7393V36.2113C50.8764 37.5357 50.5482 38.8395 49.9203 40.0056C49.2925 41.1718 48.3848 42.1636 47.2787 42.8921C46.1727 43.6206 44.903 44.0629 43.5837 44.1792C42.2644 44.2955 40.9369 44.0822 39.7204 43.5585C40.1348 42.7241 40.4596 41.8421 40.6808 40.9181C41.4414 41.2729 42.2766 41.4383 43.1151 41.4C43.9535 41.3618 44.7702 41.121 45.4953 40.6983C46.2204 40.2757 46.8323 39.6836 47.2787 38.9729C47.7252 38.2622 47.9928 37.454 48.0588 36.6173L48.0756 36.2113V25.7393H41.0308L41.014 25.3221C40.9527 24.4826 40.7019 23.6679 40.2804 22.9393ZM28.4672 8.86926C30.1214 8.86926 31.7078 9.52637 32.8775 10.696C34.0471 11.8657 34.7042 13.4521 34.7042 15.1063C34.7042 16.7604 34.0471 18.3468 32.8775 19.5165C31.7078 20.6862 30.1214 21.3433 28.4672 21.3433C26.8131 21.3433 25.2267 20.6862 24.057 19.5165C22.8873 18.3468 22.2302 16.7604 22.2302 15.1063C22.2302 13.4521 22.8873 11.8657 24.057 10.696C25.2267 9.52637 26.8131 8.86926 28.4672 8.86926ZM42.4336 10.6277C43.8546 10.6277 45.2174 11.1921 46.2222 12.1969C47.227 13.2017 47.7914 14.5645 47.7914 15.9855C47.7914 17.4064 47.227 18.7692 46.2222 19.774C45.2174 20.7788 43.8546 21.3433 42.4336 21.3433C41.0127 21.3433 39.6499 20.7788 38.6451 19.774C37.6403 18.7692 37.0758 17.4064 37.0758 15.9855C37.0758 14.5645 37.6403 13.2017 38.6451 12.1969C39.6499 11.1921 41.0127 10.6277 42.4336 10.6277ZM14.5456 10.6277C15.9666 10.6277 17.3294 11.1921 18.3342 12.1969C19.339 13.2017 19.9034 14.5645 19.9034 15.9855C19.9034 17.4064 19.339 18.7692 18.3342 19.774C17.3294 20.7788 15.9666 21.3433 14.5456 21.3433C13.1247 21.3433 11.7619 20.7788 10.7571 19.774C9.75232 18.7692 9.18784 17.4064 9.18784 15.9855C9.18784 14.5645 9.75232 13.2017 10.7571 12.1969C11.7619 11.1921 13.1247 10.6277 14.5456 10.6277ZM28.4672 11.6693C27.5557 11.6693 26.6815 12.0314 26.0369 12.6759C25.3923 13.3205 25.0302 14.1947 25.0302 15.1063C25.0302 16.0178 25.3923 16.892 26.0369 17.5366C26.6815 18.1812 27.5557 18.5433 28.4672 18.5433C29.3788 18.5433 30.253 18.1812 30.8976 17.5366C31.5421 16.892 31.9042 16.0178 31.9042 15.1063C31.9042 14.1947 31.5421 13.3205 30.8976 12.6759C30.253 12.0314 29.3788 11.6693 28.4672 11.6693ZM42.4336 13.4277C41.7553 13.4277 41.1047 13.6971 40.625 14.1768C40.1453 14.6565 39.8758 15.3071 39.8758 15.9855C39.8758 16.6638 40.1453 17.3144 40.625 17.7941C41.1047 18.2738 41.7553 18.5433 42.4336 18.5433C43.112 18.5433 43.7626 18.2738 44.2423 17.7941C44.722 17.3144 44.9914 16.6638 44.9914 15.9855C44.9914 15.3071 44.722 14.6565 44.2423 14.1768C43.7626 13.6971 43.112 13.4277 42.4336 13.4277ZM14.5456 13.4277C13.8673 13.4277 13.2167 13.6971 12.737 14.1768C12.2573 14.6565 11.9878 15.3071 11.9878 15.9855C11.9878 16.6638 12.2573 17.3144 12.737 17.7941C13.2167 18.2738 13.8673 18.5433 14.5456 18.5433C15.224 18.5433 15.8746 18.2738 16.3543 17.7941C16.834 17.3144 17.1034 16.6638 17.1034 15.9855C17.1034 15.3071 16.834 14.6565 16.3543 14.1768C15.8746 13.6971 15.224 13.4277 14.5456 13.4277Z" />
+            </svg>
+
+            <h3>Produktové fotografie</h3>
+          </div>
+          <div class="benefits__item-text-wrapper">
+            <p class="benefits__item-text">
+              Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
               e-shopu podle přesných požadavků podnikatele.
             </p>
           </div>
@@ -307,7 +266,7 @@
       <div class="intro__container">
         <div class="intro__wrapper intro__wrapper--image">
           <img
-              src="/pripadove-studie/dolce-imperial/image-intro.jpg"
+              src="/pripadove-studie/rebel-bean/image-intro.jpg"
               width="720"
               height="720"
               alt="Obrázek sekce" />
@@ -315,40 +274,36 @@
         <div class="intro__wrapper intro__wrapper--text">
           <h2 class="section__header section__header--counter-2 intro__header">Představení klienta</h2>
           <p class="section__text">
-            Cafe Imperial Dolce je novým projektem a netrpělivě očekávanou butikovou cukrárnou pod taktovkou známého českého šéfkuchaře <strong>Zdeňka Pohlreicha</strong>.
+            Rebelbean je pražírna kávy, která poskytuje energii těm, kdo se nebojí žít život podle vlastních pravidel. Síť vlastních kaváren Rebelbean se navíc rozprostírá po celém Brně.
           </p>
           <p class="section__text">
-            Na tomto místě ochutnáte nejenom ty nejlahodnější zákusky, ale současně si je budete moct objednat přímo domů díky novému e-shopu, který jsme postavili na míru těm nejvyšším požadavkům a nárokům pro ty nejlepší ze svého oboru.
+            Vlajkovou lodí pražírny je zrnková pražená káva Blend My Daily Mix. Ta má dokonce vlastní playlist na Spotify, na kterém se podílel celý rebelský tým.
           </p>
         </div>
       </div>
       <div class="intro__flex-container">
         <div class="intro__flex-item">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.75 3.5H19.25V21H15.75V3.5Z" fill="#CBA686"/>
-            <path d="M24.5 19.25C24.5 21.1065 23.7625 22.887 22.4497 24.1997C21.137 25.5125 19.3565 26.25 17.5 26.25C15.6435 26.25 13.863 25.5125 12.5503 24.1997C11.2375 22.887 10.5 21.1065 10.5 19.25V3.49999H7V19.25C7.00251 21.7295 7.88243 24.1282 9.48392 26.0211C11.0854 27.9141 13.3051 29.1792 15.75 29.5925V52.5H19.25V29.5925C21.6949 29.1792 23.9146 27.9141 25.5161 26.0211C27.1176 24.1282 27.9975 21.7295 28 19.25V3.49999H24.5V19.25ZM38.5 3.49999H36.75V52.5H40.25V35H45.5C46.4283 35 47.3185 34.6312 47.9749 33.9749C48.6312 33.3185 49 32.4283 49 31.5V14C49.0541 12.6066 48.8196 11.2171 48.311 9.91866C47.8025 8.62025 47.031 7.441 46.045 6.45499C45.059 5.46897 43.8797 4.69747 42.5813 4.18895C41.2829 3.68043 39.8934 3.44587 38.5 3.49999V3.49999ZM45.5 31.5H40.25V7.15749C45.29 8.13749 45.5 13.3525 45.5 14V31.5Z" fill="#CBA686"/>
-          </svg>
-          <p>Vyhlášené restaurace</p>
+          <h3>4</h3>
+          <p>kavárny</p>
+        </div>
+
+        <div class="intro__flex-item">
+          <h3>2015</h3>
+          <p>založeno</p>
         </div>
 
         <div class="intro__flex-item">
           <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M44.3321 42H11.6654H44.3321ZM27.9988 42V28V42ZM34.9988 42V32.6667V42ZM20.9988 42V32.6667V42ZM44.3321 51.3334V26.4367C45.1985 26.1209 45.9941 25.6372 46.673 25.0131C47.3519 24.3891 47.9009 23.6371 48.2885 22.8003C48.676 21.9635 48.8944 21.0584 48.9312 20.137C48.968 19.2156 48.8225 18.296 48.5029 17.4309C48.1833 16.5659 47.696 15.7725 47.069 15.0964C46.4419 14.4202 45.6875 13.8745 44.849 13.4907C44.0106 13.1069 43.1045 12.8924 42.1829 12.8597C41.2613 12.827 40.3424 12.9766 39.4788 13.3C38.6154 9.03935 33.7388 4.66669 27.9988 4.66669C22.2588 4.66669 17.3821 9.03935 16.5188 13.3C14.7767 12.6564 12.8504 12.7312 11.1635 13.5079C9.47662 14.2846 8.16737 15.6997 7.52378 17.4417C6.88019 19.1837 6.95497 21.1101 7.73169 22.797C8.5084 24.4838 9.92341 25.7931 11.6654 26.4367V51.3334H44.3321Z" stroke="#CBA686" stroke-width="3.5"/>
+            <path d="M37.3283 4C33.9387 4 30.6741 5.08559 27.9984 7.08075C25.3165 5.08559 22.0528 4 18.6714 4C11.2692 4 4.81128 9.27941 3.31606 16.5533L3.27451 16.7333V16.7765C3.09227 17.7475 3 18.7392 3 19.7267C3 23.7942 4.55542 27.6677 7.37966 30.6343L28.0003 51.6279L48.2339 31.022C51.3078 28.0322 53 24.0219 53 19.727C53 11.055 45.9698 4 37.3283 4ZM46.0088 28.7572L28 47.0971L9.67059 28.4366L9.66438 28.43C7.41369 26.0586 6.17465 22.9684 6.17465 19.7267C6.17465 18.8927 6.25677 18.0548 6.41873 17.2365L6.45832 17.068V17.0399C7.71044 11.3145 12.8214 7.1753 18.6717 7.1753C21.7322 7.1753 24.6706 8.28969 26.9452 10.3133L28.002 11.2536L29.0571 10.3113C31.3222 8.28903 34.2596 7.1753 37.3283 7.1753C44.2191 7.1753 49.825 12.8058 49.825 19.727C49.8253 23.1621 48.4698 26.3691 46.0088 28.7572Z" fill="#FF0000"/>
+            <path d="M36.5257 19.1256C36.5254 19.1269 36.5257 19.1282 36.5254 19.1295C35.4156 19.0703 34.4422 19.8336 34.3228 20.8142C34.2018 21.8206 34.9598 22.6353 36.0209 22.6697C35.7068 24.1979 34.2427 25.4039 32.6611 25.3987C31.0749 25.3882 29.8182 24.1495 29.8188 22.5434C30.8508 22.5424 31.7512 21.7506 31.8379 20.7282C31.922 19.7316 31.124 18.8511 30.0361 18.7804C30.0361 18.7788 30.0364 18.7775 30.0364 18.7762C30.0881 17.704 29.1776 16.7571 28.0004 16.7562C26.8232 16.7568 25.9126 17.7037 25.9643 18.7762C25.9643 18.7775 25.9646 18.7791 25.9646 18.7804C24.8764 18.8511 24.0787 19.7316 24.1628 20.7282C24.2495 21.7532 25.1548 22.547 26.1901 22.5437C26.1904 24.1498 24.9333 25.3882 23.3475 25.3987C21.7656 25.4039 20.3018 24.1976 19.988 22.669C21.0445 22.6304 21.7986 21.8177 21.6776 20.8142C21.5585 19.8333 20.5848 19.0703 19.475 19.1295C19.4746 19.1282 19.4746 19.1269 19.4746 19.1256C19.3179 18.1254 18.2569 17.4187 17.0977 17.6144C17.257 18.6198 17.4556 19.6223 17.6643 20.6238C18.1175 22.7979 18.6187 24.9684 18.872 27.1586C21.939 27.1468 24.9697 27.1409 28.0004 27.1409C31.031 27.1409 34.0621 27.1468 37.1287 27.1586C37.382 24.9684 37.8832 22.7982 38.3364 20.6238C38.5451 19.6223 38.7437 18.6198 38.903 17.6144C37.7438 17.419 36.6825 18.1257 36.5257 19.1256Z" fill="#FF0000"/>
+            <path d="M18.9922 28.5083C19.0207 28.9591 19.0364 29.411 19.0364 29.8638C25.0114 29.8638 30.9864 29.8638 36.9614 29.8638C36.9614 29.4106 36.9767 28.9588 37.0055 28.5083C30.9873 28.5037 25.0104 28.5037 18.9922 28.5083Z" fill="#FF0000"/>
           </svg>
-          <p>Více jak 10 vydaných knih</p>
-        </div>
-
-        <div class="intro__flex-item">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.66797 44.8333V19.1666C4.66797 17.9289 5.15963 16.7419 6.0348 15.8668C6.90997 14.9916 8.09696 14.4999 9.33464 14.4999H46.668C47.9056 14.4999 49.0926 14.9916 49.9678 15.8668C50.843 16.7419 51.3346 17.9289 51.3346 19.1666V44.8333C51.3346 46.0709 50.843 47.2579 49.9678 48.1331C49.0926 49.0083 47.9056 49.4999 46.668 49.4999H9.33464C8.09696 49.4999 6.90997 49.0083 6.0348 48.1331C5.15963 47.2579 4.66797 46.0709 4.66797 44.8333Z" stroke="#CBA686" stroke-width="3.5"/>
-            <path d="M19.8359 5.99994L28.0026 14.1666L36.1693 5.99994" stroke="#CBA686" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="round"/>
-          </svg>
-          <p>Nejsledovanější TV pořady</p>
+          <p>nominace na Český Goodwill 2022</p>
         </div>
 
         <div class="intro__flex-item intro__flex-item--image">
           <img
-              src="/pripadove-studie/dolce-imperial/image-intro-grid.jpg"
+              src="/pripadove-studie/rebel-bean/image-intro-grid.jpg"
               alt="Obrázek sekce"
               width="240"
               height="240" />
@@ -364,14 +319,15 @@
         <div class="task-banner__wrapper">
           <h2 class="section__header section__header--counter-2 task-banner__header">Zadání a cíle spolupráce</h2>
           <p class="section__text">
-            Prvotní představa o výsledné struktuře a grafickém designu požadovala, aby vznikl e-shop, který bude přehledným, čistým, minimalistickým místem založeným primárně na produktových fotografiích. Zdeněk Pohlreich a jeho tým si přáli, abychom v návrhu kladli důraz především na velikost fotografií, jež odprezentují finální produkt.
+            Klient nás oslovil s žádostí o úpravu a modernizaci svého
+            e-shopu. Hlavním důvodem byla snaha <strong>poskytnout uživatelům příjemnější a intuitivnější zážitek a zvýšit konverze návštěvníků</strong> na zákazníky.
           </p>
         </div>
         <div class="task-banner__wrapper">
           <div class="task-banner__image-wrapper">
             <img
                 class="task-banner__image"
-                src="/pripadove-studie/dolce-imperial/image-task-banner.jpg"
+                src="/pripadove-studie/rebel-bean/image-task-banner.jpg"
                 alt="Obrázek sekce"
                 width="550"
                 height="550" />
@@ -383,103 +339,26 @@
     <!-- SECTION: DESIGN PROCESS -->
     <section class="design-process">
       <div class="section__header-wrapper design-process__header-wrapper">
-        <h2 class="section__header section__header--counter design-process__header">
-          Navrhli jsme strukturu a unikátní<br />
-          design napříč celým e-shopem
-        </h2>
+        <h2 class="section__header section__header--counter design-process__header">Jak probíhala tvorba e-shopu na Shoptetu</h2>
       </div>
     </section>
-    <!-- -- BANNER-THIRD--REVERSE -->
-    <article class="banner-third banner-third--reverse container">
+    <!-- -- BANNER-THIRD -->
+    <article class="banner-third banner-third--reverse-flex-start container">
       <div class="banner-third__wrapper banner-third__wrapper-text">
         <div class="banner-third__text-container section__banner">
-          <h3 class="section__banner-header">Produktové fotografie</h3>
+          <h3 class="section__banner-header">Grafika e-shopu na míru od Mirandy</h3>
           <p class="section__banner-text">
-            Zdeněk Pohlreich a jeho tým si přáli, abychom v návrhu kladli důraz především na velikost fotografií, jež odprezentují finální
-            produkt.
+            <strong>Grafika hraje v e-commerce důležitou roli a vytváří základní první dojem pro zákazníky.</strong> Proto jsme vytvořili designový koncept, který je jedinečný a přiléhavý k tématu kávových produktů.
           </p>
+          <p class="section__banner-text">Hlavním cílem bylo vytvořit příjemný a jednoduchý design, který umožní zákazníkům <strong>rychle a snadno najít to, co hledají.</strong> Proto jsme použili barevnou paletu, která reflektuje tématické zaměření e-shopu od bannerů až po malé ikony.</p>
         </div>
       </div>
       <div class="banner-third__wrapper banner-third__wrapper-image">
         <div class="banner-third__image-1">
-          <img src="/pripadove-studie/dolce-imperial/image-banner-third-1.jpg" width="340" height="340" alt="Obrázek sekce" />
+          <img src="/pripadove-studie/rebel-bean/image-banner-third-1.jpg" width="340" height="340" alt="Obrázek sekce" />
         </div>
         <div class="banner-third__image-2 orbitvu-container">
-          <img src="/pripadove-studie/dolce-imperial/image-banner-third-2.jpg" width="490" height="490" alt="Obrázek sekce" />
-        </div>
-      </div>
-    </article>
-    <!-- -- BANNER-FOURTH -->
-    <article class="banner-fourth container">
-      <div class="banner-fourth__wrapper banner-fourth__wrapper--text">
-        <div class="section__banner">
-          <h3 class="section__banner-header">Typografie</h3>
-          <p class="section__banner-text">
-            Důležitým nosným prvkem celkového designu se stala typografie a přechody textů do fotografií a bannerů.
-          </p>
-        </div>
-        <div class="section__banner">
-          <h3 class="section__banner-header">Home Page</h3>
-          <p class="section__banner-text">
-            Na Home Page vznikl prostor pro carousel společně s doplňkovými banery a krátkým welcome textem. Při scrolování do spodních částí hlavní strany vznikl prostor pro další fotky s produkty z nabídky a (krátké novinky) v magazínovém stylu, to vše doplněno o krátký slogan s výzvou.
-          </p>
-        </div>
-      </div>
-      <div class="banner-fourth__wrapper banner-fourth__wrapper--image">
-        <img src="/pripadove-studie/dolce-imperial/image-banner-fourth.jpg" width="960" height="610" alt="Obrázek sekce" />
-      </div>
-    </article>
-
-    <!-- -- BANNER-SECOND -->
-    <article class="banner-second">
-      <div class="banner-second__container container">
-        <div class="banner-second__wrapper banner-second__wrapper--text">
-          <h3 class="section__banner-header">Návrh kategorií a detail produktu</h3>
-          <p class="section__banner-text">
-            V dalších krocích jsme připravili návrh kategorií, jako jsou marmelády, minidezerty, jednoporcové dorty, celé dorty, pekařina sladká, pekařina slaná, zmrzlina a sorbety a sezónní nabídka + detail produktu společně s nastylováním košíku do barev vycházejících z firemní identity klienta.
-          </p>
-        </div>
-        <div class="banner-second__wrapper banner-second__wrapper--image">
-          <img
-              class="banner-second__image"
-              src="/pripadove-studie/dolce-imperial/image-banner-second.jpg"
-              width="860"
-              height="1475"
-              alt="Obrázek sekce" />
-        </div>
-        <div class="banner-second__wrapper banner-second__wrapper--image-wide">
-          <img
-              src="/pripadove-studie/dolce-imperial/image-banner-second-nb.png"
-              width="1330"
-              height="768"
-              alt="Obrázek sekce" />
-        </div>
-      </div>
-    </article>
-
-    <!-- -- BANNER-NB -->
-    <article class="banner-nb --tile">
-      <div class="banner-nb__container">
-        <div class="banner-nb__wrapper banner-nb__wrapper--text">
-          <h3 class="section__banner-header">Celý návrh vznikl v desktopové a mobilní verzi</h3>
-          <p class="section__text">
-            Grafický návrh pro e-shop <strong>Zdeňka Pohlreicha vznikl s ohledem na jeho značku a cílovou skupinu zákazníků.</strong> Kromě estetického hlediska jsme dbali i na funkčnost a usnadnění navigace pro uživatele. Výsledkem je moderní a přehledný e-shop, který zákazníkům nabízí jednoduchý nákup kvalitních cukrářských produktů.
-          </p>
-          <p class="section__text">
-            Grafický návrh je klíčovým prvkem při tvorbě webových stránek, který umožňuje vizualizovat vzhled a uspořádání jednotlivých prvků na stránce.
-          </p>
-          <svg class="banner-nb__squares" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="25" height="25" transform="matrix(-1 0 0 1 75 50)" />
-            <rect width="50" height="50" transform="matrix(-1 0 0 1 50 0)" />
-          </svg>
-        </div>
-        <div class="banner-nb__wrapper banner-nb__wrapper--image">
-          <img
-              class="banner-nb__image --without-background"
-              src="/pripadove-studie/dolce-imperial/image-banner-nb.png"
-              width="1165"
-              height="975"
-              alt="Obrázek sekce" />
+          <img src="/pripadove-studie/rebel-bean/image-banner-third-2.jpg" width="490" height="490" alt="Obrázek sekce" />
         </div>
       </div>
     </article>
@@ -489,7 +368,7 @@
         <div class="miranda-review__wrapper">
           <h2 class="section__header miranda-review__header">Pohled specialisty z Mirandy</h2>
           <p class="section__text">
-            Spolupráce na e-shopu Cafe Imperial Dolce nás velmi bavila! Aby taky ne, připravit grafický návrh e-shopu pro jednoho z nejznámějších a nejsledovanějších českých kuchařů, který se rozhodně nebojí pojmenovat věci pravým jménem, je výzva, na kterou se neříká ne! Děkujeme celému týmu Zdeňka Pohlreicha, že jsme mohli být u toho, a přejeme spoustu nadšených a vracejících se zákazníků.
+            Pro Rebel Bean je kromě kvalitních produktů nejdůležitější kvalitní online prezentace a prodej. Naše týmy proto společně pracovaly na tvorbě moderního a uživatelsky příjemného a moderního e-shopu. V průběhu spolupráce jsme také poskytovali Rebel Bean <strong>pravidelnou zpětnou vazbu</strong> a podporu, aby se mohli efektivněji rozhodovat a optimalizovat svůj obchod. To nám umožnilo lépe <strong>porozumět jejich potřebám a dosáhnout společného cíle</strong> - růstu a úspěchu obchodu.
           </p>
           <span class="miranda-review__name">Tomáš Cina</span>
           <span class="miranda-review__position">CEO & Co-founder</span>
@@ -506,6 +385,86 @@
         </div>
       </div>
     </section>
+
+    <!-- -- BANNER-SECOND--REVERSE -->
+    <article class="banner-second">
+      <div class="banner-second__container container">
+        <div class="banner-second__wrapper banner-second__wrapper--text">
+          <h3 class="section__banner-header">Návrh kategorií a detail produktu</h3>
+          <p class="section__banner-text">
+            Po provedené analýze sortimentu jsme vytvořili hierarchii kategorií, které jsou <strong>logické a snadno procházetelné.</strong> Pro detaily produktů jsme použili obrázky s možností zoomu, aby se uživatelé mohli snadněji seznámit s vlastnostmi a vzhledem produktů.
+          </p>
+        </div>
+        <div class="banner-second__wrapper banner-second__wrapper--text">
+          <h3 class="section__banner-header">Home Page</h3>
+          <p class="section__banner-text">
+            Provedli jsme redesign, který zahrnoval použití jasných a srozumitelných vizuálních prvků, a vylepšili jsme navigaci webu tak, aby byla <strong>intuitivní a snadno ovladatelná.</strong> Celkově jsme vytvořili homepage, která odpovídá firemnímu stylu klienta a zároveň nabízí moderní a esteticky přívětivý design.
+          </p>
+        </div>
+        <div class="banner-second__wrapper banner-second__wrapper--image">
+          <img
+              class="banner-second__image"
+              src="/pripadove-studie/rebel-bean/image-banner-fourth.png"
+              width="860"
+              height="1475"
+              alt="Obrázek sekce" />
+        </div>
+      </div>
+    </article>
+
+    <!-- -- BANNER-SECOND--REVERSE -->
+    <article class="banner-second">
+      <div class="banner-second__container container">
+        <div class="banner-second__wrapper banner-second__wrapper--text">
+          <h3 class="section__banner-header">Moderní platební metody a způsoby doručení</h3>
+          <p class="section__banner-text">
+            Zavedli jsme mimo jiné řešení, díky kterým zákazníci nyní mohou platit <strong>moderními platebními metodami.</strong> V nabídce jsou  také různé způsoby doručení, včetně <strong>osobního vyzvednutí na jednom z  prodejních míst klienta, v Zásilkovně nebo PPL PARCELSHOPU.</strong>
+          </p>
+        </div>
+        <div class="banner-second__wrapper banner-second__wrapper--image">
+          <img
+              class="banner-second__image"
+              src="/pripadove-studie/rebel-bean/image-banner-second.jpg"
+              width="860"
+              height="1475"
+              alt="Obrázek sekce" />
+        </div>
+        <div class="banner-second__wrapper banner-second__wrapper--image-wide">
+          <img
+              src="/pripadove-studie/rebel-bean/image-banner-second-nb.png"
+              width="1330"
+              height="768"
+              alt="Obrázek sekce" />
+        </div>
+      </div>
+    </article>
+    <!-- -- BANNER-NB -->
+    <article class="banner-nb">
+      <div class="banner-nb__container">
+        <div class="banner-nb__wrapper banner-nb__wrapper--text">
+          <h3 class="section__banner-header">Celý návrh vznikl v desktopové a mobilní verzi</h3>
+          <p class="section__text">
+            Při tvorbě jsme se soustředili na to, aby bylo řešení plně responzivní a funkční na všech zařízeních, včetně desktopových a mobilních. Zákazníci můžou snadno a pohodlně procházet produkty a nakupovat, a to kdykoli a kdekoli.
+          </p>
+          <p class="section__text">
+            <strong>Použili jsme moderní nástroje jako Bootstrap nebo CSS Grid</strong>, které umožňují responzivní design a flexibilní uspořádání prvků na stránce. Výsledkem je design, který se automaticky přizpůsobuje na velikost obrazovky zařízení, což znamená, že zákazníci mohou procházet produkty a nakupovat pohodlně a snadno bez ohledu na to, zda používají mobilní telefon, tablet nebo desktop.
+          </p>
+          <svg class="banner-nb__squares" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="25" height="25" transform="matrix(-1 0 0 1 75 50)" />
+            <rect width="50" height="50" transform="matrix(-1 0 0 1 50 0)" />
+          </svg>
+        </div>
+        <div class="banner-nb__wrapper banner-nb__wrapper--image">
+          <img
+              class="banner-nb__image --without-background"
+              src="/pripadove-studie/rebel-bean/image-banner-nb.png"
+              width="1165"
+              height="975"
+              alt="Obrázek sekce" />
+        </div>
+      </div>
+    </article>
+
     <!-- SECTION: RESULT REVIEW--REVERSE -->
     <section class="result-review result-review--reverse">
       <div class="result-review__container">
@@ -513,7 +472,7 @@
           <div class="result-review__image-container">
             <img
                 class="result-review__image"
-                src="/pripadove-studie/dolce-imperial/image-result-review-1.jpg"
+                src="/pripadove-studie/rebel-bean/image-result-review-1.jpg"
                 alt="Obrázek sekce"
                 width="355"
                 height="535" />
@@ -521,7 +480,7 @@
           <div class="result-review__image-container">
             <img
                 class="result-review__image"
-                src="/pripadove-studie/dolce-imperial/image-result-review-2.jpg"
+                src="/pripadove-studie/rebel-bean/image-result-review-2.jpg"
                 alt="Obrázek sekce"
                 width="355"
                 height="535" />
@@ -530,12 +489,11 @@
         <div class="result-review__wrapper">
           <div class="result-review__subwrapper">
             <h2 class="section__header section__header--counter-2 result-review__header">Výsledek a zhodnocení</h2>
-            <p class="section__text">
-              Projekt je v tuto chvíli dokončený a čeká na spuštění společně s otevřením kamenné pobočky cukrárny Cafe Imperial Dolce. V průběhu spolupráce byl grafický návrh jednou iterován a po zapracování změnových požadavků obratem odsouhlasen.
-            </p>
-            <p class="section__text">
-              Miranda částečně pomohla také s výběrem domény na adrese <strong>www.cafeimperialdolce.cz</strong>. Tento projekt byl spíše menšího rozsahu a v řádu trval pouhých několik týdnů. Jak hodnotí naši spolupráci klient, se můžete dozvědět z reference.
-            </p>
+            <ul class="section__list">
+              <li>Plně funkční, esteticky působivý e-shop, který odpovídá vizuální identitě Rebelbean</li>
+              <li>Výrazně nižší náklady oproti jiným řešením tohoto rozsahu + velmi rychlá doba dodání v rámci několika týdnů</li>
+              <li>Spolupráce s <strong>Shoptet Premium partnerem MirandaMedia</strong></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -546,7 +504,7 @@
         <div class="client-review__content">
           <div class="client-review__image">
             <img
-                src="/pripadove-studie/dolce-imperial/dolce-klient.jpg"
+                src="/pripadove-studie/rebel-bean/rebelBean-klient.jpg"
                 alt="Recenze Klienta" />
             <div class="tiles">
               <div
@@ -567,11 +525,11 @@
                   fill="#453F3F" />
             </svg>
             <p class="section__text">
-              <strong>Spolupráci s Mirandou jsme započali koncem roku 2021.</strong> Dostali jsme zpracovaný e-shop s grafikou na míru pro náš nově vznikající podnik butikové cukrárny Dolce. Spolupráce se nám vydařila a e-shop jsme vytvořili. <strong>Celý proces realizace proběhl podle předem dohodnutých postupů a termínů, bez zbytečných obezliček.</strong> Jednu věc máme za sebou, ale nezůstali jsme jen u ní a s dalšími projekty společné navazujeme. Spolehlivosti si totiž cením, v kuchyni se bez ní nedá existovat.
+              MirandaMedia sme oslovili s cieľom postaviť na platforme Shoptet e-shop s vlastným designom reprezentujúcim značku Rebelbean. Od zadania zakázky, cez grafické návrhy až po spustenie e-shopu prebiehalo všetko bez problémov a hlavne rýchlo, čo bolo pre nás naozaj neoceniteľnou výhodou - kompletný web bol postavený za niekoľko málo týždňov. Po celú dobu spolupráce sa môžeme spoľahnúť na to, že sú flexibilne riešené i naše požiadavky na zmeny a úpravy drobného, ale i komplexnejšieho charakteru. Spolupráca s MirandaMedia nám prináša istotu, že môžeme funkčnosť a vizuálnu identitu webu neustále posúvať ďalej.
             </p>
             <div class="client-review__client">
-              <p class="client-review__name">Zdeněk Pohlreich</p>
-              <p class="client-review__position">Majitel Café Imperial</p>
+              <p class="client-review__name">Martin Husárik</p>
+              <p class="client-review__position">Wholesale, retail & more</p>
             </div>
           </div>
         </div>
@@ -586,18 +544,36 @@
         </h2>
       </div>
       <ul class="extra-solutions__list">
-        <li class="extra-solutions__item--visible">Dárkové a slevové vouchery</li>
-        <li class="extra-solutions__item--visible">Spropitné dopravci</li>
+        <li class="extra-solutions__item--visible">Grafika na míru</li>
+        <li class="extra-solutions__item--visible">Napojení na dopravce</li>
         <li class="extra-solutions__item--visible">Shoptet</li>
         <li class="extra-solutions__item--visible">Doplňky Shoptet</li>
-        <li class="extra-solutions__item--visible">Responzivní e-shop</li>
+        <li class="extra-solutions__item--visible">Responzivita webu</li>
         <li>Platební brána</li>
+        <li>Platby kartou</li>
+        <li>Facebook</li>
         <li>Obchodní podmínky</li>
         <li>GDPR</li>
         <li>Kontakt a kontaktní formulář</li>
         <li>Nastavení administrace Shoptet</li>
         <li>Napojení na doménu</li>
         <li>Zabezpečení e-shopu</li>
+        <li>Hlavní strana</li>
+        <li>Kategorie</li>
+        <li>Detail produktu</li>
+        <li>Nákupní proces</li>
+        <li>Předplatné</li>
+        <li>Varianty produktu</li>
+        <li>Podobné produkty</li>
+        <li>Související produkty</li>
+        <li>Instagram widget</li>
+        <li>Comgate</li>
+        <li>PPL</li>
+        <li>Zásilkovna</li>
+        <li>Apple Pay</li>
+        <li>Doprava zdarma</li>
+        <li>Slevový kupón</li>
+        <li>Dobírka</li>
         <li class="extra-solutions__item--button">
           <button
               @click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions"
@@ -622,6 +598,13 @@
 
 <script setup>
 const tiles = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+onMounted(() => {
+  useHead({
+    bodyAttrs: {
+      class: 'rituals-studies',
+    },
+  })
+})
 const isExpandedTaskBanner = ref(false)
 const isExpandedExtraSolutions = ref(false)
 
@@ -631,55 +614,56 @@ const toggleMenu = (e) => {
 </script>
 <style>
 .rituals-studies {
-  background-color: #f6f4f2;
+  background-color: #fff;
 }
 </style>
 <style scoped lang="scss">
 @import 'assets/case-studies.scss';
 
-$color-swiper-button: #ffffff;
-$color-swiper-button-hover: #F5EDE7;
-$color-swiper-button-border: #ffffff;
-$color-swiper-button-border-hover: #F5EDE7;
-$color-swiper-arrow: #1a1919;
-$color-swiper-arrow-hover: #1a1919;
+$color-swiper-button: #FF0000;
+$color-swiper-button-hover: #CC0000;
+$color-swiper-button-border: #FF0000;
+$color-swiper-button-border-hover: #CC0000;
+$color-swiper-arrow: #fff;
+$color-swiper-arrow-hover: #fff;
 
-$color-benefits-background: #FAF7F3;
-$color-benefits-border: #F5EDE7;
+$color-benefits-background: #CDCDCE;
+$color-benefits-border: #CDCDCE;
 $color-benefits-text: #222e27;
-$color-benefits-icon: #CBA686;
+$color-benefits-icon: #FF0000;
 
-$color-slider-background: #FAF7F3;
-$color-slider-border: #FAF7F3;
+$color-slider-background: #CDCDCE;
+$color-slider-border: #CDCDCE;
 $color-slider-text: #222e27;
-$color-slider-icon: #CBA686;
-$color-slider-content-background: #CBA686;
+$color-slider-icon: #FF0000;
+$color-slider-content-background: #CC0000;
 $color-slider-content-text: #fff;
 
-$color-section-background: #FAF7F3;
+$color-section-background: #efefef;
 
-$color-banner-background: #FAF7F3;
+$color-banner-background: #efefef;
 $color-banner-border: #ffffff;
 
-$color-button-border: #CBA686;
-$color-list-bullets: #CBA686;
-$color-square-icon: #CBA686;
+$color-button-border: #FF0000;
+$color-list-bullets: #FF0000;
+$color-square-icon: #FF0000;
 
 $thickness-counter-border: 5px;
 $thickness-counter-border-mobile: 2px;
 
 $color-intro-counter: transparent;
-$color-intro-counter-border: #CBA6864D;
-$color-intro-grid-background: #F5EDE7;
+$color-intro-counter-border: #FF0000;
+$color-intro-grid-background: #322F31;
 $color-intro-grid-border: transparent;
-$color-intro-grid-icon: #CBA686;
-$color-intro-grid-text: #222E27;
+$color-intro-grid-icon: #fff;
+$color-intro-grid-title: #FF0000;
+$color-intro-grid-text: #fff;
 
 $color-task-banner-counter: transparent;
-$color-task-banner-counter-border: #CBA6864D;
+$color-task-banner-counter-border: #FF0000;
 
 $color-creation-line-counter: transparent;
-$color-creation-line-counter-border: #CBA6864D;
+$color-creation-line-counter-border: #FF0000;
 
 $width-analytics: 21;
 $width-graphics: 28;
@@ -696,32 +680,35 @@ $width-month-3: 20;
 $width-month-4: 20;
 $width-month-rest: 20;
 
-$color-miranda-review-background: #FAF7F3;
-$color-miranda-review-text: #222E27;
-$color-miranda-review-name: #CBA686;
+$color-banner-background: #efefef;
+$color-banner-border: #efefef;
 
-$color-banner-nb-background: #FAF7F3;
-$color-banner-nb-square: #CBA686;
+$color-miranda-review-background: #CDCDCE;
+$color-miranda-review-text: #222E27;
+$color-miranda-review-name: #FF0000;
+
+$color-banner-nb-background: #E6E6E7;
+$color-banner-nb-square: #FF0000;
 $color-banner-nb-text: #222E27;
-$color-banner-nb-overlay: #c75f5f;
-$background-image-nb: url('/pripadove-studie/dolce-imperial/background-banner-nb.jpg');
+$color-banner-nb-overlay: #474446;
+$background-image-nb: url('/pripadove-studie/rebel-bean/background-banner-nb.jpg');
 
 $color-banner-sla-background: #ffffff;
-$color-banner-sla-overlay: #453f3f;
+$color-banner-sla-overlay: #ffd200;
 
 $color-result-review-counter: transparent;
-$color-result-review-counter-border: #CBA6864D;
+$color-result-review-counter-border: #FF0000;
 
 $color-extra-solutions-counter: transparent;
-$color-extra-solutions-counter-border: #CBA6864D;
-$color-extra-solutions-border: #CBA686;
-$color-extra-solutions-button: #CBA686;
+$color-extra-solutions-counter-border: #FF0000;
+$color-extra-solutions-border: #CDCDCE;
+$color-extra-solutions-button: #CDCDCE;
 
-$color-client-review-title: #222E27;
-$color-client-review-background: #CBA68666;
-$color-client-review-text: #222E27;
-$color-client-review-name: #CBA686;
-$color-client-review-marks: #F5EDE7;
+$color-client-review-title: #fff;
+$color-client-review-background: #322F31;
+$color-client-review-text: #fff;
+$color-client-review-name: #FF0000;
+$color-client-review-marks: #474446;
 
 :deep(.swiper-button-next),
 :deep(.swiper-button-prev) {
@@ -890,8 +877,10 @@ $color-client-review-marks: #F5EDE7;
       fill: $color-intro-grid-icon;
     }
   }
-  & p,
   & h3 {
+    color: $color-intro-grid-title;
+  }
+  & p, {
     color: $color-intro-grid-text;
   }
   @media (max-width: $width-mobile) {
@@ -919,126 +908,6 @@ $color-client-review-marks: #F5EDE7;
   }
 }
 
-.creation-line__header {
-  &::before {
-    color: $color-creation-line-counter;
-    -webkit-text-stroke-width: $thickness-counter-border;
-    -webkit-text-stroke-color: $color-task-banner-counter-border;
-  }
-  @media (max-width: $width-mobile) {
-    &::before {
-      -webkit-text-stroke-width: $thickness-counter-border-mobile;
-    }
-  }
-}
-.creation-line__wrapper {
-  & > .creation-line__analytics {
-    width: calc($width-analytics * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-analytics / 100 * 720px);
-    }
-  }
-
-  & > .creation-line__graphics {
-    width: calc($width-graphics * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-graphics / 100 * 720px);
-    }
-  }
-
-  & > .creation-line__web {
-    width: calc($width-web * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-web / 100 * 720px);
-    }
-  }
-
-  & > .creation-line__back-end {
-    width: calc($width-back-end * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-back-end / 100 * 720px);
-    }
-  }
-
-  & > .creation-line__data {
-    width: calc($width-data * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-data / 100 * 720px);
-    }
-  }
-
-  & > .creation-line__testing {
-    width: calc($width-testing * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-testing / 100 * 720px);
-    }
-  }
-
-  & > .creation-line__client {
-    width: calc($width-client * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-client / 100 * 720px);
-    }
-  }
-  & > .creation-line__final {
-    width: calc($width-final * 1%);
-  }
-}
-.time-line__wrapper {
-  & > .time-line__month-1 {
-    width: calc($width-month-1 * 1%);
-    &::after {
-      content: '1. měsíc';
-    }
-    @media (max-width: 1100px) {
-      height: calc($width-month-1 / 100 * 720px);
-    }
-  }
-  & > .time-line__month-2 {
-    width: calc($width-month-2 * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-month-2 / 100 * 720px);
-    }
-  }
-  & > .time-line__month-3 {
-    width: calc($width-month-3 * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-month-3 / 100 * 720px);
-    }
-  }
-  & > .time-line__month-4 {
-    width: calc($width-month-4 * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-month-4 / 100 * 720px);
-    }
-  }
-
-  & > .time-line__month-rest {
-    width: calc($width-month-rest * 1%);
-    @media (max-width: 1100px) {
-      height: calc($width-month-rest / 100 * 720px);
-    }
-  }
-}
-.creation-line__image-wrapper,
-.creation-line__image-container {
-  &::before {
-    background-color: $color-square-icon;
-  }
-  &::after {
-    background-color: $color-square-icon;
-  }
-}
-.creation-line__caption {
-  background-color: $color-banner-background;
-  border: 1px solid $color-banner-border;
-}
-
-.banner-first__text-wrap {
-  background-color: $color-banner-background;
-  border: 1px solid $color-banner-border;
-}
-
 .miranda-review__container {
   background-color: $color-miranda-review-background;
   p {
@@ -1057,7 +926,6 @@ $color-client-review-marks: #F5EDE7;
     background-color: $color-square-icon;
   }
 }
-
 .banner-third__wrapper-text {
   &::before {
     background-color: $color-square-icon;
@@ -1109,9 +977,6 @@ $color-client-review-marks: #F5EDE7;
 }
 .banner-nb {
   background-image: $background-image-nb;
-}
-.banner-nb--custom-rituals {
-  background: $color-banner-nb-overlay;
 }
 .banner-nb__squares {
   & rect {
@@ -1197,17 +1062,23 @@ $color-client-review-marks: #F5EDE7;
   h2 {
     color: $color-client-review-title;
   }
+  &__text {
+    color: $color-client-review-title;
+  }
   .tiles .tile {
-    background-color: $color-benefits-icon;
+    background-color: $color-client-review-name;
   }
 }
 .client-review__name {
   color: $color-client-review-name;
 }
 .client-review__text {
-  color: $color-client-review-text;
   path {
     fill: $color-client-review-marks;
   }
+}
+.banner-first__text-wrap {
+  background-color: $color-banner-background;
+  border: 1px solid $color-banner-border;
 }
 </style>

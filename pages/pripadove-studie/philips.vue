@@ -845,48 +845,62 @@
 				</h2>
 			</div>
 			<ul class="extra-solutions__list">
-				<li class="extra-solutions__item--visible">Našeptávač při vyhledávání</li>
-				<li class="extra-solutions__item--visible">Responzivní platforma</li>
-				<li class="extra-solutions__item--visible">Shoptet</li>
-				<li class="extra-solutions__item--visible">Napojení na IS Ventus</li>
-				<li class="extra-solutions__item--visible">Napojení na Balíkobot</li>
-				<li>Tvorba miniaplikace pro správu obsahu na Shoptetu</li>
-				<li>4 různé varianty detailu produktu </li>
-				<li>Hlídací pes pro zákazníky</li>
-				<li>Variabilní doba expedice u produktu dle dostupnosti</li>
-				<li>Podobné/související produkty</li>
-				<li>Slučování objednávek</li>
+				<li class="extra-solutions__item--visible">Proces objednávky, distribuce a fakturace</li>
+				<li class="extra-solutions__item--visible">Prodej do různých zemí, rozdílné nastavení DPH a měny</li>
+				<li class="extra-solutions__item--visible">Správa a přenášení objednávek mezi Shoptetem a ERP K2</li>
+				<li class="extra-solutions__item--visible">Synchronizace stavů skladů ze Shoptetu do ERP K2</li>
+				<li class="extra-solutions__item--visible">Plnění katalogu Shoptetu produkty</li>
+				<li>Scraping produktových dat z Philips.sk</li>
+				<li>Přenos produktových dat z Shoptetu do ERP K2</li>
+				<li>Automatická digitalizace popisů produktů – služba Flixmedia</li>
+				<li>Hodnocení produktů a recenze – služba Bazaarvoice</li>
+				<li>Správa zákazníků v systému Shoptet</li>
+				<li>Přenášení informací o zákaznících mezi Shoptetem a ERP</li>
+				<li>Přenášení cen a cenových politik</li>
+				<li>Akční ceny</li>
+				<li>Slevové kódy</li>
+				<li>Správa a nastavení způsobů dopravy a platby</li>
+				<li>Obecné možnosti komunikační mezivrstvy</li>
+				<li>Zásilkovna + DPD</li>
+				<li>Slevové kódy</li>
+				<li>Akční cena dne</li>
+				<li>QuarticOn</li>
 				<li>Akční cena produktů</li>
-				<li>Min. a max. ks objednaného zboží</li>
-				<li>Akční doprava produktů</li>
-				<li>Upselling na dopravu zdarma</li>
-				<li>Remarketing</li>
-				<li>Doprava a platba</li>
-				<li>Automatizace dárků k produktům</li>
-				<li>Meta tags</li>
-				<li>API</li>
-				<li>Import/export dat</li>
-				<li>Mall</li>
-				<li>Alza</li>
-				<li>Přesměrování URL adres</li>
-				<li>Opakované nákupy</li>
-				<li>Statistika slev</li>
-				<li>Stav a historie objednávky</li>
+				<li>Automatizace akčních cen</li>
+				<li>Související produkty</li>
+				<li>Doplňkový prodej v košíku</li>
+				<li>Podobné produkty</li>
+				<li>Hlídací pes</li>
+				<li>Heureka</li>
+				<li>Top 10 nejprodávanější v obchodě</li>
+				<li>Top nejprodávanější v kategorii</li>
+				<li>Foxentry</li>
+				<li>Pop-up „Už odcházíte“?</li>
+				<li>Poptin</li>
+				<li>Základní SEO</li>
+				<li>Collabim</li>
+				<li>SEOwebmaster</li>
+				<li>Pokročilé SEO</li>
+				<li>Hlídání skladu</li>
+				<li>Můj Shoptet</li>
+				<li>ROI Hunter Easy</li>
+				<li>Velkoobchod</li>
+				<li>Věrnostní slevy</li>
+				<li>Pro dopravu zdarma zbývá</li>
 				<li>Opuštěný košík</li>
-				<li>Filtrace</li>
-				<li>Nastavení kategorie</li>
-				<li>SEO</li>
-				<li>Title</li>
-				<li>Indexace</li>
-				<li>H1, H2</li>
-				<li>Automatický import produktů</li>
-				<li>Shoptet Premium</li>
-				<li>Registrace zákazníka</li>
-				<li>Zpětný bonus</li>
-				<li>Dvoufázové uživatelské testování</li>
-				<li>Upselling</li>
-				<li>Cross-seling</li>
-				<li>Balíkobot</li>
+				<li>Hromadné importy a exporty</li>
+				<li>Smartsupp</li>
+				<li>ChatGo</li>
+				<li>MessageOk</li>
+				<li>Dárkové karty</li>
+				<li>Informační e-maily</li>
+				<li>Dostupnosti</li>
+				<li>Porovnání produktových specifikací</li>
+				<li>Příznaky k produktům</li>
+				<li>Dopravce a platba pro atypický produkt</li>
+				<li>Uživatelé administrace</li>
+				<li>Skladové hospodářství</li>
+				<li>Automatický import filtračních parametrů</li>
 				<li class="extra-solutions__item--button">
 					<button
 						@click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions"

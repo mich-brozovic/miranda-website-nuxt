@@ -551,48 +551,24 @@
 				</h2>
 			</div>
 			<ul class="extra-solutions__list">
-				<li class="extra-solutions__item--visible">Našeptávač při vyhledávání</li>
-				<li class="extra-solutions__item--visible">Responzivní platforma</li>
+				<li class="extra-solutions__item--visible">Dárkové a slevové vouchery</li>
 				<li class="extra-solutions__item--visible">Shoptet</li>
-				<li class="extra-solutions__item--visible">Napojení na IS Ventus</li>
-				<li class="extra-solutions__item--visible">Napojení na Balíkobot</li>
-				<li>Tvorba miniaplikace pro správu obsahu na Shoptetu</li>
-				<li>4 různé varianty detailu produktu </li>
-				<li>Hlídací pes pro zákazníky</li>
-				<li>Variabilní doba expedice u produktu dle dostupnosti</li>
-				<li>Podobné/související produkty</li>
-				<li>Slučování objednávek</li>
-				<li>Akční cena produktů</li>
-				<li>Min. a max. ks objednaného zboží</li>
-				<li>Akční doprava produktů</li>
-				<li>Upselling na dopravu zdarma</li>
-				<li>Remarketing</li>
-				<li>Doprava a platba</li>
-				<li>Automatizace dárků k produktům</li>
-				<li>Meta tags</li>
-				<li>API</li>
-				<li>Import/export dat</li>
-				<li>Mall</li>
-				<li>Alza</li>
-				<li>Přesměrování URL adres</li>
-				<li>Opakované nákupy</li>
-				<li>Statistika slev</li>
-				<li>Stav a historie objednávky</li>
-				<li>Opuštěný košík</li>
-				<li>Filtrace</li>
-				<li>Nastavení kategorie</li>
-				<li>SEO</li>
-				<li>Title</li>
-				<li>Indexace</li>
-				<li>H1, H2</li>
-				<li>Automatický import produktů</li>
-				<li>Shoptet Premium</li>
-				<li>Registrace zákazníka</li>
-				<li>Zpětný bonus</li>
-				<li>Dvoufázové uživatelské testování</li>
-				<li>Upselling</li>
-				<li>Cross-seling</li>
-				<li>Balíkobot</li>
+				<li class="extra-solutions__item--visible">Doplňky Shoptet</li>
+				<li class="extra-solutions__item--visible">Responzivita webu</li>
+				<li class="extra-solutions__item--visible">Platební brána</li>
+				<li>Grafika na míru</li>
+				<li>Návrh wireframe</li>
+				<li>Nakódování na Shoptet Premium</li>
+				<li>Importování dat</li>
+				<li>Napojení na ekonomický systém KOPR</li>
+				<li>Napojení na účetní systém Pohoda</li>
+				<li>Integrace ISIC karty</li>
+				<li>Obchodní podmínky</li>
+				<li>GDPR</li>
+				<li>Kontakt a kontaktní formulář</li>
+				<li>Nastavení administrace Shoptet</li>
+				<li>Napojení na doménu</li>
+				<li>Zabezpečení e-shopu</li>
 				<li class="extra-solutions__item--button">
 					<button
 						@click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions"
@@ -718,8 +694,8 @@
 
 	$color-extra-solutions-counter: transparent;
 	$color-extra-solutions-counter-border: #ecf0f7;
-	$color-extra-solutions-border: #cd1719;
-	$color-extra-solutions-button: #cd1719;
+	$color-extra-solutions-border: #476BAD;
+	$color-extra-solutions-button: #476BAD;
 
 	$color-client-review-title: #222e27;
 	$color-client-review-background: #f1f1f1;
