@@ -206,8 +206,10 @@
 				<CoONasRikaji />
 			</div>
 		</section>
-		<section class="no-margin">
-			<BannerMiranda />
+		<section
+			id="kontakt"
+			class="no-margin">
+			<ContactForm />
 		</section>
 	</main>
 </template>
