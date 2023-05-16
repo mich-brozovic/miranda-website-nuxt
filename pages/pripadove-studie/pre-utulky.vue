@@ -107,8 +107,7 @@
 				<h4>Předplatné</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Funkce předplatné umožňuje zákazníkům automaticky objednávat produkty v pravidelných intervalech bez nutnosti každou objednávku zadávat zvlášť.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -224,8 +223,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Funkce předplatné umožňuje zákazníkům automaticky objednávat produkty v pravidelných intervalech bez nutnosti každou objednávku zadávat zvlášť.
 						</p>
 					</div>
 				</li>
