@@ -176,6 +176,7 @@
 	}
 	@media (max-width: 767px) {
 		.hero {
+			height: auto;
 			.video-wrapper,
 			.image-wrapper,
 			.container {
@@ -190,7 +191,8 @@
 				background: linear-gradient(180deg, transparent 0, #000 50px);
 				transform: none;
 				margin-top: -50px;
-				height: calc(50vh + 50px);
+				height: auto;
+				min-height: calc(50vh + 50px);
 				text-align: center;
 			}
 			.scroll {
