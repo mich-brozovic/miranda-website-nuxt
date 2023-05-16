@@ -2,7 +2,7 @@
 	<div class="form-wrapper">
 		<div class="columns col-2 align-center container">
 			<div class="column">
-				<h2>Mám zájem o spolupráci</h2>
+				<h2>Máte zájem o spolupráci?</h2>
 				<p>Zanechte nám na sebe kontakt, spojíme se s vámi.</p>
 				<a
 					href="tel:00420732264251"

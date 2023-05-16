@@ -2,7 +2,7 @@
 	<main>
 		<referenceHero
 			:imgUrl="'/pripadove-studie/4kavky/4kavky-hero.jpg'"
-			heading="Hravý e-shop na Shoptetu prorodinné deskovkářství 4kavky.cz"
+			heading="Hravý e-shop na Shoptetu pro rodinné deskovkářství 4kavky.cz"
 			subheading="E-shop rodinného deskovkářství 4 Kavky dostal nový kabát. Zohlednili jsme specifika cílové skupiny a vytvořili design, který je atraktivní a uživatelsky přívětivý jak pro rodiny s dětmi, tak pro milovníky deskových her."
 			pageUrl="www.4kavky.cz"
 			linkWhite />
@@ -639,7 +639,7 @@
 		<section
 			class="no-margin"
 			id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm/>
 		</section>
 	</main>
 </template>

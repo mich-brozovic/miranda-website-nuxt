@@ -187,13 +187,25 @@
             @click.prevent="toggleMenu"
             class="benefits__item">
           <div class="benefits__item-wrapper">
-            <svg class="--color-fill --color-stroke" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71484 7.14282H14.572V14.5714H7.71484V7.14282ZM9.42914 8.99996V12.7142H12.8577V8.99996H9.42914Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71484 17.4285H24.2863V24.2856H7.71484V17.4285ZM9.40581 19.1427V22.5713H22.5953V19.1427H9.40581Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.71484 3.71436H28.2863V28.2858H26.5057V5.56183H5.49538V28.2858H3.71484V3.71436Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8566 9.42864H16.2852V7.71436H24.8566V9.42864Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9994 12.2858H16.2852V10.5715H21.9994V12.2858Z" fill="#CBA686"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1423 15.1428H16.2852V13.4285H23.1423V15.1428Z" fill="#CBA686"/>
+            <svg class="--color-stroke --color-fill" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 14.75H15.5V16.25V22.7499V24.2499H17H23H24.5V22.7499V16.25V14.75H23H17ZM15.5 14.5H24.5V24.5H15.5V14.5Z" stroke="#BDA872" stroke-width="3"/>
+              <mask id="path-2-inside-1_5834_7932" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z" fill="#BDA872"/>
+              <path d="M14 31V28H11V31H14ZM43 31H46V28H43V31ZM43 43V46H46V43H43ZM14 43H11V46H14V43ZM16.9592 34V31H13.9592V34H16.9592ZM16.9592 40H13.9592V43H16.9592V40ZM40.0408 40V43H43.0408V40H40.0408ZM40.0408 34H43.0408V31H40.0408V34ZM14 34H43V28H14V34ZM40 31V43H46V31H40ZM43 40H14V46H43V40ZM17 43V31H11V43H17ZM13.9592 34V40H19.9592V34H13.9592ZM16.9592 43H40.0408V37H16.9592V43ZM43.0408 40V34H37.0408V40H43.0408ZM40.0408 31H16.9592V37H40.0408V31Z" fill="#BDA872" mask="url(#path-2-inside-1_5834_7932)"/>
+              <path d="M8.61594 10.2331V48.5H8.5V8.5H48.5V48.5H48.384V10.2331V8.73308H46.884H10.1159H8.61594V10.2331Z" fill="#BDA872" stroke="#BDA872" stroke-width="3"/>
+              <mask id="path-5-inside-2_5834_7932" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M44 17H29V14H44V17Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M44 17H29V14H44V17Z" fill="#BDA872"/>
+              <path d="M44 17V20H47V17H44ZM29 17H26V20H29V17ZM29 14V11H26V14H29ZM44 14H47V11H44V14ZM44 14H29V20H44V14ZM32 17V14H26V17H32ZM29 17H44V11H29V17ZM41 14V17H47V14H41Z" fill="#BDA872" mask="url(#path-5-inside-2_5834_7932)"/>
+              <mask id="path-7-inside-3_5834_7932" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M39 22H29V19H39V22Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M39 22H29V19H39V22Z" fill="#BDA872"/>
+              <path d="M39 22V25H42V22H39ZM29 22H26V25H29V22ZM29 19V16H26V19H29ZM39 19H42V16H39V19ZM39 19H29V25H39V19ZM32 22V19H26V22H32ZM29 22H39V16H29V22ZM36 19V22H42V19H36Z" fill="#BDA872" mask="url(#path-7-inside-3_5834_7932)"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M41 27H29V24H41V27Z" fill="#BDA872"/>
             </svg>
             <h3>Vývoj e-shopu na míru</h3>
           </div>
@@ -595,11 +607,18 @@
           <p class="section__banner-text">
             Realizace napojení <strong>ERP Helios</strong> se oproti původnímu plánu lehce protáhla. Nicméně zdržení nebylo způsobeno nesprávným projektovým vedením, ale faktem, že Assecco (Helios) nabídlo pivovaru Svijany možnost namísto zastaralého API na službě ServiceGate použít nové, moderní <strong>REST API.</strong>
           </p>
+          <img
+              class="banner-second--image--svijanyHelios"
+              style="max-width: 150px;"
+              src="/pripadove-studie/pivovar-svijany/image-banner-fourth.png"
+              width="860"
+              height="1475"
+              alt="Obrázek sekce" />
           <p class="section__banner-text">
             REST API na straně Heliosu tou dobou teprve vznikalo a MirandaMedia se tak stala první agenturou, která realizovala napojení na Shoptet Premium a celkově první napojení tohoto druhu. K funkčnímu provozu mezi Heliosem a Shoptet Premium bylo třeba nainstalovat servery pro vývojové a produkční prostředí komunikační mezivrstvy, naprogramovat všechny procesy spojené s napojením KM a Shoptet Premium. Všechno správně otestovat a předat zákazníkovi k vlastnímu testování.
           </p>
         </div>
-        <div class="banner-second__wrapper banner-second__wrapper--image">
+        <div class="banner-second__wrapper banner-second__wrapper--image banner-second__wrapper--image--svijany">
           <img
               class="banner-second__image"
               src="/pripadove-studie/pivovar-svijany/image-banner-fourth.png"
@@ -749,7 +768,7 @@
     <section
         class="no-margin"
         id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm/>
     </section>
   </main>
 </template>
@@ -776,7 +795,7 @@ $color-swiper-arrow-hover: #ffffff;
 $color-benefits-background: #ffffff;
 $color-benefits-border: #ffffff;
 $color-benefits-text: #222e27;
-$color-benefits-icon: #CA2F2D;
+$color-benefits-icon: #BDA872;
 
 $color-slider-background: #FFFDEC;
 $color-slider-border: #ffffff;
@@ -1050,7 +1069,12 @@ $color-client-review-marks: #C0B17D33;
     }
   }
 }
-
+.banner-second--image--svijanyHelios {
+  display: none;
+  @media screen and ($mobile-responsive) {
+    display: block;
+  }
+}
 .creation-line__header {
   &::before {
     color: $color-creation-line-counter;
@@ -1300,6 +1324,11 @@ $color-client-review-marks: #C0B17D33;
   }
   &::after {
     background-color: $color-square-icon;
+  }
+}
+.banner-second__wrapper--image--svijany {
+  @media screen and ($mobile-responsive) {
+    display: none;
   }
 }
 

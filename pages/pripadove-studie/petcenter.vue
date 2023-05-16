@@ -1083,7 +1083,7 @@
 		<section
 			class="no-margin"
 			id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm/>
 		</section>
 	</main>
 </template>
@@ -1301,7 +1301,9 @@
 	.slider__slide.--null-opacity {
 		opacity: 0;
 	}
-
+  .petcenter-app {
+    display: none;
+  }
   .petcenter-app__wrapper {
     position: relative;
     margin-top: 60px;

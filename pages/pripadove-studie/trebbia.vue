@@ -16,8 +16,7 @@
         <h4>Unikátní struktura e-shopu</h4>
         <div class="slider__slide-content">
           <p>
-            Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-            online obchod přizpůsobený svým specifickým potřebám.
+            Unikátní struktura webu umožňuje snadnou a přehlednou navigaci mezi různými sekcemi a obsahem, což zlepšuje zážitek z procházení a usnadňuje získání požadovaných informací.
           </p>
         </div>
       </SwiperSlide>
@@ -93,8 +92,7 @@
         <h4>Responzivita webu</h4>
         <div class="slider__slide-content">
           <p>
-            Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-            e-shopu podle přesných požadavků podnikatele.
+            Responzivní web se automaticky přizpůsobuje velikosti a rozlišení obrazovky. Obsah, obrázky a prvky designu se přesouvají a přeskupují tak, aby byly snadno čitelné a použitelné na různých zařízeních.
           </p>
         </div>
       </SwiperSlide>
@@ -105,7 +103,7 @@
             style="max-width: 60px" />
         <h4>Produktové focení</h4>
         <div class="slider__slide-content">
-          <p>Díky integraci Balíkobotu na Shoptet šetříte čas strávený administrací objednávek a expedicí.</p>
+          <p>Kvalitní produktové fotografie umožňují získat vizuální představu o produktech, což zvyšuje důvěru při nákupu a pomáhá lépe porovnat jednotlivé výrobky.</p>
         </div>
       </SwiperSlide>
     </referenceMainSlider>
@@ -122,8 +120,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-              profesionální online obchod přizpůsobený svým specifickým potřebám.
+              Unikátní struktura webu umožňuje snadnou a přehlednou navigaci mezi různými sekcemi a obsahem, což zlepšuje zážitek z procházení a usnadňuje získání požadovaných informací.
             </p>
           </div>
         </li>
@@ -206,8 +203,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-              e-shopu podle přesných požadavků podnikatele.
+              Responzivní web se automaticky přizpůsobuje velikosti a rozlišení obrazovky. Obsah, obrázky a prvky designu se přesouvají a přeskupují tak, aby byly snadno čitelné a použitelné na různých zařízeních.
             </p>
           </div>
         </li>
@@ -224,7 +220,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Díky integraci Balíkobotu na Shoptet šetříte čas strávený administrací objednávek a expedicí.
+              Kvalitní produktové fotografie umožňují získat vizuální představu o produktech, což zvyšuje důvěru při nákupu a pomáhá lépe porovnat jednotlivé výrobky.
             </p>
           </div>
         </li>
@@ -612,7 +608,7 @@
     <section
         class="no-margin"
         id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm />
     </section>
   </main>
 </template>
@@ -1186,6 +1182,14 @@ $color-client-review-marks: #2F2F2F;
 }
 .client-review__name {
   color: $color-client-review-name;
+  @media screen and ($mobile-responsive) {
+    font-size: rem(20);
+  }
+}
+.client-review__position {
+  @media screen and ($mobile-responsive) {
+    font-size: rem(16);
+  }
 }
 .client-review__text {
   path {
