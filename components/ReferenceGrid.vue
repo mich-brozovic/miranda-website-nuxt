@@ -29,6 +29,12 @@
 							:height="item.attributes.logo.data.attributes.height"
 							alt="" />
 					</div>
+					<div class="case-study">Případová studie</div>
+					<div class="reference__arrow">
+						<span class="arrow-detail">Detail studie</span>
+						<span class="arrow-line"></span>
+						<span class="arrow-head"></span>
+					</div>
 				</nuxt-link>
 				<div v-else>
 					<NuxtPicture
@@ -80,6 +86,12 @@
 							:width="item.attributes.logo.data.attributes.width"
 							:height="item.attributes.logo.data.attributes.height"
 							alt="" />
+					</div>
+					<div class="case-study">Případová studie</div>
+					<div class="reference__arrow">
+						<span class="arrow-detail">Detail studie</span>
+						<span class="arrow-line"></span>
+						<span class="arrow-head"></span>
 					</div>
 				</nuxt-link>
 				<div v-else>
@@ -226,6 +238,17 @@
 			background-color: rgba(#000, 0.2);
 			transition: all 0.2s ease-in-out;
 		}
+		.case-study {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			background-color: $color-white;
+			padding: em(10) em(20);
+			color: $color-font;
+			z-index: 1;
+			font-size: rem(12);
+			transition: all 0.2s ease-in-out;
+		}
 		&:hover,
 		&:focus {
 			.bg-img {
@@ -235,6 +258,56 @@
 			.logo {
 				transform: translate(-50%, -50%) scale(0.7);
 				opacity: 0;
+			}
+			.case-study {
+				opacity: 0;
+			}
+			.reference__arrow {
+				opacity: 1;
+				.arrow-line {
+					width: 100%;
+				}
+				.arrow-detail {
+					opacity: 1;
+					transform: none;
+				}
+			}
+		}
+		.reference__arrow {
+			position: absolute;
+			bottom: 33px;
+			right: 33px;
+			transition: all 0.3s ease-in-out;
+			width: 150px;
+			z-index: 1;
+			opacity: 0;
+			.arrow-line {
+				display: block;
+				width: 50px;
+				height: 2px;
+				background-color: $color-white;
+				position: absolute;
+				right: -1px;
+				transition: all 0.3s ease-in-out;
+			}
+			.arrow-head {
+				display: block;
+				width: 12px;
+				height: 12px;
+				border: 2px solid $color-white;
+				border-style: none solid solid none;
+				transform: rotate(-45deg);
+				position: absolute;
+				right: 0;
+				bottom: -7px;
+			}
+			.arrow-detail {
+				color: $color-white;
+				display: block;
+				margin-bottom: 10px;
+				opacity: 0;
+				transform: translateX(50%);
+				transition: all 0.3s ease-in-out;
 			}
 		}
 	}

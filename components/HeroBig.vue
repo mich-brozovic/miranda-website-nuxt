@@ -207,6 +207,9 @@
 					}
 				}
 			}
+			.texts {
+				margin-bottom: 70px;
+			}
 		}
 		.header-black .hero .container {
 			background: linear-gradient(180deg, transparent 0, #fff 50px);
