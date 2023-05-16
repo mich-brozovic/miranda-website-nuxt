@@ -552,14 +552,16 @@
 			</ul>
 		</div>
     <div class="petcenter-app container">
-      <div class="petcenter-app__text">
-        <h2>Vyvinuli jsme mobilní aplikaci<br> “pet center klub”!</h2>
-        <p>
-          <strong>Vyvinuli jsme mobilní aplikaci</strong>, která jako první svého druhu
-          nabízí <strong>plnou integraci s platformou Shoptet Premium!</strong>
-        </p>
+      <div class="petcenter-app__wrapper">
+        <div class="petcenter-app__text">
+          <h2>Vyvinuli jsme mobilní aplikaci<br> “pet center klub”!</h2>
+          <p>
+            <strong>Vyvinuli jsme mobilní aplikaci</strong>, která jako první svého druhu
+            nabízí <strong>plnou integraci s platformou Shoptet Premium!</strong>
+          </p>
+        </div>
+        <img src="/pripadove-studie/petcenter/hero_screen_petcenter-2.png" alt="Petcenter app homepage">
       </div>
-      <img src="/pripadove-studie/petcenter/hero_screen_petcenter-2.png" alt="Petcenter app homepage">
     </div>
 		<section class="intro container">
 			<div class="intro__container">
@@ -1300,7 +1302,7 @@
 		opacity: 0;
 	}
 
-  .petcenter-app {
+  .petcenter-app__wrapper {
     position: relative;
     margin-top: 60px;
     margin-bottom: 120px;
