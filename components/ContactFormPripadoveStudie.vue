@@ -170,12 +170,14 @@ const sendForm = async (e) => {
     gap: 20px;
   }
   .form-text {
+    flex: 2;
     h3 {
       margin: 0 0 5px;
       font-size: rem(32);
     }
   }
   .form-image {
+    flex: 1;
     max-width: 150px;
   }
   h2 {
