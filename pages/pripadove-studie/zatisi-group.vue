@@ -797,7 +797,7 @@
 		<section
 			class="no-margin"
 			id="kontakt">
-			<ContactForm />
+      <ContactFormPripadoveStudie />
 		</section>
 	</main>
 </template>

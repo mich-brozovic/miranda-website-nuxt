@@ -3,7 +3,7 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/petcenter/petcenter-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-			heading="E-shop + mobilní aplikace s plnou integrací na Shoptet Premium pro společnost PetCenter"
+			heading="Vytvořili jsme e-shop + mobilní aplikaci s plnou integrací na Shoptet Premium pro společnost Pet Center"
 			subheading="Klient využil našich služeb pro návrh a vývoj e-shopů Petcenter.cz a Petcenter.sk na míru na platformě Shoptet Premium společně s napojením na ESO9. K e-shopům se o něco později přidal vývoj mobilní aplikace s propojením na personalizovný zákaznický účet a věrnostní program s plnou integrací do Shoptetu. Převzali jsme také značnou část marketingových aktivit."
 			pageUrl="www.petcenter.cz"
 			textWidth="870" />
@@ -183,8 +183,7 @@
 				<h4>Mobilní aplikace</h4>
 				<div class="slider__slide-content">
 					<p>
-						Mobilní aplikace umožňuje nabízet personalizovaný obsah, rychlou a snadnou navigaci, notifikace, offline přístup a
-						další výhody, které poskytují lepší uživatelskou zkušenost a zvýšenou angažovanost.
+            Mobilní aplikace nabízí personalizovaný obsah, rychlou navigaci notifikace a další výhody, které zvyšují uživatelskou zkušenost a angažovanost.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -434,8 +433,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Mobilní aplikace umožňuje nabízet personalizovaný obsah, rychlou a snadnou navigaci, notifikace, offline přístup
-							a další výhody, které poskytují lepší uživatelskou zkušenost a zvýšenou angažovanost.
+              Mobilní aplikace nabízí personalizovaný obsah, rychlou navigaci notifikace a další výhody, které zvyšují uživatelskou zkušenost a angažovanost.
 						</p>
 					</div>
 				</li>
@@ -553,6 +551,16 @@
 				</li>
 			</ul>
 		</div>
+    <div class="petcenter-app container">
+      <div class="petcenter-app__text">
+        <h2>Vyvinuli jsme mobilní aplikaci<br> “pet center klub”!</h2>
+        <p>
+          <strong>Vyvinuli jsme mobilní aplikaci</strong>, která jako první svého druhu
+          nabízí <strong>plnou integraci s platformou Shoptet Premium!</strong>
+        </p>
+      </div>
+      <img src="/pripadove-studie/petcenter/hero_screen_petcenter-2.png" alt="Petcenter app homepage">
+    </div>
 		<section class="intro container">
 			<div class="intro__container">
 				<div class="intro__wrapper intro__wrapper--image">
@@ -809,20 +817,22 @@
 		<!-- -- BANNER-NB -->
 		<article class="banner-nb">
 			<div class="banner-nb__container">
-				<div class="banner-nb__wrapper banner-nb__wrapper--text">
+				<div class="banner-nb__wrapper banner-nb__wrapper--text" :class="{ '--show': isExpandedBannerNb }">
 					<h3 class="section__banner-header">Prodávejte více díky unikátnímu grafickému návrhu e-shopu!</h3>
 					<p class="section__text">
-						Desktopová a mobilní verze e-shopu Rituals.cz a Rituals-cosmetics.sk jsou navrženy tak, aby poskytovaly uživatelům
-						optimální zážitek z nakupování na různých zařízeních.
-					</p>
-					<p class="section__text">
-						V obou verzích e-shopů byl kladen důraz na responzivitu, tj. schopnost webu automaticky se přizpůsobovat různým
-						velikostem obrazovek a zařízení.
-					</p>
-					<p class="section__text">
-						Byla použita jednoduchá a intuitivní navigace, například pomocí vysouvacího menu nebo ikon pro rychlé ovládání,
-						která umožňuje uživatelům snadno procházet produkty a rychle dokončit nákupní proces.
-					</p>
+            Náš tým navrhl celkový design webové stránky s ohledem na <strong>optimalizaci pro desktopovou i mobilní verzi.</strong> V desktopové verzi jsme se zaměřili na vytvoření atraktivního vizuálního stylu, který zahrnuje výrazné obrázky zvířat, světlou barevnou paletu a čitelnou typografii. V <strong>mobilní verzi</strong> jsme se soustředili na efektivní využití menších obrazovek a dotykového ovládání.
+          </p>
+          <div class="banner-nb__banner-wrap">
+            <p class="section__text">
+              Pro <strong>umocnění uživatelského zážitku</strong> jsme zjednodušili navigaci, například pomocí vysouvacího menu nebo ikon pro <strong>rychlé ovládání,</strong> aby byla snadno manipulovatelná na menších obrazovkách. Rovněž jsme se snažili optimalizovat <strong>čitelnost obsahu,</strong> aby byl pohodlně čitelný a srozumitelný na všech zařízeních.
+            </p>
+          </div>
+          <button
+              class="banner__button"
+              type="button"
+              @click.prevent="isExpandedBannerNb = !isExpandedBannerNb">
+            {{ isExpandedBannerNb ? 'Ukázat méně' : 'Přečíst celé' }}
+          </button>
 					<svg
 						class="banner-nb__squares"
 						width="75"
@@ -851,7 +861,7 @@
 			</div>
 		</article>
 		<!-- -- BANNER-THIRD--REVERSE -->
-		<article class="banner-fifth banner-fifth--reverse container">
+		<article class="banner-fifth align-center banner-fifth--reverse container">
 			<div class="banner-fifth__wrapper banner-fifth__wrapper-text">
 				<div class="banner-fifth__text-container section__banner">
 					<h3 class="section__banner-header">Napojení ESO9 na Shoptet Premium</h3>
@@ -870,7 +880,7 @@
 			<div class="banner-fifth__wrapper banner-fifth__wrapper-image no-grid">
 				<div class="banner-fifth__image">
 					<img
-						src="/pripadove-studie/petcenter/eso9.png"
+						src="/pripadove-studie/petcenter/eso9-1.png"
 						width="340"
 						height="340"
 						alt="Obrázek sekce" />
@@ -950,7 +960,7 @@
 								class="tile"></div>
 						</div>
 					</div>
-					<div class="client-review__text">
+					<div class="client-review__text" :class="{ '--show': isExpandedClientReview }">
 						<svg
 							width="430"
 							height="290"
@@ -965,13 +975,24 @@
 							Jaké to s nimi je? To, co se dle mě nedá vytendrovat, je výsledek spolupráce. Výsledek lze sice do jisté míry
 							pojistit smlouvami, ale žádná smlouva vám nikdy nezaručí, že projekt neztroskotá. Každá spolupráce je hlavně o
 							lidech a jejich přístupu. K tomu, aby vše zafungovalo navzdory překážkám, je potřeba důvěra, empatie,
-							flexibilita a trpělivost (dodavatele). Naše společná cesta k cíli byla plná změnových požadavků, přehodnocení
-							některých fíčur a formulace zcela nových úloh. Ale vyplatilo se. Dnes náš nový e-shop konvertuje meziročně v
-							průměru o 50 % lépe. Dále jsme vyvinuli společně s Mirandou věrnostní program, resp. aplikaci PetCenter PREMIUM,
-							a nedávno se naše spolupráce rozšířila o významný díl v oblasti digitálního marketingu. V kontextu výše
-							popsaného asi nepřekvapí, že dokonce i pivo nám ve společnosti kluků a holek z Mirandy chutná nejméně o 10 %
-							víc. A takové to s nimi je.
+							flexibilita a trpělivost (dodavatele).
 						</p>
+            <div class="client-review__banner-wrap">
+              <p class="section__text">
+                Naše společná cesta k cíli byla plná změnových požadavků, přehodnocení
+                některých fíčur a formulace zcela nových úloh. Ale vyplatilo se. Dnes náš nový e-shop konvertuje meziročně v
+                průměru o 50 % lépe. Dále jsme vyvinuli společně s Mirandou věrnostní program, resp. aplikaci PetCenter PREMIUM,
+                a nedávno se naše spolupráce rozšířila o významný díl v oblasti digitálního marketingu. V kontextu výše
+                popsaného asi nepřekvapí, že dokonce i pivo nám ve společnosti kluků a holek z Mirandy chutná nejméně o 10 %
+                víc. A takové to s nimi je.
+              </p>
+            </div>
+            <button
+                class="banner__button white"
+                type="button"
+                @click.prevent="isExpandedClientReview = !isExpandedClientReview">
+              {{ isExpandedClientReview ? 'Ukázat méně' : 'Přečíst celé' }}
+            </button>
 						<div class="client-review__client">
 							<p class="client-review__name">Ing. Tomáš Bajtler</p>
 							<p class="client-review__position">Head of Marketing</p>
@@ -1060,7 +1081,7 @@
 		<section
 			class="no-margin"
 			id="kontakt">
-			<ContactForm />
+      <ContactFormPripadoveStudie />
 		</section>
 	</main>
 </template>
@@ -1076,9 +1097,14 @@
 	})
 	const isExpandedTaskBanner = ref(false)
 	const isExpandedExtraSolutions = ref(false)
+  const isExpandedBannerNb = ref(false);
+  const isExpandedClientReview = ref(false);
 
 	const toggleMenu = (e) => {
 		e.currentTarget.classList.toggle('--show')
+	}
+  const toggleMenuParent = (e) => {
+		e.currentTarget.parentNode.classList.toggle('--show')
 	}
 </script>
 <style>
@@ -1274,6 +1300,54 @@
 		opacity: 0;
 	}
 
+  .petcenter-app {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    padding-block: 120px;
+    background-image: url("/pripadove-studie/petcenter/petcenter-app__background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and ($mobile-responsive) {
+      background-color: #f1f0ee;
+      background-image: none;
+    }
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: unset;
+      max-width: 100%;
+      @media screen and (max-width: 1405px) {
+        display: none;
+      }
+    }
+    @media screen and ($mobile-responsive) {
+      margin-block: 60px;
+      padding-block: 40px;
+    }
+  }
+  .petcenter-app__text {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    h2 {
+      max-width: 800px;
+      margin-inline: auto;
+      font-size: rem(32);
+      line-height: em(32, 24);
+    }
+    p {
+      max-width: 750px;
+      margin-inline: auto;
+      font-size: rem(20);
+      line-height: em(32, 20);
+      text-align: center;
+    }
+
+  }
+
 	.benefits__item-wrapper {
 		border-bottom: 1px solid $color-benefits-border;
 		& svg {
@@ -1311,6 +1385,21 @@
 			}
 		}
 	}
+  .banner__button {
+		border: 2px solid $color-button-border;
+		&:hover {
+			background-color: $color-button-border;
+			color: $color-white;
+			border-color: $color-button-border;
+			&::after {
+				border-color: $color-white;
+			}
+		}
+    &.white {
+      color: $color-white;
+    }
+	}
+
 
 	.intro__header {
 		&::before {

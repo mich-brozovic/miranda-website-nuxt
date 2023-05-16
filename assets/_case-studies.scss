@@ -1690,7 +1690,15 @@ main {
 		}
 	}
 }
+.banner__button {
+	padding: 20px;
+	margin-top: 20px;
 
+	gap: 20px;
+	transition: all 0.3s ease;
+	font-family: inherit;
+	cursor: pointer;
+}
 .banner-nb__container {
 	display: flex;
 	align-items: flex-start;
@@ -1703,7 +1711,14 @@ main {
 		gap: 0;
 	}
 }
-
+.banner-nb__wrapper.--show .banner-nb__banner-wrap {
+	max-height: 5000px !important;
+}
+.banner-nb__banner-wrap {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .3s ease-in-out;
+}
 .banner-nb__wrapper--text {
 	position: relative;
 	z-index: 10;
@@ -2395,6 +2410,11 @@ main {
 		margin-inline: auto;
 	}
 }
+.client-review__banner-wrap {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .3s ease-in-out;
+}
 .client-review__text {
 	position: relative;
 	z-index: 10;
@@ -2416,7 +2436,13 @@ main {
 			margin-inline: auto;
 		}
 	}
+	&.--show {
+		.client-review__banner-wrap {
+			max-height: 5000px !important;
+		}
+	}
 }
+.client-review__banner-wrap
 .client-review__client {
 	text-align: right;
 }
