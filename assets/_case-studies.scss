@@ -177,9 +177,10 @@ main {
 }
 
 .intro__flex-container--custom-klokocka {
-	max-width: 1170px;
+	max-width: 1175px;
 
 	.intro__flex-item--image {
+		background-color: transparent;
 		width: unset;
 		aspect-ratio: unset;
 		max-width: unset;
@@ -304,7 +305,7 @@ main {
 
 .intro__flex-item--image {
 	padding: 0;
-	background-color: transparent;
+	background-color: transparent !important;
 	border: none;
 	img {
 		width: 100%;
