@@ -107,8 +107,7 @@
 				<h4>Předplatné</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Funkce předplatné umožňuje zákazníkům automaticky objednávat produkty v pravidelných intervalech bez nutnosti každou objednávku zadávat zvlášť.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -224,8 +223,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Funkce předplatné umožňuje zákazníkům automaticky objednávat produkty v pravidelných intervalech bez nutnosti každou objednávku zadávat zvlášť.
 						</p>
 					</div>
 				</li>
@@ -594,48 +592,42 @@
 				</h2>
 			</div>
 			<ul class="extra-solutions__list">
-				<li class="extra-solutions__item--visible">Našeptávač při vyhledávání</li>
-				<li class="extra-solutions__item--visible">Responzivní platforma</li>
-				<li class="extra-solutions__item--visible">Shoptet</li>
-				<li class="extra-solutions__item--visible">Napojení na IS Ventus</li>
-				<li class="extra-solutions__item--visible">Napojení na Balíkobot</li>
-				<li>Tvorba miniaplikace pro správu obsahu na Shoptetu</li>
-				<li>4 různé varianty detailu produktu </li>
-				<li>Hlídací pes pro zákazníky</li>
-				<li>Variabilní doba expedice u produktu dle dostupnosti</li>
-				<li>Podobné/související produkty</li>
-				<li>Slučování objednávek</li>
+				<li class="extra-solutions__item--visible">Proces objednávky, distribuce a fakturace</li>
+				<li class="extra-solutions__item--visible">Prodej do různých zemí, rozdílné nastavení DPH a měny</li>
+				<li class="extra-solutions__item--visible">Slevové kódy</li>
+				<li class="extra-solutions__item--visible">Akční ceny</li>
+				<li class="extra-solutions__item--visible">Hlídací pes</li>
+				<li>Mailing</li>
+				<li>Správa a nastavení způsobů dopravy a platby</li>
+				<li>Obecné možnosti komunikační mezivrstvy</li>
+				<li>Slevové kódy</li>
+				<li>Akční cena dne</li>
+				<li>Správa zákazníků v systému Shoptet</li>
 				<li>Akční cena produktů</li>
-				<li>Min. a max. ks objednaného zboží</li>
-				<li>Akční doprava produktů</li>
-				<li>Upselling na dopravu zdarma</li>
-				<li>Remarketing</li>
-				<li>Doprava a platba</li>
-				<li>Automatizace dárků k produktům</li>
-				<li>Meta tags</li>
-				<li>API</li>
-				<li>Import/export dat</li>
-				<li>Mall</li>
-				<li>Alza</li>
-				<li>Přesměrování URL adres</li>
-				<li>Opakované nákupy</li>
-				<li>Statistika slev</li>
-				<li>Stav a historie objednávky</li>
+				<li>Automatizace akčních cen</li>
+				<li>Související produkty</li>
+				<li>Doplňkový prodej v košíku</li>
+				<li>Podobné produkty</li>
+				<li>Heureka</li>
+				<li>Pop-up „Už odcházíte“?</li>
+				<li>Top 10 nejprodávanější v obchodě</li>
+				<li>Top nejprodávanější v kategorii</li>
+				<li>Základní SEO</li>
+				<li>Pokročilé SEO</li>
+				<li>Hlídání skladu</li>
+				<li>Můj Shoptet</li>
+				<li>Věrnostní slevy</li>
+				<li>Pro dopravu zdarma zbývá</li>
 				<li>Opuštěný košík</li>
-				<li>Filtrace</li>
-				<li>Nastavení kategorie</li>
-				<li>SEO</li>
-				<li>Title</li>
-				<li>Indexace</li>
-				<li>H1, H2</li>
-				<li>Automatický import produktů</li>
-				<li>Shoptet Premium</li>
-				<li>Registrace zákazníka</li>
-				<li>Zpětný bonus</li>
-				<li>Dvoufázové uživatelské testování</li>
-				<li>Upselling</li>
-				<li>Cross-seling</li>
-				<li>Balíkobot</li>
+				<li>Hromadné importy a exporty</li>
+				<li>MessageOk</li>
+				<li>Informační e-maily</li>
+				<li>Dostupnosti</li>
+				<li>Příznaky k produktům</li>
+				<li>Porovnání produktových specifikací</li>
+				<li>Dopravce a platba pro atypický produkt</li>
+				<li>Uživatelé administrace</li>
+				<li>Skladové hospodářství</li>
 				<li class="extra-solutions__item--button">
 					<button
 						@click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions"
@@ -653,7 +645,7 @@
 		<section
 			class="no-margin"
 			id="kontakt">
-			<ContactForm />
+      <ContactFormPripadoveStudie />
 		</section>
 	</main>
 </template>
@@ -761,8 +753,8 @@
 
 	$color-extra-solutions-counter: transparent;
 	$color-extra-solutions-counter-border: #d6e5f7;
-	$color-extra-solutions-border: #ed1556;
-	$color-extra-solutions-button: #ed1556;
+	$color-extra-solutions-border: #D8AA34;
+	$color-extra-solutions-button: #D8AA34;
 
 	$color-client-review-title: #222e27;
 	$color-client-review-background: #f7eed6;

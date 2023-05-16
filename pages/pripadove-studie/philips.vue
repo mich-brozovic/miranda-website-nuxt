@@ -5,7 +5,8 @@
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
 			heading="Jak vznikal e-shop pro společnost Philips na Shoptet  Premium"
 			subheading="Společnost Philips není třeba zdlouhavě představovat. Patří mezi  největší výrobce elektroniky a elektrotechniky na světě. Ve spolupráci s naší marketingovou & digitální agenturou MirandaMedia vznikl za necelých 14 týdnů e-shop na Shoptetu s napojením na systém K2, unikátním designem na míru a řadou nadstandardních funkcionalit a individuálních úprav."
-			pageUrl="www.philips-eshop.cz" />
+			pageUrl="www.philips-eshop.sk"
+      pageUrlAlt="www.philips-eshop.bg"/>
 		<referenceMainSlider
 			id="scroll"
 			:imgUrl="'pripadove-studie/philips/image-slider.jpg'">
@@ -138,28 +139,10 @@
 				</div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
-				<svg
-					class="--color-stroke"
-					width="57"
-					height="57"
-					viewBox="0 0 57 57"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M37.832 42.5L51.832 28.5L37.832 14.5"
-						stroke="#000"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round" />
-					<path
-						d="M19.168 14.5L5.16797 28.5L19.168 42.5"
-						stroke="#000"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round" />
-				</svg>
-
-				<h4>Kódování na Shoptet Premium</h4>
+        <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30.5 2C24.8632 2 19.3531 3.6715 14.6663 6.80312C9.97946 9.93473 6.32654 14.3858 4.16945 19.5935C2.01235 24.8012 1.44795 30.5316 2.54763 36.0601C3.64731 41.5885 6.36167 46.6667 10.3475 50.6525C14.3333 54.6383 19.4115 57.3527 24.9399 58.4524C30.4684 59.552 36.1988 58.9877 41.4065 56.8306C46.6142 54.6735 51.0653 51.0205 54.1969 46.3337C57.3285 41.6469 59 36.1368 59 30.5C59 22.9413 55.9973 15.6922 50.6525 10.3475C45.3077 5.00267 38.0587 2 30.5 2V2ZM26.4495 42.3071H18.578V34.4357H26.4495V42.3071ZM42.1923 34.4357H34.3626V26.5643H26.4495V18.6929H42.1923V26.5643V34.4357Z" stroke="#0B5ED7" stroke-width="3"/>
+        </svg>
+				<h4>Implementace na Shoptet Premium</h4>
 				<div class="slider__slide-content">
 					<p>
 						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
@@ -168,11 +151,10 @@
 				</div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
-				<img
-					src="/icon/balikobot-logo.png"
-					alt="balikobot"
-					style="max-width: 150px" />
-				<h4>Napojení na Balíkobot</h4>
+        <svg width="131" height="57" viewBox="0 0 131 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M71.8199 50.235H113.559V39.5512H96.4726C101.388 36.0547 104.945 33.141 107.143 30.81C110.506 27.184 112.188 23.6227 112.188 20.1262C112.188 16.6297 110.506 13.716 107.143 11.385C103.263 8.795 97.8307 7.5 90.8333 7.5C87.4704 7.5 84.1721 7.759 80.9386 8.277C78.8691 8.536 76.1529 9.054 72.79 9.831V20.5018C76.1529 18.6888 79.5805 17.7823 83.0727 17.7823C85.6596 17.7823 87.6385 18.3003 88.9966 19.3363C90.3547 20.3723 91.0402 21.6673 91.0402 23.2213C91.0402 28.0128 84.6378 34.436 71.8199 42.465V50.235V50.235ZM16.5 50.235V8.26405H35.9144V27.5077H36.1084L49.3013 8.26405H69.1037L54.5397 27.702L69.6858 50.2479H48.7193L36.1084 29.256H35.9144V50.2479H16.5V50.235Z" stroke="#0B5ED7" stroke-width="3"/>
+        </svg>
+				<h4>Unikátní grafický design</h4>
 				<div class="slider__slide-content">
 					<p>Díky integraci Balíkobotu na Shoptet šetříte čas strávený administrací objednávek a expedicí.</p>
 				</div>
@@ -185,78 +167,26 @@
 					@click.prevent="toggleMenu"
 					class="benefits__item">
 					<div class="benefits__item-wrapper">
-						<svg
-							width="57"
-							height="57"
-							viewBox="0 0 57 57"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M17 14.75H15.5V16.25V22.7499V24.2499H17H23H24.5V22.7499V16.25V14.75H23H17ZM15.5 14.5H24.5V24.5H15.5V14.5Z"
-								stroke="#0B5ED7"
-								stroke-width="3" />
-							<mask
-								id="path-2-inside-1_5576_6058"
-								fill="white">
-								<path
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z" />
-							</mask>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z"
-								fill="#0B5ED7" />
-							<path
-								d="M14 31V28H11V31H14ZM43 31H46V28H43V31ZM43 43V46H46V43H43ZM14 43H11V46H14V43ZM16.9592 34V31H13.9592V34H16.9592ZM16.9592 40H13.9592V43H16.9592V40ZM40.0408 40V43H43.0408V40H40.0408ZM40.0408 34H43.0408V31H40.0408V34ZM14 34H43V28H14V34ZM40 31V43H46V31H40ZM43 40H14V46H43V40ZM17 43V31H11V43H17ZM13.9592 34V40H19.9592V34H13.9592ZM16.9592 43H40.0408V37H16.9592V43ZM43.0408 40V34H37.0408V40H43.0408ZM40.0408 31H16.9592V37H40.0408V31Z"
-								fill="#0B5ED7"
-								mask="url(#path-2-inside-1_5576_6058)" />
-							<path
-								d="M8.61594 10.2331V48.5H8.5V8.5H48.5V48.5H48.384V10.2331V8.73308H46.884H10.1159H8.61594V10.2331Z"
-								fill="#0B5ED7"
-								stroke="#0B5ED7"
-								stroke-width="3" />
-							<mask
-								id="path-5-inside-2_5576_6058"
-								fill="white">
-								<path
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									d="M44 17H29V14H44V17Z" />
-							</mask>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M44 17H29V14H44V17Z"
-								fill="#0B5ED7" />
-							<path
-								d="M44 17V20H47V17H44ZM29 17H26V20H29V17ZM29 14V11H26V14H29ZM44 14H47V11H44V14ZM44 14H29V20H44V14ZM32 17V14H26V17H32ZM29 17H44V11H29V17ZM41 14V17H47V14H41Z"
-								fill="#0B5ED7"
-								mask="url(#path-5-inside-2_5576_6058)" />
-							<mask
-								id="path-7-inside-3_5576_6058"
-								fill="white">
-								<path
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									d="M39 22H29V19H39V22Z" />
-							</mask>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M39 22H29V19H39V22Z"
-								fill="#0B5ED7" />
-							<path
-								d="M39 22V25H42V22H39ZM29 22H26V25H29V22ZM29 19V16H26V19H29ZM39 19H42V16H39V19ZM39 19H29V25H39V19ZM32 22V19H26V22H32ZM29 22H39V16H29V22ZM36 19V22H42V19H36Z"
-								fill="#0B5ED7"
-								mask="url(#path-7-inside-3_5576_6058)" />
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M41 27H29V24H41V27Z"
-								fill="#0B5ED7" />
-						</svg>
+            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 14.75H15.5V16.25V22.7499V24.2499H17H23H24.5V22.7499V16.25V14.75H23H17ZM15.5 14.5H24.5V24.5H15.5V14.5Z" stroke="#0B5ED7" stroke-width="3"/>
+              <mask id="path-2-inside-1_5802_7168" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z" fill="#0B5ED7"/>
+              <path d="M14 31V28H11V31H14ZM43 31H46V28H43V31ZM43 43V46H46V43H43ZM14 43H11V46H14V43ZM16.9592 34V31H13.9592V34H16.9592ZM16.9592 40H13.9592V43H16.9592V40ZM40.0408 40V43H43.0408V40H40.0408ZM40.0408 34H43.0408V31H40.0408V34ZM14 34H43V28H14V34ZM40 31V43H46V31H40ZM43 40H14V46H43V40ZM17 43V31H11V43H17ZM13.9592 34V40H19.9592V34H13.9592ZM16.9592 43H40.0408V37H16.9592V43ZM43.0408 40V34H37.0408V40H43.0408ZM40.0408 31H16.9592V37H40.0408V31Z" fill="#0B5ED7" mask="url(#path-2-inside-1_5802_7168)"/>
+              <path d="M8.61594 10.2331V48.5H8.5V8.5H48.5V48.5H48.384V10.2331V8.73308H46.884H10.1159H8.61594V10.2331Z" fill="#0B5ED7" stroke="#0B5ED7" stroke-width="3"/>
+              <mask id="path-5-inside-2_5802_7168" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M44 17H29V14H44V17Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M44 17H29V14H44V17Z" fill="#0B5ED7"/>
+              <path d="M44 17V20H47V17H44ZM29 17H26V20H29V17ZM29 14V11H26V14H29ZM44 14H47V11H44V14ZM44 14H29V20H44V14ZM32 17V14H26V17H32ZM29 17H44V11H29V17ZM41 14V17H47V14H41Z" fill="#0B5ED7" mask="url(#path-5-inside-2_5802_7168)"/>
+              <mask id="path-7-inside-3_5802_7168" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M39 22H29V19H39V22Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M39 22H29V19H39V22Z" fill="#0B5ED7"/>
+              <path d="M39 22V25H42V22H39ZM29 22H26V25H29V22ZM29 19V16H26V19H29ZM39 19H42V16H39V19ZM39 19H29V25H39V19ZM32 22V19H26V22H32ZM29 22H39V16H29V22ZM36 19V22H42V19H36Z" fill="#0B5ED7" mask="url(#path-7-inside-3_5802_7168)"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M41 27H29V24H41V27Z" fill="#0B5ED7"/>
+            </svg>
 						<h3>Vývoj e-shopu na míru</h3>
 					</div>
 					<div class="benefits__item-text-wrapper">
@@ -321,27 +251,10 @@
 					@click.prevent="toggleMenu"
 					class="benefits__item">
 					<div class="benefits__item-wrapper">
-						<svg
-							class="--color-stroke"
-							width="57"
-							height="57"
-							viewBox="0 0 57 57"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M37.832 42.5L51.832 28.5L37.832 14.5"
-								stroke="#000"
-								stroke-width="3"
-								stroke-linecap="round"
-								stroke-linejoin="round" />
-							<path
-								d="M19.168 14.5L5.16797 28.5L19.168 42.5"
-								stroke="#000"
-								stroke-width="3"
-								stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-						<h3>Kódování na Shoptet Premium</h3>
+            <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.5 2C24.8632 2 19.3531 3.6715 14.6663 6.80312C9.97946 9.93473 6.32654 14.3858 4.16945 19.5935C2.01235 24.8012 1.44795 30.5316 2.54763 36.0601C3.64731 41.5885 6.36167 46.6667 10.3475 50.6525C14.3333 54.6383 19.4115 57.3527 24.9399 58.4524C30.4684 59.552 36.1988 58.9877 41.4065 56.8306C46.6142 54.6735 51.0653 51.0205 54.1969 46.3337C57.3285 41.6469 59 36.1368 59 30.5C59 22.9413 55.9973 15.6922 50.6525 10.3475C45.3077 5.00267 38.0587 2 30.5 2V2ZM26.4495 42.3071H18.578V34.4357H26.4495V42.3071ZM42.1923 34.4357H34.3626V26.5643H26.4495V18.6929H42.1923V26.5643V34.4357Z" stroke="#0B5ED7" stroke-width="3"/>
+            </svg>
+						<h3>Implementace na Shoptet Premium</h3>
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
@@ -354,9 +267,9 @@
 					@click.prevent="toggleMenu"
 					class="benefits__item">
 					<div class="benefits__item-wrapper">
-						<img
-							src="/icon/balikobot-logo.png"
-							alt="balikobot" />
+            <svg width="131" height="57" viewBox="0 0 131 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M71.8199 50.235H113.559V39.5512H96.4726C101.388 36.0547 104.945 33.141 107.143 30.81C110.506 27.184 112.188 23.6227 112.188 20.1262C112.188 16.6297 110.506 13.716 107.143 11.385C103.263 8.795 97.8307 7.5 90.8333 7.5C87.4704 7.5 84.1721 7.759 80.9386 8.277C78.8691 8.536 76.1529 9.054 72.79 9.831V20.5018C76.1529 18.6888 79.5805 17.7823 83.0727 17.7823C85.6596 17.7823 87.6385 18.3003 88.9966 19.3363C90.3547 20.3723 91.0402 21.6673 91.0402 23.2213C91.0402 28.0128 84.6378 34.436 71.8199 42.465V50.235V50.235ZM16.5 50.235V8.26405H35.9144V27.5077H36.1084L49.3013 8.26405H69.1037L54.5397 27.702L69.6858 50.2479H48.7193L36.1084 29.256H35.9144V50.2479H16.5V50.235Z" stroke="#0B5ED7" stroke-width="3"/>
+            </svg>
 						<h3>Napojení na Balíkobot</h3>
 					</div>
 					<div class="benefits__item-text-wrapper">
@@ -845,48 +758,62 @@
 				</h2>
 			</div>
 			<ul class="extra-solutions__list">
-				<li class="extra-solutions__item--visible">Našeptávač při vyhledávání</li>
-				<li class="extra-solutions__item--visible">Responzivní platforma</li>
-				<li class="extra-solutions__item--visible">Shoptet</li>
-				<li class="extra-solutions__item--visible">Napojení na IS Ventus</li>
-				<li class="extra-solutions__item--visible">Napojení na Balíkobot</li>
-				<li>Tvorba miniaplikace pro správu obsahu na Shoptetu</li>
-				<li>4 různé varianty detailu produktu </li>
-				<li>Hlídací pes pro zákazníky</li>
-				<li>Variabilní doba expedice u produktu dle dostupnosti</li>
-				<li>Podobné/související produkty</li>
-				<li>Slučování objednávek</li>
+				<li class="extra-solutions__item--visible">Proces objednávky, distribuce a fakturace</li>
+				<li class="extra-solutions__item--visible">Prodej do různých zemí, rozdílné nastavení DPH a měny</li>
+				<li class="extra-solutions__item--visible">Správa a přenášení objednávek mezi Shoptetem a ERP K2</li>
+				<li class="extra-solutions__item--visible">Synchronizace stavů skladů ze Shoptetu do ERP K2</li>
+				<li class="extra-solutions__item--visible">Plnění katalogu Shoptetu produkty</li>
+				<li>Scraping produktových dat z Philips.sk</li>
+				<li>Přenos produktových dat z Shoptetu do ERP K2</li>
+				<li>Automatická digitalizace popisů produktů – služba Flixmedia</li>
+				<li>Hodnocení produktů a recenze – služba Bazaarvoice</li>
+				<li>Správa zákazníků v systému Shoptet</li>
+				<li>Přenášení informací o zákaznících mezi Shoptetem a ERP</li>
+				<li>Přenášení cen a cenových politik</li>
+				<li>Akční ceny</li>
+				<li>Slevové kódy</li>
+				<li>Správa a nastavení způsobů dopravy a platby</li>
+				<li>Obecné možnosti komunikační mezivrstvy</li>
+				<li>Zásilkovna + DPD</li>
+				<li>Slevové kódy</li>
+				<li>Akční cena dne</li>
+				<li>QuarticOn</li>
 				<li>Akční cena produktů</li>
-				<li>Min. a max. ks objednaného zboží</li>
-				<li>Akční doprava produktů</li>
-				<li>Upselling na dopravu zdarma</li>
-				<li>Remarketing</li>
-				<li>Doprava a platba</li>
-				<li>Automatizace dárků k produktům</li>
-				<li>Meta tags</li>
-				<li>API</li>
-				<li>Import/export dat</li>
-				<li>Mall</li>
-				<li>Alza</li>
-				<li>Přesměrování URL adres</li>
-				<li>Opakované nákupy</li>
-				<li>Statistika slev</li>
-				<li>Stav a historie objednávky</li>
+				<li>Automatizace akčních cen</li>
+				<li>Související produkty</li>
+				<li>Doplňkový prodej v košíku</li>
+				<li>Podobné produkty</li>
+				<li>Hlídací pes</li>
+				<li>Heureka</li>
+				<li>Top 10 nejprodávanější v obchodě</li>
+				<li>Top nejprodávanější v kategorii</li>
+				<li>Foxentry</li>
+				<li>Pop-up „Už odcházíte“?</li>
+				<li>Poptin</li>
+				<li>Základní SEO</li>
+				<li>Collabim</li>
+				<li>SEOwebmaster</li>
+				<li>Pokročilé SEO</li>
+				<li>Hlídání skladu</li>
+				<li>Můj Shoptet</li>
+				<li>ROI Hunter Easy</li>
+				<li>Velkoobchod</li>
+				<li>Věrnostní slevy</li>
+				<li>Pro dopravu zdarma zbývá</li>
 				<li>Opuštěný košík</li>
-				<li>Filtrace</li>
-				<li>Nastavení kategorie</li>
-				<li>SEO</li>
-				<li>Title</li>
-				<li>Indexace</li>
-				<li>H1, H2</li>
-				<li>Automatický import produktů</li>
-				<li>Shoptet Premium</li>
-				<li>Registrace zákazníka</li>
-				<li>Zpětný bonus</li>
-				<li>Dvoufázové uživatelské testování</li>
-				<li>Upselling</li>
-				<li>Cross-seling</li>
-				<li>Balíkobot</li>
+				<li>Hromadné importy a exporty</li>
+				<li>Smartsupp</li>
+				<li>ChatGo</li>
+				<li>MessageOk</li>
+				<li>Dárkové karty</li>
+				<li>Informační e-maily</li>
+				<li>Dostupnosti</li>
+				<li>Porovnání produktových specifikací</li>
+				<li>Příznaky k produktům</li>
+				<li>Dopravce a platba pro atypický produkt</li>
+				<li>Uživatelé administrace</li>
+				<li>Skladové hospodářství</li>
+				<li>Automatický import filtračních parametrů</li>
 				<li class="extra-solutions__item--button">
 					<button
 						@click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions"
@@ -904,7 +831,7 @@
 		<section
 			class="no-margin"
 			id="kontakt">
-			<ContactForm />
+      <ContactFormPripadoveStudie />
 		</section>
 	</main>
 </template>

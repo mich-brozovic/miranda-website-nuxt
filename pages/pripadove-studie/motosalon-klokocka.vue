@@ -103,9 +103,7 @@
 				<h4>Unikátní návrh wireframe</h4>
 				<div class="slider__slide-content">
 					<p>
-						Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-						online obchod přizpůsobený svým specifickým potřebám.
-					</p>
+            Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.					</p>
 				</div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
@@ -180,28 +178,7 @@
 				<h4>Kódování na Shoptet</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
-					</p>
-				</div>
-			</SwiperSlide>
-			<SwiperSlide class="slider__slide">
-				<svg
-					width="57"
-					height="57"
-					viewBox="0 0 57 57"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M35.4308 22.9393C36.1171 22.9394 36.7794 23.1916 37.2919 23.6479C37.8045 24.1042 38.1316 24.7329 38.2112 25.4145L38.2308 25.7393V37.9697C38.2491 40.5229 37.2657 42.9815 35.4916 44.8177C33.7176 46.654 31.2943 47.7215 28.7419 47.7912C26.1896 47.8608 23.7117 46.927 21.8402 45.1902C19.9686 43.4534 18.8526 41.0521 18.7316 38.5017L18.7176 37.9697V25.7393C18.7177 25.0534 18.9695 24.3915 19.4252 23.879C19.881 23.3665 20.5089 23.0391 21.19 22.9589L21.5176 22.9393H35.4308ZM35.4308 25.7393H21.5148V37.9697C21.4972 39.7864 22.191 41.5379 23.4481 42.8497C24.7052 44.1614 26.4256 44.9292 28.2414 44.9888C30.0573 45.0484 31.8244 44.3952 33.1648 43.1687C34.5052 41.9423 35.3125 40.24 35.414 38.4261L35.4308 37.9697V25.7393ZM16.668 22.9393C16.2607 23.6423 16.0122 24.426 15.94 25.2353L15.9176 25.7393H8.94564V36.2113C8.94534 37.0794 9.16252 37.9338 9.57736 38.6963C9.9922 39.4589 10.5915 40.1055 11.3204 40.5769C12.0494 41.0483 12.8849 41.3296 13.7505 41.395C14.6162 41.4605 15.4845 41.3081 16.276 40.9517C16.5 41.8729 16.8248 42.7549 17.2392 43.5837C16.0602 44.0788 14.7796 44.284 13.5049 44.182C12.2302 44.08 10.9985 43.6738 9.91322 42.9975C8.82793 42.3211 7.92067 41.3943 7.26755 40.2949C6.61443 39.1955 6.2345 37.9555 6.15964 36.6789L6.14844 36.2085V25.7393C6.14853 25.0534 6.40031 24.3915 6.85604 23.879C7.31177 23.3665 7.93973 23.0391 8.62084 22.9589L8.94844 22.9393H16.668ZM40.2804 22.9393H48.0756C48.7619 22.9394 49.4242 23.1916 49.9367 23.6479C50.4493 24.1042 50.7764 24.7329 50.856 25.4145L50.8756 25.7393V36.2113C50.8764 37.5357 50.5482 38.8395 49.9203 40.0056C49.2925 41.1718 48.3848 42.1636 47.2787 42.8921C46.1727 43.6206 44.903 44.0629 43.5837 44.1792C42.2644 44.2955 40.9369 44.0822 39.7204 43.5585C40.1348 42.7241 40.4596 41.8421 40.6808 40.9181C41.4414 41.2729 42.2766 41.4383 43.1151 41.4C43.9535 41.3618 44.7702 41.121 45.4953 40.6983C46.2204 40.2757 46.8323 39.6836 47.2787 38.9729C47.7252 38.2622 47.9928 37.454 48.0588 36.6173L48.0756 36.2113V25.7393H41.0308L41.014 25.3221C40.9527 24.4826 40.7019 23.6679 40.2804 22.9393ZM28.4672 8.86926C30.1214 8.86926 31.7078 9.52637 32.8775 10.696C34.0471 11.8657 34.7042 13.4521 34.7042 15.1063C34.7042 16.7604 34.0471 18.3468 32.8775 19.5165C31.7078 20.6862 30.1214 21.3433 28.4672 21.3433C26.8131 21.3433 25.2267 20.6862 24.057 19.5165C22.8873 18.3468 22.2302 16.7604 22.2302 15.1063C22.2302 13.4521 22.8873 11.8657 24.057 10.696C25.2267 9.52637 26.8131 8.86926 28.4672 8.86926ZM42.4336 10.6277C43.8546 10.6277 45.2174 11.1921 46.2222 12.1969C47.227 13.2017 47.7914 14.5645 47.7914 15.9855C47.7914 17.4064 47.227 18.7692 46.2222 19.774C45.2174 20.7788 43.8546 21.3433 42.4336 21.3433C41.0127 21.3433 39.6499 20.7788 38.6451 19.774C37.6403 18.7692 37.0758 17.4064 37.0758 15.9855C37.0758 14.5645 37.6403 13.2017 38.6451 12.1969C39.6499 11.1921 41.0127 10.6277 42.4336 10.6277ZM14.5456 10.6277C15.9666 10.6277 17.3294 11.1921 18.3342 12.1969C19.339 13.2017 19.9034 14.5645 19.9034 15.9855C19.9034 17.4064 19.339 18.7692 18.3342 19.774C17.3294 20.7788 15.9666 21.3433 14.5456 21.3433C13.1247 21.3433 11.7619 20.7788 10.7571 19.774C9.75232 18.7692 9.18784 17.4064 9.18784 15.9855C9.18784 14.5645 9.75232 13.2017 10.7571 12.1969C11.7619 11.1921 13.1247 10.6277 14.5456 10.6277ZM28.4672 11.6693C27.5557 11.6693 26.6815 12.0314 26.0369 12.6759C25.3923 13.3205 25.0302 14.1947 25.0302 15.1063C25.0302 16.0178 25.3923 16.892 26.0369 17.5366C26.6815 18.1812 27.5557 18.5433 28.4672 18.5433C29.3788 18.5433 30.253 18.1812 30.8976 17.5366C31.5421 16.892 31.9042 16.0178 31.9042 15.1063C31.9042 14.1947 31.5421 13.3205 30.8976 12.6759C30.253 12.0314 29.3788 11.6693 28.4672 11.6693ZM42.4336 13.4277C41.7553 13.4277 41.1047 13.6971 40.625 14.1768C40.1453 14.6565 39.8758 15.3071 39.8758 15.9855C39.8758 16.6638 40.1453 17.3144 40.625 17.7941C41.1047 18.2738 41.7553 18.5433 42.4336 18.5433C43.112 18.5433 43.7626 18.2738 44.2423 17.7941C44.722 17.3144 44.9914 16.6638 44.9914 15.9855C44.9914 15.3071 44.722 14.6565 44.2423 14.1768C43.7626 13.6971 43.112 13.4277 42.4336 13.4277ZM14.5456 13.4277C13.8673 13.4277 13.2167 13.6971 12.737 14.1768C12.2573 14.6565 11.9878 15.3071 11.9878 15.9855C11.9878 16.6638 12.2573 17.3144 12.737 17.7941C13.2167 18.2738 13.8673 18.5433 14.5456 18.5433C15.224 18.5433 15.8746 18.2738 16.3543 17.7941C16.834 17.3144 17.1034 16.6638 17.1034 15.9855C17.1034 15.3071 16.834 14.6565 16.3543 14.1768C15.8746 13.6971 15.224 13.4277 14.5456 13.4277Z"
-						fill="white" />
-				</svg>
-
-				<h4>Produktové fotografie</h4>
-				<div class="slider__slide-content">
-					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -213,80 +190,34 @@
 					@click.prevent="toggleMenu"
 					class="benefits__item">
 					<div class="benefits__item-wrapper">
-						<svg
-							width="57"
-							height="57"
-							viewBox="0 0 57 57"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M17 14.75H15.5V16.25V22.7499V24.2499H17H23H24.5V22.7499V16.25V14.75H23H17ZM15.5 14.5H24.5V24.5H15.5V14.5Z"
-								stroke="#bd2d3b"
-								stroke-width="3" />
-							<mask
-								id="path-2-inside-1_5576_6058"
-								fill="white">
-								<path
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z" />
-							</mask>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z"
-								fill="#bd2d3b" />
-							<path
-								d="M14 31V28H11V31H14ZM43 31H46V28H43V31ZM43 43V46H46V43H43ZM14 43H11V46H14V43ZM16.9592 34V31H13.9592V34H16.9592ZM16.9592 40H13.9592V43H16.9592V40ZM40.0408 40V43H43.0408V40H40.0408ZM40.0408 34H43.0408V31H40.0408V34ZM14 34H43V28H14V34ZM40 31V43H46V31H40ZM43 40H14V46H43V40ZM17 43V31H11V43H17ZM13.9592 34V40H19.9592V34H13.9592ZM16.9592 43H40.0408V37H16.9592V43ZM43.0408 40V34H37.0408V40H43.0408ZM40.0408 31H16.9592V37H40.0408V31Z"
-								fill="#bd2d3b"
-								mask="url(#path-2-inside-1_5576_6058)" />
-							<path
-								d="M8.61594 10.2331V48.5H8.5V8.5H48.5V48.5H48.384V10.2331V8.73308H46.884H10.1159H8.61594V10.2331Z"
-								fill="#bd2d3b"
-								stroke="#bd2d3b"
-								stroke-width="3" />
-							<mask
-								id="path-5-inside-2_5576_6058"
-								fill="white">
-								<path
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									d="M44 17H29V14H44V17Z" />
-							</mask>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M44 17H29V14H44V17Z"
-								fill="#bd2d3b" />
-							<path
-								d="M44 17V20H47V17H44ZM29 17H26V20H29V17ZM29 14V11H26V14H29ZM44 14H47V11H44V14ZM44 14H29V20H44V14ZM32 17V14H26V17H32ZM29 17H44V11H29V17ZM41 14V17H47V14H41Z"
-								fill="#bd2d3b"
-								mask="url(#path-5-inside-2_5576_6058)" />
-							<mask
-								id="path-7-inside-3_5576_6058"
-								fill="white">
-								<path
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									d="M39 22H29V19H39V22Z" />
-							</mask>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M39 22H29V19H39V22Z"
-								fill="#bd2d3b" />
-							<path
-								d="M39 22V25H42V22H39ZM29 22H26V25H29V22ZM29 19V16H26V19H29ZM39 19H42V16H39V19ZM39 19H29V25H39V19ZM32 22V19H26V22H32ZM29 22H39V16H29V22ZM36 19V22H42V19H36Z"
-								fill="#bd2d3b"
-								mask="url(#path-7-inside-3_5576_6058)" />
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M41 27H29V24H41V27Z"
-								fill="#bd2d3b" />
-						</svg>
-
-						<h3>Vývoj e-shopu na míru</h3>
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="path-1-inside-1_551_543" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.78613 5.85742H10.929V11.4289H5.78613V5.85742ZM7.07185 7.25027V10.036H9.64327V7.25027H7.07185Z"/>
+              </mask>
+              <path d="M5.78613 5.85742V2.85742H2.78613V5.85742H5.78613ZM10.929 5.85742H13.929V2.85742H10.929V5.85742ZM10.929 11.4289V14.4289H13.929V11.4289H10.929ZM5.78613 11.4289H2.78613V14.4289H5.78613V11.4289ZM7.07185 7.25027V4.25027H4.07185V7.25027H7.07185ZM7.07185 10.036H4.07185V13.036H7.07185V10.036ZM9.64327 10.036V13.036H12.6433V10.036H9.64327ZM9.64327 7.25027H12.6433V4.25027H9.64327V7.25027ZM5.78613 8.85742H10.929V2.85742H5.78613V8.85742ZM7.92899 5.85742V11.4289H13.929V5.85742H7.92899ZM10.929 8.42885H5.78613V14.4289H10.929V8.42885ZM8.78613 11.4289V5.85742H2.78613V11.4289H8.78613ZM4.07185 7.25027V10.036H10.0719V7.25027H4.07185ZM7.07185 13.036H9.64327V7.03597H7.07185V13.036ZM12.6433 10.036V7.25027H6.64327V10.036H12.6433ZM9.64327 4.25027H7.07185V10.2503H9.64327V4.25027Z" fill="#BD2D3B" mask="url(#path-1-inside-1_551_543)"/>
+              <mask id="path-3-inside-2_551_543" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.78613 13.5723H18.2147V18.7151H5.78613V13.5723ZM7.05436 14.858V17.4294H16.9465V14.858H7.05436Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.78613 13.5723H18.2147V18.7151H5.78613V13.5723ZM7.05436 14.858V17.4294H16.9465V14.858H7.05436Z" fill="#BD2D3B"/>
+              <path d="M5.78613 13.5723V10.5723H2.78613V13.5723H5.78613ZM18.2147 13.5723H21.2147V10.5723H18.2147V13.5723ZM18.2147 18.7151V21.7151H21.2147V18.7151H18.2147ZM5.78613 18.7151H2.78613V21.7151H5.78613V18.7151ZM7.05436 14.858V11.858H4.05436V14.858H7.05436ZM7.05436 17.4294H4.05436V20.4294H7.05436V17.4294ZM16.9465 17.4294V20.4294H19.9465V17.4294H16.9465ZM16.9465 14.858H19.9465V11.858H16.9465V14.858ZM5.78613 16.5723H18.2147V10.5723H5.78613V16.5723ZM15.2147 13.5723V18.7151H21.2147V13.5723H15.2147ZM18.2147 15.7151H5.78613V21.7151H18.2147V15.7151ZM8.78613 18.7151V13.5723H2.78613V18.7151H8.78613ZM4.05436 14.858V17.4294H10.0544V14.858H4.05436ZM7.05436 20.4294H16.9465V14.4294H7.05436V20.4294ZM19.9465 17.4294V14.858H13.9465V17.4294H19.9465ZM16.9465 11.858H7.05436V17.858H16.9465V11.858Z" fill="#BD2D3B" mask="url(#path-3-inside-2_551_543)"/>
+              <mask id="path-5-inside-3_551_543" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.78613 3.28516H21.2147V21.7137H19.8793V4.67076H4.12154V21.7137H2.78613V3.28516Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.78613 3.28516H21.2147V21.7137H19.8793V4.67076H4.12154V21.7137H2.78613V3.28516Z" fill="#BD2D3B"/>
+              <path d="M2.78613 3.28516V0.285156H-0.213867V3.28516H2.78613ZM21.2147 3.28516H24.2147V0.285156H21.2147V3.28516ZM21.2147 21.7137V24.7137H24.2147V21.7137H21.2147ZM19.8793 21.7137H16.8793V24.7137H19.8793V21.7137ZM19.8793 4.67076H22.8793V1.67076H19.8793V4.67076ZM4.12154 4.67076V1.67076H1.12154V4.67076H4.12154ZM4.12154 21.7137V24.7137H7.12154V21.7137H4.12154ZM2.78613 21.7137H-0.213867V24.7137H2.78613V21.7137ZM2.78613 6.28516H21.2147V0.285156H2.78613V6.28516ZM18.2147 3.28516V21.7137H24.2147V3.28516H18.2147ZM21.2147 18.7137H19.8793V24.7137H21.2147V18.7137ZM22.8793 21.7137V4.67076H16.8793V21.7137H22.8793ZM19.8793 1.67076H4.12154V7.67076H19.8793V1.67076ZM1.12154 4.67076V21.7137H7.12154V4.67076H1.12154ZM4.12154 18.7137H2.78613V24.7137H4.12154V18.7137ZM5.78613 21.7137V3.28516H-0.213867V21.7137H5.78613Z" fill="#BD2D3B" mask="url(#path-5-inside-3_551_543)"/>
+              <mask id="path-7-inside-4_551_543" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6424 7.57087H12.2139V6.28516H18.6424V7.57087Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6424 7.57087H12.2139V6.28516H18.6424V7.57087Z" fill="#BD2D3B"/>
+              <path d="M18.6424 7.57087V10.5709H21.6424V7.57087H18.6424ZM12.2139 7.57087H9.21387V10.5709H12.2139V7.57087ZM12.2139 6.28516V3.28516H9.21387V6.28516H12.2139ZM18.6424 6.28516H21.6424V3.28516H18.6424V6.28516ZM18.6424 4.57087H12.2139V10.5709H18.6424V4.57087ZM15.2139 7.57087V6.28516H9.21387V7.57087H15.2139ZM12.2139 9.28516H18.6424V3.28516H12.2139V9.28516ZM15.6424 6.28516V7.57087H21.6424V6.28516H15.6424Z" fill="#BD2D3B" mask="url(#path-7-inside-4_551_543)"/>
+              <mask id="path-9-inside-5_551_543" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4996 9.71345H12.2139V8.42773H16.4996V9.71345Z"/>
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4996 9.71345H12.2139V8.42773H16.4996V9.71345Z" fill="#BD2D3B"/>
+              <path d="M16.4996 9.71345V12.7134H19.4996V9.71345H16.4996ZM12.2139 9.71345H9.21387V12.7134H12.2139V9.71345ZM12.2139 8.42773V5.42773H9.21387V8.42773H12.2139ZM16.4996 8.42773H19.4996V5.42773H16.4996V8.42773ZM16.4996 6.71345H12.2139V12.7134H16.4996V6.71345ZM15.2139 9.71345V8.42773H9.21387V9.71345H15.2139ZM12.2139 11.4277H16.4996V5.42773H12.2139V11.4277ZM13.4996 8.42773V9.71345H19.4996V8.42773H13.4996Z" fill="#BD2D3B" mask="url(#path-9-inside-5_551_543)"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3567 11.858H12.2139V10.5723H17.3567V11.858Z" fill="#BD2D3B"/>
+            </svg>
+            <h3>Vývoj e-shopu na míru</h3>
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
@@ -300,6 +231,7 @@
 					class="benefits__item">
 					<div class="benefits__item-wrapper">
 						<svg
+                class="--color-fill"
 							width="57"
 							height="57"
 							viewBox="0 0 57 57"
@@ -312,9 +244,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-							profesionální online obchod přizpůsobený svým specifickým potřebám.
-						</p>
+              Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.						</p>
 					</div>
 				</li>
 				<li
@@ -396,32 +326,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
-						</p>
-					</div>
-				</li>
-
-				<li
-					@click.prevent="toggleMenu"
-					class="benefits__item">
-					<div class="benefits__item-wrapper">
-						<svg
-							width="57"
-							height="57"
-							viewBox="0 0 57 57"
-							fill="#fed756"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M35.4308 22.9393C36.1171 22.9394 36.7794 23.1916 37.2919 23.6479C37.8045 24.1042 38.1316 24.7329 38.2112 25.4145L38.2308 25.7393V37.9697C38.2491 40.5229 37.2657 42.9815 35.4916 44.8177C33.7176 46.654 31.2943 47.7215 28.7419 47.7912C26.1896 47.8608 23.7117 46.927 21.8402 45.1902C19.9686 43.4534 18.8526 41.0521 18.7316 38.5017L18.7176 37.9697V25.7393C18.7177 25.0534 18.9695 24.3915 19.4252 23.879C19.881 23.3665 20.5089 23.0391 21.19 22.9589L21.5176 22.9393H35.4308ZM35.4308 25.7393H21.5148V37.9697C21.4972 39.7864 22.191 41.5379 23.4481 42.8497C24.7052 44.1614 26.4256 44.9292 28.2414 44.9888C30.0573 45.0484 31.8244 44.3952 33.1648 43.1687C34.5052 41.9423 35.3125 40.24 35.414 38.4261L35.4308 37.9697V25.7393ZM16.668 22.9393C16.2607 23.6423 16.0122 24.426 15.94 25.2353L15.9176 25.7393H8.94564V36.2113C8.94534 37.0794 9.16252 37.9338 9.57736 38.6963C9.9922 39.4589 10.5915 40.1055 11.3204 40.5769C12.0494 41.0483 12.8849 41.3296 13.7505 41.395C14.6162 41.4605 15.4845 41.3081 16.276 40.9517C16.5 41.8729 16.8248 42.7549 17.2392 43.5837C16.0602 44.0788 14.7796 44.284 13.5049 44.182C12.2302 44.08 10.9985 43.6738 9.91322 42.9975C8.82793 42.3211 7.92067 41.3943 7.26755 40.2949C6.61443 39.1955 6.2345 37.9555 6.15964 36.6789L6.14844 36.2085V25.7393C6.14853 25.0534 6.40031 24.3915 6.85604 23.879C7.31177 23.3665 7.93973 23.0391 8.62084 22.9589L8.94844 22.9393H16.668ZM40.2804 22.9393H48.0756C48.7619 22.9394 49.4242 23.1916 49.9367 23.6479C50.4493 24.1042 50.7764 24.7329 50.856 25.4145L50.8756 25.7393V36.2113C50.8764 37.5357 50.5482 38.8395 49.9203 40.0056C49.2925 41.1718 48.3848 42.1636 47.2787 42.8921C46.1727 43.6206 44.903 44.0629 43.5837 44.1792C42.2644 44.2955 40.9369 44.0822 39.7204 43.5585C40.1348 42.7241 40.4596 41.8421 40.6808 40.9181C41.4414 41.2729 42.2766 41.4383 43.1151 41.4C43.9535 41.3618 44.7702 41.121 45.4953 40.6983C46.2204 40.2757 46.8323 39.6836 47.2787 38.9729C47.7252 38.2622 47.9928 37.454 48.0588 36.6173L48.0756 36.2113V25.7393H41.0308L41.014 25.3221C40.9527 24.4826 40.7019 23.6679 40.2804 22.9393ZM28.4672 8.86926C30.1214 8.86926 31.7078 9.52637 32.8775 10.696C34.0471 11.8657 34.7042 13.4521 34.7042 15.1063C34.7042 16.7604 34.0471 18.3468 32.8775 19.5165C31.7078 20.6862 30.1214 21.3433 28.4672 21.3433C26.8131 21.3433 25.2267 20.6862 24.057 19.5165C22.8873 18.3468 22.2302 16.7604 22.2302 15.1063C22.2302 13.4521 22.8873 11.8657 24.057 10.696C25.2267 9.52637 26.8131 8.86926 28.4672 8.86926ZM42.4336 10.6277C43.8546 10.6277 45.2174 11.1921 46.2222 12.1969C47.227 13.2017 47.7914 14.5645 47.7914 15.9855C47.7914 17.4064 47.227 18.7692 46.2222 19.774C45.2174 20.7788 43.8546 21.3433 42.4336 21.3433C41.0127 21.3433 39.6499 20.7788 38.6451 19.774C37.6403 18.7692 37.0758 17.4064 37.0758 15.9855C37.0758 14.5645 37.6403 13.2017 38.6451 12.1969C39.6499 11.1921 41.0127 10.6277 42.4336 10.6277ZM14.5456 10.6277C15.9666 10.6277 17.3294 11.1921 18.3342 12.1969C19.339 13.2017 19.9034 14.5645 19.9034 15.9855C19.9034 17.4064 19.339 18.7692 18.3342 19.774C17.3294 20.7788 15.9666 21.3433 14.5456 21.3433C13.1247 21.3433 11.7619 20.7788 10.7571 19.774C9.75232 18.7692 9.18784 17.4064 9.18784 15.9855C9.18784 14.5645 9.75232 13.2017 10.7571 12.1969C11.7619 11.1921 13.1247 10.6277 14.5456 10.6277ZM28.4672 11.6693C27.5557 11.6693 26.6815 12.0314 26.0369 12.6759C25.3923 13.3205 25.0302 14.1947 25.0302 15.1063C25.0302 16.0178 25.3923 16.892 26.0369 17.5366C26.6815 18.1812 27.5557 18.5433 28.4672 18.5433C29.3788 18.5433 30.253 18.1812 30.8976 17.5366C31.5421 16.892 31.9042 16.0178 31.9042 15.1063C31.9042 14.1947 31.5421 13.3205 30.8976 12.6759C30.253 12.0314 29.3788 11.6693 28.4672 11.6693ZM42.4336 13.4277C41.7553 13.4277 41.1047 13.6971 40.625 14.1768C40.1453 14.6565 39.8758 15.3071 39.8758 15.9855C39.8758 16.6638 40.1453 17.3144 40.625 17.7941C41.1047 18.2738 41.7553 18.5433 42.4336 18.5433C43.112 18.5433 43.7626 18.2738 44.2423 17.7941C44.722 17.3144 44.9914 16.6638 44.9914 15.9855C44.9914 15.3071 44.722 14.6565 44.2423 14.1768C43.7626 13.6971 43.112 13.4277 42.4336 13.4277ZM14.5456 13.4277C13.8673 13.4277 13.2167 13.6971 12.737 14.1768C12.2573 14.6565 11.9878 15.3071 11.9878 15.9855C11.9878 16.6638 12.2573 17.3144 12.737 17.7941C13.2167 18.2738 13.8673 18.5433 14.5456 18.5433C15.224 18.5433 15.8746 18.2738 16.3543 17.7941C16.834 17.3144 17.1034 16.6638 17.1034 15.9855C17.1034 15.3071 16.834 14.6565 16.3543 14.1768C15.8746 13.6971 15.224 13.4277 14.5456 13.4277Z" />
-						</svg>
-
-						<h3>Produktové fotografie</h3>
-					</div>
-					<div class="benefits__item-text-wrapper">
-						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
 						</p>
 					</div>
 				</li>
@@ -448,7 +353,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="intro__flex-container">
+			<div class="intro__flex-container intro__flex-container--custom-klokocka">
 				<div class="intro__flex-item">
 					<h3>33+</h3>
 					<p>let na trhu</p>
@@ -754,8 +659,8 @@
 							Miranda dělá svojí práci na ryze špičkové úrovni!
 						</p>
 						<div class="client-review__client">
-							<p class="client-review__name">4 Kavky</p>
-							<p class="client-review__position">Majitelé</p>
+							<p class="client-review__name">Jakub Šumný</p>
+							<p class="client-review__position">Obchodní ředitel - Klokočka</p>
 						</div>
 					</div>
 				</div>
@@ -770,48 +675,21 @@
 				</h2>
 			</div>
 			<ul class="extra-solutions__list">
-				<li class="extra-solutions__item--visible">Našeptávač při vyhledávání</li>
-				<li class="extra-solutions__item--visible">Responzivní platforma</li>
+				<li class="extra-solutions__item--visible">Dárkové a slevové vouchery</li>
+				<li class="extra-solutions__item--visible">Spropitné dopravci</li>
 				<li class="extra-solutions__item--visible">Shoptet</li>
-				<li class="extra-solutions__item--visible">Napojení na IS Ventus</li>
-				<li class="extra-solutions__item--visible">Napojení na Balíkobot</li>
-				<li>Tvorba miniaplikace pro správu obsahu na Shoptetu</li>
-				<li>4 různé varianty detailu produktu </li>
-				<li>Hlídací pes pro zákazníky</li>
-				<li>Variabilní doba expedice u produktu dle dostupnosti</li>
-				<li>Podobné/související produkty</li>
-				<li>Slučování objednávek</li>
-				<li>Akční cena produktů</li>
-				<li>Min. a max. ks objednaného zboží</li>
-				<li>Akční doprava produktů</li>
-				<li>Upselling na dopravu zdarma</li>
-				<li>Remarketing</li>
-				<li>Doprava a platba</li>
-				<li>Automatizace dárků k produktům</li>
-				<li>Meta tags</li>
-				<li>API</li>
-				<li>Import/export dat</li>
-				<li>Mall</li>
-				<li>Alza</li>
-				<li>Přesměrování URL adres</li>
-				<li>Opakované nákupy</li>
-				<li>Statistika slev</li>
-				<li>Stav a historie objednávky</li>
-				<li>Opuštěný košík</li>
-				<li>Filtrace</li>
-				<li>Nastavení kategorie</li>
-				<li>SEO</li>
-				<li>Title</li>
-				<li>Indexace</li>
-				<li>H1, H2</li>
-				<li>Automatický import produktů</li>
-				<li>Shoptet Premium</li>
-				<li>Registrace zákazníka</li>
-				<li>Zpětný bonus</li>
-				<li>Dvoufázové uživatelské testování</li>
-				<li>Upselling</li>
-				<li>Cross-seling</li>
-				<li>Balíkobot</li>
+				<li class="extra-solutions__item--visible">Doplňky Shoptet</li>
+				<li class="extra-solutions__item--visible">Responzivita webu</li>
+				<li>Platební brána</li>
+				<li>Parametrické filtry</li>
+				<li>Obchodní podmínky</li>
+				<li>GDPR</li>
+				<li>Kontakt a kontaktní formulář</li>
+				<li>Nastavení administrace Shoptet</li>
+				<li>Napojení na doménu</li>
+				<li>Zabezpečení e-shopu</li>
+				<li>Zaškolení obsluhy Shoptet</li>
+				<li>Parametrické filtry</li>
 				<li class="extra-solutions__item--button">
 					<button
 						@click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions"
@@ -829,7 +707,7 @@
 		<section
 			class="no-margin"
 			id="kontakt">
-			<ContactForm />
+      <ContactFormPripadoveStudie />
 		</section>
 	</main>
 </template>
@@ -866,8 +744,8 @@
 	$color-swiper-arrow-hover: #fff;
 
 	$color-benefits-background: #bd2d3b;
-	$color-benefits-border: #bd2d3b;
-	$color-benefits-text: #222e27;
+	$color-benefits-border: #f7dee0;
+	$color-benefits-text: #fff;
 	$color-benefits-icon: #bd2d3b;
 
 	$color-slider-background: #fff;
@@ -945,6 +823,32 @@
 	$color-client-review-text: #222e27;
 	$color-client-review-name: #bd2d3b;
 	$color-client-review-marks: #6b6d6d;
+
+  .slider__image--custom-klokocka {
+    aspect-ratio: 1 / 1;
+    img {
+      background-color: $color-white;
+      position: relative;
+      left: 100%;
+      transform: translateX(-100%);
+      max-width: unset;
+      max-height: 100%;
+      width: auto;
+    }
+    @media (max-width: $width-mobile) {
+      aspect-ratio: unset;
+      position: unset;
+      left: unset;
+      transform: unset;
+
+      width: 100%;
+      min-width: unset;
+      max-width: unset;
+      img {
+        width: 100%;
+      }
+    }
+  }
 
 	:deep(.swiper-button-next),
 	:deep(.swiper-button-prev) {

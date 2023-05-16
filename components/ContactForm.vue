@@ -59,8 +59,9 @@
 							type="text"
 							id="jemno"
 							name="jmeno"
-							placeholder="Jméno a příjmení"
-							:ref="form.jmeno" />
+							placeholder="Jméno a příjmení*"
+							:ref="form.jmeno"
+							required/>
 					</div>
 					<div class="form-row">
 						<input
@@ -68,7 +69,8 @@
 							id="email"
 							name="email"
 							placeholder="E-mail*"
-							:ref="form.email" />
+							:ref="form.email"
+						  required/>
 					</div>
 					<div class="form-row">
 						<input

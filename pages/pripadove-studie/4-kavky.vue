@@ -23,10 +23,9 @@
 				<h4>Unikátní návrh wireframe</h4>
 				<div class="slider__slide-content">
 					<p>
-						Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-						online obchod přizpůsobený svým specifickým potřebám.
-					</p>
-				</div>
+            Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.
+          </p>
+        </div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
 				<svg
@@ -100,8 +99,7 @@
 				<h4>Kódování na Shoptet</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -120,9 +118,7 @@
 				<h4>Produktové fotografie</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
-					</p>
+            Kvalitní produktové fotografie umožňují získat vizuální představu o produktech, což zvyšuje důvěru při nákupu a pomáhá lépe porovnat jednotlivé výrobky.					</p>
 				</div>
 			</SwiperSlide>
 		</referenceMainSlider>
@@ -146,9 +142,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-							profesionální online obchod přizpůsobený svým specifickým potřebám.
-						</p>
+              Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.						</p>
 					</div>
 				</li>
 				<li
@@ -230,8 +224,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
 						</p>
 					</div>
 				</li>
@@ -254,9 +247,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
-						</p>
+              Kvalitní produktové fotografie umožňují získat vizuální představu o produktech, což zvyšuje důvěru při nákupu a pomáhá lépe porovnat jednotlivé výrobky.						</p>
 					</div>
 				</li>
 			</ul>
@@ -620,48 +611,17 @@
 				</h2>
 			</div>
 			<ul class="extra-solutions__list">
-				<li class="extra-solutions__item--visible">Našeptávač při vyhledávání</li>
-				<li class="extra-solutions__item--visible">Responzivní platforma</li>
+				<li class="extra-solutions__item--visible">Předprodej</li>
+				<li class="extra-solutions__item--visible">Platební brána</li>
 				<li class="extra-solutions__item--visible">Shoptet</li>
-				<li class="extra-solutions__item--visible">Napojení na IS Ventus</li>
-				<li class="extra-solutions__item--visible">Napojení na Balíkobot</li>
-				<li>Tvorba miniaplikace pro správu obsahu na Shoptetu</li>
-				<li>4 různé varianty detailu produktu </li>
-				<li>Hlídací pes pro zákazníky</li>
-				<li>Variabilní doba expedice u produktu dle dostupnosti</li>
-				<li>Podobné/související produkty</li>
-				<li>Slučování objednávek</li>
-				<li>Akční cena produktů</li>
-				<li>Min. a max. ks objednaného zboží</li>
-				<li>Akční doprava produktů</li>
-				<li>Upselling na dopravu zdarma</li>
-				<li>Remarketing</li>
-				<li>Doprava a platba</li>
-				<li>Automatizace dárků k produktům</li>
-				<li>Meta tags</li>
-				<li>API</li>
-				<li>Import/export dat</li>
-				<li>Mall</li>
-				<li>Alza</li>
-				<li>Přesměrování URL adres</li>
-				<li>Opakované nákupy</li>
-				<li>Statistika slev</li>
-				<li>Stav a historie objednávky</li>
-				<li>Opuštěný košík</li>
-				<li>Filtrace</li>
-				<li>Nastavení kategorie</li>
-				<li>SEO</li>
-				<li>Title</li>
-				<li>Indexace</li>
-				<li>H1, H2</li>
-				<li>Automatický import produktů</li>
-				<li>Shoptet Premium</li>
-				<li>Registrace zákazníka</li>
-				<li>Zpětný bonus</li>
-				<li>Dvoufázové uživatelské testování</li>
-				<li>Upselling</li>
-				<li>Cross-seling</li>
-				<li>Balíkobot</li>
+				<li class="extra-solutions__item--visible">Obchodní podmínky</li>
+				<li class="extra-solutions__item--visible">Responzivita webu</li>
+				<li>Grafika na míru</li>
+				<li>Produktové focení</li>
+				<li>GDPR</li>
+				<li>Nastavení administrace Shoptet</li>
+				<li>Napojení na doménu</li>
+				<li>Zabezpečení e-shopu</li>
 				<li class="extra-solutions__item--button">
 					<button
 						@click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions"
@@ -679,7 +639,7 @@
 		<section
 			class="no-margin"
 			id="kontakt">
-			<ContactForm />
+      <ContactFormPripadoveStudie />
 		</section>
 	</main>
 </template>
@@ -715,17 +675,17 @@
 	$color-swiper-arrow: #222e27;
 	$color-swiper-arrow-hover: #222e27;
 
-	$color-benefits-background: #fed756;
-	$color-benefits-border: #fed756;
-	$color-benefits-text: #222e27;
+	$color-benefits-background: #33abf2;
+	$color-benefits-border: #33abf2;
+	$color-benefits-text: #fff;
 	$color-benefits-icon: #fed756;
 
 	$color-slider-background: #fed756;
 	$color-slider-border: #fed756;
 	$color-slider-text: #222e27;
 	$color-slider-icon: #fff;
-	$color-slider-content-background: #fed756;
-	$color-slider-content-text: #222e27;
+	$color-slider-content-background: #33abf2;
+	$color-slider-content-text: #fff;
 
 	$color-section-background: #efefef;
 
@@ -744,6 +704,7 @@
 	$color-intro-grid-background: #33abf2;
 	$color-intro-grid-border: transparent;
 	$color-intro-grid-icon: #fff;
+  $color-intro-grid-title: #FFFFFF;
 	$color-intro-grid-text: #222e27;
 
 	$color-task-banner-counter: transparent;
@@ -963,8 +924,10 @@
 				fill: $color-intro-grid-icon;
 			}
 		}
-		& p,
-		& h3 {
+    & h3 {
+      color: $color-intro-grid-title;
+    }
+		& p {
 			color: $color-intro-grid-text;
 		}
 		@media (max-width: $width-mobile) {
