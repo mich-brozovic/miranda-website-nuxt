@@ -64,6 +64,9 @@ const props = defineProps({
   }
   .slider {
     overflow: hidden;
+    @media screen and ($mobile-responsive) {
+      display: none;
+    }
   }
 
   .slider__container {
@@ -89,6 +92,7 @@ const props = defineProps({
     max-width: 332px;
   }
     @media screen and ($mobile-responsive) {
+      display: none;
     width: 100%;
     min-width: unset;
     max-width: unset;
