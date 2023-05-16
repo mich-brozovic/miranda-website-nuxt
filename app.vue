@@ -252,4 +252,13 @@
 			font-size: rem(28);
 		}
 	}
+	.btn {
+		display: inline-block;
+		padding: em(10) em(20);
+		text-decoration: none;
+		&.btn-ghost {
+			border: 1px solid $color-font;
+			color: $color-font;
+		}
+	}
 </style>

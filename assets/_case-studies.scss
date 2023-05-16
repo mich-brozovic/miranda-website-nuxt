@@ -1360,7 +1360,7 @@ main {
 	margin-block: 120px;
 	display: flex;
 	align-items: center;
-	gap: (110 / 1440 * 100%);
+	gap: calc(110 / 1440 * 100%);
 	@media (max-width: 1024px) {
 		flex-direction: column-reverse;
 	}

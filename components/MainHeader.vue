@@ -1,5 +1,12 @@
 <template>
-	<header :class="{ 'scrolled-up': scrolledUp, 'fade-in': fadeIn, 'fade-out': fadeOut, 'submenu-visible': submenuVisible }">
+	<header
+		:class="{
+			'scrolled-up': scrolledUp,
+			'fade-in': fadeIn,
+			'fade-out': fadeOut,
+			'submenu-visible': submenuVisible,
+			'header-black': headerBlack,
+		}">
 		<NuxtLink
 			to="/"
 			class="logo">
@@ -64,6 +71,7 @@
 <script setup>
 	const screenWidth = useState('screenWidth')
 	const submenuVisible = useState('submenuVisible', () => false)
+	const headerBlack = useState('headerBlack', () => false)
 
 	const router = useRouter()
 	router.beforeEach((to, from, next) => {
@@ -143,6 +151,18 @@
 		&.submenu-visible {
 			position: fixed;
 			top: 0;
+		}
+	}
+	.header-black header:not(.scrolled-up) {
+		.logo svg {
+			fill: $color-accent;
+		}
+		nav ul a,
+		a {
+			color: $color-font;
+		}
+		.hamburger span {
+			background-color: $color-font;
 		}
 	}
 	.logo {

@@ -1,5 +1,7 @@
 <template>
-	<section class="hero">
+	<section
+		class="hero"
+		:class="{ black: headerBlack }">
 		<div class="image-wrapper">
 			<NuxtImg
 				:src="props.imgUrl"
@@ -93,6 +95,7 @@
 </template>
 <script setup>
 	const screenWidth = useState('screenWidth')
+	const headerBlack = useState('headerBlack')
 	const props = defineProps({
 		video: Boolean,
 		imgUrl: String,
@@ -135,6 +138,11 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+			}
+		}
+		&.black {
+			.texts {
+				color: $color-font;
 			}
 		}
 		@media screen and ($mobile-responsive) {

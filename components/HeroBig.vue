@@ -65,9 +65,11 @@
 		</div>
 		<div class="container">
 			<div class="texts">
-				<slot/>
+				<slot />
 			</div>
-			<div class="scroll">
+			<div
+				v-if="!hideScroll"
+				class="scroll">
 				<a href="#scroll">
 					<svg
 						width="24"
@@ -93,6 +95,7 @@
 		imgUrl: String,
 		heading: String,
 		subheading: String,
+		hideScroll: Boolean,
 	})
 	const videoRef = ref(null)
 	const videoPlayed = useState('videoPlayed', () => false)
@@ -127,6 +130,9 @@
 				object-fit: cover;
 			}
 		}
+	}
+	.header-black .hero .texts {
+		color: $color-font;
 	}
 	.container {
 		position: absolute;
@@ -199,6 +205,9 @@
 					}
 				}
 			}
+		}
+		.header-black .hero .container {
+			background: linear-gradient(180deg, transparent 0, #fff 50px);
 		}
 	}
 </style>
