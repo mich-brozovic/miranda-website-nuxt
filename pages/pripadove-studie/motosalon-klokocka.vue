@@ -353,7 +353,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="intro__flex-container">
+			<div class="intro__flex-container intro__flex-container--custom-klokocka">
 				<div class="intro__flex-item">
 					<h3>33+</h3>
 					<p>let na trhu</p>
@@ -823,6 +823,32 @@
 	$color-client-review-text: #222e27;
 	$color-client-review-name: #bd2d3b;
 	$color-client-review-marks: #6b6d6d;
+
+  .slider__image--custom-klokocka {
+    aspect-ratio: 1 / 1;
+    img {
+      background-color: $color-white;
+      position: relative;
+      left: 100%;
+      transform: translateX(-100%);
+      max-width: unset;
+      max-height: 100%;
+      width: auto;
+    }
+    @media (max-width: $width-mobile) {
+      aspect-ratio: unset;
+      position: unset;
+      left: unset;
+      transform: unset;
+
+      width: 100%;
+      min-width: unset;
+      max-width: unset;
+      img {
+        width: 100%;
+      }
+    }
+  }
 
 	:deep(.swiper-button-next),
 	:deep(.swiper-button-prev) {
