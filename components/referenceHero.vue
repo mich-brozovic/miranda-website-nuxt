@@ -141,6 +141,7 @@
 			}
 		}
 		@media screen and ($mobile-responsive) {
+      margin-bottom: 20px;
 			height: unset;
 			min-height: unset;
 		}

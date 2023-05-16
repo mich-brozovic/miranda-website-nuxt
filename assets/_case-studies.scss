@@ -50,7 +50,6 @@ main {
 		gap: 10px;
 
 		position: relative;
-		padding: 20px 0;
 		padding-right: 20px;
 
 		border-bottom: 1px solid var(--color-benefits-border);
@@ -976,10 +975,8 @@ main {
 
 .banner-first__image-wrap {
 	flex: 1.8;
-	&.banner-first__image-wrap--penny {
-		@media screen and ($mobile-responsive) {
-			display: none;
-		}
+	@media screen and ($mobile-responsive) {
+		display: none;
 	}
 }
 
@@ -996,7 +993,7 @@ main {
 	@media (max-width: $width-mobile) {
 		padding: 20px;
 		margin: 0;
-		margin-inline: 20px;
+		margin-inline: 0;
 		margin-top: 0;
 		margin-bottom: -40px;
 	}
@@ -1042,7 +1039,7 @@ main {
 	margin-left: 0;
 	@media (max-width: $width-mobile) {
 		margin: 0;
-		margin-inline: 20px;
+		margin-inline: 0 !important;
 		margin-top: -40px;
 		margin-bottom: 0;
 	}
@@ -1155,6 +1152,7 @@ main {
 	}
 	@media (max-width: $width-mobile) {
 		padding: 20px;
+		margin-inline: -20px;
 	}
 }
 
