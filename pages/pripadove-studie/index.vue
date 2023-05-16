@@ -183,7 +183,7 @@
 					class="partner"
 					v-for="(item, index) in partneri"
 					:key="index">
-					<NuxtPicture
+					<NuxtImg
 						:src="item.url"
 						width="180"
 						height="120"
