@@ -726,7 +726,7 @@
 			</div>
 		</article>
 		<article class="banner-first banner-first--reverse banner-firt--top">
-			<div class="banner-first__image-wrap">
+			<div class="banner-first__image-wrap banner-first__image-wrap--penny">
 				<img
 					src="/pripadove-studie/pennydomu/image-banner-first-3.jpg"
 					alt="Obrázek sekce"

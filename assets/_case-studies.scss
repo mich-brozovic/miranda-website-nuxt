@@ -974,6 +974,11 @@ main {
 
 .banner-first__image-wrap {
 	flex: 1.8;
+	&.banner-first__image-wrap--penny {
+		@media screen and ($mobile-responsive) {
+			display: none;
+		}
+	}
 }
 
 .banner-first__text-wrap {
@@ -1045,6 +1050,9 @@ main {
 	.banner-first__text-wrap {
 		margin-top: 80px;
 		margin-right: 0;
+		@media screen and ($mobile-responsive) {
+			margin-right: 20px;
+		}
 	}
 	.banner-first__image-wrap {
 		flex: 1.3;

@@ -118,8 +118,7 @@
 				<h4>Produktové fotografie</h4>
 				<div class="slider__slide-content">
 					<p>
-            Produktové fotografie jsou specializované fotografie, které mají za úkol přesně zachytit vzhled, detaily a vlastnosti daného produktu. Často se používají v obchodních katalozích, webových stránkách, reklamách nebo na sociálních médiích.
-					</p>
+            Kvalitní produktové fotografie umožňují získat vizuální představu o produktech, což zvyšuje důvěru při nákupu a pomáhá lépe porovnat jednotlivé výrobky.					</p>
 				</div>
 			</SwiperSlide>
 		</referenceMainSlider>
@@ -249,8 +248,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-              Produktové fotografie jsou specializované fotografie, které mají za úkol přesně zachytit vzhled, detaily a vlastnosti daného produktu. Často se používají v obchodních katalozích, webových stránkách, reklamách nebo na sociálních médiích.
-						</p>
+              Kvalitní produktové fotografie umožňují získat vizuální představu o produktech, což zvyšuje důvěru při nákupu a pomáhá lépe porovnat jednotlivé výrobky.						</p>
 					</div>
 				</li>
 			</ul>
