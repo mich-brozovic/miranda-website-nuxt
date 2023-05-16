@@ -178,6 +178,7 @@ main {
 
 .intro__flex-container--custom-klokocka {
 	max-width: 1175px;
+	overflow: hidden;
 
 	.intro__flex-item--image {
 		background-color: transparent;
@@ -1894,7 +1895,7 @@ main {
 	line-height: em(36, 20);
 	font-weight: 400;
 	@media (max-width: $width-mobile) {
-		font-size: rem(18);
+		font-size: rem(16);
 		line-height: em(28, 18);
 	}
 }
@@ -1912,6 +1913,9 @@ main {
 	}
 	a:hover {
 		text-decoration: underline;
+	}
+	@media screen and ($mobile-responsive) {
+		font-size: rem(16);
 	}
 }
 
@@ -1934,6 +1938,9 @@ main {
 	font-size: rem(20);
 	line-height: em(28, 16);
 	font-weight: 400;
+	@media screen and ($mobile-responsive) {
+		font-size: rem(16);
+	}
 
 	&::before {
 		content: '';
@@ -1991,7 +1998,11 @@ main {
 		max-height: 1500px;
 	}
 }
-
+.miranda-review {
+	@media screen and ($mobile-responsive) {
+		display: none;
+	}
+}
 .miranda-review__container {
 	display: flex;
 	gap: 20px;
