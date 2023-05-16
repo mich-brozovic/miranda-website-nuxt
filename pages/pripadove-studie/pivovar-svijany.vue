@@ -98,8 +98,7 @@
         <h4>Unikátní struktura e-shopu</h4>
         <div class="slider__slide-content">
           <p>
-            Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-            online obchod přizpůsobený svým specifickým potřebám.
+            Unikátní struktura e-shopu se týká uspořádání kategorií, navigace, prezentace produktů a obecného rozložení obsahu.
           </p>
         </div>
       </SwiperSlide>
@@ -300,8 +299,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Díky integraci Balíkobotu na Shoptet šetříte čas strávený administrací objednávek a expedicí.
-            </p>
+              Unikátní struktura e-shopu se týká uspořádání kategorií, navigace, prezentace produktů a obecného rozložení obsahu.            </p>
           </div>
         </li>
       </ul>
