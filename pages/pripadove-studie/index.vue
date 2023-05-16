@@ -240,7 +240,7 @@
 <style lang="scss" scoped>
 	.reference-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
 		gap: 20px;
 		margin-top: 60px;
 		a {
@@ -288,6 +288,12 @@
 	@media (max-width: 767px) {
 		.reference-grid {
 			grid-template-columns: minmax(1px, 1fr);
+		}
+	}
+	@media (max-width: 540px) {
+		.partners-grid {
+			grid-template-columns: repeat(2, minmax(1px, 1fr));
+			gap: 20px;
 		}
 	}
 </style>

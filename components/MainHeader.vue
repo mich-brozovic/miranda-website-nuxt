@@ -23,7 +23,7 @@
 		<nav v-if="screenWidth >= 1300">
 			<ul>
 				<li><NuxtLink to="/o-nas">O nás</NuxtLink></li>
-				<li><NuxtLink to="/reference">Reference</NuxtLink></li>
+				<li><NuxtLink to="/pripadove-studie">Případové studie</NuxtLink></li>
 				<li><NuxtLink to="/shoptetnamiru">Shoptet na míru</NuxtLink></li>
 				<li><NuxtLink to="/sluzby">Služby</NuxtLink></li>
 				<li><NuxtLink to="/blog">Blog</NuxtLink></li>

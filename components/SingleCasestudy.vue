@@ -135,6 +135,9 @@
 	.reference {
 		position: relative;
 		overflow: hidden;
+		img {
+			display: block;
+		}
 		&__background-image {
 			transform: scale(1.1) translateX(-3%);
 			transition: all 0.3s ease-in-out;
@@ -242,6 +245,7 @@
 			right: 0;
 			z-index: 1;
 			transform: translate(0, -50%);
+			max-width: 6vw;
 		}
 		&__fragment-top-left {
 			position: absolute;
@@ -249,6 +253,7 @@
 			left: 0;
 			z-index: 1;
 			transform: translate(-50%, -50%);
+			max-width: 11vw;
 		}
 		&__fragment-bottom {
 			position: absolute;
@@ -256,6 +261,7 @@
 			right: 0;
 			z-index: 1;
 			transform: translate(50%, 50%);
+			max-width: 11vw;
 		}
 		&__case-study {
 			position: absolute;
@@ -370,7 +376,7 @@
 			}
 		}
 	}
-	@media (max-width: 1178px) {
+	@media (max-width: 1038px) {
 		.reference {
 			&__logo {
 				max-width: 24vw;
@@ -392,6 +398,15 @@
 			}
 			&__mobile-image {
 				max-width: 10vw;
+			}
+			&__fragment-top {
+				max-width: 12vw;
+			}
+			&__fragment-top-left {
+				max-width: 22vw;
+			}
+			&__fragment-bottom {
+				max-width: 22vw;
 			}
 		}
 	}
