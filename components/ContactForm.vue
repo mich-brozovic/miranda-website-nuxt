@@ -61,7 +61,7 @@
 							name="jmeno"
 							placeholder="Jméno a příjmení*"
 							:ref="form.jmeno"
-							required/>
+							required />
 					</div>
 					<div class="form-row">
 						<input
@@ -70,7 +70,7 @@
 							name="email"
 							placeholder="E-mail*"
 							:ref="form.email"
-						  required/>
+							required />
 					</div>
 					<div class="form-row">
 						<input
@@ -98,7 +98,7 @@
 							required />
 						<label for="consent">
 							<strong>Odesláním</strong> souhlasíte s
-							<NuxtLink to="/ochrana-osobnich-udaju">Podmínkami zpracování osobních údajů</NuxtLink>.
+							<NuxtLink to="/zpracovani-osobnich-udaju">Podmínkami zpracování osobních údajů</NuxtLink>.
 						</label>
 					</div>
 					<button class="btn btn-primary">
@@ -131,7 +131,6 @@
 						email: form.email.value.value,
 						phone: form.phone.value.value,
 						message: form.message.value.value,
-
 					},
 				}),
 			})

@@ -9,22 +9,45 @@
 				v-for="(item, index) in data.data"
 				:index="index"
 				class="item">
-				<NuxtPicture
-					class="bg-img"
-					provider="strapi"
-					:src="bgImageURL(item)"
-					loading="lazy"
-					:alt="item.attributes.nazev"
-					:width="item.attributes.thumbnail.data.attributes.width"
-					:height="item.attributes.thumbnail.data.attributes.height" />
-				<div class="logo">
+				<nuxt-link
+					v-if="item.attributes.url"
+					:to="`/pripadove-studie/${item.attributes.url}`">
 					<NuxtPicture
+						class="bg-img"
 						provider="strapi"
-						:src="logoURL(item)"
+						:src="bgImageURL(item)"
 						loading="lazy"
-						:width="item.attributes.logo.data.attributes.width"
-						:height="item.attributes.logo.data.attributes.height"
-						alt="" />
+						:alt="item.attributes.nazev"
+						:width="item.attributes.thumbnail.data.attributes.width"
+						:height="item.attributes.thumbnail.data.attributes.height" />
+					<div class="logo">
+						<NuxtPicture
+							provider="strapi"
+							:src="logoURL(item)"
+							loading="lazy"
+							:width="item.attributes.logo.data.attributes.width"
+							:height="item.attributes.logo.data.attributes.height"
+							alt="" />
+					</div>
+				</nuxt-link>
+				<div v-else>
+					<NuxtPicture
+						class="bg-img"
+						provider="strapi"
+						:src="bgImageURL(item)"
+						loading="lazy"
+						:alt="item.attributes.nazev"
+						:width="item.attributes.thumbnail.data.attributes.width"
+						:height="item.attributes.thumbnail.data.attributes.height" />
+					<div class="logo">
+						<NuxtPicture
+							provider="strapi"
+							:src="logoURL(item)"
+							loading="lazy"
+							:width="item.attributes.logo.data.attributes.width"
+							:height="item.attributes.logo.data.attributes.height"
+							alt="" />
+					</div>
 				</div>
 			</SwiperSlide>
 		</Swiper>
@@ -38,22 +61,45 @@
 				v-for="(item, index) in data.data"
 				:key="index"
 				:class="{ large: (index == 2 || index == 3) && props.type == 'hp' }">
-				<NuxtPicture
-					class="bg-img"
-					provider="strapi"
-					:src="bgImageURL(item)"
-					loading="lazy"
-					:width="item.attributes.thumbnail.data.attributes.width"
-					:height="item.attributes.thumbnail.data.attributes.height"
-					:alt="item.attributes.nazev" />
-				<div class="logo">
+				<nuxt-link
+					v-if="item.attributes.url"
+					:to="`/pripadove-studie/${item.attributes.url}`">
 					<NuxtPicture
+						class="bg-img"
 						provider="strapi"
-						:src="logoURL(item)"
+						:src="bgImageURL(item)"
 						loading="lazy"
-						:width="item.attributes.logo.data.attributes.width"
-						:height="item.attributes.logo.data.attributes.height"
-						alt="" />
+						:width="item.attributes.thumbnail.data.attributes.width"
+						:height="item.attributes.thumbnail.data.attributes.height"
+						:alt="item.attributes.nazev" />
+					<div class="logo">
+						<NuxtPicture
+							provider="strapi"
+							:src="logoURL(item)"
+							loading="lazy"
+							:width="item.attributes.logo.data.attributes.width"
+							:height="item.attributes.logo.data.attributes.height"
+							alt="" />
+					</div>
+				</nuxt-link>
+				<div v-else>
+					<NuxtPicture
+						class="bg-img"
+						provider="strapi"
+						:src="bgImageURL(item)"
+						loading="lazy"
+						:width="item.attributes.thumbnail.data.attributes.width"
+						:height="item.attributes.thumbnail.data.attributes.height"
+						:alt="item.attributes.nazev" />
+					<div class="logo">
+						<NuxtPicture
+							provider="strapi"
+							:src="logoURL(item)"
+							loading="lazy"
+							:width="item.attributes.logo.data.attributes.width"
+							:height="item.attributes.logo.data.attributes.height"
+							alt="" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -111,6 +157,7 @@
 		)
 		data.value = referenceData.value
 	}
+	console.log(data.value)
 
 	const logoURL = (item) => {
 		return getStrapiMedia(item.attributes.logo)
@@ -123,7 +170,7 @@
 <style lang="scss" scoped>
 	.reference-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		grid-template-columns: repeat(4, minmax(1px, 1fr));
 		gap: 20px;
 		margin: 60px 0;
 		&.hidden {
@@ -131,9 +178,15 @@
 				display: none;
 			}
 		}
+		@media (max-width: 900px) {
+			grid-template-columns: repeat(2, minmax(1px, 1fr));
+		}
 	}
 	.item {
 		overflow: hidden;
+		a {
+			display: block;
+		}
 		img {
 			display: block;
 		}
@@ -162,7 +215,7 @@
 				width: 100%;
 			}
 		}
-		&::after {
+		a::after {
 			content: '';
 			display: block;
 			position: absolute;

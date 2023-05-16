@@ -414,5 +414,22 @@
 		.reference__case-study {
 			font-size: rem(8);
 		}
+		.reference__premium {
+			max-width: 80px;
+		}
+		.reference__arrow {
+			bottom: 15px;
+			right: 10px;
+			width: 80px;
+			.arrow-detail {
+				font-size: rem(10);
+				margin-bottom: 5px;
+			}
+			.arrow-head {
+				width: 8px;
+				height: 8px;
+				bottom: -5px;
+			}
+		}
 	}
 </style>

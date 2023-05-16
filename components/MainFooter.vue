@@ -204,7 +204,7 @@
 				</a>
 			</div>
 			<div class="signature">
-				<p>© MirandaMedia Group s.r.o. 2022 | <a href="/zpracovani-osobnich-udaju">Zpracování osobních údajů</a></p>
+				<p>© MirandaMedia Group s.r.o. 2022 | <NuxtLink href="/zpracovani-osobnich-udaju">Zpracování osobních údajů</NuxtLink></p>
 			</div>
 		</div>
 	</footer>
