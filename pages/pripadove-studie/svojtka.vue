@@ -359,8 +359,7 @@
 
 		<!-- SECTION: TASK BANNER -->
 		<section
-			class="task-banner"
-			:class="{ '--show': isExpandedTaskBanner }">
+			class="task-banner">
 			<div class="task-banner__container">
 				<div class="task-banner__wrapper">
 					<h2 class="section__header section__header--counter-2 task-banner__header">Zadání a cíle spolupráce</h2>
@@ -369,15 +368,7 @@
 						bude snadněji použitelná a bude lépe vyhovovat současným nárokům na e-commerce. Svojtka & Co chtělo zajistit, aby
 						zákazníci mohli snadno vyhledávat, objednávat a platit za své oblíbené knihy v rámci moderního a rychlého e-shopu,
 						který bude co nejlépe odpovídat jejich potřebám. Nový e-shop měl také pomoci
-						<strong
-							>zvýšit konkurenceschopnost nakladatelství v online prostředí a posílit jeho pozici na trhu s knihami.</strong
-						>
-						<button
-							class="section__button"
-							type="button"
-							@click.prevent="isExpandedTaskBanner = !isExpandedTaskBanner">
-							{{ isExpandedTaskBanner ? 'Ukázat méně' : 'Přečíst celé' }}
-						</button>
+						<strong>zvýšit konkurenceschopnost nakladatelství v online prostředí a posílit jeho pozici na trhu s knihami.</strong>
 					</p>
 				</div>
 
