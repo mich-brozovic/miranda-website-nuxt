@@ -385,7 +385,7 @@
     </section>
 
     <!-- -- BANNER-SECOND--REVERSE -->
-    <article class="banner-second">
+    <article class="banner-second banner-second--rebelBean">
       <div class="banner-second__container container">
         <div class="banner-second__wrapper banner-second__wrapper--text">
           <h3 class="section__banner-header">Návrh kategorií a detail produktu</h3>
@@ -1078,5 +1078,18 @@ $color-client-review-marks: #474446;
 .banner-first__text-wrap {
   background-color: $color-banner-background;
   border: 1px solid $color-banner-border;
+}
+.banner-second--rebelBean .banner-second__container {
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
+    .banner-second__wrapper--text {
+      grid-column: unset;
+      grid-row-start: unset;
+    }
+    .banner-second__wrapper--image {
+      grid-row-start: unset;
+      grid-column: unset;
+    }
+  }
 }
 </style>

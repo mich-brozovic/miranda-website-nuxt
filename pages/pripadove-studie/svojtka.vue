@@ -1129,14 +1129,16 @@
 		border: 1px solid $color-banner-border;
 	}
   .banner-second--svojtka .banner-second__container {
-    grid-template-columns: 1fr;
-    .banner-second__wrapper--text {
-      grid-column: unset;
-      grid-row-start: unset;
-    }
-    .banner-second__wrapper--image {
-      grid-row-start: unset;
-      grid-column: unset;
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+      .banner-second__wrapper--text {
+        grid-column: unset;
+        grid-row-start: unset;
+      }
+      .banner-second__wrapper--image {
+        grid-row-start: unset;
+        grid-column: unset;
+      }
     }
   }
 </style>
