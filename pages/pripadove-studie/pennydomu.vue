@@ -183,8 +183,7 @@
 				<h4>Napojení na platební bránu Global Payments</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Napojení e-shopu na platební bránu Global Payments umožňuje bezpečně a rychle provádět platby pomocí široké škály platebních metod.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -196,8 +195,7 @@
 				<h4>Napojení na dopravce DODO</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Propojení e-shopu s dopravcem DODO umožňuje rychlou a spolehlivou dopravu objednávek zákazníkům s možností sledování zásilky v reálném čase.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -222,8 +220,7 @@
 				<h4>Přidat vlastní administrace</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Přidání vlastní administrace na e-shop poskytuje majitelům intuitivní rozhraní pro správu obsahu, možnost nastavení cen, slev a kampaní.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -374,8 +371,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Napojení e-shopu na platební bránu Global Payments umožňuje bezpečně a rychle provádět platby pomocí široké škály platebních metod.
 						</p>
 					</div>
 				</li>
@@ -390,8 +386,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Propojení e-shopu s dopravcem DODO umožňuje rychlou a spolehlivou dopravu objednávek zákazníkům s možností sledování zásilky v reálném čase.
 						</p>
 					</div>
 				</li>
@@ -419,8 +414,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Přidání vlastní administrace na e-shop poskytuje majitelům intuitivní rozhraní pro správu obsahu, možnost nastavení cen, slev a kampaní.
 						</p>
 					</div>
 				</li>
