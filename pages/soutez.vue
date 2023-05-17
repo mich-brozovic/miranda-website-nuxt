@@ -4,7 +4,7 @@
         :imgUrl="'/soutez-hero.jpg'">
         <h1>Soutěž o<br />
           <i>GRAFICKÝ NÁVRH</i> Vašeho e-shopu<br />
-          na shoptetu<br />
+          na Shoptetu<br />
           v hodnotě <i>100.000 Kč</i>
         </h1>
     </HeroBig>
