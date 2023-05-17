@@ -23,8 +23,7 @@
 				<h4>Unikátní návrh wireframe</h4>
 				<div class="slider__slide-content">
 					<p>
-						Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-						online obchod přizpůsobený svým specifickým potřebám.
+            Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -164,8 +163,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-							profesionální online obchod přizpůsobený svým specifickým potřebám.
+              Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.
 						</p>
 					</div>
 				</li>
