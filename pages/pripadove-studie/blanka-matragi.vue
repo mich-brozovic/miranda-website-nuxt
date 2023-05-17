@@ -15,8 +15,7 @@
         <h4>Unikátní struktura e-shopu</h4>
         <div class="slider__slide-content">
           <p>
-            Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-            online obchod přizpůsobený svým specifickým potřebám.
+            Unikátní struktura e-shopu se týká uspořádání kategorií, navigace, prezentace produktů a obecného rozložení obsahu.
           </p>
         </div>
       </SwiperSlide>
@@ -92,8 +91,7 @@
         <h4>Nakódování na Shoptet</h4>
         <div class="slider__slide-content">
           <p>
-            Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-            e-shopu podle přesných požadavků podnikatele.
+            Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
           </p>
         </div>
       </SwiperSlide>
@@ -124,8 +122,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-              profesionální online obchod přizpůsobený svým specifickým potřebám.
+              Unikátní struktura e-shopu se týká uspořádání kategorií, navigace, prezentace produktů a obecného rozložení obsahu.
             </p>
           </div>
         </li>
@@ -208,8 +205,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-              e-shopu podle přesných požadavků podnikatele.
+              Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
             </p>
           </div>
         </li>
