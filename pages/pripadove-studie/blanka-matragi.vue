@@ -102,8 +102,7 @@
         <h4>Responzivní platforma</h4>
         <div class="slider__slide-content">
           <p>
-            Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-            e-shopu podle přesných požadavků podnikatele.
+            Responzivní web se automaticky přizpůsobuje velikosti a rozlišení obrazovky. Obsah, obrázky a prvky designu se přesouvají a přeskupují tak, aby byly snadno čitelné a použitelné na různých zařízeních.
           </p>
         </div>
       </SwiperSlide>
@@ -222,8 +221,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-              e-shopu podle přesných požadavků podnikatele.
+              Responzivní web se automaticky přizpůsobuje velikosti a rozlišení obrazovky. Obsah, obrázky a prvky designu se přesouvají a přeskupují tak, aby byly snadno čitelné a použitelné na různých zařízeních.
             </p>
           </div>
         </li>
