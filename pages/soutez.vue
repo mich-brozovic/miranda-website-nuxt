@@ -113,7 +113,7 @@
                 value="Souhlasím s  podmínkami soutěže a zpracování osobních údajů"
                 checked />
             <label for="personal-data-processing">
-              Souhlasím s <a href="/zpracovani-osobnich-udaju">zpracováním osobních údajů</a>
+              Souhlasím se <a href="/zpracovani-osobnich-udaju">zpracováním osobních údajů</a>
             </label>
           </div>
         </form>
