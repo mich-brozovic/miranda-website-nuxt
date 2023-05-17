@@ -113,7 +113,7 @@
                 value="Souhlasím s  podmínkami soutěže a zpracování osobních údajů"
                 checked />
             <label for="personal-data-processing">
-              Souhlasím s <a href="/podminky-souteze">podmínkami soutěže</a> a <a href="/zpracovani-osobnich-udaju">zpracování osobních údajů</a>
+              Souhlasím s <a href="/zpracovani-osobnich-udaju">zpracováním osobních údajů</a>
             </label>
           </div>
         </form>
@@ -267,7 +267,7 @@
         </p>
         <strong>Slosování výherce</strong>
         <p>
-          Výherce bude vybrán prostřednictvím slosování. Slosování se uskuteční dne 18. 7. 2023 za účasti notáře. Výherce bude informován prostřednictvím e-mailu nebo telefonu nejpozději do [31. 7. 2023].
+          Výherce bude vybrán prostřednictvím slosování. Slosování se uskuteční dne 18. 7. 2023 za účasti notáře. Výherce bude informován prostřednictvím e-mailu nebo telefonu nejpozději do 31. 7. 2023.
         </p>
         <strong>Ceny:</strong>
         <ol>
