@@ -358,7 +358,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Připojení e-shopu na PDK číselník PharmaData umožňuje prodejci zobrazovat aktuální informace o léčivech.
+              Napojení e-shopu na systém Mediox umožňuje prodejci v reálném čase zobrazovat dostupnost zboží na skladě a zákazníkům sledovat stav objednávek.
             </p>
           </div>
         </li>
