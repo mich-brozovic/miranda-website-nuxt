@@ -509,13 +509,7 @@
         <div class="miranda-review__wrapper">
           <h2 class="section__header miranda-review__header">Pohled specialisty z Mirandy</h2>
           <p class="section__text">
-            Být součástí procesu vytváření e-shopu pro Rituals.cz a Rituals-cosmetics.sk bylo pro nás nejen výzvou, ale i velkou
-            satisfakcí. Náš tým pracoval s maximálním nasazením na každém kroku, abychom zajistili, že nový e-shop bude
-            odpovídat nejvyšším standardům společnosti Rituals a přinese skvělé zážitky z nakupování.
-          </p>
-          <p class="section__text">
-            Spolupráce s Rituals je důkazem toho, že naše práce a zkušenosti jsou ceněny a že jsme schopni poskytovat naše
-            služby pro ty nejlepší společnosti v oboru.
+            Po nějaké době přestal původní e-shop vyhovovat vzhledem k plánovanému budoucímu objemu prodeje, objemu listovaných položek, požadavku na moderní design, snadnějšímu vyhledávání a nutnosti marketingových nástrojů na <strong>podporu prodeje.</strong> Výsledkem spolupráce Mirandy a Pivovaru Svijany je tak e-shop, který splňuje všechny nároky a požadavky, a navíc s možností dalšího rozvoje funkcionalit a obsahu.
           </p>
           <span class="miranda-review__name">Tomáš Cina</span>
           <span class="miranda-review__position">CEO & Co-founder</span>
@@ -944,7 +938,7 @@ $color-client-review-marks: #C0B17D33;
   height: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in;
+  transition: all 0.6s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
