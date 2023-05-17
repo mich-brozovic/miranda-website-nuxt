@@ -4,7 +4,7 @@
         :imgUrl="'/pripadove-studie/trebbia/trebbia-hero.jpg'"
         :logoUrl="'/icon/wordpress-logo.svg'"
         heading="Navrhli jsme jedinečné webové stránky s globálním dosahem  pro Nadační fond TREBBIA"
-        subheading="Mezinárodní ceny TREBBIA jsou každoročně předávány laureátům z mnoha zemí světa v přímém přenosu Českou a Slovenskou televizí. Po dlouhých 21 letech dostala webová prezentace této významné události novou podobu."
+        subheading="Mezinárodní ceny TREBBIA jsou každoročně předávány laureátům z mnoha zemí světa v přímém přenosu Českou a Slovenskou televizí. Po dlouhých 21 letech dostala webová prezentace této významné události novou podobu a to díky Mirandě."
         pageUrl="www.trebbia-awards.eu"/>
     <referenceMainSlider
         id="scroll"
