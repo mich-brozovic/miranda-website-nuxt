@@ -132,7 +132,7 @@
               <h3>Unikátní design na míru Vašemu e-shopu</h3>
             </div>
             <p>
-              Grafický design připravený na míru Vašemu e-shopu dokáže zvednout obraty až o desítky procent! Naši seniornní grafici pro Vás
+              Grafický design připravený na míru Vašemu e-shopu dokáže zvednout obraty až o desítky procent! Naši seniorní grafici pro Vás
               připraví unikátní návrh hlavní strany, kategorie a detailu produktu v desktopové a mobilní verzi včetně implementace na Váš
               Shoptet.
             </p>
