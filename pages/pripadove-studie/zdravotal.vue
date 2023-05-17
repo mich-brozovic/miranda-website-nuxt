@@ -343,7 +343,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Připojení e-shopu na PDK číselník PharmaData umožňuje prodejci zobrazovat aktuální informace o léčivech.
+              Vytvoření kompletního vizuálního stylu, který zahrnuje unikátní logo, typografii, barevné schéma a další grafické prvky včetně vizitek společnosti.
             </p>
           </div>
         </li>
