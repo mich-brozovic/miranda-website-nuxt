@@ -55,9 +55,9 @@
 			<a
 				href="tel:00420732264251"
 				class="project-phone">
-				<span
+<!--				<span
 					class="status"
-					:class="{ online: actualHour >= 9 && actualHour < 17 }"></span>
+					:class="{ online: actualHour >= 9 && actualHour < 17 }"></span>-->
 				+420 732 264 251
 			</a>
 			<a
@@ -206,9 +206,9 @@
 			display: flex;
 			align-items: center;
 		}
-		.project-mail {
+		/*.project-mail {
 			padding-left: 38px;
-		}
+		}*/
 	}
 	.status {
 		display: inline-block;
