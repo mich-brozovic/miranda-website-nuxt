@@ -169,8 +169,29 @@
 				padding: 40px;
 				flex: 0 1 390px;
 			}
-      .content :deep(p) {
-        line-height: em(32);
+      .content {
+        :deep(p) {
+          line-height: em(32);
+        }
+        :deep(ul) {
+          list-style: none;
+          padding-left: 0;
+          li {
+            position: relative;
+            padding-left: 20px;
+            font-size: rem(16);
+            line-height: 2;
+            &::before {
+              content: '';
+              position: absolute;
+              top: em(13, 20);
+              left: 0;
+              width: 10px;
+              height: 10px;
+              background-color: $color-accent;
+            }
+          }
+        }
       }
 		}
     &__excerpt {
