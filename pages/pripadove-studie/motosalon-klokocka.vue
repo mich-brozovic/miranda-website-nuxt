@@ -653,7 +653,7 @@
 								fill="#453F3F" />
 						</svg>
 						<p class="section__text">
-							S Miradnou spolupracujeme v rámci Autosalonu Klokočka už nějaký ten pátek. Známe se dobře, protože pro nás
+							S Mirandou spolupracujeme v rámci Autosalonu Klokočka už nějaký ten pátek. Známe se dobře, protože pro nás
 							navrhli a kompletně zrealizovali dříve nový projekt e-shop Motosalon Klokočka. Spolupráce s lidmi z Mirandy je
 							na vysoce profesionální úrovni a stejně jako Klokočka poskytuje svým zákazníkům jen ten nejlepší servis, i
 							Miranda dělá svojí práci na ryze špičkové úrovni!
@@ -920,7 +920,7 @@
 		height: 100%;
 		max-height: 0;
 		overflow: hidden;
-		transition: all 0.3s ease-in;
+    transition: all 0.6s ease-out;
 		display: flex;
 		align-items: center;
 		justify-content: center;
