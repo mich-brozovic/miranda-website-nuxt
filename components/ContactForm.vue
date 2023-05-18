@@ -174,6 +174,12 @@
 	.form-col {
 		max-width: 570px;
 	}
+  .project-phone:hover svg {
+    animation: swing 1s ease-in-out;
+  }
+  .project-mail:hover svg {
+    animation: slideEmail .6s ease-in-out;
+  }
 	.project-mail,
 	.project-phone {
 		display: flex;
@@ -196,4 +202,41 @@
 			font-size: 1.4rem;
 		}
 	}
+  @keyframes slideEmail {
+    50% {
+      transform: translateX(15px);
+    }
+    51% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(-15px);
+    }
+  }
+  @keyframes swing {
+    20% {
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    to {
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+  .swing {
+    transform-origin: top center;
+    animation-name: swing;
+  }
 </style>

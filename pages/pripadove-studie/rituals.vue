@@ -977,7 +977,7 @@
 		height: 100%;
 		max-height: 0;
 		overflow: hidden;
-		transition: all 0.3s ease-in;
+    transition: all 0.6s ease-out;
 		display: flex;
 		align-items: center;
 		justify-content: center;

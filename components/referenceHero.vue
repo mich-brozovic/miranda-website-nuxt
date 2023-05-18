@@ -153,6 +153,7 @@
 		object-position: right;
 		max-height: 100vh;
 		min-height: 865px;
+    transition: transform .3s ease-in-out;
 		@media screen and ($mobile-responsive) {
 			min-height: unset;
 		}
@@ -242,6 +243,11 @@
 		position: absolute;
 		bottom: 2rem;
 		left: 0;
+    animation: shakeY 9s infinite;
+    &:hover {
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
+    }
 		a {
 			color: $color-white;
 		}
@@ -293,4 +299,20 @@
 			}
 		}
 	}
+  @keyframes shakeY {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translate3d(0, -10px, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translate3d(0, 10px, 0);
+    }
+  }
 </style>
