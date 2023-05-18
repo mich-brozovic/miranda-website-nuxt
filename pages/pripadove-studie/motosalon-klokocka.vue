@@ -103,8 +103,9 @@
 				<h4>Unikátní návrh wireframe</h4>
 				<div class="slider__slide-content">
 					<p>
-            Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.					</p>
-				</div>
+            Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka. 
+          </p>
+        </div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
 				<svg
@@ -244,7 +245,8 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-              Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.						</p>
+              Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka. 
+            </p>
 					</div>
 				</li>
 				<li
