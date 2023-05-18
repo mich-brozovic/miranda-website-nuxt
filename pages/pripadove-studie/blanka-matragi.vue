@@ -122,6 +122,7 @@
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
               Unikátní struktura e-shopu se týká uspořádání kategorií, navigace, prezentace produktů a obecného rozložení obsahu.
+            </p>
           </div>
         </li>
         <li
