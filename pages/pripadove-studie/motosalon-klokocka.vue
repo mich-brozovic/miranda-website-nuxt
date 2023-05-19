@@ -2,8 +2,8 @@
 	<main>
 		<referenceHero
 			:imgUrl="'/pripadove-studie/klokocka/klokocka-hero.jpg'"
-			heading="Navrhli jsme  e-shop na Shoptetu pro motorové nadšence z  Klokočky"
-			subheading="Firma Jana Klokočky do svého portfolia před časem zařadila motorky značky Honda a rozhodla se společně s Mirandou zrealizovat vizi jejich online prodeje  na platformě Shoptet Premium."
+			heading="Navrhli jsme  e&#8209;shop na Shoptetu pro motorové nadšence z Klokočky"
+			subheading="Firma Jana Klokočky do svého portfolia před časem zařadila motorky značky Honda a rozhodla se společně s Mirandou zrealizovat vizi jejich online prodeje na platformě Shoptet Premium."
 			pageUrl="www.motosalonklokocka.cz" />
 		<referenceMainSlider
 			id="scroll"

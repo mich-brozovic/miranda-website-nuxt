@@ -3,8 +3,8 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/pennydomu/penny-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-			heading="Navrhli jsme první e-shop pro Penny Market na Shoptet Premium"
-			subheading="Naším zadáním a současně cílem bylo vytvořit e-shop s unikátním designem na míru, který bude odpovídat vizuálnímu stylu značky Penny Market společně s napojením e-shopu na dopravce DODO, možností výběru času doručení, validací adres pro rozvoz objednávek, naprogramováním funkcionality vratných obalů, či dokonce s vlastní  na míru připravenou administrací."
+			heading="Navrhli jsme první e&#8209;shop pro Penny Market na Shoptet Premium"
+			subheading="Naším zadáním a současně cílem bylo vytvořit e&#8209;shop s unikátním designem na míru, který bude odpovídat vizuálnímu stylu značky Penny Market společně s napojením e&#8209;shopu na dopravce DODO, možností výběru času doručení, validací adres pro rozvoz objednávek, naprogramováním funkcionality vratných obalů, či dokonce s vlastní na míru připravenou administrací."
 			pageUrl="www.pennydomu.cz"
 			linkWhite />
 		<referenceMainSlider

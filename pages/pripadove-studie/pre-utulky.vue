@@ -3,8 +3,8 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/preutulky/preutulky-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-			heading="Navrhli jsme e-shop, který pomáhá slovenským útulkům! "
-			subheading="E-shop vytvořený na Shoptet Premium získal krátce po svém spuštění vysoké hodnocení více jak 9 z 10 bodů ze strany zákazníků v kategorii celková zkušenost, design, celková přehlednost a průběh objednávky. Díky úspěšné správě kampaní jsme přispěli ke zvýšení měsíčních tržeb o 136 %!"
+			heading="Navrhli jsme e&#8209;shop, který pomáhá slovenským útulkům! "
+			subheading="E&#8209;shop vytvořený na Shoptet Premium získal krátce po svém spuštění vysoké hodnocení více jak 9 z 10 bodů ze strany zákazníků v kategorii celková zkušenost, design, celková přehlednost a průběh objednávky. Díky úspěšné správě kampaní jsme přispěli ke zvýšení měsíčních tržeb o 136 %!"
 			pageUrl="www.preutulky.sk" />
 		<referenceMainSlider
 			id="scroll"

@@ -2,8 +2,8 @@
   <main>
     <referenceHero
         :imgUrl="'/pripadove-studie/blanka-matragi/blanka-matragi-hero.jpg'"
-        heading="Jak jsme vytvořili úspěšný e-shop na Shoptetu pro Blanku Matragi"
-        subheading="Pro světoznámou módní návrhářku Blanku Matragi jsme navrhli e-shop, který propojil virtuální a reálný svět módy a přinesl navýšení tržeb o desítky procent během prvních několika týdnů od spuštění!"
+        heading="Jak jsme vytvořili úspěšný e&#8209;shop na Shoptetu pro Blanku Matragi"
+        subheading="Pro světoznámou módní návrhářku Blanku Matragi jsme navrhli e&#8209;shop, který propojil virtuální a reálný svět módy a přinesl navýšení tržeb o desítky procent během prvních několika týdnů od spuštění!"
         pageUrl="www.blankamatragi.eu"/>
     <referenceMainSlider
         id="scroll"
