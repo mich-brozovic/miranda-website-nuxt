@@ -669,6 +669,10 @@
 					text="Poptat spolupráci" />
 			</div>
 		</section>
+    <section>
+      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+      <caseStudies/>
+    </section>
 		<section
 			class="no-margin"
 			id="kontakt">

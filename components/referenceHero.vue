@@ -150,11 +150,11 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: right;
 		max-height: 100vh;
 		min-height: 865px;
     transition: transform .3s ease-in-out;
 		@media screen and ($mobile-responsive) {
+      object-position: right;
 			min-height: unset;
 		}
 	}
