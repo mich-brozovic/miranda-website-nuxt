@@ -3,8 +3,8 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/zatisi/zatisi-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-			heading="Náš e-shop rozváží čerstvá jídla zkušených šéfkuchařů ze Zátiší Group až na váš stůl!"
-			subheading="Zátiší Group nás oslovili s požadavkem na vytvoření doručovacího e-shopu jejich skvělých jídel. S pomocí platformy Shoptet Premium jsme během 3 a půl měsíce spustili e-shop, který splnil veškerá očekávání a přinesl novou úroveň pohodlí a dostupnosti pro jejich zákazníky."
+			heading="Náš e&#8209;shop rozváží čerstvá jídla zkušených šéfkuchařů ze Zátiší Group až na váš stůl!"
+			subheading="Zátiší Group nás oslovili s požadavkem na vytvoření doručovacího e&#8209;shopu jejich skvělých jídel. S pomocí platformy Shoptet Premium jsme během 3 a půl měsíce spustili e&#8209;shop, který splnil veškerá očekávání a přinesl novou úroveň pohodlí a dostupnosti pro jejich zákazníky."
 			pageUrl="rozvoz.zatisigroup.cz" />
 		<referenceMainSlider
 			id="scroll"

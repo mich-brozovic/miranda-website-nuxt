@@ -2,8 +2,8 @@
   <main>
     <referenceHero
         :imgUrl="'/pripadove-studie/rebel-bean/rebelBean-hero.jpg'"
-        heading="Navrhli jsme e-shop na Shoptetu pro kávové nadšence z Rebelbean.cz"
-        subheading="Vytvoření moderního a svěžího e-shopu bylo pro pražírnu kávy Rebelbean skvělým krokem směrem k zajištění lepšího uživatelského zážitku a zvýšení prodeje. E-shop vznikl za pár týdnů na platformě Shoptet Core."
+        heading="Navrhli jsme e&#8209;shop na Shoptetu pro kávové nadšence z Rebelbean.cz"
+        subheading="Vytvoření moderního a svěžího e-shopu bylo pro pražírnu kávy Rebelbean skvělým krokem směrem k zajištění lepšího uživatelského zážitku a zvýšení prodeje. E&#8209;shop vznikl za pár týdnů na platformě Shoptet Core."
         pageUrl="www.rebelbean.cz"/>
     <referenceMainSlider
         id="scroll"

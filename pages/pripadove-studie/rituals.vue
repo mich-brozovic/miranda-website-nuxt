@@ -3,8 +3,8 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/rituals/rituals-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-			heading="Postavili jsme e-shop pro Rituals.cz a Rituals-cosmetics.sk  na Shoptet Premium"
-			subheading="Od A do Z jsme v Mirandě navrhli a vytvořili český a slovenský e-shop pro společnost Rituals včetně napojení na informační systém Ventus. Oba e-shopy vznikly a přešly do ostrého provozu na platformě Shoptet Premium za necelé 4 měsíce!"
+			heading="Postavili jsme e&#8209;shop pro Rituals.cz a Rituals-cosmetics.sk  na Shoptet Premium"
+			subheading="Od A do Z jsme v Mirandě navrhli a vytvořili český a slovenský e&#8209;shop pro společnost Rituals včetně napojení na informační systém Ventus. Oba e&#8209;shopy vznikly a přešly do ostrého provozu na platformě Shoptet Premium za necelé 4 měsíce!"
 			pageUrl="www.rituals.cz"
 			pageUrlAlt="www.rituals-cosmetics.sk" />
 		<referenceMainSlider

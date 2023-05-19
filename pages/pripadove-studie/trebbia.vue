@@ -3,7 +3,7 @@
     <referenceHero
         :imgUrl="'/pripadove-studie/trebbia/trebbia-hero.jpg'"
         :logoUrl="'/icon/wordpress-logo.svg'"
-        heading="Navrhli jsme jedinečné webové stránky s globálním dosahem  pro Nadační fond TREBBIA"
+        heading="Navrhli jsme jedinečné webové stránky s globálním dosahem pro Nadační fond TREBBIA"
         subheading="Mezinárodní ceny TREBBIA jsou každoročně předávány laureátům z mnoha zemí světa v přímém přenosu Českou a Slovenskou televizí. Po dlouhých 21 letech dostala webová prezentace této významné události novou podobu a to díky Mirandě."
         pageUrl="www.trebbia-awards.eu"/>
     <referenceMainSlider
@@ -315,7 +315,7 @@
     <!-- SECTION: CREATION LINE -->
     <section class="creation-line">
       <div class="section__header-wrapper creation-line__header-wrapper">
-        <h2 class="section__header section__header--counter creation-line__header">Jak probíhala tvorba e-shopu na WordPressu</h2>
+        <h2 class="section__header section__header--counter creation-line__header">Jak probíhala tvorba webu na WordPressu</h2>
       </div>
 
       <div class="creation-line__container container">
@@ -569,7 +569,7 @@
         :class="{ '--show': isExpandedExtraSolutions }">
       <div class="section__header-wrapper extra-solutions__header-wrapper">
         <h2 class="section__header section__header--counter extra-solutions__header">
-          Co dalšího jsme na tomto e-shopu realizovali
+          Co dalšího jsme na tomto webu realizovali
         </h2>
       </div>
       <ul class="extra-solutions__list">

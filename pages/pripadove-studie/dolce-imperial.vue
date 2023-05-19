@@ -2,8 +2,8 @@
   <main>
     <referenceHero
         :imgUrl="'/pripadove-studie/dolce-imperial/dolce-hero.jpg'"
-        heading="E-shop na Shoptetu pro Zdeňka Pohlreicha"
-        subheading="Zdeněk Pohlreich říká, že chce, aby za ním zůstávalo něco smysluplného. Nejen něco, co si budou lidé pamatovat, ale z čeho budou mít užitek. Se stejnou filozofií jsme přistoupili k tvorbě nového e-shopu na platformě Shoptet Core pro butikovou cukrárnu Cafe Imperial Dolce."
+        heading="E&#8209;shop na Shoptetu pro Zdeňka Pohlreicha"
+        subheading="Zdeněk Pohlreich říká, že chce, aby za ním zůstávalo něco smysluplného. Nejen něco, co si budou lidé pamatovat, ale z čeho budou mít užitek. Se stejnou filozofií jsme přistoupili k tvorbě nového e&#8209;shopu na platformě Shoptet Core pro butikovou cukrárnu Cafe Imperial Dolce."
         pageUrl="www.cafeimperialdolce.cz"/>
     <referenceMainSlider
         id="scroll"

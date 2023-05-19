@@ -4,7 +4,7 @@
         :imgUrl="'/pripadove-studie/pivovar-svijany/svijany-hero.jpg'"
         :logoUrl="'/icon/shoptet-premium-v2_white.svg'"
         heading="E&#8209;shop pro pivovar Svijany na platformě Shoptet Premium"
-        subheading="Pivovar Svijany nás oslovil s žádostí o vytvoření nového e&#8209;shopu. Vznikl moderní a uživatelsky přívětivý e-shop na platformě Shoptet Premium s napojením na ERP Helios a bezpečným platebním systémem a jednoduchým procesem objednávání, který umožňuje zákazníkům pohodlný nákup jejich oblíbených piv online."
+        subheading="Pivovar Svijany nás oslovil s žádostí o vytvoření nového e&#8209;shopu. Vznikl moderní a uživatelsky přívětivý e&#8209;shop na platformě Shoptet Premium s napojením na ERP Helios a bezpečným platebním systémem a jednoduchým procesem objednávání, který umožňuje zákazníkům pohodlný nákup jejich oblíbených piv online."
         pageUrl="eshop.pivovarsvijany.cz"/>
     <referenceMainSlider
         id="scroll"

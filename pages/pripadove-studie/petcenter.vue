@@ -4,7 +4,7 @@
 			:imgUrl="'/pripadove-studie/petcenter/petcenter-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
 			heading="Vytvořili jsme e&#8209;shop + mobilní aplikaci s plnou integrací na Shoptet Premium pro společnost Pet Center"
-			subheading="Klient využil našich služeb pro návrh a vývoj e&#8209;shopů Petcenter.cz a Petcenter.sk na míru na platformě Shoptet Premium společně s napojením na ESO9. K e-shopům se o něco později přidal vývoj mobilní aplikace s propojením na personalizovný zákaznický účet a věrnostní program s plnou integrací do Shoptetu. Převzali jsme také značnou část marketingových aktivit."
+			subheading="Klient využil našich služeb pro návrh a vývoj e&#8209;shopů Petcenter.cz a Petcenter.sk na míru na platformě Shoptet Premium společně s napojením na ESO9. K e&#8209;shopům se o něco později přidal vývoj mobilní aplikace s propojením na personalizovný zákaznický účet a věrnostní program s plnou integrací do Shoptetu. Převzali jsme také značnou část marketingových aktivit."
 			pageUrl="www.petcenter.cz"
 			textWidth="870" />
 		<referenceMainSlider

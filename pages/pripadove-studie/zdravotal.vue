@@ -3,8 +3,8 @@
     <referenceHero
         :imgUrl="'/pripadove-studie/zdravotal/zdravotal-hero.jpg'"
         :logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-        heading="Přivedli jsme na svět novou on-line lékárnu Zdravotal.cz"
-        subheading="Na platformě Shoptet Premium jsme vytvořili e-shop on-line lékárny včetně návrhu vizuální identity značky. Díky API jsme napojili Mediox a PharmaData. Po 6 měsících marketingové spolupráce jsme dosáhli zvýšení tržeb o 160,7 %! O zlepšení celkového prodeje svědčí počet objednávek, který vzrostl o 145,4 %."
+        heading="Přivedli jsme na svět novou on&#8209;line lékárnu Zdravotal.cz"
+        subheading="Na platformě Shoptet Premium jsme vytvořili e&#8209;shop on&#8209;line lékárny včetně návrhu vizuální identity značky. Díky API jsme napojili Mediox a PharmaData. Po 6 měsících marketingové spolupráce jsme dosáhli zvýšení tržeb o 160,7 %! O zlepšení celkového prodeje svědčí počet objednávek, který vzrostl o 145,4 %."
         pageUrl="www.zdravotal.cz"
         linkWhite
     />

@@ -2,8 +2,8 @@
 	<main>
 		<referenceHero
 			:imgUrl="'/pripadove-studie/svojtka/svojtka-hero.jpg'"
-			heading="Vytvořili jsme e-shop na Shoptet Premium pro  nakladatelství Svojtka & Co"
-			subheading="Svojtka & Co jsou oddaní svému poslání přinášet zejména dětem radost ze čtení a poskytovat jim nejlepší knižní zážitky. S novým e-shopem od Mirandy jsou připraveni dopřát svým zákazníkům ještě lepší služby a zážitky z nakupování."
+			heading="Vytvořili jsme e&#8209;shop na Shoptet Premium pro nakladatelství Svojtka & Co"
+			subheading="Svojtka & Co jsou oddaní svému poslání přinášet zejména dětem radost ze čtení a poskytovat jim nejlepší knižní zážitky. S novým e&#8209;shopem od Mirandy jsou připraveni dopřát svým zákazníkům ještě lepší služby a zážitky z nakupování."
 			pageUrl="www.svojtka.cz" />
 		<referenceMainSlider
 			id="scroll"
