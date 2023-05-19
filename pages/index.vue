@@ -19,7 +19,7 @@
 				<ReferenceGrid type="hp" />
 				<div class="buttons-center">
 					<BtnSecondary
-						url="/reference"
+						url="/pripadove-studie"
 						text="Objevit další projekty" />
 				</div>
 			</div>
