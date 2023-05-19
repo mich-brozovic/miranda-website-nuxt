@@ -238,6 +238,7 @@
 		font-size: clamp(1rem, 2vw, rem(20));
 		line-height: em(36, 24);
 		font-weight: 400;
+    hyphens: none;
 	}
 	.scroll {
 		position: absolute;
