@@ -3,7 +3,7 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/petcenter/petcenter-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-			heading="Vytvořili jsme e&#8209;shop + mobilní aplikaci s plnou integrací na Shoptet Premium pro společnost Pet Center"
+			heading="Vytvořili jsme e&#8209;shop + mobilní aplikaci s plnou integrací na Shoptet Premium pro společnost Pet&nbsp;Center"
 			subheading="Klient využil našich služeb pro návrh a vývoj e&#8209;shopů Petcenter.cz a Petcenter.sk na míru na platformě Shoptet Premium společně s napojením na ESO9. K e&#8209;shopům se o něco později přidal vývoj mobilní aplikace s propojením na personalizovný zákaznický účet a věrnostní program s plnou integrací do Shoptetu. Převzali jsme také značnou část marketingových aktivit."
 			pageUrl="www.petcenter.cz"
 			textWidth="870" />
@@ -791,7 +791,7 @@
 					<h3 class="section__banner-header">Využili jsme trendu personalizace v e-commerce</h3>
 					<p class="section__banner-text">
 						Personalizace pomáhá e-shopu vytvořit <strong>silnější vztah se zákazníky</strong> a posílit jejich loajalitu, což
-						vede ke zvýšení prodejů a zisků. E-shop Pet Center od společnosti MirandaMedia se snaží poskytnout zákazníkům
+						vede ke zvýšení prodejů a zisků. E-shop Pet&nbsp;Center od společnosti MirandaMedia se snaží poskytnout zákazníkům
 						<strong>jedinečný zážitek při nákupu</strong> tím, že se na ně zaměřuje jako na jednotlivce, a ne jako na pouhé
 						číslo v databázi. Například
 						<strong>může analyzovat data zákazníků a doporučit jim produkt na základě jejich předchozího nákupu</strong>,

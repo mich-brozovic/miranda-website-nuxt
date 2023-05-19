@@ -3,7 +3,7 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/4kavky/4kavky-hero.jpg'"
 			heading="Hravý e&#8209;shop na Shoptetu pro rodinné deskovkářství 4kavky.cz"
-			subheading="E&#8209;shop rodinného deskovkářství 4 Kavky dostal nový kabát. Zohlednili jsme specifika cílové skupiny a vytvořili design, který je atraktivní a uživatelsky přívětivý jak pro rodiny s dětmi, tak pro milovníky deskových her."
+			subheading="E&#8209;shop rodinného deskovkářství 4&nbsp;Kavky dostal nový kabát. Zohlednili jsme specifika cílové skupiny a vytvořili design, který je atraktivní a uživatelsky přívětivý jak pro rodiny s dětmi, tak pro milovníky deskových her."
 			pageUrl="www.4kavky.cz"
 			linkWhite />
 		<referenceMainSlider
