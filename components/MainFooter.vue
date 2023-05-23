@@ -42,7 +42,7 @@
 								<nuxt-link to="/o-nas">O nás</nuxt-link>
 							</li>
 							<li>
-								<nuxt-link to="/reference">Reference</nuxt-link>
+								<nuxt-link to="/pripadove-studie">Případové studie</nuxt-link>
 							</li>
 							<li>
 								<nuxt-link to="/sluzby">Služby</nuxt-link>
