@@ -3,8 +3,8 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/philips/philips-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-			heading="Jak vznikal e-shop pro společnost Philips na Shoptet  Premium"
-			subheading="Společnost Philips není třeba zdlouhavě představovat. Patří mezi  největší výrobce elektroniky a elektrotechniky na světě. Ve spolupráci s naší marketingovou & digitální agenturou MirandaMedia vznikl za necelých 14 týdnů e-shop na Shoptetu s napojením na systém K2, unikátním designem na míru a řadou nadstandardních funkcionalit a individuálních úprav."
+			heading="Jak vznikal e&#8209;shop pro společnost Philips na Shoptet Premium"
+			subheading="Společnost Philips není třeba zdlouhavě představovat. Patří mezi největší výrobce elektroniky a elektrotechniky na světě. Ve spolupráci s naší marketingovou & digitální agenturou MirandaMedia vznikl za necelých 14 týdnů e&#8209;shop na Shoptetu s napojením na systém K2, unikátním designem na míru a řadou nadstandardních funkcionalit a individuálních úprav."
 			pageUrl="www.philips-eshop.sk"
       pageUrlAlt="www.philips-eshop.bg"/>
 		<referenceMainSlider
@@ -154,9 +154,9 @@
         <svg width="131" height="57" viewBox="0 0 131 57" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M71.8199 50.235H113.559V39.5512H96.4726C101.388 36.0547 104.945 33.141 107.143 30.81C110.506 27.184 112.188 23.6227 112.188 20.1262C112.188 16.6297 110.506 13.716 107.143 11.385C103.263 8.795 97.8307 7.5 90.8333 7.5C87.4704 7.5 84.1721 7.759 80.9386 8.277C78.8691 8.536 76.1529 9.054 72.79 9.831V20.5018C76.1529 18.6888 79.5805 17.7823 83.0727 17.7823C85.6596 17.7823 87.6385 18.3003 88.9966 19.3363C90.3547 20.3723 91.0402 21.6673 91.0402 23.2213C91.0402 28.0128 84.6378 34.436 71.8199 42.465V50.235V50.235ZM16.5 50.235V8.26405H35.9144V27.5077H36.1084L49.3013 8.26405H69.1037L54.5397 27.702L69.6858 50.2479H48.7193L36.1084 29.256H35.9144V50.2479H16.5V50.235Z" stroke="#0B5ED7" stroke-width="3"/>
         </svg>
-				<h4>Unikátní grafický design</h4>
+				<h4>Napojení na K2</h4>
 				<div class="slider__slide-content">
-					<p>Díky integraci Balíkobotu na Shoptet šetříte čas strávený administrací objednávek a expedicí.</p>
+					<p>Integrace e-shopu s ERP systémem K2 umožňuje efektivní správu objednávek, skladových zásob a fakturace.</p>
 				</div>
 			</SwiperSlide>
 		</referenceMainSlider>
@@ -270,11 +270,11 @@
             <svg width="131" height="57" viewBox="0 0 131 57" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M71.8199 50.235H113.559V39.5512H96.4726C101.388 36.0547 104.945 33.141 107.143 30.81C110.506 27.184 112.188 23.6227 112.188 20.1262C112.188 16.6297 110.506 13.716 107.143 11.385C103.263 8.795 97.8307 7.5 90.8333 7.5C87.4704 7.5 84.1721 7.759 80.9386 8.277C78.8691 8.536 76.1529 9.054 72.79 9.831V20.5018C76.1529 18.6888 79.5805 17.7823 83.0727 17.7823C85.6596 17.7823 87.6385 18.3003 88.9966 19.3363C90.3547 20.3723 91.0402 21.6673 91.0402 23.2213C91.0402 28.0128 84.6378 34.436 71.8199 42.465V50.235V50.235ZM16.5 50.235V8.26405H35.9144V27.5077H36.1084L49.3013 8.26405H69.1037L54.5397 27.702L69.6858 50.2479H48.7193L36.1084 29.256H35.9144V50.2479H16.5V50.235Z" stroke="#0B5ED7" stroke-width="3"/>
             </svg>
-						<h3>Napojení na Balíkobot</h3>
+						<h3>Napojení na K2</h3>
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Díky integraci Balíkobotu na Shoptet šetříte čas strávený administrací objednávek a expedicí.
+              Integrace e-shopu s ERP systémem K2 umožňuje efektivní správu objednávek, skladových zásob a fakturace.
 						</p>
 					</div>
 				</li>
@@ -423,11 +423,6 @@
 						systémy třetích stran pomocí API podle přání klientů. To nám umožňuje přizpůsobit šablonu e-shopu na míru a přitom
 						nestrávit jeho vývojem dlouhé měsíce až roky.
 					</p>
-					<button
-						class="section__button"
-						type="button">
-						Ukázat více
-					</button>
 				</div>
 			</div>
 		</section>
@@ -577,7 +572,7 @@
 			</div>
 		</section>
 		<!-- -- BANNER-THIRD--REVERSE -->
-		<article class="banner-fifth container">
+		<article class="banner-fifth align-center container">
 			<div class="banner-fifth__wrapper banner-fifth__wrapper-text">
 				<div class="banner-fifth__text-container section__banner">
 					<h3 class="section__banner-header">Napojení ERP K2 na Shoptet Premium</h3>
@@ -828,10 +823,14 @@
 					text="Poptat spolupráci" />
 			</div>
 		</section>
+    <section>
+      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+      <caseStudies/>
+    </section>
 		<section
 			class="no-margin"
 			id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm/>
 		</section>
 	</main>
 </template>
@@ -1018,7 +1017,7 @@
 		height: 100%;
 		max-height: 0;
 		overflow: hidden;
-		transition: all 0.3s ease-in;
+    transition: all 0.6s ease-out;
 		display: flex;
 		align-items: center;
 		justify-content: center;

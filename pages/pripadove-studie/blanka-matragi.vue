@@ -2,8 +2,8 @@
   <main>
     <referenceHero
         :imgUrl="'/pripadove-studie/blanka-matragi/blanka-matragi-hero.jpg'"
-        heading="Jak jsme vytvořili úspěšný e-shop na Shoptetu pro Blanku Matragi"
-        subheading="Pro světoznámou módní návrhářku Blanku Matragi jsme navrhli e-shop, který propojil virtuální a reálný svět módy a přinesl navýšení tržeb o desítky procent během prvních několika týdnů od spuštění!"
+        heading="Jak jsme vytvořili úspěšný e&#8209;shop na Shoptetu pro Blanku&nbsp;Matragi"
+        subheading="Pro světoznámou módní návrhářku Blanku&nbsp;Matragi jsme navrhli e&#8209;shop, který propojil virtuální a reálný svět módy a přinesl navýšení tržeb o desítky procent během prvních několika týdnů od spuštění!"
         pageUrl="www.blankamatragi.eu"/>
     <referenceMainSlider
         id="scroll"
@@ -15,8 +15,7 @@
         <h4>Unikátní struktura e-shopu</h4>
         <div class="slider__slide-content">
           <p>
-            Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-            online obchod přizpůsobený svým specifickým potřebám.
+            Unikátní struktura e-shopu se týká uspořádání kategorií, navigace, prezentace produktů a obecného rozložení obsahu.
           </p>
         </div>
       </SwiperSlide>
@@ -92,8 +91,7 @@
         <h4>Nakódování na Shoptet</h4>
         <div class="slider__slide-content">
           <p>
-            Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-            e-shopu podle přesných požadavků podnikatele.
+            Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
           </p>
         </div>
       </SwiperSlide>
@@ -104,8 +102,7 @@
         <h4>Responzivní platforma</h4>
         <div class="slider__slide-content">
           <p>
-            Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-            e-shopu podle přesných požadavků podnikatele.
+            Responzivní web se automaticky přizpůsobuje velikosti a rozlišení obrazovky. Obsah, obrázky a prvky designu se přesouvají a přeskupují tak, aby byly snadno čitelné a použitelné na různých zařízeních.
           </p>
         </div>
       </SwiperSlide>
@@ -120,12 +117,11 @@
             <svg class="--color-fill" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M49.4996 32H38.9996C38.0717 32.0009 37.182 32.37 36.5258 33.0261C35.8696 33.6823 35.5006 34.572 35.4996 35.5V39H25.7241L17.9996 31.2755V21.5H21.4996C22.4276 21.4991 23.3173 21.13 23.9735 20.4739C24.6297 19.8177 24.9987 18.928 24.9996 18V7.5C24.9987 6.57203 24.6297 5.68233 23.9735 5.02615C23.3173 4.36997 22.4276 4.00093 21.4996 4H10.9996C10.0717 4.00093 9.18195 4.36997 8.52578 5.02615C7.8696 5.68233 7.50055 6.57203 7.49963 7.5V18C7.50055 18.928 7.8696 19.8177 8.52578 20.4739C9.18195 21.13 10.0717 21.4991 10.9996 21.5H14.4996V31.2755L6.26238 39.5127C5.9343 39.8409 5.75 40.286 5.75 40.75C5.75 41.214 5.9343 41.6591 6.26238 41.9873L15.0124 50.7373C15.3406 51.0653 15.7856 51.2496 16.2496 51.2496C16.7137 51.2496 17.1587 51.0653 17.4869 50.7373L25.7241 42.5H35.4996V46C35.5006 46.928 35.8696 47.8177 36.5258 48.4739C37.182 49.13 38.0717 49.4991 38.9996 49.5H49.4996C50.4276 49.4991 51.3173 49.13 51.9735 48.4739C52.6297 47.8177 52.9987 46.928 52.9996 46V35.5C52.9987 34.572 52.6297 33.6823 51.9735 33.0261C51.3173 32.37 50.4276 32.0009 49.4996 32ZM10.9996 7.5H21.4996V18H10.9996V7.5ZM16.2496 47.0255L9.97413 40.75L16.2496 34.4745L22.5251 40.75L16.2496 47.0255ZM38.9996 46V35.5H49.4996V46H38.9996Z" fill="#BDA872"/>
             </svg>
-            <h3>Unikátní návrh wireframe</h3>
+            <h3>Unikátní struktura e-shopu</h3>
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-              profesionální online obchod přizpůsobený svým specifickým potřebám.
+              Unikátní struktura e-shopu se týká uspořádání kategorií, navigace, prezentace produktů a obecného rozložení obsahu.
             </p>
           </div>
         </li>
@@ -208,8 +204,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-              e-shopu podle přesných požadavků podnikatele.
+              Kompletní vytvoření a migrace celého e-shopu na platformu Shoptet, včetně přenosu všech získaných dat. Po přechodu na Shoptet je pak jeho správa mimořádně jednoduchá.
             </p>
           </div>
         </li>
@@ -226,8 +221,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-              e-shopu podle přesných požadavků podnikatele.
+              Responzivní web se automaticky přizpůsobuje velikosti a rozlišení obrazovky. Obsah, obrázky a prvky designu se přesouvají a přeskupují tak, aby byly snadno čitelné a použitelné na různých zařízeních.
             </p>
           </div>
         </li>
@@ -544,10 +538,14 @@
             text="Poptat spolupráci" />
       </div>
     </section>
+    <section>
+      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+      <caseStudies/>
+    </section>
     <section
         class="no-margin"
         id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm/>
     </section>
   </main>
 </template>
@@ -738,7 +736,7 @@ $color-client-review-tiles: #999798;
   height: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in;
+  transition: all 0.6s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;

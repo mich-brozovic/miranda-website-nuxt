@@ -65,7 +65,7 @@ const props = defineProps({
   .slider {
     overflow: hidden;
     @media screen and ($mobile-responsive) {
-      display: none;
+      margin: 0;
     }
   }
 

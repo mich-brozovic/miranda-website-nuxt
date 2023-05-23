@@ -2,8 +2,8 @@
 	<main>
 		<referenceHero
 			:imgUrl="'/pripadove-studie/svojtka/svojtka-hero.jpg'"
-			heading="Vytvořili jsme e-shop na Shoptet Premium pro  nakladatelství Svojtka & Co"
-			subheading="Svojtka & Co jsou oddaní svému poslání přinášet zejména dětem radost ze čtení a poskytovat jim nejlepší knižní zážitky. S novým e-shopem od Mirandy jsou připraveni dopřát svým zákazníkům ještě lepší služby a zážitky z nakupování."
+			heading="Vytvořili jsme e&#8209;shop na Shoptet Premium pro nakladatelství Svojtka & Co"
+			subheading="Svojtka & Co jsou oddaní svému poslání přinášet zejména dětem radost ze čtení a poskytovat jim nejlepší knižní zážitky. S novým e&#8209;shopem od Mirandy jsou připraveni dopřát svým zákazníkům ještě lepší služby a zážitky z nakupování."
 			pageUrl="www.svojtka.cz" />
 		<referenceMainSlider
 			id="scroll"
@@ -23,9 +23,8 @@
 				<h4>Unikátní návrh wireframe</h4>
 				<div class="slider__slide-content">
 					<p>
-						Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-						online obchod přizpůsobený svým specifickým potřebám.
-					</p>
+            Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka. 
+          </p>
 				</div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
@@ -97,12 +96,49 @@
 						stroke-linejoin="round" />
 				</svg>
 
-				<h4>Kódování na Shoptet</h4>
+				<h4>Nakódování na Shoptet Premium</h4>
 				<div class="slider__slide-content">
 					<p>
 						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
 						e-shopu podle přesných požadavků podnikatele.
 					</p>
+				</div>
+			</SwiperSlide>
+      <SwiperSlide class="slider__slide">
+        <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M39 4H18C16.6076 4 15.2723 4.55312 14.2877 5.53769C13.3031 6.52226 12.75 7.85761 12.75 9.25V47.75C12.75 49.1424 13.3031 50.4777 14.2877 51.4623C15.2723 52.4469 16.6076 53 18 53H39C40.3924 53 41.7277 52.4469 42.7123 51.4623C43.6969 50.4777 44.25 49.1424 44.25 47.75V9.25C44.25 7.85761 43.6969 6.52226 42.7123 5.53769C41.7277 4.55312 40.3924 4 39 4ZM40.75 47.75C40.75 48.2141 40.5656 48.6592 40.2374 48.9874C39.9093 49.3156 39.4641 49.5 39 49.5H18C17.5359 49.5 17.0908 49.3156 16.7626 48.9874C16.4344 48.6592 16.25 48.2141 16.25 47.75V9.25C16.25 8.78587 16.4344 8.34075 16.7626 8.01256C17.0908 7.68437 17.5359 7.5 18 7.5H39C39.4641 7.5 39.9093 7.68437 40.2374 8.01256C40.5656 8.34075 40.75 8.78587 40.75 9.25V47.75ZM31.125 13.625C31.125 14.1442 30.971 14.6517 30.6826 15.0834C30.3942 15.515 29.9842 15.8515 29.5045 16.0502C29.0249 16.2489 28.4971 16.3008 27.9879 16.1996C27.4787 16.0983 27.011 15.8483 26.6438 15.4812C26.2767 15.114 26.0267 14.6463 25.9254 14.1371C25.8242 13.6279 25.8761 13.1001 26.0748 12.6205C26.2735 12.1408 26.61 11.7308 27.0416 11.4424C27.4733 11.154 27.9808 11 28.5 11C29.1962 11 29.8639 11.2766 30.3562 11.7688C30.8484 12.2611 31.125 12.9288 31.125 13.625Z" fill="#476BAD"/>
+        </svg>
+				<h4>Responzivní web</h4>
+				<div class="slider__slide-content">
+					<p>
+            Responzivní web se automaticky přizpůsobuje velikosti a rozlišení obrazovky. Obsah, obrázky a prvky designu se přesouvají a přeskupují tak, aby byly snadno čitelné a použitelné na různých zařízeních.
+          </p>
+				</div>
+			</SwiperSlide>
+      <SwiperSlide class="slider__slide">
+        <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect x="0.5" y="0.5" width="56" height="56" fill="url(#pattern0)"/>
+          <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_5423_25699" transform="scale(0.005)"/>
+            </pattern>
+            <image id="image0_5423_25699" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAAHaX54IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAydpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAxIDc5LmMwMjA0YjJkZWYsIDIwMjMvMDIvMDItMTI6MTQ6MjQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC40IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NDE0QTNEMEU4RDMxMUVEQTFEN0UwRjI3NDhCQUFBRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NDE0QTNEMUU4RDMxMUVEQTFEN0UwRjI3NDhCQUFBRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU0MTRBM0NFRThEMzExRURBMUQ3RTBGMjc0OEJBQUFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU0MTRBM0NGRThEMzExRURBMUQ3RTBGMjc0OEJBQUFGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+CcCnSwAAEf1JREFUeNpi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"/>
+          </defs>
+        </svg>
+				<h4>Napojení na ekono-mický systém KOPR</h4>
+				<div class="slider__slide-content">
+					<p>
+            Propojení e-shopu s ekonomickým systémem KOPR umožňuje automatický přenos dat o objednávkách, fakturaci a skladových pohybech, což eliminuje manuální práci a zvyšuje přesnost účetních procesů.
+					</p>
+				</div>
+			</SwiperSlide>
+      <SwiperSlide class="slider__slide">
+        <img style="max-width: 56px;" src="/pripadove-studie/svojtka/logo_isic1.png" alt="ISIC">
+				<h4>Implementace ISIC karty</h4>
+				<div class="slider__slide-content">
+					<p>
+            Implementace ISIC karty na e-shop umožňuje studentům využívat při nákupu online výhodné slevy a speciální nabídky.
+          </p>
 				</div>
 			</SwiperSlide>
 		</referenceMainSlider>
@@ -114,6 +150,7 @@
 					class="benefits__item">
 					<div class="benefits__item-wrapper">
 						<svg
+                class="--color-fill"
 							width="57"
 							height="57"
 							viewBox="0 0 57 57"
@@ -126,9 +163,8 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-							profesionální online obchod přizpůsobený svým specifickým potřebám.
-						</p>
+              Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka. 
+            </p>
 					</div>
 				</li>
 				<li
@@ -215,6 +251,47 @@
 						</p>
 					</div>
 				</li>
+        <li
+            @click.prevent="toggleMenu"
+            class="benefits__item">
+          <div class="benefits__item-wrapper">
+            <svg class="--color-fill" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M39 4H18C16.6076 4 15.2723 4.55312 14.2877 5.53769C13.3031 6.52226 12.75 7.85761 12.75 9.25V47.75C12.75 49.1424 13.3031 50.4777 14.2877 51.4623C15.2723 52.4469 16.6076 53 18 53H39C40.3924 53 41.7277 52.4469 42.7123 51.4623C43.6969 50.4777 44.25 49.1424 44.25 47.75V9.25C44.25 7.85761 43.6969 6.52226 42.7123 5.53769C41.7277 4.55312 40.3924 4 39 4ZM40.75 47.75C40.75 48.2141 40.5656 48.6592 40.2374 48.9874C39.9093 49.3156 39.4641 49.5 39 49.5H18C17.5359 49.5 17.0908 49.3156 16.7626 48.9874C16.4344 48.6592 16.25 48.2141 16.25 47.75V9.25C16.25 8.78587 16.4344 8.34075 16.7626 8.01256C17.0908 7.68437 17.5359 7.5 18 7.5H39C39.4641 7.5 39.9093 7.68437 40.2374 8.01256C40.5656 8.34075 40.75 8.78587 40.75 9.25V47.75ZM31.125 13.625C31.125 14.1442 30.971 14.6517 30.6826 15.0834C30.3942 15.515 29.9842 15.8515 29.5045 16.0502C29.0249 16.2489 28.4971 16.3008 27.9879 16.1996C27.4787 16.0983 27.011 15.8483 26.6438 15.4812C26.2767 15.114 26.0267 14.6463 25.9254 14.1371C25.8242 13.6279 25.8761 13.1001 26.0748 12.6205C26.2735 12.1408 26.61 11.7308 27.0416 11.4424C27.4733 11.154 27.9808 11 28.5 11C29.1962 11 29.8639 11.2766 30.3562 11.7688C30.8484 12.2611 31.125 12.9288 31.125 13.625Z" fill="#222E27"/>
+            </svg>
+            <h3>Responzivní web</h3>
+          </div>
+          <div class="benefits__item-text-wrapper">
+            <p class="benefits__item-text">
+              Responzivní web se automaticky přizpůsobuje velikosti a rozlišení obrazovky. Obsah, obrázky a prvky designu se přesouvají a přeskupují tak, aby byly snadno čitelné a použitelné na různých zařízeních.
+            </p>
+          </div>
+        </li>
+        <li
+            @click.prevent="toggleMenu"
+            class="benefits__item">
+          <div class="benefits__item-wrapper">
+            <img style="max-width: 32px;" src="/pripadove-studie/svojtka/kopr.png" alt="KOPR">
+            <h3>Napojení na ekono-mický systém KOPR</h3>
+          </div>
+          <div class="benefits__item-text-wrapper">
+            <p class="benefits__item-text">
+              Propojení e-shopu s ekonomickým systémem KOPR umožňuje automatický přenos dat o objednávkách, fakturaci a skladových pohybech, což eliminuje manuální práci a zvyšuje přesnost účetních procesů.
+            </p>
+          </div>
+        </li>
+        <li
+            @click.prevent="toggleMenu"
+            class="benefits__item">
+          <div class="benefits__item-wrapper">
+            <img style="max-width: 32px;" src="/pripadove-studie/svojtka/logo_isic1.png" alt="ISIC">
+            <h3>Implementace ISIC karty</h3>
+          </div>
+          <div class="benefits__item-text-wrapper">
+            <p class="benefits__item-text">
+              Implementace ISIC karty na e-shop umožňuje studentům využívat při nákupu online výhodné slevy a speciální nabídky.
+            </p>
+          </div>
+        </li>
 			</ul>
 		</div>
 		<section class="intro container">
@@ -282,8 +359,7 @@
 
 		<!-- SECTION: TASK BANNER -->
 		<section
-			class="task-banner"
-			:class="{ '--show': isExpandedTaskBanner }">
+			class="task-banner">
 			<div class="task-banner__container">
 				<div class="task-banner__wrapper">
 					<h2 class="section__header section__header--counter-2 task-banner__header">Zadání a cíle spolupráce</h2>
@@ -292,15 +368,7 @@
 						bude snadněji použitelná a bude lépe vyhovovat současným nárokům na e-commerce. Svojtka & Co chtělo zajistit, aby
 						zákazníci mohli snadno vyhledávat, objednávat a platit za své oblíbené knihy v rámci moderního a rychlého e-shopu,
 						který bude co nejlépe odpovídat jejich potřebám. Nový e-shop měl také pomoci
-						<strong
-							>zvýšit konkurenceschopnost nakladatelství v online prostředí a posílit jeho pozici na trhu s knihami.</strong
-						>
-						<button
-							class="section__button"
-							type="button"
-							@click.prevent="isExpandedTaskBanner = !isExpandedTaskBanner">
-							{{ isExpandedTaskBanner ? 'Ukázat méně' : 'Přečíst celé' }}
-						</button>
+						<strong>zvýšit konkurenceschopnost nakladatelství v online prostředí a posílit jeho pozici na trhu s knihami.</strong>
 					</p>
 				</div>
 
@@ -349,7 +417,7 @@
 		</section>
 
 		<!-- -- BANNER-SECOND--REVERSE -->
-		<article class="banner-second">
+		<article class="banner-second banner-second--svojtka">
 			<div class="banner-second__container container">
 				<div class="banner-second__wrapper banner-second__wrapper--text">
 					<h3 class="section__banner-header">Integrace ISIC karty</h3>
@@ -359,7 +427,7 @@
 					</p>
 					<img
 						src="/pripadove-studie/svojtka/isic.jpg"
-						alt="" />
+						alt="Isic" />
 				</div>
 				<div class="banner-second__wrapper banner-second__wrapper--text">
 					<h3 class="section__banner-header">Napojení na ekonomický systém KOPR a účetní systém Pohoda</h3>
@@ -584,10 +652,14 @@
 					text="Poptat spolupráci" />
 			</div>
 		</section>
+    <section>
+      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+      <caseStudies/>
+    </section>
 		<section
 			class="no-margin"
 			id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm />
 		</section>
 	</main>
 </template>
@@ -773,7 +845,7 @@
 		height: 100%;
 		max-height: 0;
 		overflow: hidden;
-		transition: all 0.3s ease-in;
+    transition: all 0.6s ease-out;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -1051,4 +1123,17 @@
 		background-color: $color-banner-background;
 		border: 1px solid $color-banner-border;
 	}
+  .banner-second--svojtka .banner-second__container {
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+      .banner-second__wrapper--text {
+        grid-column: unset;
+        grid-row-start: unset;
+      }
+      .banner-second__wrapper--image {
+        grid-row-start: unset;
+        grid-column: unset;
+      }
+    }
+  }
 </style>

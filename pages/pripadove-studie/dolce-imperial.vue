@@ -2,8 +2,8 @@
   <main>
     <referenceHero
         :imgUrl="'/pripadove-studie/dolce-imperial/dolce-hero.jpg'"
-        heading="E-shop na Shoptetu pro Zdeňka Pohlreicha"
-        subheading="Zdeněk Pohlreich říká, že chce, aby za ním zůstávalo něco smysluplného. Nejen něco, co si budou lidé pamatovat, ale z čeho budou mít užitek. Se stejnou filozofií jsme přistoupili k tvorbě nového e-shopu na platformě Shoptet Core pro butikovou cukrárnu Cafe Imperial Dolce."
+        heading="E&#8209;shop na Shoptetu pro Zdeňka Pohlreicha"
+        subheading="Zdeněk Pohlreich říká, že chce, aby za ním zůstávalo něco smysluplného. Nejen něco, co si budou lidé pamatovat, ale z čeho budou mít užitek. Se stejnou filozofií jsme přistoupili k tvorbě nového e&#8209;shopu na platformě Shoptet Core pro butikovou cukrárnu Cafe Imperial Dolce."
         pageUrl="www.cafeimperialdolce.cz"/>
     <referenceMainSlider
         id="scroll"
@@ -97,8 +97,7 @@
         <h4>Unikátní návrh wireframe</h4>
         <div class="slider__slide-content">
           <p>
-            Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.
-          </p>
+            Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka.          </p>
         </div>
       </SwiperSlide>
       <SwiperSlide class="slider__slide">
@@ -214,7 +213,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Naše unikátní wireframy jsou vizuálně působivé a funkční, přesně navržené pro potřeby uživatelů a splňují požadavky projektu.
+              Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka.
             </p>
           </div>
         </li>
@@ -613,10 +612,14 @@
             text="Poptat spolupráci" />
       </div>
     </section>
+    <section>
+      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+      <caseStudies/>
+    </section>
     <section
         class="no-margin"
         id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm />
     </section>
   </main>
 </template>
@@ -794,7 +797,7 @@ $color-client-review-marks: #F5EDE7;
   height: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in;
+  transition: all 0.6s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;

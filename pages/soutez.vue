@@ -4,7 +4,7 @@
         :imgUrl="'/soutez-hero.jpg'">
         <h1>Soutěž o<br />
           <i>GRAFICKÝ NÁVRH</i> Vašeho e-shopu<br />
-          na shoptetu<br />
+          na Shoptetu<br />
           v hodnotě <i>100.000 Kč</i>
         </h1>
     </HeroBig>
@@ -113,7 +113,7 @@
                 value="Souhlasím s  podmínkami soutěže a zpracování osobních údajů"
                 checked />
             <label for="personal-data-processing">
-              Souhlasím s <a href="/podminky-souteze">podmínkami soutěže</a> a <a href="/zpracovani-osobnich-udaju">zpracování osobních údajů</a>
+              Souhlasím se <a href="/zpracovani-osobnich-udaju">zpracováním osobních údajů</a>
             </label>
           </div>
         </form>
@@ -132,7 +132,7 @@
               <h3>Unikátní design na míru Vašemu e-shopu</h3>
             </div>
             <p>
-              Grafický design připravený na míru Vašemu e-shopu dokáže zvednout obraty až o desítky procent! Naši seniornní grafici pro Vás
+              Grafický design připravený na míru Vašemu e-shopu dokáže zvednout obraty až o desítky procent! Naši seniorní grafici pro Vás
               připraví unikátní návrh hlavní strany, kategorie a detailu produktu v desktopové a mobilní verzi včetně implementace na Váš
               Shoptet.
             </p>
@@ -186,9 +186,9 @@
       </div>
     </section>
     <section id="announcement" class="announcement">
-      <h2 class="announcement__title">Vyhlášení vítězů</h2>
+      <h2 class="announcement__title">Vyhlášení vítězů proběhne zde!</h2>
       <div class="announcement__content">
-        <table>
+<!--        <table>
           <tr>
             <td>1.</td>
             <td>Jméno příjmení</td>
@@ -198,58 +198,58 @@
           <tr>
             <td>2.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Správa výkonnostních kampaní Google a Sklik na 3 měsíce zdarma.</td>
           </tr>
           <tr>
             <td>3.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Poukaz v hodnotě 3000 Kč na produktové fotografie.</td>
           </tr>
           <tr>
             <td>4.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Poukaz v hodnotě 3000 Kč na produktové fotografie.</td>
           </tr>
           <tr>
             <td>5.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Poukaz v hodnotě 3000 Kč na produktové fotografie.</td>
           </tr>
           <tr>
             <td>6.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Poukaz v hodnotě 3000 Kč na produktové fotografie.</td>
           </tr>
           <tr>
             <td>7.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Poukaz v hodnotě 3000 Kč na produktové fotografie.</td>
           </tr>
           <tr>
             <td>8.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Poukaz v hodnotě 3000 Kč na produktové fotografie.</td>
           </tr>
           <tr>
             <td>9.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Poukaz v hodnotě 3000 Kč na produktové fotografie.</td>
           </tr>
           <tr>
             <td>10.</td>
             <td>Jméno příjmení</td>
-            <td>Název firmy</td>
+            <td>Adresa e-shopu</td>
             <td>Poukaz v hodnotě 3000 Kč na produktové fotografie.</td>
           </tr>
-        </table>
+        </table>-->
       </div>
     </section>
     <section id="competition-rules" class="competition-rules">
@@ -267,7 +267,7 @@
         </p>
         <strong>Slosování výherce</strong>
         <p>
-          Výherce bude vybrán prostřednictvím slosování. Slosování se uskuteční dne 18. 7. 2023 za účasti notáře. Výherce bude informován prostřednictvím e-mailu nebo telefonu nejpozději do [31. 7. 2023].
+          Výherce bude vybrán prostřednictvím slosování. Slosování se uskuteční dne 18. 7. 2023 za účasti notáře. Výherce bude informován prostřednictvím e-mailu nebo telefonu nejpozději do 31. 7. 2023.
         </p>
         <strong>Ceny:</strong>
         <ol>

@@ -150,10 +150,11 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: right;
 		max-height: 100vh;
 		min-height: 865px;
+    transition: transform .3s ease-in-out;
 		@media screen and ($mobile-responsive) {
+      object-position: right;
 			min-height: unset;
 		}
 	}
@@ -237,11 +238,17 @@
 		font-size: clamp(1rem, 2vw, rem(20));
 		line-height: em(36, 24);
 		font-weight: 400;
+    hyphens: none;
 	}
 	.scroll {
 		position: absolute;
 		bottom: 2rem;
 		left: 0;
+    animation: shakeY 9s infinite;
+    &:hover {
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
+    }
 		a {
 			color: $color-white;
 		}
@@ -293,4 +300,20 @@
 			}
 		}
 	}
+  @keyframes shakeY {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translate3d(0, -10px, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translate3d(0, 10px, 0);
+    }
+  }
 </style>

@@ -14,10 +14,11 @@
 			<div class="article__content">
 				<main>
 					<h1>{{ data.data[0].attributes.nazev }}</h1>
+          <p class="article__excerpt" v-html="data.data[0].attributes.description"></p>
 					<ClientOnly
 						fallback-tag="div"
 						fallback="Načítám...">
-						<Markdown :source="data.data[0].attributes.content" />
+						<Markdown class="content" :source="data.data[0].attributes.content" />
 					</ClientOnly>
 				</main>
 				<aside>
@@ -168,7 +169,35 @@
 				padding: 40px;
 				flex: 0 1 390px;
 			}
+      .content {
+        :deep(p) {
+          line-height: em(32);
+        }
+        :deep(ul) {
+          list-style: none;
+          padding-left: 0;
+          li {
+            position: relative;
+            padding-left: 20px;
+            font-size: rem(16);
+            line-height: 2;
+            &::before {
+              content: '';
+              position: absolute;
+              top: em(13, 20);
+              left: 0;
+              width: 10px;
+              height: 10px;
+              background-color: $color-accent;
+            }
+          }
+        }
+      }
 		}
+    &__excerpt {
+      font-size: rem(18);
+      line-height: em(32);
+    }
 		&__reading {
 			display: flex;
 			align-items: center;

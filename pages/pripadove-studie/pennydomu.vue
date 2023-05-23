@@ -3,8 +3,8 @@
 		<referenceHero
 			:imgUrl="'/pripadove-studie/pennydomu/penny-hero.jpg'"
 			:logoUrl="'/icon/shoptet-premium-v2_white.svg'"
-			heading="Navrhli jsme první e-shop pro Penny Market na Shoptet Premium"
-			subheading="Naším zadáním a současně cílem bylo vytvořit e-shop s unikátním designem na míru, který bude odpovídat vizuálnímu stylu značky Penny Market společně s napojením e-shopu na dopravce DODO, možností výběru času doručení, validací adres pro rozvoz objednávek, naprogramováním funkcionality vratných obalů, či dokonce s vlastní  na míru připravenou administrací."
+			heading="Navrhli jsme první e&#8209;shop pro Penny Market na Shoptet Premium"
+			subheading="Naším zadáním a současně cílem bylo vytvořit e&#8209;shop s unikátním designem na míru, který bude odpovídat vizuálnímu stylu značky Penny Market společně s napojením e&#8209;shopu na dopravce DODO, možností výběru času doručení, validací adres pro rozvoz objednávek, naprogramováním funkcionality vratných obalů, či dokonce s vlastní na míru připravenou administrací."
 			pageUrl="www.pennydomu.cz"
 			linkWhite />
 		<referenceMainSlider
@@ -183,8 +183,7 @@
 				<h4>Napojení na platební bránu Global Payments</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Napojení e-shopu na platební bránu Global Payments umožňuje bezpečně a rychle provádět platby pomocí široké škály platebních metod.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -196,8 +195,7 @@
 				<h4>Napojení na dopravce DODO</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Propojení e-shopu s dopravcem DODO umožňuje rychlou a spolehlivou dopravu objednávek zákazníkům s možností sledování zásilky v reálném čase.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -222,8 +220,7 @@
 				<h4>Přidat vlastní administrace</h4>
 				<div class="slider__slide-content">
 					<p>
-						Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-						e-shopu podle přesných požadavků podnikatele.
+            Přidání vlastní administrace na e-shop poskytuje majitelům intuitivní rozhraní pro správu obsahu, možnost nastavení cen, slev a kampaní.
 					</p>
 				</div>
 			</SwiperSlide>
@@ -374,8 +371,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Napojení e-shopu na platební bránu Global Payments umožňuje bezpečně a rychle provádět platby pomocí široké škály platebních metod.
 						</p>
 					</div>
 				</li>
@@ -390,8 +386,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Propojení e-shopu s dopravcem DODO umožňuje rychlou a spolehlivou dopravu objednávek zákazníkům s možností sledování zásilky v reálném čase.
 						</p>
 					</div>
 				</li>
@@ -419,8 +414,7 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-							Kódování na Shoptet Premium umožňuje upravit design, rozložení stránek, funkce, procesy nákupu a další aspekty
-							e-shopu podle přesných požadavků podnikatele.
+              Přidání vlastní administrace na e-shop poskytuje majitelům intuitivní rozhraní pro správu obsahu, možnost nastavení cen, slev a kampaní.
 						</p>
 					</div>
 				</li>
@@ -880,10 +874,14 @@
 					text="Poptat spolupráci" />
 			</div>
 		</section>
+    <section>
+      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+      <caseStudies/>
+    </section>
 		<section
 			class="no-margin"
 			id="kontakt">
-			<ContactFormPripadoveStudie />
+			<ContactForm/>
 		</section>
 	</main>
 </template>
@@ -1072,7 +1070,7 @@
 		height: 100%;
 		max-height: 0;
 		overflow: hidden;
-		transition: all 0.3s ease-in;
+		transition: all 0.6s ease-out;
 		display: flex;
 		align-items: center;
 		justify-content: center;

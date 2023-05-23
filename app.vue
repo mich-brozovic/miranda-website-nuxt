@@ -259,6 +259,21 @@
 		&.btn-ghost {
 			border: 1px solid $color-font;
 			color: $color-font;
+      transition: background-color, color, .3s ease-in-out;
+      &:hover {
+        background-color: $color-font;
+        color: $color-white;
+      }
 		}
+    &.btn-ghost-v2 {
+      border: 1px solid $color-white;
+      color: $color-white;
+      padding: em(19);
+      transition: background-color, color, .3s ease-in-out;
+      &:hover {
+        background-color: $color-white;
+        color: $color-font;
+      }
+    }
 	}
 </style>

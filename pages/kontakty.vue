@@ -171,6 +171,15 @@
 			aspect-ratio: 1 / 1;
 			max-width: 260px;
 			border: 10px solid $color-font;
+      &.phone:hover svg {
+        animation: swing 1s ease-in-out;
+      }
+      &.email:hover svg {
+        animation: slideEmail .7s ease-in-out;
+      }
+      &.address:hover svg {
+        animation: shakeY 1.5s ease-in-out;
+      }
 			a {
 				display: flex;
 				flex-direction: column;
@@ -258,4 +267,52 @@
 			font-size: rem(48);
 		}
 	}
+  @keyframes slideEmail {
+    50% {
+      transform: translateX(30px);
+    }
+    51% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(-30px);
+    }
+  }
+  @keyframes swing {
+    20% {
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    to {
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+  @keyframes shakeY {
+    from,
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+    10%,
+    50% {
+      transform: translate3d(0, -10px, 0);
+    }
+
+    30%,
+    70% {
+      transform: translate3d(0, 10px, 0);
+    }
+  }
 </style>

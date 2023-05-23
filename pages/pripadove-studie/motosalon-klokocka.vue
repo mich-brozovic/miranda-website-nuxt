@@ -2,8 +2,8 @@
 	<main>
 		<referenceHero
 			:imgUrl="'/pripadove-studie/klokocka/klokocka-hero.jpg'"
-			heading="Navrhli jsme  e-shop na Shoptetu pro motorové nadšence z  Klokočky"
-			subheading="Firma Jana Klokočky do svého portfolia před časem zařadila motorky značky Honda a rozhodla se společně s Mirandou zrealizovat vizi jejich online prodeje  na platformě Shoptet Premium."
+			heading="Navrhli jsme  e&#8209;shop na Shoptetu pro motorové nadšence z Klokočky"
+			subheading="Firma Jana Klokočky do svého portfolia před časem zařadila motorky značky Honda a rozhodla se společně s Mirandou zrealizovat vizi jejich online prodeje na platformě Shoptet Premium."
 			pageUrl="www.motosalonklokocka.cz" />
 		<referenceMainSlider
 			id="scroll"
@@ -103,8 +103,9 @@
 				<h4>Unikátní návrh wireframe</h4>
 				<div class="slider__slide-content">
 					<p>
-            Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.					</p>
-				</div>
+            Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka. 
+          </p>
+        </div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
 				<svg
@@ -244,7 +245,8 @@
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
-              Unikátní wireframe poskytuje intuitivní a přehledné uživatelské rozhraní, které zlepšuje interakci s webovou stránkou a usnadňuje navigaci mezi produkty a kategoriemi.						</p>
+              Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka. 
+            </p>
 					</div>
 				</li>
 				<li
@@ -653,7 +655,7 @@
 								fill="#453F3F" />
 						</svg>
 						<p class="section__text">
-							S Miradnou spolupracujeme v rámci Autosalonu Klokočka už nějaký ten pátek. Známe se dobře, protože pro nás
+							S Mirandou spolupracujeme v rámci Autosalonu Klokočka už nějaký ten pátek. Známe se dobře, protože pro nás
 							navrhli a kompletně zrealizovali dříve nový projekt e-shop Motosalon Klokočka. Spolupráce s lidmi z Mirandy je
 							na vysoce profesionální úrovni a stejně jako Klokočka poskytuje svým zákazníkům jen ten nejlepší servis, i
 							Miranda dělá svojí práci na ryze špičkové úrovni!
@@ -704,10 +706,14 @@
 					text="Poptat spolupráci" />
 			</div>
 		</section>
+    <section>
+      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+      <caseStudies/>
+    </section>
 		<section
 			class="no-margin"
 			id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm/>
 		</section>
 	</main>
 </template>
@@ -920,7 +926,7 @@
 		height: 100%;
 		max-height: 0;
 		overflow: hidden;
-		transition: all 0.3s ease-in;
+    transition: all 0.6s ease-out;
 		display: flex;
 		align-items: center;
 		justify-content: center;

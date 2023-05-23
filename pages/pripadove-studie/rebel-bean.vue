@@ -2,8 +2,8 @@
   <main>
     <referenceHero
         :imgUrl="'/pripadove-studie/rebel-bean/rebelBean-hero.jpg'"
-        heading="Navrhli jsme e-shop na Shoptetu pro kávové nadšence z Rebelbean.cz"
-        subheading="Vytvoření moderního a svěžího e-shopu bylo pro pražírnu kávy Rebelbean skvělým krokem směrem k zajištění lepšího uživatelského zážitku a zvýšení prodeje. E-shop vznikl za pár týdnů na platformě Shoptet Core."
+        heading="Navrhli jsme e&#8209;shop na Shoptetu pro kávové nadšence z Rebelbean.cz"
+        subheading="Vytvoření moderního a svěžího e-shopu bylo pro pražírnu kávy Rebelbean skvělým krokem směrem k zajištění lepšího uživatelského zážitku a zvýšení prodeje. E&#8209;shop vznikl za pár týdnů na platformě Shoptet Core."
         pageUrl="www.rebelbean.cz"/>
     <referenceMainSlider
         id="scroll"
@@ -23,8 +23,7 @@
         <h4>Unikátní návrh wireframe</h4>
         <div class="slider__slide-content">
           <p>
-            Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít profesionální
-            online obchod přizpůsobený svým specifickým potřebám.
+            Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka. 
           </p>
         </div>
       </SwiperSlide>
@@ -146,8 +145,7 @@
           </div>
           <div class="benefits__item-text-wrapper">
             <p class="benefits__item-text">
-              Vývoj e-shopu na míru s pomocí Shoptet Premium je vynikající volbou pro podnikatele, kteří chtějí mít
-              profesionální online obchod přizpůsobený svým specifickým potřebám.
+              Wireframe vytváří vizuální rozložení a strukturu e-shopu, má klíčový význam pro úspěšnou implementaci a konverze zákazníka. 
             </p>
           </div>
         </li>
@@ -386,7 +384,7 @@
     </section>
 
     <!-- -- BANNER-SECOND--REVERSE -->
-    <article class="banner-second">
+    <article class="banner-second banner-second--rebelBean">
       <div class="banner-second__container container">
         <div class="banner-second__wrapper banner-second__wrapper--text">
           <h3 class="section__banner-header">Návrh kategorií a detail produktu</h3>
@@ -587,10 +585,14 @@
             text="Poptat spolupráci" />
       </div>
     </section>
+    <section>
+      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+      <caseStudies/>
+    </section>
     <section
         class="no-margin"
         id="kontakt">
-      <ContactFormPripadoveStudie />
+      <ContactForm />
     </section>
   </main>
 </template>
@@ -779,7 +781,7 @@ $color-client-review-marks: #474446;
   height: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in;
+  transition: all 0.6s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1079,5 +1081,18 @@ $color-client-review-marks: #474446;
 .banner-first__text-wrap {
   background-color: $color-banner-background;
   border: 1px solid $color-banner-border;
+}
+.banner-second--rebelBean .banner-second__container {
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
+    .banner-second__wrapper--text {
+      grid-column: unset;
+      grid-row-start: unset;
+    }
+    .banner-second__wrapper--image {
+      grid-row-start: unset;
+      grid-column: unset;
+    }
+  }
 }
 </style>

@@ -163,6 +163,11 @@
 		position: absolute;
 		bottom: 2rem;
 		left: 0;
+    animation: shakeY 9s infinite;
+    &:hover {
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
+    }
 		a {
 			color: $color-white;
 		}
@@ -215,4 +220,20 @@
 			background: linear-gradient(180deg, transparent 0, #fff 50px);
 		}
 	}
+  @keyframes shakeY {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translate3d(0, -10px, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translate3d(0, 10px, 0);
+    }
+  }
 </style>
