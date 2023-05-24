@@ -1,10 +1,9 @@
 <template>
 	<main>
-		<HeroBig
-			:imgUrl="screenWidth > 767 ? '/shoptetnamiru-hero.jpg' : '/shoptetnamiru-hero-mobile.jpg'">
-      <h1>Postavíme vám Shoptet na míru</h1>
-      <h2>Kompletní e-shopové řešení za nejkratší možnou dobu</h2>
-    </HeroBig>
+		<HeroBig :imgUrl="screenWidth > 767 ? '/shoptetnamiru-hero.jpg' : '/shoptetnamiru-hero-mobile.jpg'">
+			<h1>Postavíme vám Shoptet na míru</h1>
+			<h2>Kompletní e-shopové řešení za nejkratší možnou dobu</h2>
+		</HeroBig>
 		<section class="container anchors-wrapper">
 			<nav>
 				<ul>
@@ -247,21 +246,21 @@
 		<section class="container">
 			<NuxtLink
 				class="banner-link"
-				to="/reference/expresmenu">
+				to="/pripadove-studie/petcenter">
 				<div
 					class="banner"
-					style="background-color: rgb(247, 244, 213)">
+					style="background-color: #f7f4d5">
 					<div class="banner__logo">
 						<NuxtPicture
-							src="/expresmenu-logo.webp"
+							src="/petcenter-logo.png"
 							:img-attrs="{ style: 'max-width: 100%; width: auto;' }" />
 					</div>
 					<div class="banner__info">
-						<strong>o 3278%</strong>
-						nárůst tržeb
+						<strong>38,6%</strong>
+						nárůst tržeb během prvních 3&nbsp;měsíců
 					</div>
 					<div class="banner__mockup">
-						<NuxtPicture src="/expresmenu-mockup.webp" />
+						<NuxtPicture src="/petcenter-mockup.png" />
 					</div>
 					<div class="banner__arrow">
 						<svg
@@ -330,21 +329,21 @@
 		<section class="container">
 			<NuxtLink
 				class="banner-link"
-				to="/reference/epiderma">
+				to="/pripadove-studie/rituals">
 				<div
 					class="banner"
-					style="background-color: rgb(244, 235, 228)">
+					style="background-color: #ded2bc">
 					<div class="banner__logo">
 						<NuxtPicture
-							src="/epiderma-logo.png"
+							src="/rituals-logo.png"
 							:img-attrs="{ style: 'max-width: 100%; width: auto;' }" />
 					</div>
 					<div class="banner__info">
-						<strong>305%</strong>
-						nárůst obratu po redesignu
+						<strong>4 měsíce</strong>
+						Vytvoření 2 e-shopů pro společnost Rituals za nejmenší možnou dobu
 					</div>
 					<div class="banner__mockup">
-						<NuxtPicture src="/epiderma-mockup.png" />
+						<NuxtPicture src="/rituals-mockup.png" />
 					</div>
 					<div class="banner__arrow">
 						<svg
@@ -525,7 +524,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 50px;
+		gap: 80px;
 		padding: 40px 100px;
 		& > div {
 			flex: 0 1 auto;
@@ -537,6 +536,7 @@
 			font-size: rem(24);
 			position: relative;
 			z-index: 1;
+			max-width: 450px;
 			strong {
 				display: block;
 				font-size: rem(56);

@@ -169,7 +169,6 @@
 		)
 		data.value = referenceData.value
 	}
-	console.log(data.value)
 
 	const logoURL = (item) => {
 		return getStrapiMedia(item.attributes.logo)
