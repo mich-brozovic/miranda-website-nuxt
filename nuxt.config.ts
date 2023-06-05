@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 	css: ['normalize.css/normalize.css'],
-	modules: ['@nuxt/image-edge', '@nuxtjs/strapi', 'nuxt-swiper'],
+	modules: ['@nuxt/image-edge', '@nuxtjs/strapi', 'nuxt-swiper', 'nuxt-simple-sitemap'],
 	vite: {
 		css: {
 			preprocessorOptions: {
@@ -28,5 +28,10 @@ export default defineNuxtConfig({
 	swiper: {
 		prefix: 'Swiper',
 		styleLang: 'css',
+	},
+	runtimeConfig: {
+		public: {
+			siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.mirandamedia.cz',
+		},
 	},
 })
