@@ -26,7 +26,7 @@
 				<li><NuxtLink to="/pripadove-studie">Případové studie</NuxtLink></li>
 				<li><NuxtLink to="/shoptetnamiru">Shoptet na míru</NuxtLink></li>
 				<li><NuxtLink to="/sluzby">Služby</NuxtLink></li>
-				<li><NuxtLink to="/blog">Blog</NuxtLink></li>
+				<li><NuxtLink to="/clanky">Blog</NuxtLink></li>
 				<li><NuxtLink to="/kariera">Kariéra</NuxtLink></li>
 				<li><NuxtLink to="/kontakty">Kontakty</NuxtLink></li>
 			</ul>
@@ -46,7 +46,7 @@
 				<li><NuxtLink to="/pripadove-studie">Případové studie</NuxtLink></li>
 				<li><NuxtLink to="/shoptetnamiru">Shoptet na míru</NuxtLink></li>
 				<li><NuxtLink to="/sluzby">Služby</NuxtLink></li>
-				<li><NuxtLink to="/blog">Blog</NuxtLink></li>
+				<li><NuxtLink to="/clanky">Blog</NuxtLink></li>
 				<li><NuxtLink to="/kariera">Kariéra</NuxtLink></li>
 				<li><NuxtLink to="/kontakty">Kontakty</NuxtLink></li>
 			</ul>
@@ -55,7 +55,7 @@
 			<a
 				href="tel:00420732264251"
 				class="project-phone">
-<!--				<span
+				<!--				<span
 					class="status"
 					:class="{ online: actualHour >= 9 && actualHour < 17 }"></span>-->
 				+420 732 264 251

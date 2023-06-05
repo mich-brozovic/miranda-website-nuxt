@@ -10,7 +10,7 @@
 					v-for="(item, index) in data.data"
 					:key="index">
 					<NuxtLink
-						:to="`/blog/${item.attributes.slug}`"
+						:to="`/clanky/${item.attributes.slug}`"
 						class="post__link">
 						<div class="post__image">
 							<NuxtPicture
@@ -108,8 +108,17 @@
 	</main>
 </template>
 <script setup>
+	const { find } = useStrapi()
 	const data = useState('blogArticles', () => null)
-	data.value = await fetchAPI('blogData', '/clanky', { populate: '*', sort: 'publishedAt:desc' })
+	const { data: blogArticles, error: blogError } = await useAsyncData('blogData', () =>
+		find('clanky', {
+			populate: '*',
+			sort: 'publishedAt:desc',
+		})
+	)
+	data.value = blogArticles.value
+
+	// data.value = await fetchAPI('blogData', '/clanky', { populate: '*', sort: 'publishedAt:desc' })
 </script>
 <style lang="scss">
 	.post-grid {

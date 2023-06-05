@@ -51,7 +51,7 @@
 								<nuxt-link to="/kariera">Kariéra</nuxt-link>
 							</li>
 							<li>
-								<nuxt-link to="/blog">Blog</nuxt-link>
+								<nuxt-link to="/clanky">Blog</nuxt-link>
 							</li>
 							<li>
 								<nuxt-link to="/kontakty">Kontakt</nuxt-link>
