@@ -4,21 +4,25 @@
 		<div class="container">
 			<div class="article__image">
 				<NuxtPicture
-					:src="getStrapiMedia(data.data[0].attributes.obrazek)"
+					:src="getStrapiMedia(data[0].attributes.obrazek)"
 					:imgAttrs="{ style: 'display:block;' }"
-					:width="data.data[0].attributes.obrazek.data.attributes.width"
-					:height="data.data[0].attributes.obrazek.data.attributes.height"
-					:alt="data.data[0].attributes.nazev"
+					:width="data[0].attributes.obrazek.data.attributes.width"
+					:height="data[0].attributes.obrazek.data.attributes.height"
+					:alt="data[0].attributes.nazev"
 					provider="strapi" />
 			</div>
 			<div class="article__content">
 				<main>
-					<h1>{{ data.data[0].attributes.nazev }}</h1>
-          <p class="article__excerpt" v-html="data.data[0].attributes.description"></p>
+					<h1>{{ data[0].attributes.nazev }}</h1>
+					<p
+						class="article__excerpt"
+						v-html="data[0].attributes.description"></p>
 					<ClientOnly
 						fallback-tag="div"
 						fallback="Načítám...">
-						<Markdown class="content" :source="data.data[0].attributes.content" />
+						<Markdown
+							class="content"
+							:source="data[0].attributes.content" />
 					</ClientOnly>
 				</main>
 				<aside>
@@ -36,23 +40,23 @@
 								d="M13 7H11V12.414L14.293 15.707L15.707 14.293L13 11.586V7Z"
 								fill="#59DC8E" />
 						</svg>
-						<span>Doba čtení článku {{ data.data[0].attributes.read_duration }}</span>
+						<span>Doba čtení článku {{ data[0].attributes.read_duration }}</span>
 					</div>
 					<h4>Autor</h4>
 					<div class="article__author">
 						<div class="article__author--wrapper">
 							<div class="article__author--image">
 								<NuxtPicture
-									:src="getStrapiMedia(authorData.data.attributes.avatar)"
+									:src="getStrapiMedia(authorData.attributes.avatar)"
 									:imgAttrs="{ style: 'display:block;' }"
-									:width="authorData.data.attributes.avatar.data.attributes.width"
-									:height="authorData.data.attributes.avatar.data.attributes.height"
-									:alt="authorData.data.attributes.jmeno"
+									:width="authorData.attributes.avatar.data.attributes.width"
+									:height="authorData.attributes.avatar.data.attributes.height"
+									:alt="authorData.attributes.jmeno"
 									provider="strapi" />
 							</div>
 							<div class="article__author--info">
-								<h5>{{ authorData.data.attributes.jmeno }}</h5>
-								<p>{{ authorData.data.attributes.pozice }}</p>
+								<h5>{{ authorData.attributes.jmeno }}</h5>
+								<p>{{ authorData.attributes.pozice }}</p>
 							</div>
 						</div>
 					</div>
@@ -62,7 +66,7 @@
 							<ShareNetwork
 								network="facebook"
 								:url="router.currentRoute.value.fullPath"
-								:title="data.data[0].attributes.nazev">
+								:title="data[0].attributes.nazev">
 								<svg
 									width="12"
 									height="24"
@@ -77,7 +81,7 @@
 							<ShareNetwork
 								network="twitter"
 								:url="router.currentRoute.value.fullPath"
-								:title="data.data[0].attributes.nazev">
+								:title="data[0].attributes.nazev">
 								<svg
 									width="30"
 									height="24"
@@ -92,7 +96,7 @@
 							<ShareNetwork
 								network="linkedin"
 								:url="router.currentRoute.value.fullPath"
-								:title="data.data[0].attributes.nazev">
+								:title="data[0].attributes.nazev">
 								<svg
 									width="24"
 									height="24"
@@ -116,25 +120,21 @@
 	import Markdown from 'vue3-markdown-it'
 	const { find, findOne } = useStrapi()
 	const router = useRouter()
-	const { data, error } = await useAsyncData('article', () =>
-		find('clanky', { filters: { slug: router.currentRoute.value.params.slug }, populate: '*' })
-	)
-	const { data: authorData, error: authorError } = await useAsyncData('author', () =>
-		findOne('autors', data.value.data[0].attributes.autor.data.id, { populate: '*' })
-	)
+	const { data } = await find('clanky', { filters: { slug: router.currentRoute.value.params.slug }, populate: '*' })
+	const { data: authorData } = await findOne('autors', data[0].attributes.autor.data.id, { populate: '*' })
 	useHead({
-		title: data.value.data[0].attributes.nazev,
+		title: data[0].attributes.nazev,
 		meta: {
 			name: 'description',
-			content: data.value.data[0].attributes.description,
+			content: data[0].attributes.description,
 		},
 	})
 	useSeoMeta({
-		title: data.value.data[0].attributes.nazev,
-		ogTitle: data.value.data[0].attributes.nazev,
-		description: data.value.data[0].attributes.description,
-		ogDescription: data.value.data[0].attributes.description,
-		ogImage: getStrapiMedia(data.value.data[0].attributes.obrazek),
+		title: data[0].attributes.nazev,
+		ogTitle: data[0].attributes.nazev,
+		description: data[0].attributes.description,
+		ogDescription: data[0].attributes.description,
+		ogImage: getStrapiMedia(data[0].attributes.obrazek),
 	})
 </script>
 <style lang="scss" scoped>
@@ -169,35 +169,35 @@
 				padding: 40px;
 				flex: 0 1 390px;
 			}
-      .content {
-        :deep(p) {
-          line-height: em(32);
-        }
-        :deep(ul) {
-          list-style: none;
-          padding-left: 0;
-          li {
-            position: relative;
-            padding-left: 20px;
-            font-size: rem(16);
-            line-height: 2;
-            &::before {
-              content: '';
-              position: absolute;
-              top: em(13, 20);
-              left: 0;
-              width: 10px;
-              height: 10px;
-              background-color: $color-accent;
-            }
-          }
-        }
-      }
+			.content {
+				:deep(p) {
+					line-height: em(32);
+				}
+				:deep(ul) {
+					list-style: none;
+					padding-left: 0;
+					li {
+						position: relative;
+						padding-left: 20px;
+						font-size: rem(16);
+						line-height: 2;
+						&::before {
+							content: '';
+							position: absolute;
+							top: em(13, 20);
+							left: 0;
+							width: 10px;
+							height: 10px;
+							background-color: $color-accent;
+						}
+					}
+				}
+			}
 		}
-    &__excerpt {
-      font-size: rem(18);
-      line-height: em(32);
-    }
+		&__excerpt {
+			font-size: rem(18);
+			line-height: em(32);
+		}
 		&__reading {
 			display: flex;
 			align-items: center;
