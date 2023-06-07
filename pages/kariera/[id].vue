@@ -1,26 +1,18 @@
 <template>
 	<main>
-		<HeroSmall
-			imgUrl="/kariera-hero.jpg"
-			:heading="data.data.attributes.Nazev" />
+		<HeroSmall imgUrl="/kariera-hero.jpg" :heading="data.attributes.Nazev" />
 		<section class="single-career">
 			<div class="container single-career__content">
-				<ClientOnly
-					fallback-tag="div"
-					fallback="Načítám...">
-					<Markdown :source="data.data.attributes.content" />
+				<ClientOnly fallback-tag="div" fallback="Načítám...">
+					<Markdown :source="data.attributes.content" />
 				</ClientOnly>
 				<div class="single-career__cta">
 					<p>Jdeš do toho?</p>
-					<BtnSecondary
-						:url="`#kontakt`"
-						text="No jistě!" />
+					<BtnSecondary :url="`#kontakt`" text="No jistě!" />
 				</div>
 			</div>
 		</section>
-		<section
-			class="no-margin"
-			id="kontakt">
+		<section class="no-margin" id="kontakt">
 			<ContactForm />
 		</section>
 	</main>
@@ -29,9 +21,9 @@
 	import Markdown from 'vue3-markdown-it'
 	const { findOne } = useStrapi()
 	const router = useRouter()
-	const { data, error } = await useAsyncData('career', () => findOne('careers', router.currentRoute.value.params.id, { populate: '*' }))
+	const { data } = await findOne('careers', router.currentRoute.value.params.id, { populate: '*' })
 	useHead({
-		title: data.value.data.attributes.Nazev + ' | MirandaMedia',
+		title: data.attributes.Nazev + ' | MirandaMedia',
 	})
 </script>
 <style lang="scss">

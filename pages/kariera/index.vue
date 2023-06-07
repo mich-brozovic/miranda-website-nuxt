@@ -1,13 +1,8 @@
 <template>
 	<main>
-		<HeroSmall
-			imgUrl="/kariera-hero.jpg"
-			heading="Kariéra v Mirandě" />
+		<HeroSmall imgUrl="/kariera-hero.jpg" heading="Kariéra v Mirandě" />
 		<section class="container">
-			<article
-				class="career columns col-1-2"
-				v-for="(item, index) in data.data"
-				:key="index">
+			<article class="career columns col-1-2" v-for="(item, index) in data" :key="index">
 				<div class="column">
 					<NuxtPicture
 						v-if="item.attributes.image.data"
@@ -20,9 +15,7 @@
 					<h1>
 						{{ item.attributes.Nazev }}
 					</h1>
-					<BtnSecondary
-						:url="`/kariera/${item.id}`"
-						text="Zobrazit pozici" />
+					<BtnSecondary :url="`/kariera/${item.id}`" text="Zobrazit pozici" />
 				</div>
 			</article>
 		</section>
@@ -30,12 +23,12 @@
 </template>
 <script setup>
 	const { find } = useStrapi()
-	const { data, error } = await useAsyncData('careers', () => find('careers', { populate: '*' }))
-	console.log(data.value, error.value)
+	const { data } = await find('careers', { populate: '*' })
 </script>
 <style lang="scss" scoped>
 	.career {
 		gap: 50px;
+		margin-bottom: 50px;
 		&__content {
 			display: flex;
 			flex-direction: column;
