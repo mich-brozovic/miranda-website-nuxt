@@ -1,13 +1,10 @@
 <template>
 	<main>
-		<HeroBig
-			:video="true">
-      <h1>Marketingová digitální agentura</h1>
-      <h2>Tvoříme ziskové e-shopy a weby, navrhujeme design produktů a značek, staráme se o výkon kampaní, ctíme fair play</h2>
-    </HeroBig>
-		<section
-			id="scroll"
-			class="reference">
+		<HeroBig :video="true">
+			<h1>Marketingová digitální agentura</h1>
+			<h2>Tvoříme ziskové e-shopy a weby, navrhujeme design produktů a značek, staráme se o výkon kampaní, ctíme fair play</h2>
+		</HeroBig>
+		<section id="scroll" class="reference">
 			<div class="container">
 				<h2 class="text-center">Na co jsme hrdí</h2>
 				<div class="text-center container narrow">
@@ -18,9 +15,7 @@
 				</div>
 				<ReferenceGrid type="hp" />
 				<div class="buttons-center">
-					<BtnSecondary
-						url="/pripadove-studie"
-						text="Objevit další projekty" />
+					<BtnSecondary url="/pripadove-studie" text="Objevit další projekty" />
 				</div>
 			</div>
 		</section>
@@ -35,9 +30,7 @@
 				</div>
 				<SluzbyBlock />
 				<div class="buttons-center">
-					<BtnSecondary
-						url="/kontakty#kontakt"
-						text="Poptat službu" />
+					<BtnSecondary url="/kontakty#kontakt" text="Poptat službu" />
 				</div>
 			</div>
 		</section>
@@ -50,17 +43,10 @@
 							Protože tahle agenturní dáma umí být věrná a spolehlivá každým coulem. Pro svého zákazníka udělá, co mu na očích
 							vidí a nikdy nenechá ležet kdejakou pořádnou výzvu bokem.
 						</p>
-						<BtnSecondary
-							url="/o-nas"
-							text="Více o nás" />
+						<BtnSecondary url="/o-nas" text="Více o nás" />
 					</div>
 					<div class="column">
-						<NuxtPicture
-							src="/proc-miranda-grid.webp"
-							width="1612"
-							height="1272"
-							alt=""
-							loading="lazy" />
+						<NuxtPicture src="/proc-miranda-grid.webp" width="1612" height="1272" alt="" loading="lazy" />
 					</div>
 				</div>
 			</div>
@@ -127,12 +113,12 @@
 </template>
 <script setup>
 	useHead({
-		title: 'MirandaMedia | Digitální marketingová agentura',
+		title: 'Mirandamedia.cz - Kreativní digitální agentura pro vaše podnikání',
 		meta: [
 			{
 				name: 'description',
 				content:
-					'MirandaMedia je digitální marketingová agentura, která se specializuje na tvorbu webových stránek, SEO, PPC, SMM, videa, grafiku a dalších marketingových služeb.',
+					'Mirandamedia.cz je kreativní digitální agentura, která vám pomůže posílit online přítomnost vašeho podnikání. Nabízíme komplexní služby v oblasti webového designu, marketingu a online strategie.',
 			},
 		],
 	})

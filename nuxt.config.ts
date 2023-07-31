@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 				scss: {
 					additionalData: `@import "@/assets/_mixins.scss";
 					    @import "@/assets/_variables.scss";
-						@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');`,
+						@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');`,
 				},
 			},
 		},

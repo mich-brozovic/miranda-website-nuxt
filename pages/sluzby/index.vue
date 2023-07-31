@@ -1,8 +1,6 @@
 <template>
 	<main>
-		<HeroSmall
-			heading="Naše služby"
-			imgUrl="/sluzby-hero.webp" />
+		<HeroSmall heading="Naše služby" imgUrl="/sluzby-hero.webp" />
 		<section class="container">
 			<div class="sluzby-wrapper">
 				<div class="sluzba columns col-2">
@@ -30,11 +28,7 @@
 							sítí Facebook & Instagram pro hladový fanoušky, zbožové vyhledávače, e-mailing, webovou analytiku a další
 							neodmyslitelný marketovky pro váš do maxima vyladěný onlajnový flow.
 						</p>
-						<a
-							class="btn-secondary"
-							href="#kontakt"
-							>Spojit se s Mirandou</a
-						>
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 				</div>
 				<div class="sluzba columns col-2">
@@ -46,11 +40,7 @@
 							si vezmeme celou na starost. Zajistíme návrh UX/UI, pořádně vymazlenou grafiku, programování a kódování. Pak to
 							celé otestujeme, napojíme na kdejaký měřící nástroje a přivedeme tam plnotučnej trafiic, to dá přeci rozum.
 						</p>
-						<a
-							class="btn-secondary"
-							href="#kontakt"
-							>Spojit se s Mirandou</a
-						>
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 					<div class="column image">
 						<NuxtPicture
@@ -96,11 +86,7 @@
 							fanouška. Přidělenej stratég sociálních mega-sítí, co tuní obsah, četuje a ladí vizuály s grafikem, bude měsíc
 							co měsíc sedět nad vaším profilem.
 						</p>
-						<a
-							class="btn-secondary"
-							href="#kontakt"
-							>Spojit se s Mirandou</a
-						>
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 				</div>
 				<div class="sluzba columns col-2">
@@ -112,11 +98,7 @@
 							přijde na takovou korporátní identitu, to se pak jeden zapotí, než to začne lícovat. Všechny tyhle bannery,
 							tiskoviny, letáky a loga.
 						</p>
-						<a
-							class="btn-secondary"
-							href="#kontakt"
-							>Spojit se s Mirandou</a
-						>
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 					<div class="column image">
 						<NuxtPicture
@@ -151,23 +133,28 @@
 							Zajistíme ty správný influencery pro tvý vymazlený kampaně. Disponujeme top databází těch nejvlivnějších týpků,
 							co pozvednou tvůj brand na úplně jinej level.
 						</p>
-						<a
-							class="btn-secondary"
-							href="#kontakt"
-							>Spojit se s Mirandou</a
-						>
+						<a class="btn-secondary" href="#kontakt">Spojit se s Mirandou</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section
-			id="kontakt"
-			class="no-margin">
+		<section id="kontakt" class="no-margin">
 			<ContactForm />
 		</section>
 	</main>
 </template>
-<script setup></script>
+<script setup>
+	useHead({
+		title: 'Mirandamedia.cz - Naše nabídka služeb pro digitální marketing',
+		meta: [
+			{
+				name: 'description',
+				content:
+					'Mirandamedia.cz nabízí širokou škálu služeb v oblasti digitálního marketingu. Zahrnujeme webový design, SEO optimalizaci, správu sociálních sítí, obsahový marketing a mnoho dalšího. Přečtěte si více o našich službách a jak vám mohou pomoci.',
+			},
+		],
+	})
+</script>
 <style lang="scss" scoped>
 	.image {
 		position: relative;

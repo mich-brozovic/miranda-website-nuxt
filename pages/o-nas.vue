@@ -1,12 +1,10 @@
 <template>
 	<main>
 		<HeroBig imgUrl="/o-nas-hero.webp">
-      <h1>Miranda</h1>
-      <h2>Digitální marketingová agentura s citem pro design a perspektivu</h2>
-    </HeroBig>
-		<section
-			id="scroll"
-			class="container">
+			<h1>Miranda</h1>
+			<h2>Digitální marketingová agentura s citem pro design a perspektivu</h2>
+		</HeroBig>
+		<section id="scroll" class="container">
 			<h2 class="text-center">Poznejte Mirandu</h2>
 			<div class="text-center container narrow">
 				<p>Spojujeme společnosti se zákazníky na základě podrobných dat, příběhů a hodnot.</p>
@@ -178,12 +176,12 @@
 </template>
 <script setup>
 	useHead({
-		title: 'O nás | MirandaMedia',
+		title: 'Mirandamedia.cz - Kdo jsme a co děláme',
 		meta: [
 			{
 				name: 'description',
 				content:
-					'Miranda Media je dynamická marketingová agentura se sídlem v Praze. Specializujeme se na digitální marketing, tvorbu webových stránek a e-commerce. Naše tým tvoří odborníci v oblasti SEO, PPC, sociálních médií a dalších oblastí. Snažíme se pomoci našim klientům dosáhnout úspěchu v online prostředí. Navštivte naši stránku, abyste se dozvěděli více o našich službách a našem týmu.',
+					'Jsme profesionální digitální agentura zaměřená na tvorbu moderních webových stránek, efektivní online marketing a strategie pro růst vašeho podnikání. Přečtěte si více o našem týmu a našich službách.',
 			},
 		],
 	})

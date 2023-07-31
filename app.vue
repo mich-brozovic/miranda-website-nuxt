@@ -171,7 +171,7 @@
 		position: sticky;
 		top: 0;
 		background-color: $color-white;
-		z-index: 2;
+		z-index: 3;
 		nav {
 			overflow-x: auto;
 			ul {
@@ -238,6 +238,35 @@
 			}
 		}
 	}
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 74px;
+		height: 74px;
+		background-color: #e9ebea;
+		transition: all 0.15s ease-in-out;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0;
+		&::after {
+			line-height: 0;
+			display: block;
+			content: url('/icon/swiper-arrow-black.svg');
+		}
+		&:hover {
+			background-color: $color-font;
+			&::after {
+				content: url('/icon/swiper-arrow.svg');
+			}
+		}
+	}
+	.swiper-button-prev {
+		&::after {
+			transform: rotate(180deg);
+		}
+	}
 
 	@media (max-width: 767px) {
 		.container {
@@ -259,21 +288,32 @@
 		&.btn-ghost {
 			border: 1px solid $color-font;
 			color: $color-font;
-      transition: background-color, color, .3s ease-in-out;
-      &:hover {
-        background-color: $color-font;
-        color: $color-white;
-      }
+			transition: background-color, color, 0.3s ease-in-out;
+			&:hover {
+				background-color: $color-font;
+				color: $color-white;
+			}
 		}
-    &.btn-ghost-v2 {
-      border: 1px solid $color-white;
-      color: $color-white;
-      padding: em(19);
-      transition: background-color, color, .3s ease-in-out;
-      &:hover {
-        background-color: $color-white;
-        color: $color-font;
-      }
-    }
+		&.btn-ghost-v2 {
+			border: 1px solid $color-white;
+			color: $color-white;
+			padding: em(19);
+			transition: background-color, color, 0.3s ease-in-out;
+			&:hover {
+				background-color: $color-white;
+				color: $color-font;
+			}
+		}
+		&.btn-tertiary {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			background-color: $color-font;
+			color: $color-white;
+			width: 100%;
+			text-align: center;
+			max-width: 335px;
+		}
 	}
 </style>

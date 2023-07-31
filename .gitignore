@@ -17,3 +17,4 @@ tmp
 # Local Netlify folder
 .netlify
 .tmp
+pages/sprava-ppc-kampani.vue

@@ -1,12 +1,8 @@
 <template>
 	<main>
-		<HeroBig
-			imgUrl="/rozcestnik/hero.jpg"
-			:hideScroll="true">
+		<HeroBig imgUrl="/rozcestnik/hero.jpg" :hideScroll="true">
 			<div class="logos">
-				<img
-					src="/rozcestnik/logos.png"
-					alt="Shoptet" />
+				<img src="/rozcestnik/logos.png" alt="Shoptet" />
 			</div>
 			<h1>Případové studie</h1>
 			<ul class="styled-list">
@@ -17,11 +13,7 @@
 				<li>Fotíme produkty ve vlastním studiu</li>
 			</ul>
 			<div class="buttons">
-				<a
-					class="btn btn-ghost font"
-					href="#kontakt">
-					Domluvte si schůzku
-				</a>
+				<a class="btn btn-ghost font" href="#kontakt"> Domluvte si schůzku </a>
 			</div>
 		</HeroBig>
 		<section class="container">
@@ -179,15 +171,8 @@
 				<p>Seznamte se s naším portfoliem</p>
 			</div>
 			<div class="partners-grid">
-				<div
-					class="partner"
-					v-for="(item, index) in partneri"
-					:key="index">
-					<NuxtImg
-						:src="item.url"
-						width="180"
-						height="120"
-						:alt="item.name" />
+				<div class="partner" v-for="(item, index) in partneri" :key="index">
+					<NuxtImg :src="item.url" width="180" height="120" :alt="item.name" />
 				</div>
 				<div class="partner">
 					<strong>+ mnoho dalších</strong>
@@ -206,9 +191,7 @@
 				<CoONasRikaji />
 			</div>
 		</section>
-		<section
-			id="kontakt"
-			class="no-margin">
+		<section id="kontakt" class="no-margin">
 			<ContactForm />
 		</section>
 	</main>
@@ -237,6 +220,14 @@
 		bodyAttrs: {
 			class: 'header-black',
 		},
+		title: 'Mirandamedia.cz - Naše práce a projekty',
+		meta: [
+			{
+				name: 'description',
+				content:
+					'Podívejte se na naše dosavadní práce a projekty, které jsme realizovali pro naše spokojené klienty. Zahrnujeme design webových stránek, grafiku, marketingová videa a mnoho dalšího. Inspirujte se naším portfoliem a připojte se k našim spokojeným zákazníkům.',
+			},
+		],
 	})
 </script>
 <style lang="scss" scoped>
