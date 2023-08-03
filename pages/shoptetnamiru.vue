@@ -11,7 +11,6 @@
 					<li><a href="#sluzby">Služby</a></li>
 					<li><a href="#proc-shoptet">Proč Shoptet</a></li>
 					<li><a href="#reakce">Reakce zákazníků</a></li>
-					<li><a href="#konfigurator">Konfigurátor</a></li>
 					<li><a href="#kontakt">Kontakty</a></li>
 				</ul>
 			</nav>
@@ -20,7 +19,7 @@
 			<h2 class="text-center">Naše e-shopy na Shoptetu na míru</h2>
 			<ReferenceGrid type="shop" />
 		</section>
-		<section class="container">
+		<section class="container" id="sluzby">
 			<div class="shoptet-sluzby-grid">
 				<div class="large item">
 					<NuxtPicture src="/shoptet-premium-logo.webp" :imgAttrs="{ style: `max-width: 160px; width: auto;` }" />
@@ -214,7 +213,7 @@
 				</div>
 			</NuxtLink>
 		</section>
-		<section class="proc-shoptet container">
+		<section class="proc-shoptet container" id="proc-shoptet">
 			<div class="columns col-1-2">
 				<div class="column">
 					<NuxtPicture src="/proc-shoptet.webp" />
@@ -284,7 +283,7 @@
 				</div>
 			</NuxtLink>
 		</section>
-		<section class="commentary">
+		<section class="commentary" id="reakce">
 			<div class="container">
 				<h2 class="text-center">Co říkáte na Mirandu?</h2>
 				<div class="text-center container narrow">
