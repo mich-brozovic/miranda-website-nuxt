@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="btn-wrap">
-                        <button class="btn btn-secondary">
+                        <button class="btn-secondary">
                             <span>Odeslat formulář</span>
                         </button>
                     </div>
