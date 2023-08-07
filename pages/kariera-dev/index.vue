@@ -412,7 +412,7 @@
             </div>
         </section>
         <!-- POZICE -->
-        <section class="pozice container">
+        <section id="pozice" class="pozice container">
             <div class="pozice-grid">
                 <div class="item wide image" style="height: 320px">
                     <div>
@@ -450,7 +450,7 @@
                             Místo u stolu máme připravené, možná čeká právě na tebe. Vyplň formulář níže a pošli nám své
                             CV. Obratem se Ti ozveme.
                         </p>
-                        <BtnSecondary url="/pozice" text="Ano, chci do týmu! " />
+                        <BtnSecondary url="#pozice" text="Ano, chci do týmu! " />
                     </div>
                     <div class="column">
                         <NuxtPicture src="/kariera/tym-banner.png" width="806" height="636" alt="" loading="lazy" />

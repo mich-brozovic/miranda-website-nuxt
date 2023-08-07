@@ -75,7 +75,7 @@
                             <input type="checkbox" name="consent" id="consent" required />
                             <label for="consent">
                                 Odesláním formuláře souhlasíte se
-                                <NuxtLink to="/zpracovani-osobnich-udaju">zpracováním osobních údajů.</NuxtLink>.
+                                <NuxtLink to="/zpracovani-osobnich-udaju">zpracováním osobních údajů.</NuxtLink>
                             </label>
                         </div>
                         <div class="form-row wide file">
@@ -189,6 +189,7 @@ form {
             position: relative;
             padding-left: 34px;
             line-height: 24px;
+            display: inline-block;
             &::before {
                 content: "";
                 position: absolute;
