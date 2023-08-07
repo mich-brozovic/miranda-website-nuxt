@@ -421,22 +421,24 @@
                     </div>
                 </div>
                 <article class="item" v-for="(item, index) in data" :key="index">
-                    <div class="item-wrap">
-                        <h1>
-                            {{ item.attributes.Nazev }}
-                        </h1>
-                        <p>
-                            {{
-                                item.attributes.description
-                                    ? item.attributes.description
-                                    : "Hledáme do svých řad nového kolegu / novou kolegyni."
-                            }}
-                        </p>
-                        <div class="item-btn-wrap">
-                            <BtnSecondary :url="`/kariera/${item.id}`" text="Zobrazit pozici" />
-                            <span>Praha</span>
+                    <NuxtLink :to="`/kariera/${item.id}`" class="item-link">
+                        <div class="item-wrap">
+                            <h1>
+                                {{ item.attributes.Nazev }}
+                            </h1>
+                            <p>
+                                {{
+                                    item.attributes.description
+                                        ? item.attributes.description
+                                        : "Hledáme do svých řad nového kolegu / novou kolegyni."
+                                }}
+                            </p>
+                            <div class="item-btn-wrap">
+                                <BtnSecondary :url="``" text="Zobrazit pozici" />
+                                <span>Praha</span>
+                            </div>
                         </div>
-                    </div>
+                    </NuxtLink>
                 </article>
             </div>
         </section>
@@ -479,6 +481,7 @@ const { data } = await find("careers", { populate: "*" });
 // OFFICE BANNER
 .office {
     display: flex;
+    align-items: center;
 }
 .office__content {
     flex: 1;
@@ -576,6 +579,13 @@ const { data } = await find("careers", { populate: "*" });
             padding: 20px;
             height: 100%;
         }
+    }
+    .office__slider {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        padding-left: 20px;
+        margin-right: -20px;
+        padding-right: 20px;
     }
 }
 // MIRANDA GRID
@@ -794,9 +804,21 @@ const { data } = await find("careers", { populate: "*" });
     .item:not(.image) {
         position: relative;
         background-color: rgba($color-font, 0.05);
-        padding: 40px 50px;
+        .item-link {
+            display: block;
+            padding: 40px 50px;
+            text-decoration: none;
+            height: 100%;
+            &:hover {
+                h1 {
+                    color: $color-accent;
+                }
+            }
+        }
         h1 {
             margin: 0;
+            color: $color-font;
+            transition: all 0.15s ease-in;
         }
         p {
             color: $color-font-gray;
@@ -841,6 +863,7 @@ const { data } = await find("careers", { populate: "*" });
             display: flex;
             align-items: center;
             gap: 10px;
+            color: $color-font;
             &:before {
                 content: url("/kariera/place-icon.png");
                 line-height: 0;
@@ -854,7 +877,9 @@ const { data } = await find("careers", { populate: "*" });
             grid-column-end: span 2;
         }
         .item:not(.image) {
-            padding: 20px;
+            .item-link {
+                padding: 20px;
+            }
         }
     }
 }
