@@ -470,6 +470,16 @@
 <script setup>
 const { find } = useStrapi();
 const { data } = await find("careers", { populate: "*" });
+
+onMounted(() => {
+    let vw = document.documentElement.clientWidth * 0.01;
+
+    document.documentElement.style.setProperty("--vw", `${vw}px`);
+    window.addEventListener("resize", () => {
+        let vw = document.documentElement.clientWidth * 0.01;
+        document.documentElement.style.setProperty("--vw", `${vw}px`);
+    });
+});
 </script>
 
 <style lang="scss" scoped>
@@ -497,8 +507,8 @@ const { data } = await find("careers", { populate: "*" });
 }
 .office__slider {
     flex: 1.5;
-    margin-right: calc(50% - 50vw);
-    padding-right: calc(50vw - 50%);
+    margin-right: calc(50% - 50 * var(--vw));
+    padding-right: calc(50 * var(--vw) - 50%);
 }
 .office__slide {
     width: unset !important;
@@ -640,12 +650,12 @@ const { data } = await find("careers", { populate: "*" });
             }
         }
         &:not(.image) {
-            padding: 70px;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             &.large {
-                padding: 100px;
+                padding: 50px;
             }
         }
 
@@ -883,6 +893,16 @@ const { data } = await find("careers", { populate: "*" });
         }
     }
 }
+// PROC MIRANDA
+
+.proc-miranda {
+    .columns {
+        @media (max-width: 1030px) {
+            flex-direction: column;
+        }
+    }
+}
+
 // KONTAKT FORM 2
 #kontakt {
     margin-bottom: -40px;
