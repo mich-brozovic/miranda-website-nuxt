@@ -149,11 +149,13 @@
 		box-shadow: none;
 		border: none;
 		background-color: transparent;
+		cursor: pointer;
 	}
 	input[type='text'],
 	input[type='email'],
 	input[type='phone'],
-	textarea {
+	textarea,
+	select {
 		background-color: rgba($color-accent, 0.8);
 		border: 1px solid $color-accent;
 		padding: 0.625em 1.25em;
@@ -315,5 +317,58 @@
 			text-align: center;
 			max-width: 335px;
 		}
+		&.btn-accent {
+			background-color: $color-accent;
+			color: $color-black;
+			padding: em(15) em(30);
+			line-height: em(28);
+			font-weight: 700;
+			text-transform: uppercase;
+			display: inline-flex;
+			align-items: center;
+			gap: 0.6em;
+			svg {
+				stroke: $color-font;
+				transition: inherit;
+			}
+			&:hover {
+				background-color: $color-font;
+				color: $color-white;
+				svg {
+					stroke: $color-white;
+				}
+			}
+		}
+		&.btn-ghost-accent {
+			color: $color-white;
+			font-weight: 700;
+			padding: em(20);
+			border: 2px solid $color-accent;
+			background-color: rgba($color-accent, 0.6);
+		}
+	}
+	.styled-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: left;
+		li {
+			position: relative;
+			padding-left: 20px;
+			font-size: rem(20);
+			line-height: em(36, 20);
+			&::before {
+				content: '';
+				position: absolute;
+				top: em(13, 20);
+				left: 0;
+				width: 10px;
+				height: 10px;
+				background-color: $color-accent;
+			}
+		}
+	}
+	.overflow-hidden {
+		overflow: hidden;
 	}
 </style>

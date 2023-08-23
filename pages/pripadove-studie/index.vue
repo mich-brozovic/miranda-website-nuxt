@@ -248,27 +248,7 @@
 		justify-content: center;
 		gap: 20px 60px;
 	}
-	.styled-list {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		text-align: left;
-		li {
-			position: relative;
-			padding-left: 20px;
-			font-size: rem(20);
-			line-height: em(36, 20);
-			&::before {
-				content: '';
-				position: absolute;
-				top: em(13, 20);
-				left: 0;
-				width: 10px;
-				height: 10px;
-				background-color: $color-accent;
-			}
-		}
-	}
+
 	.logos {
 		margin-bottom: 20px;
 		img {
