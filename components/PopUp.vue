@@ -13,19 +13,14 @@
 </template>
 <script setup>
 	const showPopup = useState('showPopup', () => false)
-	useHead({
-		bodyAttrs: {
-			class: showPopup.value ? 'overflow-hidden' : '',
-		},
-	})
 	watch(
 		() => showPopup.value,
-		(val) => {
-			useHead({
-				bodyAttrs: {
-					class: showPopup.value ? 'overflow-hidden' : '',
-				},
-			})
+		() => {
+			if (showPopup.value) {
+				document.body.classList.add('overflow-hidden')
+			} else {
+				document.body.classList.remove('overflow-hidden')
+			}
 		}
 	)
 </script>

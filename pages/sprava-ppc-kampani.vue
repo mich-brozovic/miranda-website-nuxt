@@ -1194,6 +1194,7 @@
 	</PopUp>
 </template>
 <script setup>
+	const showPopup = useState('showPopup')
 	useHead({
 		bodyAttrs: {
 			class: 'header-black',
@@ -1206,7 +1207,6 @@
 		sort: 'publishedAt:desc',
 		pagination: { page: 1, pageSize: 3 },
 	})
-	const showPopup = useState('showPopup')
 </script>
 <style lang="scss" scoped>
 	.buttons {
