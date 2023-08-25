@@ -85,4 +85,40 @@
 			margin: 0 0 em(10);
 		}
 	}
+	@media (max-width: 1100px) {
+		:slotted(h3) {
+			font-size: rem(22);
+		}
+		.question-wrapper {
+			.answer {
+				padding: 0 50px;
+			}
+			&.active .answer {
+				padding: 50px;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		:slotted(h3) {
+			font-size: rem(18);
+			display: flex;
+			flex-direction: column;
+		}
+		.question-wrapper {
+			.question {
+				padding: 0 10px 10px;
+				align-items: flex-start;
+				&::after {
+					width: 12px;
+					height: 12px;
+				}
+			}
+			.answer {
+				padding: 0 20px;
+			}
+			&.active .answer {
+				padding: 20px;
+			}
+		}
+	}
 </style>

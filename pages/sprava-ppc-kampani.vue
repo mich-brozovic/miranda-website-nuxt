@@ -51,90 +51,118 @@
 		</section>
 		<section id="priklady" class="container">
 			<h2 class="text-center">Výkon PPC kampaní na reálných příkladech</h2>
-			<Swiper :slides-per-view="1" :loop="true" :modules="[SwiperNavigation]" navigation>
+			<Swiper :slides-per-view="1" :loop="true" :modules="[SwiperNavigation, SwiperPagination]" navigation pagination>
 				<SwiperSlide class="banner-study">
-					<NuxtPicture
-						src="/ppc/banner-zdravotal.jpg"
-						alt=""
-						width="1440"
-						height="350"
-						loading="lazy"
-						:imgAttrs="{ style: 'display: block;' }" />
-					<div class="texts">
-						<NuxtImg src="/ppc/zdravotal-logo.png" width="159" height="35" alt="Zdravotal" />
-						<h3>Zvýšení tržeb <strong class="black">o 160,7 %</strong> <small>již po 6 měsících spolupráce</small></h3>
-						<NuxtLink to="/pripadove-studie/zdravotal" class="detail-button">
-							Detail studie
+					<NuxtLink to="/pripadove-studie/zdravotal">
+						<picture>
+							<source media="(min-width:880px)" srcset="/ppc/banner-zdravotal.jpg" width="1440" height="350" />
+							<source srcset="/ppc/banner-zdravotal-mobile.jpg" width="670" height="670" />
+							<nuxt-img src="/ppc/banner-zdravotal.jpg" width="1440" height="350" loading="lazy" alt="" />
+						</picture>
+						<div class="texts">
+							<NuxtImg src="/ppc/zdravotal-logo.png" width="159" height="35" alt="Zdravotal" />
+							<h3>Zvýšení tržeb <strong class="black">o 160,7 %</strong> <small>již po 6 měsících spolupráce</small></h3>
+							<span class="detail-button">
+								Detail studie
+								<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
+									<path
+										d="M50.7071 8.70711C51.0976 8.31659 51.0976 7.68342 50.7071 7.2929L44.3431 0.928936C43.9526 0.538412 43.3195 0.538412 42.9289 0.928936C42.5384 1.31946 42.5384 1.95263 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM-8.74228e-08 9L50 9L50 7L8.74228e-08 7L-8.74228e-08 9Z"
+										fill="white" />
+								</svg>
+							</span>
+						</div>
+						<span class="detail-button mobile">
 							<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
 								<path
 									d="M50.7071 8.70711C51.0976 8.31659 51.0976 7.68342 50.7071 7.2929L44.3431 0.928936C43.9526 0.538412 43.3195 0.538412 42.9289 0.928936C42.5384 1.31946 42.5384 1.95263 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM-8.74228e-08 9L50 9L50 7L8.74228e-08 7L-8.74228e-08 9Z"
 									fill="white" />
 							</svg>
-						</NuxtLink>
-					</div>
+						</span>
+					</NuxtLink>
 				</SwiperSlide>
 				<SwiperSlide class="banner-study">
-					<NuxtPicture
-						src="/ppc/banner-petcenter.jpg"
-						alt=""
-						width="1440"
-						height="350"
-						loading="lazy"
-						:imgAttrs="{ style: 'display: block;' }" />
-					<div class="texts">
-						<NuxtImg src="/ppc/petcenter-logo.png" width="159" height="35" alt="PetCenter" />
-						<h3>Zvýšení tržeb <strong class="accent">o XX %</strong> <small>consectetur adipiscing elit</small></h3>
-						<NuxtLink to="/pripadove-studie/petcenter" class="detail-button">
-							Detail studie
+					<NuxtLink to="/pripadove-studie/petcenter">
+						<picture>
+							<source media="(min-width:880px)" srcset="/ppc/banner-petcenter.jpg" width="1440" height="350" />
+							<source srcset="/ppc/banner-petcenter-mobile.jpg" width="670" height="670" />
+							<nuxt-img src="/ppc/banner-petcenter.jpg" width="1440" height="350" loading="lazy" alt="" />
+						</picture>
+						<div class="texts">
+							<NuxtImg src="/ppc/petcenter-logo.png" width="159" height="35" alt="PetCenter" />
+							<h3>Zvýšení tržeb <strong class="accent">o XX %</strong> <small>consectetur adipiscing elit</small></h3>
+							<span class="detail-button">
+								Detail studie
+								<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
+									<path
+										d="M50.7071 8.70711C51.0976 8.31659 51.0976 7.68342 50.7071 7.2929L44.3431 0.928936C43.9526 0.538412 43.3195 0.538412 42.9289 0.928936C42.5384 1.31946 42.5384 1.95263 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM-8.74228e-08 9L50 9L50 7L8.74228e-08 7L-8.74228e-08 9Z"
+										fill="white" />
+								</svg>
+							</span>
+						</div>
+						<span class="detail-button mobile">
 							<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
 								<path
 									d="M50.7071 8.70711C51.0976 8.31659 51.0976 7.68342 50.7071 7.2929L44.3431 0.928936C43.9526 0.538412 43.3195 0.538412 42.9289 0.928936C42.5384 1.31946 42.5384 1.95263 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM-8.74228e-08 9L50 9L50 7L8.74228e-08 7L-8.74228e-08 9Z"
 									fill="white" />
 							</svg>
-						</NuxtLink>
-					</div>
+						</span>
+					</NuxtLink>
 				</SwiperSlide>
 				<SwiperSlide class="banner-study">
-					<NuxtPicture
-						src="/ppc/banner-svijany.jpg"
-						alt=""
-						width="1440"
-						height="350"
-						loading="lazy"
-						:imgAttrs="{ style: 'display: block;' }" />
-					<div class="texts">
-						<NuxtImg src="/ppc/svijany-logo.png" width="159" height="35" alt="Svijany" />
-						<h3>Zvýšení tržeb <strong class="accent">o XX %</strong> <small>consectetur adipiscing elit</small></h3>
-						<NuxtLink to="/pripadove-studie/svijany" class="detail-button">
-							Detail studie
+					<NuxtLink to="/pripadove-studie/svijany">
+						<picture>
+							<source media="(min-width:880px)" srcset="/ppc/banner-svijany.jpg" width="1440" height="350" />
+							<source srcset="/ppc/banner-svijany-mobile.jpg" width="670" height="670" />
+							<nuxt-img src="/ppc/banner-svijany.jpg" width="1440" height="350" loading="lazy" alt="" />
+						</picture>
+						<div class="texts">
+							<NuxtImg src="/ppc/svijany-logo.png" width="159" height="35" alt="Svijany" />
+							<h3>Zvýšení tržeb <strong class="accent">o XX %</strong> <small>consectetur adipiscing elit</small></h3>
+							<span to="/pripadove-studie/svijany" class="detail-button">
+								Detail studie
+								<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
+									<path
+										d="M50.7071 8.70711C51.0976 8.31659 51.0976 7.68342 50.7071 7.2929L44.3431 0.928936C43.9526 0.538412 43.3195 0.538412 42.9289 0.928936C42.5384 1.31946 42.5384 1.95263 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM-8.74228e-08 9L50 9L50 7L8.74228e-08 7L-8.74228e-08 9Z"
+										fill="white" />
+								</svg>
+							</span>
+						</div>
+						<span class="detail-button mobile">
 							<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
 								<path
 									d="M50.7071 8.70711C51.0976 8.31659 51.0976 7.68342 50.7071 7.2929L44.3431 0.928936C43.9526 0.538412 43.3195 0.538412 42.9289 0.928936C42.5384 1.31946 42.5384 1.95263 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM-8.74228e-08 9L50 9L50 7L8.74228e-08 7L-8.74228e-08 9Z"
 									fill="white" />
 							</svg>
-						</NuxtLink>
-					</div>
+						</span>
+					</NuxtLink>
 				</SwiperSlide>
 				<SwiperSlide class="banner-study">
-					<NuxtPicture
-						src="/ppc/banner-preutulky.jpg"
-						alt=""
-						width="1440"
-						height="350"
-						loading="lazy"
-						:imgAttrs="{ style: 'display: block;' }" />
-					<div class="texts">
-						<NuxtImg src="/ppc/preutulky-logo.png" width="159" height="35" alt="Svijany" />
-						<h3>Zvýšení tržeb <strong class="accent">o 136 %</strong> <small>díky úspěšné správě kampaní</small></h3>
-						<NuxtLink to="/pripadove-studie/pre-utulky" class="detail-button">
-							Detail studie
+					<NuxtLink to="/pripadove-studie/pre-utulky">
+						<picture>
+							<source media="(min-width:880px)" srcset="/ppc/banner-preutulky.jpg" width="1440" height="350" />
+							<source srcset="/ppc/banner-preutulky-mobile.jpg" width="670" height="670" />
+							<nuxt-img src="/ppc/banner-preutulky.jpg" width="1440" height="350" loading="lazy" alt="" />
+						</picture>
+						<div class="texts">
+							<NuxtImg src="/ppc/preutulky-logo.png" width="159" height="35" alt="Svijany" />
+							<h3>Zvýšení tržeb <strong class="accent">o 136 %</strong> <small>díky úspěšné správě kampaní</small></h3>
+							<span to="/pripadove-studie/pre-utulky" class="detail-button">
+								Detail studie
+								<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
+									<path
+										d="M50.7071 8.70711C51.0976 8.31659 51.0976 7.68342 50.7071 7.2929L44.3431 0.928936C43.9526 0.538412 43.3195 0.538412 42.9289 0.928936C42.5384 1.31946 42.5384 1.95263 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM-8.74228e-08 9L50 9L50 7L8.74228e-08 7L-8.74228e-08 9Z"
+										fill="white" />
+								</svg>
+							</span>
+						</div>
+						<span class="detail-button mobile">
 							<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
 								<path
 									d="M50.7071 8.70711C51.0976 8.31659 51.0976 7.68342 50.7071 7.2929L44.3431 0.928936C43.9526 0.538412 43.3195 0.538412 42.9289 0.928936C42.5384 1.31946 42.5384 1.95263 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM-8.74228e-08 9L50 9L50 7L8.74228e-08 7L-8.74228e-08 9Z"
 									fill="white" />
 							</svg>
-						</NuxtLink>
-					</div>
+						</span>
+					</NuxtLink>
 				</SwiperSlide>
 			</Swiper>
 			<div class="references">
@@ -160,6 +188,7 @@
 					<div class="texts">
 						<h3>Hana</h3>
 						<span>Senior PPC specialist</span>
+						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 							<p>
@@ -168,107 +197,10 @@
 							</p>
 						</div>
 					</div>
-				</div>
-				<div class="team-member">
-					<NuxtPicture
-						src="/ppc/dmitry.jpg"
-						alt=""
-						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
-					<div class="texts">
-						<h3>Dmitry</h3>
-						<span>Senior PPC specialist</span>
-						<div class="info">
-							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-								laborum.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="team-member">
-					<NuxtPicture
-						src="/ppc/martin.jpg"
-						alt=""
-						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
-					<div class="texts">
-						<h3>Martin</h3>
-						<span>PPC specialist</span>
-						<div class="info">
-							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-								laborum.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="team-member">
-					<NuxtPicture
-						src="/ppc/petra.jpg"
-						alt=""
-						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
-					<div class="texts">
-						<h3>Petra</h3>
-						<span>Account manager</span>
-						<div class="info">
-							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-								laborum.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="team-member">
-					<NuxtPicture
-						src="/ppc/lucie.jpg"
-						alt=""
-						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
-					<div class="texts">
-						<h3>Lucie</h3>
-						<span>Customer Success Manager</span>
-						<div class="info">
-							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-								laborum.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="team-member">
-					<NuxtPicture
-						src="/ppc/karel.jpg"
-						alt=""
-						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
-					<div class="texts">
-						<h3>Karel</h3>
-						<span>Social media manager</span>
-						<div class="info">
-							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-								laborum.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="team-member">
-					<NuxtPicture
-						src="/ppc/timur.jpg"
-						alt=""
-						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
-					<div class="texts">
-						<h3>Timur</h3>
-						<span>Grafik</span>
-						<div class="info">
-							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-								laborum.
-							</p>
-						</div>
+					<div class="info mobile">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
 					</div>
 				</div>
 				<div class="team-member">
@@ -279,6 +211,7 @@
 					<div class="texts">
 						<h3>Filip</h3>
 						<span>Obchodní manager</span>
+						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 							<p>
@@ -286,6 +219,149 @@
 								laborum.
 							</p>
 						</div>
+					</div>
+					<div class="info mobile">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<NuxtPicture
+						src="/ppc/jana.jpg"
+						alt=""
+						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
+					<div class="texts">
+						<h3>Jana</h3>
+						<span>Customer Success Manager</span>
+						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+						<div class="info">
+							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+							<p>
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+								laborum.
+							</p>
+						</div>
+					</div>
+					<div class="info mobile">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<NuxtPicture
+						src="/ppc/petra.jpg"
+						alt=""
+						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
+					<div class="texts">
+						<h3>Petra</h3>
+						<span>Account manager</span>
+						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+						<div class="info">
+							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+							<p>
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+								laborum.
+							</p>
+						</div>
+					</div>
+					<div class="info mobile">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<NuxtPicture
+						src="/ppc/dmitry.jpg"
+						alt=""
+						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
+					<div class="texts">
+						<h3>Dmitry</h3>
+						<span>Senior PPC specialist</span>
+						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+						<div class="info">
+							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+							<p>
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+								laborum.
+							</p>
+						</div>
+					</div>
+					<div class="info mobile">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<NuxtPicture
+						src="/ppc/martin.jpg"
+						alt=""
+						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
+					<div class="texts">
+						<h3>Martin</h3>
+						<span>PPC specialist</span>
+						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+						<div class="info">
+							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+							<p>
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+								laborum.
+							</p>
+						</div>
+					</div>
+					<div class="info mobile">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<NuxtPicture
+						src="/ppc/karel.jpg"
+						alt=""
+						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
+					<div class="texts">
+						<h3>Karel</h3>
+						<span>Social media manager</span>
+						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+						<div class="info">
+							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+							<p>
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+								laborum.
+							</p>
+						</div>
+					</div>
+					<div class="info mobile">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+				<div class="team-member">
+					<NuxtPicture
+						src="/ppc/timur.jpg"
+						alt=""
+						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
+					<div class="texts">
+						<h3>Timur</h3>
+						<span>Grafik</span>
+						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+						<div class="info">
+							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
+							<p>
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+								laborum.
+							</p>
+						</div>
+					</div>
+					<div class="info mobile">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -1168,6 +1244,8 @@
 							<option value="Facebook/Instagram">Facebook/Instagram</option>
 							<option value="Amazaon Advertising">Amazon Advertising</option>
 							<option value="Shoptet">Shoptet</option>
+							<option value="Bing">Bing</option>
+							<option value="Sklik">Sklik</option>
 							<option value="Jiná">Jiná</option>
 						</select>
 					</div>
@@ -1224,7 +1302,11 @@
 			width: 100%;
 			flex: 0 1 100px;
 		}
+		@media (max-width: 767px) {
+			display: none;
+		}
 	}
+
 	.banner-study {
 		position: relative;
 		.texts {
@@ -1270,8 +1352,48 @@
 					transform: translateX(10px);
 				}
 			}
+			&.mobile {
+				display: none;
+			}
+		}
+		@media (max-width: 1150px) {
+			h3 {
+				font-size: rem(36);
+			}
+		}
+		@media (max-width: 880px) {
+			.texts {
+				transform: none;
+				left: 50px;
+				top: 50px;
+				right: 50px;
+			}
+			.detail-button {
+				display: none;
+				&.mobile {
+					display: block;
+					position: absolute;
+					bottom: 50px;
+					right: 50px;
+				}
+			}
+		}
+		@media (max-width: 640px) {
+			h3 {
+				font-size: rem(27);
+			}
+			.texts {
+				left: 20px;
+				top: 20px;
+				right: 20px;
+			}
+			.detail-button.mobile {
+				bottom: 20px;
+				right: 20px;
+			}
 		}
 	}
+
 	.references {
 		display: flex;
 		flex-wrap: wrap;
@@ -1282,11 +1404,33 @@
 		img {
 			width: auto;
 		}
+		@media (max-width: 750px) {
+			gap: 20px;
+			img {
+				max-width: 100px;
+			}
+		}
+		@media (max-width: 500px) {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(1px, 1fr));
+			justify-items: center;
+			gap: 10px;
+			text-align: center;
+			img {
+				width: 100%;
+			}
+		}
 	}
 	.team-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		gap: 40px;
+		@media (max-width: 767px) {
+			gap: 20px;
+		}
+		@media (max-width: 680px) {
+			display: block;
+		}
 	}
 	.team-member {
 		aspect-ratio: 1;
@@ -1336,6 +1480,12 @@
 			max-height: 0;
 			overflow: hidden;
 			transition: all 0.15s ease-in-out;
+			&.mobile {
+				display: none;
+			}
+		}
+		.mail-mobile {
+			display: none;
 		}
 		&::before {
 			content: '';
@@ -1358,6 +1508,62 @@
 				color: $color-font;
 			}
 		}
+		@media (max-width: 680px) {
+			&::before {
+				display: none;
+			}
+			&:hover {
+				.info {
+					max-height: unset;
+				}
+				.texts {
+					background-color: transparent;
+					backdrop-filter: none;
+					color: $color-font;
+				}
+			}
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			aspect-ratio: auto;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid $color-border;
+			& > picture {
+				flex: 0 1 190px;
+			}
+			.texts {
+				flex: 1 1 220px;
+				position: initial;
+				color: $color-font;
+				align-items: flex-start;
+				padding: 0 10px;
+			}
+			.info {
+				display: none;
+				&.mobile {
+					display: block;
+					flex-basis: 100%;
+					padding: 0 20px;
+					background-color: rgba($color-font, 0.05);
+				}
+			}
+			.mail-mobile {
+				display: flex;
+				margin: 0;
+				&::before {
+					content: url('/icon/icon-mail-green.svg');
+				}
+			}
+		}
+		@media (max-width: 580px) {
+			& > picture {
+				flex-basis: 90px;
+			}
+			h3 {
+				font-size: rem(22);
+			}
+		}
 	}
 	.certifications {
 		display: flex;
@@ -1367,6 +1573,14 @@
 		justify-content: space-between;
 		img {
 			width: auto;
+		}
+		@media (max-width: 767px) {
+			display: grid;
+			justify-items: center;
+			grid-template-columns: repeat(3, minmax(1px, 1fr));
+			img {
+				width: 100%;
+			}
 		}
 	}
 	.steps {
@@ -1429,6 +1643,47 @@
 			}
 		}
 	}
+	@media (max-width: 1100px) {
+		.steps {
+			grid-template-columns: repeat(2, minmax(1px, 1fr));
+		}
+		.step {
+			grid-column-end: unset;
+			&.wide {
+				grid-column-end: unset;
+			}
+			&.contact-us {
+				grid-column-end: span 2;
+			}
+		}
+	}
+	@media (max-width: 900px) {
+		.steps {
+			gap: 20px;
+		}
+		.step {
+			padding: 20px;
+			h3 {
+				font-size: rem(22);
+			}
+			.step-no {
+				font-size: 77px;
+				bottom: 20px;
+				right: 20px;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		.steps {
+			grid-template-columns: minmax(1px, 1fr);
+			gap: 15px;
+		}
+		.step {
+			&.contact-us {
+				grid-column-end: unset;
+			}
+		}
+	}
 
 	.ppcSticky {
 		background-color: $color-font;
@@ -1451,6 +1706,30 @@
 		}
 		p {
 			margin: 0;
+		}
+		@media (max-width: 767px) {
+			.container {
+				flex-direction: column;
+				text-align: center;
+				gap: 10px;
+			}
+			h2 {
+				font-size: rem(16);
+			}
+			p {
+				font-size: rem(9);
+			}
+			button {
+				font-size: rem(12);
+				line-height: 1em;
+				padding: em(10, 12);
+				width: 100%;
+				justify-content: center;
+			}
+			.button {
+				width: 100%;
+				max-width: 375px;
+			}
 		}
 	}
 	.ppc-audit {
@@ -1489,13 +1768,24 @@
 				max-width: 930px;
 			}
 		}
+		@media (max-width: 767px) {
+			background-image: url('/ppc/audit-bg-mobile.jpg');
+			background-position: bottom center;
+			padding-bottom: 60vw;
+			ul {
+				columns: unset;
+			}
+		}
+		@media (max-width: 640px) {
+			padding-top: 20px;
+		}
 	}
 	.miranda-expert {
 		display: flex;
 		gap: 80px;
 		.texts {
 			align-self: center;
-			padding-right: calc((100vw - 1440px - 1rem) / 2);
+			padding-right: clamp(2rem, calc((100vw - 1440px - 1rem) / 2), calc((100vw - 1440px - 1rem) / 2));
 			ul {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
@@ -1520,10 +1810,45 @@
 		}
 		.buttons {
 			display: flex;
+			flex-wrap: wrap;
 			gap: 20px;
 			.btn-tertiary {
 				width: auto;
 				max-width: unset;
+			}
+		}
+		@media (max-width: 1260px) {
+			gap: 40px;
+			.texts ul {
+				font-size: 1rem;
+				li {
+					align-items: center;
+					svg {
+						flex-basis: 24px;
+					}
+				}
+			}
+		}
+		@media (max-width: 900px) {
+			flex-direction: column;
+			padding: 0 2rem;
+			& > picture {
+				max-height: 240px;
+				overflow: hidden;
+			}
+		}
+		@media (max-width: 767px) {
+			padding: 0 20px;
+		}
+		@media (max-width: 640px) {
+			& > picture {
+				max-height: unset;
+			}
+			h2 {
+				margin: 0 0 25px;
+			}
+			.texts ul {
+				display: block;
 			}
 		}
 	}
@@ -1543,6 +1868,9 @@
 		}
 		h2 {
 			margin: 0;
+		}
+		@media (max-width: 767px) {
+			padding: 40px 0;
 		}
 	}
 	.popup-header {
@@ -1583,6 +1911,30 @@
 		&-inner {
 			max-width: 480px;
 			margin: 0 auto;
+		}
+	}
+</style>
+<style lang="scss">
+	#priklady {
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			border-radius: 0;
+			transition: all 0.15s ease-in-out;
+			&.swiper-pagination-bullet-active {
+				transform: scale(1.34);
+			}
+		}
+		@media (min-width: 880px) {
+			.swiper-pagination {
+				display: none;
+			}
+		}
+		@media (max-width: 879px) {
+			.swiper-button-next,
+			.swiper-button-prev {
+				display: none;
+			}
 		}
 	}
 </style>

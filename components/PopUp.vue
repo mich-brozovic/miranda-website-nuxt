@@ -5,8 +5,10 @@
 				<span></span>
 				<span></span>
 			</div>
-			<div class="popup-inner">
-				<slot></slot>
+			<div>
+				<div class="popup-inner">
+					<slot></slot>
+				</div>
 			</div>
 		</div>
 	</Transition>
@@ -29,9 +31,10 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		right: 0;
-		bottom: 0;
-		padding: 2rem;
+		// right: 0;
+		// bottom: 0;
+		width: 100%;
+		height: 100vh;
 		background-color: rgba($color-font, 0.6);
 		backdrop-filter: blur(10px);
 		z-index: 1001;
@@ -42,6 +45,7 @@
 		.popup-inner {
 			max-width: 740px;
 			width: 100%;
+			position: relative;
 		}
 	}
 	#popup-close {

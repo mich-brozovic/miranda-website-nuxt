@@ -264,12 +264,19 @@
 			}
 		}
 	}
+
 	.swiper-button-prev {
 		&::after {
 			transform: rotate(180deg);
 		}
 	}
-
+	@media (max-width: 1150px) {
+		.swiper-button-next,
+		.swiper-button-prev {
+			width: 48px;
+			height: 48px;
+		}
+	}
 	@media (max-width: 767px) {
 		.container {
 			padding-left: 20px;
