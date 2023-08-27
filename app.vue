@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<LoadingBar />
+		<!-- <LoadingBar /> -->
 		<MainHeader />
 		<NuxtPage />
 		<MainFooter />

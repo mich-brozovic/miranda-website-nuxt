@@ -33,20 +33,27 @@
 		left: 0;
 		// right: 0;
 		// bottom: 0;
+		padding: 20px;
 		width: 100%;
 		height: 100vh;
 		background-color: rgba($color-font, 0.6);
 		backdrop-filter: blur(10px);
 		z-index: 1001;
 		display: flex;
-		align-items: center;
+		// align-items: center;
 		justify-content: center;
 		overflow-y: scroll;
+		padding-top: 100px;
 		.popup-inner {
 			max-width: 740px;
 			width: 100%;
 			position: relative;
 		}
+		// & > div:not(#popup-close) {
+		// 	display: flex;
+		// 	align-items: center;
+		// 	justify-content: center;
+		// }
 	}
 	#popup-close {
 		position: absolute;
