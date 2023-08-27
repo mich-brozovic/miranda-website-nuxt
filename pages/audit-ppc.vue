@@ -535,7 +535,7 @@
 				</NuxtLink>
 			</SwiperSlide>
 			<SwiperSlide class="banner-study">
-				<NuxtLink to="/pripadove-studie/svijany">
+				<NuxtLink to="/pripadove-studie/pivovar-svijany">
 					<picture>
 						<source media="(min-width:880px)" srcset="/ppc/banner-svijany.jpg" width="1440" height="350" />
 						<source srcset="/ppc/banner-svijany-mobile.jpg" width="670" height="670" />
@@ -570,7 +570,7 @@
 						<nuxt-img src="/ppc/banner-preutulky.jpg" width="1440" height="350" loading="lazy" alt="" />
 					</picture>
 					<div class="texts">
-						<NuxtImg src="/ppc/preutulky-logo.png" width="159" height="35" alt="Svijany" />
+						<NuxtImg src="/ppc/preutulky-logo.png" width="159" height="35" alt="Preutulky" />
 						<h3>Zvýšení tržeb <strong class="accent">o 136 %</strong> <small>díky úspěšné správě kampaní</small></h3>
 						<span to="/pripadove-studie/pre-utulky" class="detail-button">
 							Detail studie
