@@ -1195,6 +1195,7 @@
 				'Překonejte svoje obchodní rekordy a připojte se k řadám úspěšných klientů, kteří se rozhodli přidat k <strong>Miranda PPC Expert!</strong>',
 			imageUrl: '/ppc-hero.jpg',
 			imageMobileUrl: '/ppc-hero-mobile.jpg',
+			dataBlack: true,
 		},
 		{
 			title: '#1 Shoptet E-commerce PPC expert pro raketový růst vašeho prodeje!',
@@ -1207,6 +1208,7 @@
 			`,
 			imageUrl: '/ppc-hero-2.jpg',
 			imageMobileUrl: '/ppc-hero-mobile2.jpg',
+			dataBlack: true,
 		},
 	])
 </script>

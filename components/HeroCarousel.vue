@@ -17,7 +17,7 @@
 				</div>
 				<div class="container">
 					<div class="texts">
-						<slot name="top"></slot>
+						<div class="logos" v-if="item.logos" v-html="item.logos"></div>
 						<h1 v-html="item.title"></h1>
 						<h2 v-html="item.subtitle"></h2>
 						<slot></slot>
@@ -56,6 +56,15 @@
 </script>
 <style lang="scss" scoped>
 	.hero {
+		.logos {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			margin-bottom: 25px;
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
 		width: 100%;
 		height: 100vh;
 		position: relative;
@@ -75,7 +84,7 @@
 		}
 		h1,
 		h2 {
-			transition: all 0.3s ease-in-out;
+			transition: all 0.15s ease-in-out;
 		}
 	}
 	.header-black .hero .texts {
