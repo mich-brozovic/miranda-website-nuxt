@@ -73,6 +73,10 @@
 				object-fit: cover;
 			}
 		}
+		h1,
+		h2 {
+			transition: all 0.3s ease-in-out;
+		}
 	}
 	.header-black .hero .texts {
 		color: $color-font;
