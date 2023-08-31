@@ -78,7 +78,9 @@
 						</picture>
 						<div class="texts">
 							<NuxtImg src="/ppc/zdravotal-logo.png" width="159" height="35" alt="Zdravotal" />
-							<h3>Zvýšení tržeb <strong class="black">o 160,7 %</strong> <small>již po 6 měsících spolupráce</small></h3>
+							<h3>
+								Zvýšení tržeb <strong class="black">o&nbsp;160,7&nbsp;%</strong> <small>již po 6 měsících spolupráce</small>
+							</h3>
 							<span class="detail-button">
 								Detail studie
 								<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
@@ -106,7 +108,10 @@
 						</picture>
 						<div class="texts">
 							<NuxtImg src="/ppc/petcenter-logo.png" width="159" height="35" alt="PetCenter" />
-							<h3>Zvýšení tržeb <strong class="accent">o XX %</strong> <small>consectetur adipiscing elit</small></h3>
+							<h3>
+								Zvýšení tržeb <strong class="accent">o&nbsp;112&nbsp;%</strong>
+								<small>Porovnání mezi měsíci <br />květen 2022 a květen 2023</small>
+							</h3>
 							<span class="detail-button">
 								Detail studie
 								<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
@@ -134,7 +139,9 @@
 						</picture>
 						<div class="texts">
 							<NuxtImg src="/ppc/svijany-logo.png" width="159" height="35" alt="Svijany" />
-							<h3>Zvýšení tržeb <strong class="accent">o XX %</strong> <small>consectetur adipiscing elit</small></h3>
+							<h3>
+								Zvýšení tržeb <strong class="accent">o&nbsp;84&nbsp;%</strong> <small>Porovnání v meziročním nárůstu</small>
+							</h3>
 							<span to="/pripadove-studie/svijany" class="detail-button">
 								Detail studie
 								<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
@@ -162,7 +169,9 @@
 						</picture>
 						<div class="texts">
 							<NuxtImg src="/ppc/preutulky-logo.png" width="159" height="35" alt="Preutulky" />
-							<h3>Zvýšení tržeb <strong class="accent">o 136 %</strong> <small>díky úspěšné správě kampaní</small></h3>
+							<h3>
+								Zvýšení tržeb <strong class="accent">o&nbsp;136&nbsp;%</strong> <small>díky úspěšné správě kampaní</small>
+							</h3>
 							<span to="/pripadove-studie/pre-utulky" class="detail-button">
 								Detail studie
 								<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
@@ -1219,93 +1228,6 @@
 		}
 		@media (max-width: 767px) {
 			display: none;
-		}
-	}
-
-	.banner-study {
-		position: relative;
-		.texts {
-			position: absolute;
-			top: 50%;
-			left: 30%;
-			transform: translateY(-50%);
-			img {
-				width: auto;
-			}
-		}
-		h3 {
-			font-size: rem(52);
-			line-height: em(64, 52);
-			margin: em(15, 52) 0 em(25, 52);
-			font-weight: 900;
-			color: $color-white;
-			small {
-				display: block;
-				font-size: em(24, 52);
-				line-height: em(32, 24);
-				font-weight: 400;
-			}
-		}
-		.accent {
-			color: $color-accent;
-		}
-		.black {
-			color: $color-font;
-		}
-		.detail-button {
-			display: inline-flex;
-			align-items: center;
-			color: $color-white;
-			text-decoration: none;
-			svg {
-				margin-left: 10px;
-				transform: translateX(0);
-				transition: transform 0.3s ease;
-			}
-			&:hover {
-				svg {
-					transform: translateX(10px);
-				}
-			}
-			&.mobile {
-				display: none;
-			}
-		}
-		@media (max-width: 1150px) {
-			h3 {
-				font-size: rem(36);
-			}
-		}
-		@media (max-width: 880px) {
-			.texts {
-				transform: none;
-				left: 50px;
-				top: 50px;
-				right: 50px;
-			}
-			.detail-button {
-				display: none;
-				&.mobile {
-					display: block;
-					position: absolute;
-					bottom: 50px;
-					right: 50px;
-				}
-			}
-		}
-		@media (max-width: 640px) {
-			h3 {
-				font-size: rem(27);
-			}
-			.texts {
-				left: 20px;
-				top: 20px;
-				right: 20px;
-			}
-			.detail-button.mobile {
-				bottom: 20px;
-				right: 20px;
-			}
 		}
 	}
 

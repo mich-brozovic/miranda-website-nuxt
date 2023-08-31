@@ -1,17 +1,8 @@
 <template>
 	<div v-if="props.type === 'hp' && screenWidth <= 767">
-		<Swiper
-			:slides-per-view="1"
-			:loop="true"
-			:modules="[SwiperPagination]"
-			pagination>
-			<SwiperSlide
-				v-for="(item, index) in data.data"
-				:index="index"
-				class="item">
-				<nuxt-link
-					v-if="item.attributes.url"
-					:to="`/pripadove-studie/${item.attributes.url}`">
+		<Swiper :slides-per-view="1" :loop="true" :modules="[SwiperPagination]" pagination>
+			<SwiperSlide v-for="(item, index) in data.data" :index="index" class="item">
+				<nuxt-link v-if="item.attributes.url" :to="`/pripadove-studie/${item.attributes.url}`">
 					<NuxtPicture
 						class="bg-img"
 						provider="strapi"
@@ -59,17 +50,13 @@
 		</Swiper>
 	</div>
 	<div v-else>
-		<div
-			class="reference-grid"
-			:class="{ hidden: props.type == 'shop' && !visibleAll }">
+		<div class="reference-grid" :class="{ hidden: props.type == 'shop' && !visibleAll }">
 			<div
 				class="item"
 				v-for="(item, index) in data.data"
 				:key="index"
 				:class="{ large: (index == 2 || index == 3) && props.type == 'hp' }">
-				<nuxt-link
-					v-if="item.attributes.url"
-					:to="`/pripadove-studie/${item.attributes.url}`">
+				<nuxt-link v-if="item.attributes.url" :to="`/pripadove-studie/${item.attributes.url}`">
 					<NuxtPicture
 						class="bg-img"
 						provider="strapi"
@@ -119,18 +106,8 @@
 
 	<div v-if="props.type == 'shop'">
 		<div class="buttons-center">
-			<button
-				v-if="!visibleAll"
-				class="btn-secondary"
-				@click="visibleAll = true">
-				Zobrazit všechny Shoptet reference
-			</button>
-			<button
-				v-else
-				class="btn-secondary"
-				@click="visibleAll = false">
-				Skrýt reference
-			</button>
+			<button v-if="!visibleAll" class="btn-secondary" @click="visibleAll = true">Zobrazit další případové studie</button>
+			<button v-else class="btn-secondary" @click="visibleAll = false">Skrýt reference</button>
 		</div>
 	</div>
 </template>

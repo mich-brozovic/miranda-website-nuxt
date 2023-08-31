@@ -6,8 +6,9 @@
 			:loop="true"
 			:modules="[SwiperPagination, SwiperAutoplay]"
 			pagination
-			:autoplay="{ delay: 5000 }">
-			<SwiperSlide v-for="(item, index) in props.data" :key="index">
+			:autoplay="{ delay: 5000 }"
+			@slideChangeTransitionEnd="onSlideChange()">
+			<SwiperSlide v-for="(item, index) in props.data" :key="index" :data-black="item.dataBlack">
 				<div class="image-wrapper">
 					<NuxtPicture
 						:src="screenWidth > 767 ? item.imageUrl : item.imageMobileUrl"
@@ -15,6 +16,7 @@
 				</div>
 				<div class="container">
 					<div class="texts">
+						<slot name="top"></slot>
 						<h1 v-html="item.title"></h1>
 						<h2 v-html="item.subtitle"></h2>
 						<slot></slot>
@@ -38,6 +40,15 @@
 <script setup>
 	const screenWidth = useState('screenWidth')
 	const props = defineProps(['data', 'hideScroll'])
+	const onSlideChange = () => {
+		const activeSlide = ref(document.querySelector('.hero .swiper-slide-active'))
+		const dataBlack = ref(activeSlide.value.getAttribute('data-black'))
+		if (dataBlack.value) {
+			document.body.classList.add('header-black')
+		} else {
+			document.body.classList.remove('header-black')
+		}
+	}
 </script>
 <style lang="scss" scoped>
 	.hero {
