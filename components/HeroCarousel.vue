@@ -4,9 +4,10 @@
 			style="height: 100%"
 			:slides-per-view="1"
 			:loop="true"
-			:modules="[SwiperPagination, SwiperAutoplay]"
+			:modules="[SwiperPagination, SwiperAutoplay, SwiperEffectFade]"
 			pagination
 			:autoplay="{ delay: 5000 }"
+			:effect="'fade'"
 			@slideChangeTransitionEnd="onSlideChange()">
 			<SwiperSlide v-for="(item, index) in props.data" :key="index" :data-black="item.dataBlack">
 				<div class="image-wrapper">
@@ -49,6 +50,9 @@
 			document.body.classList.remove('header-black')
 		}
 	}
+	onBeforeUnmount(() => {
+		document.body.classList.remove('header-black')
+	})
 </script>
 <style lang="scss" scoped>
 	.hero {
