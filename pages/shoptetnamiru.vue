@@ -385,7 +385,7 @@
 	const carouselData = ref([
 		{
 			title: 'Váš nový e‑shop s&nbsp;podporou Shoptet Premium partnera',
-			subtitle: 'Našim expertním službám můžete důvěřovat. Jsme stejně nároční jako Vy!',
+			subtitle: 'Našim expertním službám můžete důvěřovat. Jsme&nbsp;stejně nároční jako Vy!',
 			imageUrl: '/shoptetnamiru/carousel-new1.jpg',
 			imageMobileUrl: '/shoptetnamiru/carousel-new1-mobile.jpg',
 			logos: `
