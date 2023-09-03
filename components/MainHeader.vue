@@ -19,7 +19,13 @@
 				<li><NuxtLink to="/o-nas">O nás</NuxtLink></li>
 				<li><NuxtLink to="/pripadove-studie">Případové studie</NuxtLink></li>
 				<li><NuxtLink to="/shoptetnamiru">Shoptet na míru</NuxtLink></li>
-				<li><NuxtLink to="/sluzby">Služby</NuxtLink></li>
+				<li class="has-children">
+					<NuxtLink to="/sluzby">Služby</NuxtLink>
+					<ul class="menu-level-2">
+						<li><NuxtLink to="/sprava-ppc-kampani">Správa PPC kampaní</NuxtLink></li>
+						<li><NuxtLink to="/audit-ppc">Audit PPC</NuxtLink></li>
+					</ul>
+				</li>
 				<li><NuxtLink to="/clanky">Blog</NuxtLink></li>
 				<li><NuxtLink to="/kariera">Kariéra</NuxtLink></li>
 				<li><NuxtLink to="/kontakty">Kontakty</NuxtLink></li>
@@ -35,7 +41,16 @@
 				<li><NuxtLink to="/o-nas">O nás</NuxtLink></li>
 				<li><NuxtLink to="/pripadove-studie">Případové studie</NuxtLink></li>
 				<li><NuxtLink to="/shoptetnamiru">Shoptet na míru</NuxtLink></li>
-				<li><NuxtLink to="/sluzby">Služby</NuxtLink></li>
+				<li class="has-children">
+					<NuxtLink to="/sluzby">
+						Služby
+						<span class="submenu-arrow" @click.prevent="openSubmenu"></span>
+					</NuxtLink>
+					<ul class="menu-level-2">
+						<li><NuxtLink to="/sprava-ppc-kampani">Správa PPC kampaní</NuxtLink></li>
+						<li><NuxtLink to="/audit-ppc">Audit PPC</NuxtLink></li>
+					</ul>
+				</li>
 				<li><NuxtLink to="/clanky">Blog</NuxtLink></li>
 				<li><NuxtLink to="/kariera">Kariéra</NuxtLink></li>
 				<li><NuxtLink to="/kontakty">Kontakty</NuxtLink></li>
@@ -99,6 +114,11 @@
 			}
 		}
 		scrollBefore.value = scroll
+	}
+	const openSubmenu = (e) => {
+		const parent = e.target.closest('.has-children')
+		console.log(e.target.closest('.has-children'))
+		if (parent) parent.classList.toggle('submenu-visible')
 	}
 	onMounted(() => {
 		window.addEventListener('scroll', handleScroll)
@@ -172,6 +192,30 @@
 					color: $color-accent;
 					border-color: $color-accent;
 					box-shadow: 0 0 15px rgba($color-accent, 0.3);
+				}
+			}
+		}
+		.menu-level-2 {
+			display: none;
+			position: absolute;
+			top: 100%;
+			flex-direction: column;
+			white-space: nowrap;
+			padding: 10px;
+			gap: 10px;
+			background-color: $color-font;
+			a {
+				color: $color-white !important;
+			}
+		}
+		li {
+			&.has-children {
+				position: relative;
+				&:hover,
+				&:focus {
+					.menu-level-2 {
+						display: flex;
+					}
 				}
 			}
 		}
@@ -269,12 +313,12 @@
 				color: $color-font;
 			}
 		}
-		#mobile-navigation ul {
+		#mobile-navigation > ul {
 			max-width: 480px;
 		}
 	}
 	#mobile-navigation {
-		ul {
+		& > ul {
 			transition: all 0.3s ease-in-out;
 			position: fixed;
 			top: 0;
@@ -294,13 +338,51 @@
 					background-color: rgba($color-accent, 0.3);
 				}
 			}
+			li {
+				&.has-children {
+					& > a {
+						display: flex;
+						align-items: center;
+						gap: 20px;
+						justify-content: space-between;
+					}
+					&.submenu-visible {
+						.submenu-arrow {
+							transform: rotate(-135deg);
+						}
+						.menu-level-2 {
+							display: flex;
+						}
+					}
+					.submenu-arrow {
+						padding: 3px;
+						transform: rotate(45deg);
+						transition: all 0.15s ease-in-out;
+						&::before {
+							content: '';
+							display: block;
+							width: 12px;
+							height: 12px;
+							border: 2px solid $color-font;
+							border-style: none solid solid none;
+						}
+					}
+				}
+				.menu-level-2 {
+					position: initial;
+					background-color: transparent;
+					a {
+						color: $color-font !important;
+					}
+				}
+			}
 		}
 	}
 	@media (max-width: 991px) {
 		header {
 			padding: 20px;
 		}
-		#mobile-navigation ul {
+		#mobile-navigation > ul {
 			padding-top: 90px;
 		}
 	}
@@ -319,7 +401,7 @@
 					fill: $color-accent;
 				}
 			}
-			#mobile-navigation ul {
+			#mobile-navigation > ul {
 				max-width: 620px;
 			}
 		}

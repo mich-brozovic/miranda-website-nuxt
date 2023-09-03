@@ -222,7 +222,17 @@
 				<button @click.prevent="showPopup = true" class="btn btn-primary">
 					<span> Bezplatný PPC audit </span>
 				</button>
-				<a href="#" class="btn btn-ghost-accent">+420 732 264 251</a>
+				<a href="tel:+420732264251" class="btn btn-ghost-accent">
+					<svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+						<path
+							d="M21.5004 15.9201V18.9201C21.5016 19.1986 21.4445 19.4743 21.3329 19.7294C21.2214 19.9846 21.0577 20.2137 20.8525 20.402C20.6473 20.5902 20.405 20.7336 20.1412 20.8228C19.8773 20.912 19.5978 20.9452 19.3204 20.9201C16.2433 20.5857 13.2874 19.5342 10.6904 17.8501C8.27425 16.3148 6.22576 14.2663 4.69042 11.8501C3.0004 9.2413 1.94866 6.27109 1.62042 3.1801C1.59543 2.90356 1.6283 2.62486 1.71692 2.36172C1.80555 2.09859 1.94799 1.85679 2.13519 1.65172C2.32238 1.44665 2.55023 1.28281 2.80421 1.17062C3.0582 1.05843 3.33276 1.00036 3.61042 1.0001H6.61042C7.09573 0.995321 7.56621 1.16718 7.93418 1.48363C8.30215 1.80008 8.5425 2.23954 8.61042 2.7201C8.73704 3.68016 8.97187 4.62282 9.31042 5.5301C9.44497 5.88802 9.47408 6.27701 9.39433 6.65098C9.31457 7.02494 9.12928 7.36821 8.86042 7.6401L7.59042 8.9101C9.01398 11.4136 11.0869 13.4865 13.5904 14.9101L14.8604 13.6401C15.1323 13.3712 15.4756 13.1859 15.8495 13.1062C16.2235 13.0264 16.6125 13.0556 16.9704 13.1901C17.8777 13.5286 18.8204 13.7635 19.7804 13.8901C20.2662 13.9586 20.7098 14.2033 21.027 14.5776C21.3441 14.9519 21.5126 15.4297 21.5004 15.9201Z"
+							stroke="white"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+					+420 732 264 251
+				</a>
 			</div>
 		</div>
 	</section>
@@ -469,7 +479,24 @@
 			<div class="item image mobile-wide">
 				<div class="step contact-us">
 					<h3>Kontaktujte nás <small>ještě dnes!</small></h3>
-					<a href="tel:+420732264251" class="project-phone">+420 732 264 251</a>
+					<a href="tel:+420732264251" class="project-phone">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+							<g clip-path="url(#clip0_7054_18832)">
+								<path
+									d="M20.1683 15.5101V18.2601C20.1693 18.5154 20.117 18.7681 20.0147 19.002C19.9125 19.2359 19.7625 19.4459 19.5743 19.6185C19.3862 19.7911 19.1641 19.9225 18.9223 20.0043C18.6805 20.0861 18.4242 20.1164 18.1699 20.0935C15.3492 19.787 12.6397 18.8231 10.2591 17.2793C8.04428 15.8719 6.1665 13.9941 4.75911 11.7793C3.20992 9.3879 2.24583 6.66521 1.94494 3.8318C1.92203 3.57831 1.95216 3.32283 2.0334 3.08162C2.11464 2.84041 2.24521 2.61876 2.41681 2.43078C2.5884 2.2428 2.79726 2.09261 3.03008 1.98977C3.2629 1.88694 3.51459 1.8337 3.76911 1.83346H6.51911C6.96397 1.82908 7.39525 1.98662 7.73256 2.2767C8.06986 2.56678 8.29018 2.96962 8.35244 3.41013C8.46851 4.29019 8.68377 5.1543 8.99411 5.98596C9.11744 6.31406 9.14413 6.67063 9.07102 7.01344C8.99791 7.35624 8.82807 7.6709 8.58161 7.92013L7.41744 9.0843C8.72237 11.3792 10.6225 13.2794 12.9174 14.5843L14.0816 13.4201C14.3308 13.1737 14.6455 13.0038 14.9883 12.9307C15.3311 12.8576 15.6877 12.8843 16.0158 13.0076C16.8474 13.318 17.7115 13.5332 18.5916 13.6493C19.0369 13.7121 19.4436 13.9364 19.7343 14.2795C20.025 14.6226 20.1794 15.0606 20.1683 15.5101Z"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</g>
+							<defs>
+								<clipPath id="clip0_7054_18832">
+									<rect width="22" height="22" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						+420 732 264 251
+					</a>
 					<button @click.prevent="showPopup = true" class="btn btn-primary"><span>Audit zdarma</span></button>
 				</div>
 			</div>
@@ -959,7 +986,14 @@
 		bodyAttrs: {
 			class: 'header-black',
 		},
-		title: '',
+		title: 'Kompletní Audit PPC Kampaní | Miranda Media',
+		meta: [
+			{
+				name: 'description',
+				content:
+					'Získejte podrobný přehled o stavu vašich PPC kampaní s naším profesionálním auditem. Miranda Media vám pomůže identifikovat příležitosti ke zlepšení a dosažení lepších výsledků.',
+			},
+		],
 	})
 	const { find } = useStrapi()
 	const { data } = await find('clanky', {
@@ -1066,6 +1100,7 @@
 			.btn-tertiary {
 				width: auto;
 				max-width: unset;
+				padding: 0.9375em 1.875em;
 			}
 		}
 		.perex {
@@ -1264,6 +1299,11 @@
 			gap: 20px;
 			justify-content: center;
 			margin-top: 40px;
+			.btn-ghost-accent {
+				display: inline-flex;
+				align-items: center;
+				gap: 1em;
+			}
 		}
 		.container {
 			max-width: 980px;
@@ -1325,6 +1365,11 @@
 			background-color: rgba($color-font, 0.1);
 			.buttons {
 				margin-top: 20px;
+			}
+			.project-phone {
+				display: inline-flex;
+				align-items: center;
+				gap: 1em;
 			}
 		}
 	}

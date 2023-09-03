@@ -1,8 +1,6 @@
 <template>
-	<NuxtLink
-		:to="props.url"
-		class="btn-primary">
-		<span>{{ props.text }}</span>
+	<NuxtLink :to="props.url" class="btn-primary">
+		<span><slot></slot>{{ props.text }}</span>
 	</NuxtLink>
 </template>
 <script setup>
@@ -10,7 +8,7 @@
 </script>
 <style lang="scss">
 	.btn-primary {
-    padding: 0;
+		padding: 0;
 		display: inline-block;
 		position: relative;
 		color: $color-font;
@@ -19,32 +17,39 @@
 		transition: all 0.4s ease-in-out;
 		overflow: hidden;
 		span {
-			display: block;
+			display: flex;
+			align-items: center;
+			gap: 1em;
 			position: relative;
 			z-index: 1;
 			padding: 1.25em;
+			svg {
+				stroke: $color-font;
+				transition: all 0.4s ease-in-out;
+			}
 		}
-    a {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      position: relative;
-      z-index: 1;
-      padding: 1.25em;
-      color: $color-font;
-      font-weight: 700;
-      text-decoration: none;
-      transition: color .3s ease-in-out;
-      svg path {
-        transition: all .3s ease-in-out;
-      }
-      &:hover, &:focus {
-        color: $color-white;
-        svg path {
-          stroke: $color-white;
-        }
-      }
-    }
+		a {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			position: relative;
+			z-index: 1;
+			padding: 1.25em;
+			color: $color-font;
+			font-weight: 700;
+			text-decoration: none;
+			transition: color 0.3s ease-in-out;
+			svg path {
+				transition: all 0.3s ease-in-out;
+			}
+			&:hover,
+			&:focus {
+				color: $color-white;
+				svg path {
+					stroke: $color-white;
+				}
+			}
+		}
 		&::before,
 		&::after {
 			content: '';
@@ -70,6 +75,9 @@
 		&:hover,
 		&:focus {
 			color: $color-white;
+			span svg {
+				stroke: $color-white;
+			}
 			&::after {
 				left: 0;
 				right: auto;
