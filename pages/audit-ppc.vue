@@ -6,6 +6,17 @@
 			</button>
 		</div>
 	</HeroCarousel>
+	<section class="ppcSticky no-margin">
+		<div class="container">
+			<div class="texts">
+				<h2>Jak si stojí vaše PPC?</h2>
+				<p>Získejte ještě dnes bezplatný odborný posudek výkonnosti svých reklam.</p>
+			</div>
+			<div class="button">
+				<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">PPC audit zdarma</button>
+			</div>
+		</div>
+	</section>
 	<section id="usp">
 		<div class="container">
 			<div class="item grey">
@@ -121,7 +132,7 @@
 					</li>
 				</ol>
 				<ol class="custom-ol" v-else>
-					<Swiper :slides-per-view="1.5" :modules="[SwiperPagination]" pagination>
+					<Swiper :slides-per-view="1.5" :space-between="20" :modules="[SwiperPagination]" pagination>
 						<SwiperSlide>
 							<li>
 								Analýza klíčových slov: Zkoumání klíčových slov použitých ve vašich kampaních a jejich relevanci pro vaši
@@ -197,7 +208,7 @@
 			<div class="column texts">
 				<h2>Otevřený dopis všem zájemcům</h2>
 				<p>
-					V Mirande jsme si vědomi, že jako majitel firmy nebo marketingový ředitel se často potýkáte s náročným úkolem vyvážit
+					V Mirandě jsme si vědomi, že jako majitel firmy nebo marketingový ředitel se často potýkáte s náročným úkolem vyvážit
 					povinnosti a používat efektivní prodejní strategie. Právě proto jsme tu pro vás s nabídkou 100% bezplatných auditů
 					Google Ads. Věříme, že získání bezplatného auditu Google Ads je klíčovým krokem pro úspěšný rozvoj vašeho podnikání v
 					tomto roce.
@@ -514,7 +525,9 @@
 					</picture>
 					<div class="texts">
 						<NuxtImg src="/ppc/zdravotal-logo.png" width="159" height="35" alt="Zdravotal" />
-						<h3>Zvýšení tržeb <strong class="black">o 160,7 %</strong> <small>již po 6 měsících spolupráce</small></h3>
+						<h3>
+							Zvýšení tržeb <strong class="black">o&nbsp;160,7&nbsp;%</strong> <small>již po 6 měsících spolupráce</small>
+						</h3>
 						<span class="detail-button">
 							Detail studie
 							<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
@@ -542,7 +555,10 @@
 					</picture>
 					<div class="texts">
 						<NuxtImg src="/ppc/petcenter-logo.png" width="159" height="35" alt="PetCenter" />
-						<h3>Zvýšení tržeb <strong class="accent">o XX %</strong> <small>consectetur adipiscing elit</small></h3>
+						<h3>
+							Zvýšení tržeb <strong class="accent">o&nbsp;112&nbsp;%</strong>
+							<small>Porovnání mezi měsíci <br />květen 2022 a květen 2023</small>
+						</h3>
 						<span class="detail-button">
 							Detail studie
 							<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
@@ -570,7 +586,9 @@
 					</picture>
 					<div class="texts">
 						<NuxtImg src="/ppc/svijany-logo.png" width="159" height="35" alt="Svijany" />
-						<h3>Zvýšení tržeb <strong class="accent">o XX %</strong> <small>consectetur adipiscing elit</small></h3>
+						<h3>
+							Zvýšení tržeb <strong class="accent">o&nbsp;84&nbsp;%</strong> <small>Porovnání v meziročním nárůstu</small>
+						</h3>
 						<span to="/pripadove-studie/svijany" class="detail-button">
 							Detail studie
 							<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
@@ -598,7 +616,7 @@
 					</picture>
 					<div class="texts">
 						<NuxtImg src="/ppc/preutulky-logo.png" width="159" height="35" alt="Preutulky" />
-						<h3>Zvýšení tržeb <strong class="accent">o 136 %</strong> <small>díky úspěšné správě kampaní</small></h3>
+						<h3>Zvýšení tržeb <strong class="accent">o&nbsp;136&nbsp;%</strong> <small>díky úspěšné správě kampaní</small></h3>
 						<span to="/pripadove-studie/pre-utulky" class="detail-button">
 							Detail studie
 							<svg xmlns="http://www.w3.org/2000/svg" width="51" height="16" viewBox="0 0 51 16" fill="none">
@@ -1243,9 +1261,9 @@
 		}
 		@media (max-width: 767px) {
 			display: block;
-			:deep(.swiper-wrapper) {
-				gap: 20px;
-			}
+			// :deep(.swiper-slide) {
+			// 	margin: 0 10px;
+			// }
 		}
 	}
 	.letter {
@@ -1489,6 +1507,17 @@
 			.texts span {
 				font-size: rem(12);
 			}
+			&:hover {
+				.info {
+					max-height: 0;
+				}
+				.texts {
+					justify-content: flex-end;
+					background-color: transparent;
+					backdrop-filter: none;
+					color: $color-white;
+				}
+			}
 		}
 	}
 	.step {
@@ -1652,6 +1681,53 @@
 			text-align: center;
 			img {
 				width: 100%;
+			}
+		}
+	}
+	.ppcSticky {
+		background-color: $color-font;
+		padding: rem(10) 0;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 4;
+		.container {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			justify-content: space-evenly;
+			color: $color-white;
+		}
+		h2 {
+			font-size: rem(24);
+			margin: 0;
+		}
+		p {
+			margin: 0;
+		}
+		@media (max-width: 767px) {
+			.container {
+				flex-direction: column;
+				text-align: center;
+				gap: 10px;
+			}
+			h2 {
+				font-size: rem(16);
+			}
+			p {
+				font-size: rem(9);
+			}
+			button {
+				font-size: rem(12);
+				line-height: 1em;
+				padding: em(10, 12);
+				width: 100%;
+				justify-content: center;
+			}
+			.button {
+				width: 100%;
+				max-width: 375px;
 			}
 		}
 	}

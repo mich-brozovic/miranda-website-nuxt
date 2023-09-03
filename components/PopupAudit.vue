@@ -73,13 +73,13 @@
 		<div class="popup-body">
 			<div class="popup-body-inner">
 				<h3>Získejte PPC AUDIT ZDARMA</h3>
-				<p>
-					Vyplňte prosím formulář níže. <br />
-					<strong>Ozveme se ještě dnes!</strong>
-				</p>
 				<div v-if="formSending">Odesílám...</div>
 				<div v-else-if="formSent">Formulář byl v pořádku odeslán, naši accounti se Vám co nejdříve ozvou.</div>
 				<form v-else @submit.prevent="sendForm">
+					<p>
+						Vyplňte prosím formulář níže. <br />
+						<strong>Ozveme se ještě dnes!</strong>
+					</p>
 					<div class="form-row">
 						<input type="text" name="fullName" placeholder="Jméno a příjmení *" required :ref="form.jmeno" />
 					</div>
@@ -193,9 +193,6 @@
 		h3 {
 			margin: 0 0 10px;
 			font-size: rem(32);
-		}
-		p {
-			margin: 0;
 		}
 		form {
 			margin-top: 30px;

@@ -1,30 +1,5 @@
 <template>
 	<main>
-		<!-- <HeroBig imgUrl="/ppc-hero.jpg" :hideScroll="true">
-			<h1>
-				Jsme experti na růst E-commerce.<br />
-				Zvyšte své tržby!
-			</h1>
-			<h2>
-				Překonejte svoje obchodní rekordy a připojte se k řadám úspěšných klientů, kteří se rozhodli přidat k
-				<strong>Miranda PPC Expert!</strong>
-			</h2>
-			<div class="buttons">
-				<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">PPC audit zdarma</button>
-			</div>
-			<div class="logos">
-				<NuxtImg src="/ppc/google-ads.png" width="110" height="56" alt="Google Ads" />
-				<NuxtImg src="/ppc/sklik.png" width="111" height="20" alt="Sklik" />
-				<NuxtImg src="/ppc/favi.png" width="111" height="50" alt="Favi" />
-				<NuxtImg src="/ppc/zbozi-cz.png" width="110" height="23" alt="Zboží.cz" />
-				<NuxtImg src="/ppc/amazon-ads.png" width="110" height="56" alt="Amazon Ads" />
-				<NuxtImg src="/ppc/heureka.png" width="110" height="24" alt="Heureka" />
-				<NuxtImg src="/ppc/linkedin.png" width="111" height="29" alt="LinkedIn" />
-				<NuxtImg src="/ppc/instagram.png" width="111" height="33" alt="Instagram" />
-				<NuxtImg src="/ppc/facebook.png" width="110" height="25" alt="Facebook" />
-				<NuxtImg src="/ppc/tiktok-ads.png" width="110" height="18" alt="TikTok Ads" />
-			</div>
-		</HeroBig> -->
 		<HeroCarousel :data="carouselData">
 			<div class="buttons">
 				<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">PPC audit zdarma</button>
