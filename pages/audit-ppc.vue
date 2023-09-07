@@ -280,17 +280,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="item image">
@@ -305,17 +305,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="item center mobile-wide">
@@ -349,17 +349,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="item image">
@@ -374,17 +374,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="item image">
@@ -395,21 +395,21 @@
 						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
 					<div class="texts">
 						<h3>Jana</h3>
-						<span>Customer Success Manager</span>
+						<span>Obchodní manager</span>
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="item image">
@@ -424,17 +424,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="item image">
@@ -449,17 +449,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="item image">
@@ -474,17 +474,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="item image mobile-wide">

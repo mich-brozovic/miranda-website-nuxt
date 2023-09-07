@@ -192,17 +192,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 				<div class="team-member">
 					<NuxtPicture
@@ -215,17 +215,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 				<div class="team-member">
 					<NuxtPicture
@@ -234,21 +234,21 @@
 						:imgAttrs="{ style: 'display: block; width:100%; height:100%; object-fit: cover; object-position: center;' }" />
 					<div class="texts">
 						<h3>Jana</h3>
-						<span>Customer Success Manager</span>
+						<span>Obchodní manager</span>
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 				<div class="team-member">
 					<NuxtPicture
@@ -261,16 +261,16 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
 					<div class="info mobile">
-						<p>
+						<!-- <p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
+						</p> -->
 					</div>
 				</div>
 				<div class="team-member">
@@ -284,17 +284,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 				<div class="team-member">
 					<NuxtPicture
@@ -307,17 +307,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 				<div class="team-member">
 					<NuxtPicture
@@ -330,17 +330,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 				<div class="team-member">
 					<NuxtPicture
@@ -353,17 +353,17 @@
 						<a class="mail-mobile" href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
 						<div class="info">
 							<a href="mailto:info@mirandamedia.cz">info@mirandamedia.cz</a>
-							<p>
+							<!-- <p>
 								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 								laborum.
-							</p>
+							</p> -->
 						</div>
 					</div>
-					<div class="info mobile">
+					<!-- <div class="info mobile">
 						<p>
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
@@ -1200,7 +1200,7 @@
 	})
 	const carouselData = ref([
 		{
-			title: 'Jsme experti na růst E-commerce.<br />Zvyšte své tržby!',
+			title: 'Jsme experti na růst E‑commerce.<br />Zvyšte své tržby!',
 			subtitle:
 				'Překonejte svoje obchodní rekordy a připojte se k řadám úspěšných klientů, kteří se rozhodli přidat k <strong>Miranda PPC Expert!</strong>',
 			imageUrl: '/ppc-hero.jpg',
@@ -1208,7 +1208,7 @@
 			dataBlack: true,
 		},
 		{
-			title: '#1 Shoptet E-commerce PPC expert pro raketový růst vašeho prodeje!',
+			title: '#1 Shoptet E‑commerce PPC expert pro raketový růst vašeho prodeje!',
 			subtitle: `
 				<ul class="styled-list">
 					<li>Chcete prodávat více produktů?</li>
