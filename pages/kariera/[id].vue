@@ -13,7 +13,7 @@
 			</div>
 		</section>
 		<section class="no-margin" id="kontakt">
-			<ContactForm />
+			<ContactForm2 />
 		</section>
 	</main>
 </template>

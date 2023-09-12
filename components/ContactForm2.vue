@@ -37,7 +37,7 @@
 						</div>
 						<div class="form-row wide file">
 							<label for="file">Nahrát soubor</label>
-							<input type="file" id="file" name="file" multiple="multiple" required :ref="form.file" />
+							<input type="file" id="file" name="file" multiple="multiple" :ref="form.file" />
 							<span class="info">Nahrajte prosím soubor typu PDF, DOC(X) nebo ODT.</span>
 						</div>
 					</div>
@@ -60,27 +60,40 @@
 		phone: ref(null),
 		message: ref(null),
 		linkedin: ref(null),
+		file: ref(null),
 	}
 	const formSending = useState('formSending', () => false)
 	const formSent = useState('formSent', () => false)
 
 	const sendForm = async (e) => {
 		e.preventDefault()
+		const formData = new FormData()
+		formData.append('name', form.jmeno.value.value)
+		formData.append('surname', form.prijemni.value.value)
+		formData.append('email', form.email.value.value)
+		formData.append('phone', form.phone.value.value)
+		formData.append('message', form.message.value.value)
+		formData.append('linkedin', form.linkedin.value.value)
+		formData.append('consent', 'yes')
+		formData.append('files[]', form.file.value.files[0])
+		console.log(formData)
 		try {
 			formSending.value = true
-			const response = await $fetch(getStrapiURL('/api/ezforms/submit'), {
+			const response = await $fetch('https://miranda.axfone.eu', {
 				method: 'POST',
-				body: JSON.stringify({
-					formData: {
-						jmeno: form.jmeno.value.value,
-						prijemni: form.prijemni.value.value,
-						email: form.email.value.value,
-						phone: form.phone.value.value,
-						message: form.message.value.value,
-						linkedin: form.linkedin.value.value,
-					},
-				}),
+				headers: {
+					Accept: 'application/json',
+					'Epiderma-Api-Token': 'y1ol9MWZ05Q6tBV10b27I72ziCgTKgjSpYi2WxCmQBEh89c1vZ',
+				},
+				body: formData,
 			})
+			const data = await response.json()
+			if (data.errors.length) {
+				console.log(data.errors)
+				formSending.value = false
+				formSent.value = false
+				return
+			}
 			formSending.value = false
 			formSent.value = true
 		} catch (e) {
@@ -90,6 +103,12 @@
 </script>
 
 <style lang="scss" scoped>
+	.container {
+		margin-bottom: -40px;
+		@media (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
 	form {
 		max-width: 600px;
 		margin: 0 auto;

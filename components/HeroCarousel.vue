@@ -137,7 +137,16 @@
 			left: 0;
 		}
 	}
-
+	@media (max-height: 900px) {
+		:slotted(h1),
+		h1 {
+			font-size: clamp(2.375rem, 3.5vw, 3.075rem) !important;
+		}
+		:slotted(h2),
+		h2 {
+			font-size: clamp(1rem, 1.5vw, 1.5rem) !important;
+		}
+	}
 	@media (max-width: 767px) {
 		.hero {
 			.container {
