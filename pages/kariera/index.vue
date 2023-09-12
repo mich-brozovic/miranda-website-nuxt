@@ -718,6 +718,9 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 		gap: 20px;
+		@media (max-width: 540px) {
+			grid-template-columns: minmax(1px, 1fr);
+		}
 	}
 	.lide__container {
 		position: relative;
