@@ -294,6 +294,7 @@
 		display: inline-block;
 		padding: em(10) em(20);
 		text-decoration: none;
+		transition: background-color 0.15s ease-in-out;
 		&.btn-ghost {
 			border: 1px solid $color-font;
 			color: $color-font;
@@ -352,6 +353,26 @@
 			padding: em(20);
 			border: 2px solid $color-accent;
 			background-color: rgba($color-accent, 0.6);
+		}
+		&.btn-pink {
+			background-color: #d92e94;
+			color: $color-white;
+			padding: em(15) em(30);
+			line-height: em(28);
+			font-weight: 700;
+			text-transform: uppercase;
+			display: inline-flex;
+			align-items: center;
+			gap: 0.6em;
+			transition: all 0.15s ease-in-out;
+			&:hover,
+			&:focus {
+				background-color: $color-font;
+				&.light-hover {
+					background-color: $color-white;
+					color: $color-font;
+				}
+			}
 		}
 	}
 	.styled-list {

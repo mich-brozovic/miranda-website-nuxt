@@ -518,7 +518,7 @@
 			`,
 		},
 		{
-			title: '#1 Shoptet Premium partner pro váš e‑shop',
+			title: '#1 Shoptet Premium partner pro Váš e‑shop',
 			subtitle: 'České i světové značky se spoléhají na naši tvorbu e‑shopu na Shoptetu. Spolehněte se i Vy!',
 			imageUrl: '/shoptetnamiru/carousel-new2.jpg',
 			imageMobileUrl: '/shoptetnamiru/carousel-new2-mobile.jpg',

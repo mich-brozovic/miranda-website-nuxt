@@ -2,7 +2,7 @@
 	<main>
 		<HeroCarousel :data="carouselData">
 			<div class="buttons">
-				<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">PPC audit zdarma</button>
+				<button @click.prevent="showPopup = true" class="btn btn-pink" href="#kontakt">PPC audit zdarma</button>
 			</div>
 			<div class="logos">
 				<NuxtImg src="/ppc/google-ads.png" width="110" height="56" alt="Google Ads" />
@@ -24,7 +24,7 @@
 					<p>Získejte ještě dnes bezplatný odborný posudek výkonnosti svých reklam.</p>
 				</div>
 				<div class="button">
-					<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">PPC audit zdarma</button>
+					<button @click.prevent="showPopup = true" class="btn btn-pink light-hover" href="#kontakt">PPC audit zdarma</button>
 				</div>
 			</div>
 		</section>
@@ -408,7 +408,7 @@
 								stroke-linejoin="round" />
 						</svg>
 					</BtnPrimary>
-					<button @click.prevent="showPopup = true" class="btn btn-accent">Zdarma audit PPC Google Ads</button>
+					<button @click.prevent="showPopup = true" class="btn btn-pink">Zdarma audit PPC Google Ads</button>
 				</div>
 			</div>
 		</section>
@@ -457,7 +457,7 @@
 						</svg>
 						+420 732 264 251
 					</a>
-					<button @click.prevent="showPopup = true" class="btn btn-primary"><span>Audit zdarma</span></button>
+					<button @click.prevent="showPopup = true" class="btn btn-pink light-hover"><span>Audit zdarma</span></button>
 				</div>
 			</div>
 		</section>
@@ -631,7 +631,7 @@
 					</li>
 				</ul>
 				<div class="buttons">
-					<button @click.prevent="showPopup = true" class="btn btn-accent">Bezplatný PPC audit</button>
+					<button @click.prevent="showPopup = true" class="btn btn-pink">Bezplatný PPC audit</button>
 					<NuxtLink class="btn btn-tertiary" to="/kontakty">Kontaktujte nás</NuxtLink>
 				</div>
 			</div>
@@ -818,7 +818,7 @@
 			<div class="container text-center">
 				<h2>Už nečekejte a objednejte si PPC audit zdarma!</h2>
 				<div class="buttons">
-					<button @click.prevent="showPopup = true" class="btn btn-primary">
+					<button @click.prevent="showPopup = true" class="btn btn-pink light-hover">
 						<span> Bezplatný PPC audit </span>
 					</button>
 					<a href="tel:+420732264251" class="btn btn-ghost-accent">
@@ -1173,6 +1173,9 @@
 					</ul>
 				</template>
 			</QuestionWrapper>
+		</section>
+		<section id="kontakt" class="no-margin">
+			<ContactForm3></ContactForm3>
 		</section>
 	</main>
 	<PopupAudit></PopupAudit>
