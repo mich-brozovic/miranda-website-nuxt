@@ -228,7 +228,7 @@
 		<section class="proc-shoptet container" id="proc-shoptet">
 			<div class="columns col-1-2">
 				<div class="column">
-					<NuxtPicture src="/proc-shoptet.webp" />
+					<NuxtPicture src="/proc-shoptet2.png" />
 				</div>
 				<div class="column">
 					<h2>Proč zvolit Shoptet nebo Shoptet Premium?</h2>

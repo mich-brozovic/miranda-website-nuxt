@@ -982,7 +982,7 @@
 			<SinglePost v-for="(item, index) in data" :key="index" :item="item" />
 		</PostsGrid>
 		<div class="buttons buttons-center">
-			<nuxt-link to="/clanky" class="btn btn-secondary">Zobrazit další</nuxt-link>
+			<BtnSecondary url="/clanky" text="Zobrazit další" />
 		</div>
 	</section>
 	<PopupAudit></PopupAudit>

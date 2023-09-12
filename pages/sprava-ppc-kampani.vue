@@ -841,7 +841,7 @@
 				<SinglePost v-for="(item, index) in data" :key="index" :item="item" />
 			</PostsGrid>
 			<div class="buttons buttons-center">
-				<nuxt-link to="/clanky" class="btn btn-secondary">Zobrazit další</nuxt-link>
+				<BtnSecondary url="/clanky" text="Zobrazit další" />
 			</div>
 		</section>
 		<section id="edukace" class="container">
@@ -1240,6 +1240,12 @@
 		}
 		@media (max-width: 767px) {
 			display: none;
+		}
+	}
+	@media (max-height: 900px) {
+		.logos {
+			margin-top: 20px;
+			row-gap: 20px;
 		}
 	}
 

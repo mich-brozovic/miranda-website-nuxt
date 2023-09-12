@@ -28,7 +28,7 @@
 							sítí Facebook & Instagram pro hladový fanoušky, zbožové vyhledávače, e-mailing, webovou analytiku a další
 							neodmyslitelný marketovky pro váš do maxima vyladěný onlajnový flow.
 						</p>
-						<NuxtLink to="/sprava-ppc-kampani" class="btn btn-secondary">Detail služby</NuxtLink>
+						<BtnSecondary url="/sprava-ppc-kampani" text="Detail služby" />
 					</div>
 				</div>
 				<div class="sluzba columns col-2">
@@ -40,7 +40,7 @@
 							si vezmeme celou na starost. Zajistíme návrh UX/UI, pořádně vymazlenou grafiku, programování a kódování. Pak to
 							celé otestujeme, napojíme na kdejaký měřící nástroje a přivedeme tam plnotučnej trafiic, to dá přeci rozum.
 						</p>
-						<NuxtLink to="/shoptetnamiru" class="btn btn-secondary">Detail služby</NuxtLink>
+						<BtnSecondary url="/shoptetnamiru" text="Detail služby" />
 					</div>
 					<div class="column image">
 						<NuxtPicture
