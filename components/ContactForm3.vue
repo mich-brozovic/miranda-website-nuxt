@@ -55,7 +55,9 @@
 					<div class="form-row">
 						<button class="btn btn-primary" type="submit"><span>Odeslat</span></button>
 					</div>
-					<div class="consents">Odesláním souhlasíte s <nuxt-link>Podmínkami zpracování osobních údajů</nuxt-link></div>
+					<div class="consents">
+						Odesláním souhlasíte s <nuxt-link to="/zpracovani-osobnich-udaju">Podmínkami zpracování osobních údajů</nuxt-link>
+					</div>
 				</form>
 			</div>
 		</div>
