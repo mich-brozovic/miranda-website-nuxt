@@ -494,4 +494,7 @@
 			}
 		}
 	}
+	.consents a {
+		color: inherit;
+	}
 </style>

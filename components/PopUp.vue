@@ -1,6 +1,6 @@
 <template>
 	<Transition>
-		<div id="popup-wrapper" v-if="showPopup">
+		<div id="popup-wrapper" v-if="showPopup" @click.self="showPopup = false">
 			<div @click.prevent="showPopup = false" id="popup-close">
 				<span></span>
 				<span></span>

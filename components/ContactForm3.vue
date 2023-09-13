@@ -102,6 +102,9 @@
 	}
 </script>
 <style lang="scss" scoped>
+	button.btn.btn-primary {
+		padding: 0;
+	}
 	.contact-ppc {
 		padding: 100px 0;
 		color: $color-white;

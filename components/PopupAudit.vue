@@ -167,6 +167,13 @@
 	}
 </script>
 <style lang="scss" scoped>
+	button.btn.btn-primary {
+		padding: 0;
+		span {
+			justify-content: center;
+		}
+		text-align: center;
+	}
 	.popup-header {
 		padding: 30px;
 		background-color: $color-white;
