@@ -87,13 +87,13 @@
 				},
 				body: formData,
 			})
-			const data = await response.json()
-			if (data.errors.length) {
-				console.log(data.errors)
-				formSending.value = false
-				formSent.value = false
-				return
-			}
+			// const data = await response.json()
+			// if (data.errors.length) {
+			// 	console.log(data.errors)
+			// 	formSending.value = false
+			// 	formSent.value = false
+			// 	return
+			// }
 			formSending.value = false
 			formSent.value = true
 		} catch (e) {
