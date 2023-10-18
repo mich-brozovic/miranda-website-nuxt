@@ -96,7 +96,11 @@
 			})
 			formSending.value = false
 			formSent.value = true
-			fbq('track', 'Lead', {
+			// fbq('track', 'Lead', {
+			// 	content_category: 'contact',
+			// 	content_name: 'audit-form',
+			// })
+			fbq('trackCustom', 'LeadAuditForm', {
 				content_category: 'contact',
 				content_name: 'audit-form',
 			})
