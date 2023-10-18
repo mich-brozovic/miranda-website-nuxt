@@ -96,6 +96,10 @@
 			})
 			formSending.value = false
 			formSent.value = true
+			fbq('track', 'Lead', {
+				content_category: 'contact',
+				content_name: 'audit-form',
+			})
 		} catch (e) {
 			console.log(e)
 		}
