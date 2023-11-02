@@ -96,6 +96,10 @@
 				content_category: 'contact',
 				content_name: 'contact-form',
 			})
+			fbq('trackCustom', 'ContactForm', {
+				content_category: 'contact',
+				content_name: 'contact-form',
+			})
 		} catch (e) {
 			console.log(e)
 		}

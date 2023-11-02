@@ -100,6 +100,10 @@
 			// 	content_category: 'contact',
 			// 	content_name: 'career-form',
 			// })
+			fbq('trackCustom', 'CareerForm', {
+				content_category: 'contact',
+				content_name: 'career-form',
+			})
 		} catch (e) {
 			console.log(e)
 		}
