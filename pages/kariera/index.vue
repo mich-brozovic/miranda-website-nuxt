@@ -375,33 +375,6 @@
 						</div>
 					</div>
 					<!-- </SwiperSlide>
-
-						<SwiperSlide> -->
-					<div class="lide__slide">
-						<div class="lide__slide-image">
-							<NuxtPicture
-								src="/lide/anton.jpg"
-								:imgAttrs="{
-									style: 'display:block; width:100%; height:100%; object-fit:cover;',
-								}"
-								alt=""
-								loading="lazy"
-								class="lide__img" />
-							<NuxtPicture
-								src="/lide/anton-alt.jpg"
-								:imgAttrs="{
-									style: 'display:block; width:100%; height:100%; object-fit:cover;',
-								}"
-								alt=""
-								loading="lazy"
-								class="lide__img lide__img--hover" />
-						</div>
-						<div class="lide__slide-content">
-							<h3>Anton</h3>
-							<p>Frontend developer</p>
-						</div>
-					</div>
-					<!-- </SwiperSlide>
 					</Swiper> -->
 				</div>
 				<!-- <div class="lide__btn-prev swiper-button-prev"></div>
