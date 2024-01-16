@@ -10,7 +10,7 @@
 	},
 	"devDependencies": {
 		"@gtm-support/vue-gtm": "^2.0.0",
-		"@nuxt/image-edge": "1.0.0-28094923.e859bba",
+		"@nuxt/image-edge": "^1.2.0-28417792.5fb7d0e",
 		"@nuxtjs/strapi": "^1.9.1",
 		"nuxt": "^3.5.1",
 		"nuxt-simple-sitemap": "^2.6.1",
@@ -26,5 +26,5 @@
 		"vue3-lottie": "^2.4.0",
 		"vue3-markdown-it": "^1.0.10"
 	},
-	"packageManager": "yarn@3.5.0"
+	"packageManager": "yarn@3.6.4"
 }

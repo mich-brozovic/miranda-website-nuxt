@@ -2,30 +2,15 @@
 	<NuxtLink :to="`/pripadove-studie/${props.url}`">
 		<div class="reference">
 			<div class="reference__background-image">
-				<NuxtImg
-					:src="props.background"
-					width="710"
-					height="400"
-					alt=""
-					:img-attrs="{ style: 'display: block;' }" />
+				<NuxtImg :src="props.background" width="710" height="400" alt="" :img-attrs="{ style: 'display: block;' }" />
 			</div>
 			<div class="reference__content">
 				<div class="reference__images">
 					<div class="reference__notebook-image">
-						<NuxtImg
-							:src="props.nb"
-							width="285"
-							height="174"
-							alt=""
-							:img-attrs="{ style: 'display: block; width: auto;' }" />
+						<NuxtImg :src="props.nb" width="285" height="174" alt="" :img-attrs="{ style: 'display: block; width: auto;' }" />
 					</div>
 					<div class="reference__mobile-image">
-						<NuxtImg
-							:src="props.mob"
-							width="72"
-							height="150"
-							alt=""
-							:img-attrs="{ style: 'display: block; width: auto;' }" />
+						<NuxtImg :src="props.mob" width="72" height="150" alt="" :img-attrs="{ style: 'display: block; width: auto;' }" />
 					</div>
 					<div class="reference__box-top-right">
 						<NuxtImg
@@ -60,9 +45,7 @@
 							:img-attrs="{ style: 'display: block; width: auto;' }" />
 					</div>
 					<div class="reference__glow"></div>
-					<div
-						v-if="props.fragmentTop"
-						class="reference__fragment-top">
+					<div v-if="props.fragmentTop" class="reference__fragment-top">
 						<NuxtImg
 							:src="props.fragmentTop"
 							width="77"
@@ -70,18 +53,14 @@
 							alt=""
 							:img-attrs="{ style: 'display: block; width: auto;' }" />
 					</div>
-					<div
-						v-if="props.fragmentLeft"
-						class="reference__fragment-top-left">
+					<div v-if="props.fragmentLeft" class="reference__fragment-top-left">
 						<NuxtImg
 							:src="props.fragmentLeft"
 							width="140"
 							height="130"
 							:img-attrs="{ style: 'display: block; width: auto;' }" />
 					</div>
-					<div
-						v-if="props.fragmentBottom"
-						class="reference__fragment-bottom">
+					<div v-if="props.fragmentBottom" class="reference__fragment-bottom">
 						<NuxtImg
 							:src="props.fragmentBottom"
 							width="150"
@@ -102,12 +81,9 @@
 				</div>
 			</div>
 			<div class="reference__case-study">Případová studie</div>
-			<div
-				v-if="props.premium"
-				class="reference__premium">
-				<NuxtImg
-					src="/rozcestnik/premium.png"
-					:img-attrs="{ style: 'display: block; width: auto;' }" />
+			<div v-if="props.premium || props.webtop" class="reference__premium">
+				<NuxtImg v-if="props.premium" src="/rozcestnik/premium.png" width="115" height="38" />
+				<NuxtImg v-if="props.webtop" src="/icon/webtop100.png" width="81" height="36" />
 			</div>
 			<div class="reference__arrow">
 				<span class="arrow-detail">Detail studie</span>
@@ -129,6 +105,7 @@
 		'fragmentBottom',
 		'fragmentLeft',
 		'premium',
+		'webtop',
 	])
 </script>
 <style lang="scss" scoped>
@@ -279,7 +256,15 @@
 			position: absolute;
 			bottom: 15px;
 			left: 15px;
+			right: 15px;
 			transition: all 0.3s ease-in-out;
+			display: flex;
+			align-items: center;
+			gap: 24px;
+			img {
+				max-width: 100%;
+				width: auto;
+			}
 		}
 		&__arrow {
 			position: absolute;

@@ -31,7 +31,8 @@
 					fragmentLeft="/rozcestnik/rituals/fragment-top-left.png"
 					fragmentTop="/rozcestnik/rituals/fragment-top.png"
 					fragmentBottom="/rozcestnik/rituals/fragment-bottom.png"
-					:premium="true" />
+					:premium="true"
+					:webtop="true" />
 				<SingleCasestudy
 					url="petcenter"
 					background="/rozcestnik/petcenter/bg.jpg"

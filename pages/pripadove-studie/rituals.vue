@@ -6,28 +6,17 @@
 			heading="Postavili jsme e&#8209;shop pro Rituals.cz a Rituals-cosmetics.sk  na Shoptet Premium"
 			subheading="Od A do Z jsme v Mirandě navrhli a vytvořili český a slovenský e&#8209;shop pro společnost Rituals včetně napojení na informační systém Ventus. Oba e&#8209;shopy vznikly a přešly do ostrého provozu na platformě Shoptet Premium za necelé 4 měsíce!"
 			pageUrl="www.rituals.cz"
-			pageUrlAlt="www.rituals-cosmetics.sk" />
-		<referenceMainSlider
-			id="scroll"
-			:imgUrl="'pripadove-studie/rituals/image-slider.jpg'">
+			pageUrlAlt="www.rituals-cosmetics.sk"
+			:webtopUrl="'/icon/webtop100.png'" />
+		<referenceMainSlider id="scroll" :imgUrl="'pripadove-studie/rituals/image-slider.jpg'">
 			<SwiperSlide class="slider__slide">
-				<svg
-					width="57"
-					height="57"
-					viewBox="0 0 57 57"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+				<svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M17 14.75H15.5V16.25V22.7499V24.2499H17H23H24.5V22.7499V16.25V14.75H23H17ZM15.5 14.5H24.5V24.5H15.5V14.5Z"
 						stroke="#9A7B69"
 						stroke-width="3" />
-					<mask
-						id="path-2-inside-1_5576_6058"
-						fill="white">
-						<path
-							fill-rule="evenodd"
-							clip-rule="evenodd"
-							d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z" />
+					<mask id="path-2-inside-1_5576_6058" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M14 31H43V43H14V31ZM16.9592 34V40H40.0408V34H16.9592Z" />
 					</mask>
 					<path
 						fill-rule="evenodd"
@@ -43,45 +32,23 @@
 						fill="#9A7B69"
 						stroke="#9A7B69"
 						stroke-width="3" />
-					<mask
-						id="path-5-inside-2_5576_6058"
-						fill="white">
-						<path
-							fill-rule="evenodd"
-							clip-rule="evenodd"
-							d="M44 17H29V14H44V17Z" />
+					<mask id="path-5-inside-2_5576_6058" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M44 17H29V14H44V17Z" />
 					</mask>
-					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M44 17H29V14H44V17Z"
-						fill="#9A7B69" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M44 17H29V14H44V17Z" fill="#9A7B69" />
 					<path
 						d="M44 17V20H47V17H44ZM29 17H26V20H29V17ZM29 14V11H26V14H29ZM44 14H47V11H44V14ZM44 14H29V20H44V14ZM32 17V14H26V17H32ZM29 17H44V11H29V17ZM41 14V17H47V14H41Z"
 						fill="#9A7B69"
 						mask="url(#path-5-inside-2_5576_6058)" />
-					<mask
-						id="path-7-inside-3_5576_6058"
-						fill="white">
-						<path
-							fill-rule="evenodd"
-							clip-rule="evenodd"
-							d="M39 22H29V19H39V22Z" />
+					<mask id="path-7-inside-3_5576_6058" fill="white">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M39 22H29V19H39V22Z" />
 					</mask>
-					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M39 22H29V19H39V22Z"
-						fill="#9A7B69" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M39 22H29V19H39V22Z" fill="#9A7B69" />
 					<path
 						d="M39 22V25H42V22H39ZM29 22H26V25H29V22ZM29 19V16H26V19H29ZM39 19H42V16H39V19ZM39 19H29V25H39V19ZM32 22V19H26V22H32ZM29 22H39V16H29V22ZM36 19V22H42V19H36Z"
 						fill="#9A7B69"
 						mask="url(#path-7-inside-3_5576_6058)" />
-					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M41 27H29V24H41V27Z"
-						fill="#9A7B69" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M41 27H29V24H41V27Z" fill="#9A7B69" />
 				</svg>
 				<h4>Vývoj e-shopu na míru</h4>
 				<div class="slider__slide-content">
@@ -92,13 +59,7 @@
 				</div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
-				<svg
-					class="--color-stroke"
-					width="57"
-					height="57"
-					viewBox="0 0 57 57"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+				<svg class="--color-stroke" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M12.168 13.3333C12.168 11.1674 13.0284 9.09013 14.5599 7.55859C16.0915 6.02704 18.1687 5.16663 20.3346 5.16663H28.5013V21.5H20.3346C18.1687 21.5 16.0915 20.6395 14.5599 19.108C13.0284 17.5765 12.168 15.4992 12.168 13.3333Z"
 						stroke="#000"
@@ -139,13 +100,7 @@
 				</div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
-				<svg
-					class="--color-stroke"
-					width="57"
-					height="57"
-					viewBox="0 0 57 57"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+				<svg class="--color-stroke" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M37.832 42.5L51.832 28.5L37.832 14.5"
 						stroke="#000"
@@ -169,11 +124,17 @@
 				</div>
 			</SwiperSlide>
 			<SwiperSlide class="slider__slide">
-        <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M28.0328 0.409052L5.60918 11.1228C4.06433 11.8609 4.10073 14.0725 5.66904 14.7594L28.0922 24.5801C28.6004 24.8027 29.1781 24.8042 29.6874 24.5842L52.4314 14.7633C54.0125 14.0806 54.0488 11.8518 52.4908 11.1179L29.7473 0.404343C29.204 0.14845 28.5746 0.150178 28.0328 0.409052Z" fill="#9A7B69"/>
-          <path d="M24.7717 27.5652C16.6635 24.2384 7.17338 20.7414 2.81524 18.6922C1.97609 18.2976 0.5 19.1083 0.5 20.0356V45.9149C0.5 46.3309 0.757626 46.7035 1.14689 46.8505L24.0358 55.4892C24.6899 55.736 25.3889 55.2527 25.3889 54.5536V28.4882C25.3889 28.0833 25.1463 27.7189 24.7717 27.5652Z" fill="#9A7B69"/>
-          <path d="M55.1068 18.6602L32.6068 28.2823C32.2387 28.4397 32 28.8014 32 29.2018V54.5455C32 55.2468 32.7031 55.7303 33.358 55.4792L55.858 46.8525C56.2447 46.7042 56.5 46.3329 56.5 45.9187V19.5796C56.5 18.8621 55.7666 18.378 55.1068 18.6602Z" fill="#9A7B69"/>
-        </svg>
+				<svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M28.0328 0.409052L5.60918 11.1228C4.06433 11.8609 4.10073 14.0725 5.66904 14.7594L28.0922 24.5801C28.6004 24.8027 29.1781 24.8042 29.6874 24.5842L52.4314 14.7633C54.0125 14.0806 54.0488 11.8518 52.4908 11.1179L29.7473 0.404343C29.204 0.14845 28.5746 0.150178 28.0328 0.409052Z"
+						fill="#9A7B69" />
+					<path
+						d="M24.7717 27.5652C16.6635 24.2384 7.17338 20.7414 2.81524 18.6922C1.97609 18.2976 0.5 19.1083 0.5 20.0356V45.9149C0.5 46.3309 0.757626 46.7035 1.14689 46.8505L24.0358 55.4892C24.6899 55.736 25.3889 55.2527 25.3889 54.5536V28.4882C25.3889 28.0833 25.1463 27.7189 24.7717 27.5652Z"
+						fill="#9A7B69" />
+					<path
+						d="M55.1068 18.6602L32.6068 28.2823C32.2387 28.4397 32 28.8014 32 29.2018V54.5455C32 55.2468 32.7031 55.7303 33.358 55.4792L55.858 46.8525C56.2447 46.7042 56.5 46.3329 56.5 45.9187V19.5796C56.5 18.8621 55.7666 18.378 55.1068 18.6602Z"
+						fill="#9A7B69" />
+				</svg>
 				<h4>Napojení na Balíkobot</h4>
 				<div class="slider__slide-content">
 					<p>Díky integraci Balíkobotu na Shoptet šetříte čas strávený administrací objednávek a expedicí.</p>
@@ -183,38 +144,80 @@
 		<!-- BENEFITS -->
 		<div class="benefits">
 			<ul class="benefits__list">
-				<li
-					@click.prevent="toggleMenu"
-					class="benefits__item">
+				<li @click.prevent="toggleMenu" class="benefits__item">
 					<div class="benefits__item-wrapper">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <mask id="path-1-inside-1_552_559" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71387 7.14258H14.571V14.5711H7.71387V7.14258ZM9.42816 8.99971V12.714H12.8567V8.99971H9.42816Z"/>
-              </mask>
-              <path d="M7.71387 7.14258V4.14258H4.71387V7.14258H7.71387ZM14.571 7.14258H17.571V4.14258H14.571V7.14258ZM14.571 14.5711V17.5711H17.571V14.5711H14.571ZM7.71387 14.5711H4.71387V17.5711H7.71387V14.5711ZM9.42816 8.99971V5.99971H6.42816V8.99971H9.42816ZM9.42816 12.714H6.42816V15.714H9.42816V12.714ZM12.8567 12.714V15.714H15.8567V12.714H12.8567ZM12.8567 8.99971H15.8567V5.99971H12.8567V8.99971ZM7.71387 10.1426H14.571V4.14258H7.71387V10.1426ZM11.571 7.14258V14.5711H17.571V7.14258H11.571ZM14.571 11.5711H7.71387V17.5711H14.571V11.5711ZM10.7139 14.5711V7.14258H4.71387V14.5711H10.7139ZM6.42816 8.99971V12.714H12.4282V8.99971H6.42816ZM9.42816 15.714H12.8567V9.71398H9.42816V15.714ZM15.8567 12.714V8.99971H9.85671V12.714H15.8567ZM12.8567 5.99971H9.42816V11.9997H12.8567V5.99971Z" fill="#9A7B69" mask="url(#path-1-inside-1_552_559)"/>
-              <mask id="path-3-inside-2_552_559" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71387 17.4277H24.2853V24.2849H7.71387V17.4277ZM9.40484 19.142V22.5706H22.5943V19.142H9.40484Z"/>
-              </mask>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71387 17.4277H24.2853V24.2849H7.71387V17.4277ZM9.40484 19.142V22.5706H22.5943V19.142H9.40484Z" fill="#9A7B69"/>
-              <path d="M7.71387 17.4277V14.4277H4.71387V17.4277H7.71387ZM24.2853 17.4277H27.2853V14.4277H24.2853V17.4277ZM24.2853 24.2849V27.2849H27.2853V24.2849H24.2853ZM7.71387 24.2849H4.71387V27.2849H7.71387V24.2849ZM9.40484 19.142V16.142H6.40484V19.142H9.40484ZM9.40484 22.5706H6.40484V25.5706H9.40484V22.5706ZM22.5943 22.5706V25.5706H25.5943V22.5706H22.5943ZM22.5943 19.142H25.5943V16.142H22.5943V19.142ZM7.71387 20.4277H24.2853V14.4277H7.71387V20.4277ZM21.2853 17.4277V24.2849H27.2853V17.4277H21.2853ZM24.2853 21.2849H7.71387V27.2849H24.2853V21.2849ZM10.7139 24.2849V17.4277H4.71387V24.2849H10.7139ZM6.40484 19.142V22.5706H12.4048V19.142H6.40484ZM9.40484 25.5706H22.5943V19.5706H9.40484V25.5706ZM25.5943 22.5706V19.142H19.5943V22.5706H25.5943ZM22.5943 16.142H9.40484V22.142H22.5943V16.142Z" fill="#9A7B69" mask="url(#path-3-inside-2_552_559)"/>
-              <mask id="path-5-inside-3_552_559" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.71387 3.71484H28.2853V28.2863H26.5048V5.56232H5.49441V28.2863H3.71387V3.71484Z"/>
-              </mask>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.71387 3.71484H28.2853V28.2863H26.5048V5.56232H5.49441V28.2863H3.71387V3.71484Z" fill="#9A7B69"/>
-              <path d="M3.71387 3.71484V0.714844H0.713867V3.71484H3.71387ZM28.2853 3.71484H31.2853V0.714844H28.2853V3.71484ZM28.2853 28.2863V31.2863H31.2853V28.2863H28.2853ZM26.5048 28.2863H23.5048V31.2863H26.5048V28.2863ZM26.5048 5.56232H29.5048V2.56232H26.5048V5.56232ZM5.49441 5.56232V2.56232H2.49441V5.56232H5.49441ZM5.49441 28.2863V31.2863H8.49441V28.2863H5.49441ZM3.71387 28.2863H0.713867V31.2863H3.71387V28.2863ZM3.71387 6.71484H28.2853V0.714844H3.71387V6.71484ZM25.2853 3.71484V28.2863H31.2853V3.71484H25.2853ZM28.2853 25.2863H26.5048V31.2863H28.2853V25.2863ZM29.5048 28.2863V5.56232H23.5048V28.2863H29.5048ZM26.5048 2.56232H5.49441V8.56232H26.5048V2.56232ZM2.49441 5.56232V28.2863H8.49441V5.56232H2.49441ZM5.49441 25.2863H3.71387V31.2863H5.49441V25.2863ZM6.71387 28.2863V3.71484H0.713867V28.2863H6.71387Z" fill="#9A7B69" mask="url(#path-5-inside-3_552_559)"/>
-              <mask id="path-7-inside-4_552_559" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8576 9.42913H16.2861V7.71484H24.8576V9.42913Z"/>
-              </mask>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8576 9.42913H16.2861V7.71484H24.8576V9.42913Z" fill="#9A7B69"/>
-              <path d="M24.8576 9.42913V12.4291H27.8576V9.42913H24.8576ZM16.2861 9.42913H13.2861V12.4291H16.2861V9.42913ZM16.2861 7.71484V4.71484H13.2861V7.71484H16.2861ZM24.8576 7.71484H27.8576V4.71484H24.8576V7.71484ZM24.8576 6.42913H16.2861V12.4291H24.8576V6.42913ZM19.2861 9.42913V7.71484H13.2861V9.42913H19.2861ZM16.2861 10.7148H24.8576V4.71484H16.2861V10.7148ZM21.8576 7.71484V9.42913H27.8576V7.71484H21.8576Z" fill="#9A7B69" mask="url(#path-7-inside-4_552_559)"/>
-              <mask id="path-9-inside-5_552_559" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0004 12.2866H16.2861V10.5723H22.0004V12.2866Z"/>
-              </mask>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0004 12.2866H16.2861V10.5723H22.0004V12.2866Z" fill="#9A7B69"/>
-              <path d="M22.0004 12.2866V15.2866H25.0004V12.2866H22.0004ZM16.2861 12.2866H13.2861V15.2866H16.2861V12.2866ZM16.2861 10.5723V7.57227H13.2861V10.5723H16.2861ZM22.0004 10.5723H25.0004V7.57227H22.0004V10.5723ZM22.0004 9.28655H16.2861V15.2866H22.0004V9.28655ZM19.2861 12.2866V10.5723H13.2861V12.2866H19.2861ZM16.2861 13.5723H22.0004V7.57227H16.2861V13.5723ZM19.0004 10.5723V12.2866H25.0004V10.5723H19.0004Z" fill="#9A7B69" mask="url(#path-9-inside-5_552_559)"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1433 15.142H16.2861V13.4277H23.1433V15.142Z" fill="#9A7B69"/>
-            </svg>
-            <h3>Vývoj e-shopu na míru</h3>
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="path-1-inside-1_552_559" fill="white">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M7.71387 7.14258H14.571V14.5711H7.71387V7.14258ZM9.42816 8.99971V12.714H12.8567V8.99971H9.42816Z" />
+							</mask>
+							<path
+								d="M7.71387 7.14258V4.14258H4.71387V7.14258H7.71387ZM14.571 7.14258H17.571V4.14258H14.571V7.14258ZM14.571 14.5711V17.5711H17.571V14.5711H14.571ZM7.71387 14.5711H4.71387V17.5711H7.71387V14.5711ZM9.42816 8.99971V5.99971H6.42816V8.99971H9.42816ZM9.42816 12.714H6.42816V15.714H9.42816V12.714ZM12.8567 12.714V15.714H15.8567V12.714H12.8567ZM12.8567 8.99971H15.8567V5.99971H12.8567V8.99971ZM7.71387 10.1426H14.571V4.14258H7.71387V10.1426ZM11.571 7.14258V14.5711H17.571V7.14258H11.571ZM14.571 11.5711H7.71387V17.5711H14.571V11.5711ZM10.7139 14.5711V7.14258H4.71387V14.5711H10.7139ZM6.42816 8.99971V12.714H12.4282V8.99971H6.42816ZM9.42816 15.714H12.8567V9.71398H9.42816V15.714ZM15.8567 12.714V8.99971H9.85671V12.714H15.8567ZM12.8567 5.99971H9.42816V11.9997H12.8567V5.99971Z"
+								fill="#9A7B69"
+								mask="url(#path-1-inside-1_552_559)" />
+							<mask id="path-3-inside-2_552_559" fill="white">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M7.71387 17.4277H24.2853V24.2849H7.71387V17.4277ZM9.40484 19.142V22.5706H22.5943V19.142H9.40484Z" />
+							</mask>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M7.71387 17.4277H24.2853V24.2849H7.71387V17.4277ZM9.40484 19.142V22.5706H22.5943V19.142H9.40484Z"
+								fill="#9A7B69" />
+							<path
+								d="M7.71387 17.4277V14.4277H4.71387V17.4277H7.71387ZM24.2853 17.4277H27.2853V14.4277H24.2853V17.4277ZM24.2853 24.2849V27.2849H27.2853V24.2849H24.2853ZM7.71387 24.2849H4.71387V27.2849H7.71387V24.2849ZM9.40484 19.142V16.142H6.40484V19.142H9.40484ZM9.40484 22.5706H6.40484V25.5706H9.40484V22.5706ZM22.5943 22.5706V25.5706H25.5943V22.5706H22.5943ZM22.5943 19.142H25.5943V16.142H22.5943V19.142ZM7.71387 20.4277H24.2853V14.4277H7.71387V20.4277ZM21.2853 17.4277V24.2849H27.2853V17.4277H21.2853ZM24.2853 21.2849H7.71387V27.2849H24.2853V21.2849ZM10.7139 24.2849V17.4277H4.71387V24.2849H10.7139ZM6.40484 19.142V22.5706H12.4048V19.142H6.40484ZM9.40484 25.5706H22.5943V19.5706H9.40484V25.5706ZM25.5943 22.5706V19.142H19.5943V22.5706H25.5943ZM22.5943 16.142H9.40484V22.142H22.5943V16.142Z"
+								fill="#9A7B69"
+								mask="url(#path-3-inside-2_552_559)" />
+							<mask id="path-5-inside-3_552_559" fill="white">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M3.71387 3.71484H28.2853V28.2863H26.5048V5.56232H5.49441V28.2863H3.71387V3.71484Z" />
+							</mask>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M3.71387 3.71484H28.2853V28.2863H26.5048V5.56232H5.49441V28.2863H3.71387V3.71484Z"
+								fill="#9A7B69" />
+							<path
+								d="M3.71387 3.71484V0.714844H0.713867V3.71484H3.71387ZM28.2853 3.71484H31.2853V0.714844H28.2853V3.71484ZM28.2853 28.2863V31.2863H31.2853V28.2863H28.2853ZM26.5048 28.2863H23.5048V31.2863H26.5048V28.2863ZM26.5048 5.56232H29.5048V2.56232H26.5048V5.56232ZM5.49441 5.56232V2.56232H2.49441V5.56232H5.49441ZM5.49441 28.2863V31.2863H8.49441V28.2863H5.49441ZM3.71387 28.2863H0.713867V31.2863H3.71387V28.2863ZM3.71387 6.71484H28.2853V0.714844H3.71387V6.71484ZM25.2853 3.71484V28.2863H31.2853V3.71484H25.2853ZM28.2853 25.2863H26.5048V31.2863H28.2853V25.2863ZM29.5048 28.2863V5.56232H23.5048V28.2863H29.5048ZM26.5048 2.56232H5.49441V8.56232H26.5048V2.56232ZM2.49441 5.56232V28.2863H8.49441V5.56232H2.49441ZM5.49441 25.2863H3.71387V31.2863H5.49441V25.2863ZM6.71387 28.2863V3.71484H0.713867V28.2863H6.71387Z"
+								fill="#9A7B69"
+								mask="url(#path-5-inside-3_552_559)" />
+							<mask id="path-7-inside-4_552_559" fill="white">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M24.8576 9.42913H16.2861V7.71484H24.8576V9.42913Z" />
+							</mask>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M24.8576 9.42913H16.2861V7.71484H24.8576V9.42913Z"
+								fill="#9A7B69" />
+							<path
+								d="M24.8576 9.42913V12.4291H27.8576V9.42913H24.8576ZM16.2861 9.42913H13.2861V12.4291H16.2861V9.42913ZM16.2861 7.71484V4.71484H13.2861V7.71484H16.2861ZM24.8576 7.71484H27.8576V4.71484H24.8576V7.71484ZM24.8576 6.42913H16.2861V12.4291H24.8576V6.42913ZM19.2861 9.42913V7.71484H13.2861V9.42913H19.2861ZM16.2861 10.7148H24.8576V4.71484H16.2861V10.7148ZM21.8576 7.71484V9.42913H27.8576V7.71484H21.8576Z"
+								fill="#9A7B69"
+								mask="url(#path-7-inside-4_552_559)" />
+							<mask id="path-9-inside-5_552_559" fill="white">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M22.0004 12.2866H16.2861V10.5723H22.0004V12.2866Z" />
+							</mask>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M22.0004 12.2866H16.2861V10.5723H22.0004V12.2866Z"
+								fill="#9A7B69" />
+							<path
+								d="M22.0004 12.2866V15.2866H25.0004V12.2866H22.0004ZM16.2861 12.2866H13.2861V15.2866H16.2861V12.2866ZM16.2861 10.5723V7.57227H13.2861V10.5723H16.2861ZM22.0004 10.5723H25.0004V7.57227H22.0004V10.5723ZM22.0004 9.28655H16.2861V15.2866H22.0004V9.28655ZM19.2861 12.2866V10.5723H13.2861V12.2866H19.2861ZM16.2861 13.5723H22.0004V7.57227H16.2861V13.5723ZM19.0004 10.5723V12.2866H25.0004V10.5723H19.0004Z"
+								fill="#9A7B69"
+								mask="url(#path-9-inside-5_552_559)" />
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M23.1433 15.142H16.2861V13.4277H23.1433V15.142Z"
+								fill="#9A7B69" />
+						</svg>
+						<h3>Vývoj e-shopu na míru</h3>
 					</div>
 					<div class="benefits__item-text-wrapper">
 						<p class="benefits__item-text">
@@ -223,9 +226,7 @@
 						</p>
 					</div>
 				</li>
-				<li
-					@click.prevent="toggleMenu"
-					class="benefits__item">
+				<li @click.prevent="toggleMenu" class="benefits__item">
 					<div class="benefits__item-wrapper">
 						<svg
 							class="--color-stroke"
@@ -274,9 +275,7 @@
 						</p>
 					</div>
 				</li>
-				<li
-					@click.prevent="toggleMenu"
-					class="benefits__item">
+				<li @click.prevent="toggleMenu" class="benefits__item">
 					<div class="benefits__item-wrapper">
 						<svg
 							class="--color-stroke"
@@ -307,15 +306,19 @@
 						</p>
 					</div>
 				</li>
-				<li
-					@click.prevent="toggleMenu"
-					class="benefits__item">
+				<li @click.prevent="toggleMenu" class="benefits__item">
 					<div class="benefits__item-wrapper">
-            <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M28.0328 0.409052L5.60918 11.1228C4.06433 11.8609 4.10073 14.0725 5.66904 14.7594L28.0922 24.5801C28.6004 24.8027 29.1781 24.8042 29.6874 24.5842L52.4314 14.7633C54.0125 14.0806 54.0488 11.8518 52.4908 11.1179L29.7473 0.404343C29.204 0.14845 28.5746 0.150178 28.0328 0.409052Z" fill="#9A7B69"/>
-              <path d="M24.7717 27.5652C16.6635 24.2384 7.17338 20.7414 2.81524 18.6922C1.97609 18.2976 0.5 19.1083 0.5 20.0356V45.9149C0.5 46.3309 0.757626 46.7035 1.14689 46.8505L24.0358 55.4892C24.6899 55.736 25.3889 55.2527 25.3889 54.5536V28.4882C25.3889 28.0833 25.1463 27.7189 24.7717 27.5652Z" fill="#9A7B69"/>
-              <path d="M55.1068 18.6602L32.6068 28.2823C32.2387 28.4397 32 28.8014 32 29.2018V54.5455C32 55.2468 32.7031 55.7303 33.358 55.4792L55.858 46.8525C56.2447 46.7042 56.5 46.3329 56.5 45.9187V19.5796C56.5 18.8621 55.7666 18.378 55.1068 18.6602Z" fill="#9A7B69"/>
-            </svg>
+						<svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M28.0328 0.409052L5.60918 11.1228C4.06433 11.8609 4.10073 14.0725 5.66904 14.7594L28.0922 24.5801C28.6004 24.8027 29.1781 24.8042 29.6874 24.5842L52.4314 14.7633C54.0125 14.0806 54.0488 11.8518 52.4908 11.1179L29.7473 0.404343C29.204 0.14845 28.5746 0.150178 28.0328 0.409052Z"
+								fill="#9A7B69" />
+							<path
+								d="M24.7717 27.5652C16.6635 24.2384 7.17338 20.7414 2.81524 18.6922C1.97609 18.2976 0.5 19.1083 0.5 20.0356V45.9149C0.5 46.3309 0.757626 46.7035 1.14689 46.8505L24.0358 55.4892C24.6899 55.736 25.3889 55.2527 25.3889 54.5536V28.4882C25.3889 28.0833 25.1463 27.7189 24.7717 27.5652Z"
+								fill="#9A7B69" />
+							<path
+								d="M55.1068 18.6602L32.6068 28.2823C32.2387 28.4397 32 28.8014 32 29.2018V54.5455C32 55.2468 32.7031 55.7303 33.358 55.4792L55.858 46.8525C56.2447 46.7042 56.5 46.3329 56.5 45.9187V19.5796C56.5 18.8621 55.7666 18.378 55.1068 18.6602Z"
+								fill="#9A7B69" />
+						</svg>
 						<h3>Napojení na Balíkobot</h3>
 					</div>
 					<div class="benefits__item-text-wrapper">
@@ -329,11 +332,7 @@
 		<section class="intro container">
 			<div class="intro__container">
 				<div class="intro__wrapper intro__wrapper--image">
-					<img
-						src="/pripadove-studie/rituals/image-intro.jpg"
-						width="720"
-						height="720"
-						alt="Obrázek sekce" />
+					<img src="/pripadove-studie/rituals/image-intro.jpg" width="720" height="720" alt="Obrázek sekce" />
 				</div>
 				<div class="intro__wrapper intro__wrapper--text">
 					<h2 class="section__header section__header--counter-2 intro__header">Představení klienta</h2>
@@ -365,19 +364,13 @@
 				</div>
 
 				<div class="intro__flex-item intro__flex-item--image">
-					<img
-						src="/pripadove-studie/rituals/image-intro-grid.jpg"
-						alt="Obrázek sekce"
-						width="240"
-						height="240" />
+					<img src="/pripadove-studie/rituals/image-intro-grid.jpg" alt="Obrázek sekce" width="240" height="240" />
 				</div>
 			</div>
 		</section>
 
 		<!-- SECTION: TASK BANNER -->
-		<section
-			class="task-banner"
-			:class="{ '--show': isExpandedTaskBanner }">
+		<section class="task-banner" :class="{ '--show': isExpandedTaskBanner }">
 			<div class="task-banner__container">
 				<div class="task-banner__wrapper">
 					<h2 class="section__header section__header--counter-2 task-banner__header">Zadání a cíle spolupráce</h2>
@@ -397,10 +390,7 @@
 							souborů na definovaném uložišti v hlavičce objednávky.
 						</p>
 					</div>
-					<button
-						class="section__button"
-						type="button"
-						@click.prevent="isExpandedTaskBanner = !isExpandedTaskBanner">
+					<button class="section__button" type="button" @click.prevent="isExpandedTaskBanner = !isExpandedTaskBanner">
 						{{ isExpandedTaskBanner ? 'Ukázat méně' : 'Přečíst celé' }}
 					</button>
 				</div>
@@ -470,11 +460,7 @@
 		<!-- -- BANNER-FIRST -->
 		<article class="banner-first">
 			<div class="banner-first__image-wrap">
-				<img
-					src="/pripadove-studie/rituals/image-banner-first-1.jpg"
-					alt="Obrázek sekce"
-					width="960"
-					height="720" />
+				<img src="/pripadove-studie/rituals/image-banner-first-1.jpg" alt="Obrázek sekce" width="960" height="720" />
 			</div>
 			<div class="banner-first__text-wrap">
 				<h3 class="section__banner-header">Rychlý a snadný nákup</h3>
@@ -510,11 +496,7 @@
 						alt="Obrázek sekce" />
 				</div>
 				<div class="banner-second__wrapper banner-second__wrapper--image-wide">
-					<img
-						src="/pripadove-studie/rituals/image-banner-second-nb.png"
-						width="1330"
-						height="768"
-						alt="Obrázek sekce" />
+					<img src="/pripadove-studie/rituals/image-banner-second-nb.png" width="1330" height="768" alt="Obrázek sekce" />
 				</div>
 			</div>
 		</article>
@@ -572,14 +554,8 @@
 						viewBox="0 0 75 75"
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg">
-						<rect
-							width="25"
-							height="25"
-							transform="matrix(-1 0 0 1 75 50)" />
-						<rect
-							width="50"
-							height="50"
-							transform="matrix(-1 0 0 1 50 0)" />
+						<rect width="25" height="25" transform="matrix(-1 0 0 1 75 50)" />
+						<rect width="50" height="50" transform="matrix(-1 0 0 1 50 0)" />
 					</svg>
 				</div>
 				<div class="banner-nb__wrapper banner-nb__wrapper--image">
@@ -615,27 +591,16 @@
 			</div>
 			<div class="banner-fifth__wrapper banner-fifth__wrapper-image">
 				<div class="banner-fifth__image-1">
-					<img
-						src="/pripadove-studie/rituals/balikobot.jpg"
-						width="340"
-						height="340"
-						alt="Obrázek sekce" />
+					<img src="/pripadove-studie/rituals/balikobot.jpg" width="340" height="340" alt="Obrázek sekce" />
 				</div>
 				<div class="banner-fifth__image-2">
-					<img
-						src="/pripadove-studie/rituals/kados.jpg"
-						width="490"
-						height="490"
-						alt="Obrázek sekce" />
+					<img src="/pripadove-studie/rituals/kados.jpg" width="490" height="490" alt="Obrázek sekce" />
 				</div>
 			</div>
 		</article>
 		<!-- BANNER-SLA -->
 		<article class="sla">
-			<img
-				class="sla__background"
-				src="/pripadove-studie/rituals/background-sla.jpg"
-				alt="Obrázek pozadí sekce" />
+			<img class="sla__background" src="/pripadove-studie/rituals/background-sla.jpg" alt="Obrázek pozadí sekce" />
 			<div class="sla__container">
 				<div class="sla__wrapper">
 					<h3 class="section__banner-header">Doplňky Shoptet pro lepší nákupní zážitek</h3>
@@ -692,23 +657,13 @@
 				<h2>Jak je s naší prací spokojený klient?</h2>
 				<div class="client-review__content">
 					<div class="client-review__image">
-						<img
-							src="/pripadove-studie/rituals/rituals-klient.jpg"
-							alt="Recenze Klienta" />
+						<img src="/pripadove-studie/rituals/rituals-klient.jpg" alt="Recenze Klienta" />
 						<div class="tiles">
-							<div
-								v-for="(item, index) in tiles"
-								:key="index"
-								class="tile"></div>
+							<div v-for="(item, index) in tiles" :key="index" class="tile"></div>
 						</div>
 					</div>
 					<div class="client-review__text">
-						<svg
-							width="430"
-							height="290"
-							viewBox="0 0 430 290"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
+						<svg width="430" height="290" viewBox="0 0 430 290" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M135.789 290H0L127.802 0L214.334 0L135.789 290ZM351.455 290L215.666 290L343.467 0L430 0L351.455 290Z"
 								fill="#453F3F" />
@@ -722,9 +677,7 @@
 				</div>
 			</div>
 		</section>
-		<section
-			class="extra-solutions container"
-			:class="{ '--show': isExpandedExtraSolutions }">
+		<section class="extra-solutions container" :class="{ '--show': isExpandedExtraSolutions }">
 			<div class="section__header-wrapper extra-solutions__header-wrapper">
 				<h2 class="section__header section__header--counter extra-solutions__header">
 					Co dalšího jsme na tomto e-shopu realizovali
@@ -774,27 +727,21 @@
 				<li>Cross-seling</li>
 				<li>Balíkobot</li>
 				<li class="extra-solutions__item--button">
-					<button
-						@click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions"
-						type="button">
+					<button @click.prevent="isExpandedExtraSolutions = !isExpandedExtraSolutions" type="button">
 						{{ isExpandedExtraSolutions ? 'Ukázat méně' : 'Ukázat více' }}
 					</button>
 				</li>
 			</ul>
 			<div class="buttons-center">
-				<BtnSecondary
-					url="#kontakt"
-					text="Poptat spolupráci" />
+				<BtnSecondary url="#kontakt" text="Poptat spolupráci" />
 			</div>
 		</section>
-    <section>
-      <h2 class="text-center">Prozkoumejte naše další případové studie</h2>
-      <caseStudies/>
-    </section>
-		<section
-			class="no-margin"
-			id="kontakt">
-      <ContactForm/>
+		<section>
+			<h2 class="text-center">Prozkoumejte naše další případové studie</h2>
+			<caseStudies />
+		</section>
+		<section class="no-margin" id="kontakt">
+			<ContactForm />
 		</section>
 	</main>
 </template>
@@ -981,7 +928,7 @@
 		height: 100%;
 		max-height: 0;
 		overflow: hidden;
-    transition: all 0.6s ease-out;
+		transition: all 0.6s ease-out;
 		display: flex;
 		align-items: center;
 		justify-content: center;
