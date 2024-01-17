@@ -10,9 +10,10 @@
 	},
 	"devDependencies": {
 		"@gtm-support/vue-gtm": "^2.0.0",
+		"@nuxt/image": "latest",
 		"@nuxt/image-edge": "^1.2.0-28417792.5fb7d0e",
 		"@nuxtjs/strapi": "^1.9.1",
-		"nuxt": "^3.5.1",
+		"nuxt": "^3.9.2",
 		"nuxt-simple-sitemap": "^2.6.1",
 		"sass": "^1.56.1",
 		"sass-loader": "^10.4.1"

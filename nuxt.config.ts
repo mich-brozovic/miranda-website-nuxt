@@ -1,7 +1,13 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 	css: ['normalize.css/normalize.css'],
-	modules: ['@nuxt/image-edge', '@nuxtjs/strapi', 'nuxt-swiper', 'nuxt-simple-sitemap'],
+	modules: [
+        '@nuxt/image-edge',
+        '@nuxtjs/strapi',
+        'nuxt-swiper',
+        'nuxt-simple-sitemap',
+        "@nuxt/image"
+    ],
 	vite: {
 		css: {
 			preprocessorOptions: {
