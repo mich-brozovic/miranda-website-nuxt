@@ -79,19 +79,20 @@
 	})
 
 	// HANDLE STATUS LIGHT
-	const actualHour = ref(0)
-	const isHoliday = ref(false)
-	const { data, error } = await useAsyncData('holidayAPI', () => $fetch('https://svatkyapi.cz/api/day/'))
-	if (!error) isHoliday.value = data.value.isHoliday
-	const day = ref(new Date().getDay())
-	if (day === 0 || day === 6 || isHoliday.value) {
-		actualHour.value = 18
-	} else {
-		actualHour.value = new Date().getHours()
-	}
-	setInterval(() => {
-		actualHour.value = new Date().getHours()
-	}, 60000)
+	// const actualHour = ref(0)
+	// const isHoliday = ref(false)
+	// const { data, error } = await useAsyncData('holidayAPI', () => $fetch('https://svatkyapi.cz/api/day/'))
+	// if (!error) isHoliday.value = data.value.isHoliday
+	// const day = ref(new Date().getDay())
+	// if (day === 0 || day === 6 || isHoliday.value) {
+	// 	actualHour.value = 18
+	// } else {
+	// 	actualHour.value = new Date().getHours()
+	// }
+
+	// setInterval(() => {
+	// 	actualHour.value = new Date().getHours()
+	// }, 60000)
 
 	// HANDLE SCROLL
 	const scrolledUp = ref(false)
