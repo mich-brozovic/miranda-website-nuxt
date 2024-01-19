@@ -113,4 +113,7 @@ export default defineNuxtConfig({
 		cookieNameCookiesEnabledIds: 'ncc_e',
 		locales: ['cs'],
 	},
+	site: {
+		url: 'https://www.mirandamedia.cz',
+	},
 })
