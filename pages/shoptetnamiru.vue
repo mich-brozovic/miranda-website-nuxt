@@ -386,8 +386,8 @@
 		{
 			title: 'Váš nový e‑shop s&nbsp;podporou Shoptet Premium partnera',
 			subtitle: 'Našim expertním službám můžete důvěřovat. Jsme&nbsp;stejně nároční jako Vy!',
-			imageUrl: '/shoptetnamiru/carousel-new1.jpg',
-			imageMobileUrl: '/shoptetnamiru/carousel-new1-mobile.jpg',
+			imageUrl: '/shoptetnamiru/carousel-new3.jpg',
+			imageMobileUrl: '/shoptetnamiru/carousel-new3-mobile.jpg',
 			logos: `
 				<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
 						<path

@@ -2,7 +2,7 @@
 	<main>
 		<HeroCarousel :data="auditData" class="no-margin">
 			<div class="buttons">
-				<button @click.prevent="showPopup = true" class="btn btn-pink" href="#kontakt">
+				<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">
 					Už nečekejte - zajistěte si svůj audit ještě dnes!
 				</button>
 			</div>
@@ -14,7 +14,7 @@
 					<p>Získejte ještě dnes bezplatný odborný posudek výkonnosti svých reklam.</p>
 				</div>
 				<div class="button">
-					<button @click.prevent="showPopup = true" class="btn btn-pink" href="#kontakt">PPC audit zdarma</button>
+					<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">PPC audit zdarma</button>
 				</div>
 			</div>
 		</section>
@@ -81,7 +81,7 @@
 						<strong>Ano, je to tak jednoduché!</strong>
 					</p>
 					<div class="buttons">
-						<button @click.prevent="showPopup = true" class="btn btn-pink">Bezplatný PPC audit</button>
+						<button @click.prevent="showPopup = true" class="btn btn-accent">Bezplatný PPC audit</button>
 						<NuxtLink class="btn btn-tertiary" to="/kontakty">Kontaktujte nás</NuxtLink>
 					</div>
 				</div>
@@ -198,7 +198,7 @@
 						</Swiper>
 					</ol>
 					<div class="buttons">
-						<button @click.prevent="showPopup = true" class="btn btn-pink" href="#kontakt">
+						<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">
 							Už nečekejte a nechte si zpracovat podrobný audit
 						</button>
 					</div>
@@ -238,7 +238,7 @@
 			<div class="container text-center">
 				<h2>Rezervujte si 100% bezplatný audit Google Ads a získejte rychle lepší výsledky!</h2>
 				<div class="buttons">
-					<button @click.prevent="showPopup = true" class="btn btn-pink light-hover">
+					<button @click.prevent="showPopup = true" class="btn btn-accent light-hover">
 						<span> Bezplatný PPC audit </span>
 					</button>
 					<a href="tel:+420732264251" class="btn btn-ghost-accent">
@@ -340,7 +340,7 @@
 						úspěchu vašeho podnikání a objednejte si audit PPC hned teď!
 					</p>
 					<div class="buttons">
-						<button @click.prevent="showPopup = true" class="btn btn-pink" href="#kontakt">
+						<button @click.prevent="showPopup = true" class="btn btn-accent" href="#kontakt">
 							ZDARMA AUDIT PPC GOOGLE ADS. ANO PROSÍM.
 						</button>
 					</div>
@@ -516,7 +516,7 @@
 							</svg>
 							+420 732 264 251
 						</a>
-						<button @click.prevent="showPopup = true" class="btn btn-pink light-hover"><span>Audit zdarma</span></button>
+						<button @click.prevent="showPopup = true" class="btn btn-accent light-hover"><span>Audit zdarma</span></button>
 					</div>
 				</div>
 			</div>

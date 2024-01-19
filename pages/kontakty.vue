@@ -88,7 +88,7 @@
 				<Marker :options="{ position: { lat: 50.1080258, lng: 14.4544731 } }"></Marker>
 			</GoogleMap>
 		</section>
-		<section class="no-margin">
+		<section class="no-margin" id="kontakt">
 			<ContactForm />
 		</section>
 	</main>

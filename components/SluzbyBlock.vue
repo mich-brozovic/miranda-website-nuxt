@@ -1,11 +1,7 @@
 <template>
-	<div
-		v-if="screenWidth > 1040"
-		class="sluzby-wrapper">
+	<div v-if="screenWidth > 1040" class="sluzby-wrapper">
 		<div class="image-wrapper">
-			<div
-				ref="kampane"
-				v-show="activeRef == kampane">
+			<div ref="kampane" v-show="activeRef == kampane">
 				<div class="bg-img">
 					<NuxtPicture
 						src="/kampane.webp"
@@ -33,9 +29,7 @@
 					</div>
 				</div>
 			</div>
-			<div
-				ref="ehopy"
-				v-show="activeRef == eshopy">
+			<div ref="ehopy" v-show="activeRef == eshopy">
 				<div class="bg-img">
 					<NuxtPicture
 						src="/weby_eshopy.webp"
@@ -65,9 +59,7 @@
 					</div>
 				</div>
 			</div>
-			<div
-				ref="social"
-				v-show="activeRef == social">
+			<div ref="social" v-show="activeRef == social">
 				<div class="bg-img">
 					<NuxtPicture
 						src="/social.webp"
@@ -95,9 +87,7 @@
 					</div>
 				</div>
 			</div>
-			<div
-				ref="kreativa"
-				v-show="activeRef == kreativa">
+			<div ref="kreativa" v-show="activeRef == kreativa">
 				<div class="bg-img">
 					<NuxtPicture
 						src="/kreativa.webp"
@@ -123,9 +113,7 @@
 					</div>
 				</div>
 			</div>
-			<div
-				ref="influencing"
-				v-show="activeRef == influencing">
+			<div ref="influencing" v-show="activeRef == influencing">
 				<div class="bg-img">
 					<NuxtPicture
 						src="/influencing.webp"
@@ -148,33 +136,23 @@
 			</div>
 		</div>
 		<div class="options-wrapper">
-			<div
-				class="option"
-				@mouseenter="activeRef = kampane">
+			<div class="option" @mouseenter="activeRef = kampane" @click="navigateTo('/sprava-ppc-kampani')">
 				<small>Miranda</small>
 				<h3>PPC kampaně</h3>
 			</div>
-			<div
-				class="option"
-				@mouseenter="activeRef = eshopy">
+			<div class="option" @mouseenter="activeRef = eshopy" @click="navigateTo('/shoptetnamiru')">
 				<small>Miranda</small>
 				<h3>Weby & e-shopy</h3>
 			</div>
-			<div
-				class="option"
-				@mouseenter="activeRef = social">
+			<div class="option" @mouseenter="activeRef = social">
 				<small>Miranda</small>
 				<h3>Sociální sítě</h3>
 			</div>
-			<div
-				class="option"
-				@mouseenter="activeRef = kreativa">
+			<div class="option" @mouseenter="activeRef = kreativa">
 				<small>Miranda</small>
 				<h3>Kreativa</h3>
 			</div>
-			<div
-				class="option"
-				@mouseenter="activeRef = influencing">
+			<div class="option" @mouseenter="activeRef = influencing">
 				<small>Miranda</small>
 				<h3>Influencing</h3>
 			</div>
@@ -183,9 +161,7 @@
 	<div v-else>
 		<div class="sluzby-inline">
 			<div class="sluzba">
-				<div
-					class="sluzba__header"
-					@click.prevent="toggleContent">
+				<div class="sluzba__header" @click.prevent="toggleContent">
 					<small>Miranda</small>
 					<h3>PPC kampaně</h3>
 				</div>
@@ -208,9 +184,7 @@
 				</div>
 			</div>
 			<div class="sluzba">
-				<div
-					class="sluzba__header"
-					@click.prevent="toggleContent">
+				<div class="sluzba__header" @click.prevent="toggleContent">
 					<small>Miranda</small>
 					<h3>Weby & e-shopy</h3>
 				</div>
@@ -235,9 +209,7 @@
 				</div>
 			</div>
 			<div class="sluzba">
-				<div
-					class="sluzba__header"
-					@click.prevent="toggleContent">
+				<div class="sluzba__header" @click.prevent="toggleContent">
 					<small>Miranda</small>
 					<h3>Sociální sítě</h3>
 				</div>
@@ -260,9 +232,7 @@
 				</div>
 			</div>
 			<div class="sluzba">
-				<div
-					class="sluzba__header"
-					@click.prevent="toggleContent">
+				<div class="sluzba__header" @click.prevent="toggleContent">
 					<small>Miranda</small>
 					<h3>Kreativa</h3>
 				</div>
@@ -283,9 +253,7 @@
 				</div>
 			</div>
 			<div class="sluzba">
-				<div
-					class="sluzba__header"
-					@click.prevent="toggleContent">
+				<div class="sluzba__header" @click.prevent="toggleContent">
 					<small>Miranda</small>
 					<h3>Influencing</h3>
 				</div>

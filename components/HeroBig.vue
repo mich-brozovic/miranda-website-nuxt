@@ -1,73 +1,31 @@
 <template>
 	<section class="hero">
-		<div
-			class="video-wrapper"
-			v-if="props.video">
+		<div class="video-wrapper" v-if="props.video">
 			<div v-if="screenWidth > 767">
-				<video
-					v-if="!videoPlayed"
-					poster="/blank-black.jpg"
-					autoplay
-					playsinline
-					muted
-					preload
-					@ended="switchVideo">
-					<source
-						src="/intro-hp-nove.mp4"
-						type="video/mp4" />
+				<video v-if="!videoPlayed" poster="/blank-black.jpg" autoplay playsinline muted preload @ended="switchVideo">
+					<source src="/intro-hp-nove.mp4" type="video/mp4" />
 				</video>
-				<video
-					v-show="videoPlayed"
-					poster="/intro-loop-poster.jpg"
-					preload
-					playsinline
-					muted
-					loop
-					ref="videoRef">
-					<source
-						src="/intro-hp-loop.mp4"
-						type="video/mp4" />
+				<video v-show="videoPlayed" poster="/intro-loop-poster.jpg" preload playsinline muted loop ref="videoRef">
+					<source src="/intro-hp-loop.mp4" type="video/mp4" />
 				</video>
 			</div>
 			<div v-else>
-				<video
-					v-if="!videoPlayed"
-					poster="/intro-hp-mobile.jpg"
-					autoplay
-					playsinline
-					muted
-					preload
-					@ended="switchVideo">
-					<source
-						src="/intro-hp-mobile.mp4"
-						type="video/mp4" />
+				<video v-if="!videoPlayed" poster="/intro-hp-mobile.jpg" autoplay playsinline muted preload @ended="switchVideo">
+					<source src="/intro-hp-mobile.mp4" type="video/mp4" />
 				</video>
-				<video
-					v-show="videoPlayed"
-					poster="/intro-loop-poster-mobile.jpg"
-					preload
-					playsinline
-					muted
-					loop
-					ref="videoRef">
-					<source
-						src="/intro-loop-mobile.mp4"
-						type="video/mp4" />
+				<video v-show="videoPlayed" poster="/intro-loop-poster-mobile.jpg" preload playsinline muted loop ref="videoRef">
+					<source src="/intro-loop-mobile.mp4" type="video/mp4" />
 				</video>
 			</div>
 		</div>
-		<div
-			class="image-wrapper"
-			v-else>
-			<NuxtPicture
-				:src="props.imgUrl"
-				:imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover;' }" />
+		<div class="image-wrapper" v-else>
+			<NuxtPicture :src="props.imgUrl" :imgAttrs="{ style: 'width:100%; height:100%; object-fit:cover;' }" />
 		</div>
 		<div class="container">
 			<div class="texts">
 				<slot />
 			</div>
-			<div
+			<!-- <div
 				v-if="!hideScroll"
 				class="scroll">
 				<a href="#scroll">
@@ -84,7 +42,7 @@
 					</svg>
 					<span>Scrolluj</span>
 				</a>
-			</div>
+			</div> -->
 		</div>
 	</section>
 </template>
@@ -163,11 +121,11 @@
 		position: absolute;
 		bottom: 2rem;
 		left: 0;
-    animation: shakeY 9s infinite;
-    &:hover {
-      animation-fill-mode: forwards;
-      animation-play-state: paused;
-    }
+		animation: shakeY 9s infinite;
+		&:hover {
+			animation-fill-mode: forwards;
+			animation-play-state: paused;
+		}
 		a {
 			color: $color-white;
 		}
@@ -220,20 +178,20 @@
 			background: linear-gradient(180deg, transparent 0, #fff 50px);
 		}
 	}
-  @keyframes shakeY {
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-      transform: translate3d(0, -10px, 0);
-    }
+	@keyframes shakeY {
+		10%,
+		30%,
+		50%,
+		70%,
+		90% {
+			transform: translate3d(0, -10px, 0);
+		}
 
-    20%,
-    40%,
-    60%,
-    80% {
-      transform: translate3d(0, 10px, 0);
-    }
-  }
+		20%,
+		40%,
+		60%,
+		80% {
+			transform: translate3d(0, 10px, 0);
+		}
+	}
 </style>

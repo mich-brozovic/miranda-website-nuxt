@@ -4,6 +4,7 @@
 		<MainHeader />
 		<NuxtPage />
 		<MainFooter />
+		<CookieControl class="no-margin" locale="cs" />
 	</div>
 </template>
 <script>

@@ -13,7 +13,7 @@
 				<li>Fotíme produkty ve vlastním studiu</li>
 			</ul>
 			<div class="buttons">
-				<a class="btn btn-ghost font" href="#kontakt"> Domluvte si schůzku </a>
+				<a class="btn btn-accent" href="#kontakt"> Domluvte si schůzku </a>
 			</div>
 		</HeroBig>
 		<section class="container">

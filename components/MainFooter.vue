@@ -61,6 +61,7 @@
 						<NuxtImg src="/icon/heureka.svg" loading="lazy" alt="Heureka Partner" width="110" height="103" />
 						<NuxtImg src="/icon/shoptet-premium.svg" loading="lazy" alt="Shoptet Premium Partner" width="110" height="110" />
 						<NuxtImg src="/icon/meta.webp" loading="lazy" alt="Meta Business Partner" width="110" height="63" />
+						<NuxtImg src="/axfone.png" loading="lazy" alt="Axfone" width="161" height="39" />
 					</div>
 				</div>
 			</div>

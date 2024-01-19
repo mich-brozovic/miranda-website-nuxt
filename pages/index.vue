@@ -3,6 +3,9 @@
 		<HeroBig :video="true">
 			<h1>Marketingová digitální agentura</h1>
 			<h2>Tvoříme ziskové e-shopy a weby, navrhujeme design produktů a značek, staráme se o výkon kampaní, ctíme fair play</h2>
+			<div class="buttons">
+				<NuxtLink class="btn btn-accent" href="/kontakty#kontakt">Poptat spolupráci</NuxtLink>
+			</div>
 		</HeroBig>
 		<section id="scroll" class="reference">
 			<div class="container">
