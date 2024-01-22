@@ -50,7 +50,10 @@
 					</a>
 				</div>
 			</div>
-			<div class="scroll">
+			<div class="buttons">
+				<NuxtLink class="btn btn-accent" href="/kontakty#kontakt">Poptat spolupráci</NuxtLink>
+			</div>
+			<!-- <div class="scroll">
 				<a href="#scroll">
 					<svg width="24" height="112" viewBox="0 0 24 112" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<title>scrolluj</title>
@@ -60,7 +63,7 @@
 					</svg>
 					<span>Scrolluj</span>
 				</a>
-			</div>
+			</div> -->
 		</div>
 	</section>
 </template>
@@ -116,6 +119,10 @@
 			.texts {
 				color: $color-font;
 			}
+		}
+		.buttons {
+			margin-top: 20px;
+			order: 10;
 		}
 		@media screen and ($mobile-responsive) {
 			margin-bottom: 20px;
@@ -279,9 +286,12 @@
 				}
 			}
 			.logo {
-				margin-bottom: -30px;
+				// margin-bottom: -30px;
 				margin-top: 20px;
 				// max-width: 100px;
+			}
+			.buttons {
+				margin-top: 0;
 			}
 		}
 	}
