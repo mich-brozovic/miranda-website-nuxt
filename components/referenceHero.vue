@@ -51,7 +51,7 @@
 				</div>
 			</div>
 			<div class="buttons">
-				<NuxtLink class="btn btn-accent" href="/kontakty#kontakt">Poptat spolupráci</NuxtLink>
+				<a class="btn btn-accent" href="#kontakt">Poptat spolupráci</a>
 			</div>
 			<!-- <div class="scroll">
 				<a href="#scroll">
