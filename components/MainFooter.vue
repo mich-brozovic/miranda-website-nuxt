@@ -1,67 +1,133 @@
 <template>
 	<footer>
 		<div class="container">
+			<div class="footer-menu-wrapper">
+				<nav class="footer-navigation">
+					<ul>
+						<li>
+							<nuxt-link to="/">Homepage</nuxt-link>
+						</li>
+						<li>
+							<nuxt-link to="/o-nas">O nás</nuxt-link>
+						</li>
+						<li>
+							<nuxt-link to="/pripadove-studie">Případové studie</nuxt-link>
+						</li>
+						<li>
+							<nuxt-link to="/sluzby">Služby</nuxt-link>
+						</li>
+						<li>
+							<nuxt-link to="/kariera">Kariéra</nuxt-link>
+						</li>
+						<li>
+							<nuxt-link to="/clanky">Blog</nuxt-link>
+						</li>
+						<li>
+							<nuxt-link to="/kontakty">Kontakt</nuxt-link>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="awards-wrapper">
+				<a href="https://www.webtop100.cz/vysledky/2023/firemni-web" target="_blank" rel="noopener">
+					<NuxtImg src="/webtop100.png" alt="WEBTOP100" width="200" height="176" loading="lazy" />
+				</a>
+				<a href="https://www.apek.cz/seznam-clenu/mirandamedia-group-sro" target="_blank" rel="noopener">
+					<NuxtImg src="/apek.png" alt="APEK" width="200" height="176" loading="lazy" />
+				</a>
+			</div>
 			<div class="footer-top">
-				<div class="site-logo">
-					<NuxtLink to="/" class="logo">
-						<svg width="67" height="55" viewBox="0 0 67 55" xmlns="http://www.w3.org/2000/svg" href="/">
-							<title>MirandaMedia Group s.r.o.</title>
-							<path
-								d="M0 0H6.76955V6.54484H0V0ZM0 8.08755H6.76955V14.6324H0V8.08755ZM0 16.1517H6.76955V22.6966H0V16.1517ZM0 24.2159H6.76955V30.7607H0V24.2159ZM0 32.3034H6.76955V38.8483H0V32.3034ZM0 40.3676H6.76955V46.9125H0V40.3676ZM0 48.4552H6.76955V55H0V48.4552ZM8.60104 0H15.3706V6.54484H8.60104V0ZM8.60104 8.08755H15.3706V14.6324H8.60104V8.08755ZM8.60104 16.1517H15.3706V22.6966H8.60104V16.1517ZM8.60104 24.2159H15.3706V30.7607H8.60104V24.2159ZM8.60104 32.3034H15.3706V38.8483H8.60104V32.3034ZM8.60104 40.3676H15.3706V46.9125H8.60104V40.3676ZM8.60104 48.4552H15.3706V55H8.60104V48.4552ZM17.2253 8.08755H23.9948V14.6324H17.2253V8.08755ZM17.2253 16.1517H23.9948V22.6966H17.2253V16.1517ZM17.2253 24.2159H23.9948V30.7607H17.2253V24.2159ZM17.2253 32.3034H23.9948V38.8483H17.2253V32.3034ZM25.8263 16.1517H32.5959V22.6966H25.8263V16.1517ZM25.8263 24.2159H32.5959V30.7607H25.8263V24.2159ZM25.8263 32.3034H32.5959V38.8483H25.8263V32.3034ZM25.8263 40.3676H32.5959V46.9125H25.8263V40.3676ZM34.4273 16.1517H41.1969V22.6966H34.4273V16.1517ZM34.4273 24.2159H41.1969V30.7607H34.4273V24.2159ZM34.4273 32.3034H41.1969V38.8483H34.4273V32.3034ZM34.4273 40.3676H41.1969V46.9125H34.4273V40.3676ZM43.0284 8.08755H49.7979V14.6324H43.0284V8.08755ZM43.0284 16.1517H49.7979V22.6966H43.0284V16.1517ZM43.0284 24.2159H49.7979V30.7607H43.0284V24.2159ZM43.0284 32.3034H49.7979V38.8483H43.0284V32.3034ZM51.6294 0H58.399V6.54484H51.6294V0ZM51.6294 8.08755H58.399V14.6324H51.6294V8.08755ZM51.6294 16.1517H58.399V22.6966H51.6294V16.1517ZM51.6294 24.2159H58.399V30.7607H51.6294V24.2159ZM51.6294 32.3034H58.399V38.8483H51.6294V32.3034ZM51.6294 40.3676H58.399V46.9125H51.6294V40.3676ZM51.6294 48.4552H58.399V55H51.6294V48.4552ZM60.2305 0H67V6.54484H60.2305V0ZM60.2305 8.08755H67V14.6324H60.2305V8.08755ZM60.2305 16.1517H67V22.6966H60.2305V16.1517ZM60.2305 24.2159H67V30.7607H60.2305V24.2159ZM60.2305 32.3034H67V38.8483H60.2305V32.3034ZM60.2305 40.3676H67V46.9125H60.2305V40.3676ZM60.2305 48.4552H67V55H60.2305V48.4552Z"></path>
-						</svg>
-					</NuxtLink>
-				</div>
 				<div>
-					<h4>MirandaMedia Group, s.r.o.</h4>
-					<p>
-						Jankovcova 1596/14b, 170 00 <br />
-						Praha 7 - Holešovice <br />
-						Vchod B
-					</p>
-					<p>
-						<strong>IČO:</strong> 08272930 <br />
-						<strong>DIČ:</strong> CZ08272930 <br />
-						<strong>BÚ:</strong> 2201649999/2010
-					</p>
+					<div class="inner-max-width">
+						<h4>Potkejte se s námi osobně</h4>
+						<p>
+							<strong>IČO:</strong> 08272930 <br />
+							<strong>DIČ:</strong> CZ08272930 <br />
+							<strong>BÚ:</strong> 2201649999/2010
+						</p>
+					</div>
 				</div>
-				<div class="footer-menu-wrapper">
-					<h4>Stránky</h4>
-					<nav class="footer-navigation">
-						<ul>
-							<li>
-								<nuxt-link to="/">Homepage</nuxt-link>
-							</li>
-							<li>
-								<nuxt-link to="/o-nas">O nás</nuxt-link>
-							</li>
-							<li>
-								<nuxt-link to="/pripadove-studie">Případové studie</nuxt-link>
-							</li>
-							<li>
-								<nuxt-link to="/sluzby">Služby</nuxt-link>
-							</li>
-							<li>
-								<nuxt-link to="/kariera">Kariéra</nuxt-link>
-							</li>
-							<li>
-								<nuxt-link to="/clanky">Blog</nuxt-link>
-							</li>
-							<li>
-								<nuxt-link to="/kontakty">Kontakt</nuxt-link>
-							</li>
-						</ul>
-					</nav>
+				<div class="office">
+					<div class="office__map">
+						<a href="https://maps.app.goo.gl/X1NpbRQhez2RqfJ19" target="_blank" rel="noopener" title="Zobrazit na mapě">
+							<NuxtImg src="/praha.svg" alt="Pobočka Praha" width="120" height="70" loading="lazy" />
+						</a>
+					</div>
+					<div class="office__address">
+						<strong>Praha</strong> <br />
+						Jankovcova 1596/14b <br />
+						157 00, Praha 7 - Holešovice
+					</div>
 				</div>
+				<div class="office">
+					<div class="office__map">
+						<a href="https://maps.app.goo.gl/is2kh3D1ojUgqhre9" target="_blank" rel="noopener" title="Zobrazit na mapě">
+							<NuxtImg src="/brno.svg" alt="Pobočka Brno" width="120" height="70" loading="lazy" />
+						</a>
+					</div>
+					<div class="office__address">
+						<strong>Brno</strong> <br />
+						Holandská 2/4 <br />
+						639 00, Brno
+					</div>
+				</div>
+				<div class="office">
+					<div class="office__map">
+						<a href="https://maps.app.goo.gl/7GaZ6CktpPiWGL396" target="_blank" rel="noopener" title="Zobrazit na mapě">
+							<NuxtImg src="/bratislava.svg" alt="Pobočka Bratislava" width="125" height="60" loading="lazy" />
+						</a>
+					</div>
+					<div class="office__address">
+						<strong>Bratislava</strong> <br />
+						Suché Mýto 1 <br />
+						811 03, Bratislava
+					</div>
+				</div>
+			</div>
+			<div class="footer-middle">
 				<div class="partneri-wrapper">
-					<h4>Partneři</h4>
+					<h5>Naši partneři</h5>
 					<div class="partneri">
-						<NuxtImg src="/icon/google-partner.svg" loading="lazy" alt="Google Partner" width="110" height="80" />
-						<NuxtImg src="/icon/sklik.svg" loading="lazy" alt="Sklik" width="110" height="54" />
-						<NuxtImg src="/icon/shoptet-partner.svg" loading="lazy" alt="Zlatý Shoptet Partner" width="110" height="35" />
-						<NuxtImg src="/icon/heureka.svg" loading="lazy" alt="Heureka Partner" width="110" height="103" />
-						<NuxtImg src="/icon/shoptet-premium.svg" loading="lazy" alt="Shoptet Premium Partner" width="110" height="110" />
-						<NuxtImg src="/icon/meta.webp" loading="lazy" alt="Meta Business Partner" width="110" height="63" />
-						<NuxtImg src="/axfone.png" loading="lazy" alt="Axfone" width="161" height="39" />
+						<div>
+							<!-- <a href="https://partnersdirectory.withgoogle.com/partners/3133375494" target="_blank" rel="noopener"> -->
+							<NuxtImg src="/google-partner.svg" loading="lazy" alt="Google Partner" width="111" height="78" />
+							<!-- </a> -->
+						</div>
+						<div class="wide">
+							<!-- <a href="https://partneri.shoptet.cz/profesionalove/shoptetnamiru-cz/" target="_blank" rel="noopener"> -->
+							<NuxtImg src="/shoptet-partner.png" loading="lazy" alt="Zlatý Shoptet Partner" width="175" height="40" />
+							<!-- </a> -->
+						</div>
+						<div>
+							<NuxtImg src="/meta-partner.svg" loading="lazy" alt="Meta Business Partner" width="113" height="40" />
+						</div>
+						<div>
+							<NuxtImg src="/heureka-partner.png" loading="lazy" alt="Heureka Partner" width="78" height="93" />
+						</div>
+						<div>
+							<NuxtImg src="/sklik.png" loading="lazy" alt="Ověření Sklik" width="123" height="63" />
+						</div>
+						<div>
+							<!-- <a href="https://www.axfone.cz/" target="_blank" rel="noopener"> -->
+							<NuxtImg src="/axfone.png" loading="lazy" alt="Axfone" width="161" height="39" />
+							<!-- </a> -->
+						</div>
+						<div>
+							<!-- <a href="https://partneri.shoptet.cz/profesionalove/shoptetnamiru-cz/" target="_blank" rel="noopener"> -->
+							<NuxtImg src="/premium-parnet.svg" loading="lazy" alt="Shoptet Premium Partner" width="101" height="101" />
+							<!-- </a> -->
+						</div>
+					</div>
+				</div>
+				<div class="certifikace-wrapper">
+					<h5>Certifikace</h5>
+					<div class="certifikace">
+						<NuxtImg
+							src="/co2.svg"
+							loading="lazy"
+							alt="Clean Advantage - Certifikát o kompenzaci C02"
+							width="130"
+							height="101" />
 					</div>
 				</div>
 			</div>
@@ -141,9 +207,9 @@
 		background-color: $color-font;
 		color: $color-white;
 		h4 {
-			color: $color-accent;
+			color: $color-white;
 			font-size: rem(24);
-			margin: 0 0 em(20, 24);
+			margin: 0 0 em(10, 24);
 		}
 		a {
 			text-decoration: none;
@@ -155,41 +221,140 @@
 				text-decoration: underline;
 			}
 		}
-	}
-	.site-logo {
-		svg {
-			fill: $color-accent;
+		p:last-child {
+			margin-bottom: 0;
+		}
+		@media (max-width: 767px) {
+			padding: 50px 0;
+			h4 {
+				font-size: rem(18);
+			}
 		}
 	}
 	.footer-navigation {
+		text-align: center;
+		margin-bottom: 50px;
 		ul {
 			list-style: none;
 			margin: 0;
-			padding: 0;
+			padding: 20px 0;
+			display: inline-flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 20px 60px;
+			background: linear-gradient(90deg, rgba(234, 255, 242, 0) 0%, rgba(234, 255, 242, 0.05) 51%, rgba(234, 255, 242, 0) 100%);
+			@media (max-width: 767px) {
+				flex-direction: column;
+				background: none;
+				padding: 0;
+				gap: 0;
+			}
+		}
+		a {
+			padding: em(10);
+			color: #bdf1d2;
+			font-weight: 700;
+			&:hover,
+			&.router-link-active {
+				color: $color-white;
+				text-decoration: none;
+			}
 		}
 	}
-	.footer-menu-wrapper {
-		margin-left: auto;
-		margin-right: auto;
+	.awards-wrapper {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+		margin-bottom: 50px;
+		a {
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+		img {
+			width: auto;
+			max-width: 100%;
+			transition: all 0.6s ease-in-out;
+		}
 	}
-	.partneri-wrapper {
-		flex: 0 1 410px;
+	.footer-top {
+		padding-bottom: 50px;
+		margin-bottom: 50px;
+		border-bottom: 1px solid #656d68;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 50px;
+		.inner-max-width {
+			max-width: 220px;
+		}
+		& > div {
+			flex: 1 1 300px;
+		}
+	}
+	.office {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		&__address {
+			line-height: em(28);
+			strong {
+				color: $color-accent;
+			}
+		}
+		img {
+			transition: all 0.6s ease-in-out;
+		}
+		a {
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+	.footer-middle {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 60px;
+		padding-bottom: 50px;
+		margin-bottom: 50px;
+		border-bottom: 1px solid #656d68;
+		h5 {
+			font-size: rem(16);
+		}
+		img {
+			width: auto;
+			max-width: 100%;
+			filter: grayscale(1);
+		}
+		@media (max-width: 767px) {
+			text-align: center;
+			gap: 20px;
+			.certifikace-wrapper {
+				width: 100%;
+			}
+		}
 	}
 	.partneri {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 40px;
-		img {
-			flex: 0 1 110px;
+		justify-content: center;
+		gap: 50px;
+		@media (max-width: 767px) {
+			gap: 30px;
+			div {
+				flex: 1 1 80px;
+				&.wide {
+					order: 1000;
+					flex-basis: auto;
+				}
+			}
 		}
-	}
-	.footer-top {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 40px;
 	}
 	.footer-bottom {
 		display: flex;
@@ -236,30 +401,6 @@
 		p,
 		a {
 			color: rgba($color-white, 0.7);
-		}
-	}
-	@media (max-width: 767px) {
-		footer {
-			padding: 50px 0 30px;
-		}
-		.footer-top {
-			flex-direction: column;
-		}
-		.footer-menu-wrapper {
-			margin: 0;
-		}
-		.project-mail,
-		.project-phone {
-			font-size: 1rem;
-		}
-		.partneri-wrapper {
-			flex-basis: auto;
-		}
-		.partneri {
-			justify-content: center;
-			img {
-				max-width: 70px;
-			}
 		}
 	}
 </style>

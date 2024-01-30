@@ -118,7 +118,6 @@
 	}
 	const openSubmenu = (e) => {
 		const parent = e.target.closest('.has-children')
-		console.log(e.target.closest('.has-children'))
 		if (parent) parent.classList.toggle('submenu-visible')
 	}
 	onMounted(() => {
