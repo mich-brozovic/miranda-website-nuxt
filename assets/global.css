@@ -1,0 +1,38 @@
+div.swiper-button-next,
+div.swiper-button-prev {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 74px;
+	height: 74px;
+	background-color: #e9ebea;
+	transition: all 0.15s ease-in-out;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+}
+div.swiper-button-next::after,
+div.swiper-button-prev::after {
+	line-height: 0;
+	display: block;
+	content: url('/icon/swiper-arrow-black.svg');
+}
+div.swiper-button-next:hover,
+div.swiper-button-prev:hover {
+	background-color: #222e27;
+}
+div.swiper-button-next:hover::after,
+div.swiper-button-prev:hover::after {
+	content: url('/icon/swiper-arrow.svg');
+}
+div.swiper-button-prev::after {
+	transform: rotate(180deg);
+}
+
+@media (max-width: 1150px) {
+	div.swiper-button-next,
+	div.swiper-button-prev {
+		width: 48px;
+		height: 48px;
+	}
+}

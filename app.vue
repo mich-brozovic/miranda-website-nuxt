@@ -241,43 +241,7 @@
 			}
 		}
 	}
-	.swiper-button-next,
-	.swiper-button-prev {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 74px;
-		height: 74px;
-		background-color: #e9ebea;
-		transition: all 0.15s ease-in-out;
-		top: 50%;
-		transform: translateY(-50%);
-		margin: 0;
-		&::after {
-			line-height: 0;
-			display: block;
-			content: url('/icon/swiper-arrow-black.svg');
-		}
-		&:hover {
-			background-color: $color-font;
-			&::after {
-				content: url('/icon/swiper-arrow.svg');
-			}
-		}
-	}
 
-	.swiper-button-prev {
-		&::after {
-			transform: rotate(180deg);
-		}
-	}
-	@media (max-width: 1150px) {
-		.swiper-button-next,
-		.swiper-button-prev {
-			width: 48px;
-			height: 48px;
-		}
-	}
 	@media (max-width: 767px) {
 		.container {
 			padding-left: 20px;
