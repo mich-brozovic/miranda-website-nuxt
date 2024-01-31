@@ -218,29 +218,6 @@
 			}
 		}
 	}
-	.disabled {
-		opacity: 0.6;
-		cursor: not-allowed;
-	}
-	.swiper {
-		margin-bottom: 30px;
-	}
-	.swiper-pagination {
-		position: initial;
-		padding: 20px 0;
-		align-items: center;
-		display: flex;
-		justify-content: center;
-		&-bullet {
-			border-radius: 999px;
-			height: 3px;
-			width: 30px;
-			&-active {
-				height: 5px;
-				background-color: $color-accent;
-			}
-		}
-	}
 
 	@media (max-width: 767px) {
 		.container {

@@ -28,7 +28,29 @@ div.swiper-button-prev:hover::after {
 div.swiper-button-prev::after {
 	transform: rotate(180deg);
 }
-
+.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+div.swiper {
+	margin-bottom: 30px;
+}
+div.swiper-pagination {
+	position: initial;
+	padding: 20px 0;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+span.swiper-pagination-bullet {
+	border-radius: 999px;
+	height: 3px;
+	width: 30px;
+}
+span.swiper-pagination-bullet-active {
+	height: 5px;
+	background-color: #59dc8e;
+}
 @media (max-width: 1150px) {
 	div.swiper-button-next,
 	div.swiper-button-prev {
