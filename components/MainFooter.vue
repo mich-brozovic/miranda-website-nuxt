@@ -29,12 +29,12 @@
 				</nav>
 			</div>
 			<div class="awards-wrapper">
-				<a href="https://www.webtop100.cz/vysledky/2023/firemni-web" target="_blank" rel="noopener">
+				<a href="https://www.webtop100.cz/agentury/mirandamedia-group" target="_blank" rel="noopener">
 					<NuxtImg src="/webtop100.png" alt="WEBTOP100" width="200" height="176" loading="lazy" />
 				</a>
-				<a href="https://www.apek.cz/seznam-clenu/mirandamedia-group-sro" target="_blank" rel="noopener">
+				<!-- <a href="https://www.apek.cz/seznam-clenu/mirandamedia-group-sro" target="_blank" rel="noopener">
 					<NuxtImg src="/apek.png" alt="APEK" width="200" height="176" loading="lazy" />
-				</a>
+				</a> -->
 			</div>
 			<div class="footer-top">
 				<div>
@@ -56,7 +56,7 @@
 					<div class="office__address">
 						<strong>Praha</strong> <br />
 						Jankovcova 1596/14b <br />
-						157 00, Praha 7 - Holešovice
+						157 00, Praha 7
 					</div>
 				</div>
 				<div class="office">
@@ -108,11 +108,6 @@
 							<NuxtImg src="/sklik.png" loading="lazy" alt="Ověření Sklik" width="123" height="63" />
 						</div>
 						<div>
-							<!-- <a href="https://www.axfone.cz/" target="_blank" rel="noopener"> -->
-							<NuxtImg src="/axfone.png" loading="lazy" alt="Axfone" width="161" height="39" />
-							<!-- </a> -->
-						</div>
-						<div>
 							<!-- <a href="https://partneri.shoptet.cz/profesionalove/shoptetnamiru-cz/" target="_blank" rel="noopener"> -->
 							<NuxtImg src="/premium-parnet.svg" loading="lazy" alt="Shoptet Premium Partner" width="101" height="101" />
 							<!-- </a> -->
@@ -120,7 +115,7 @@
 					</div>
 				</div>
 				<div class="certifikace-wrapper">
-					<h5>Certifikace</h5>
+					<h5>Členství a certifikace</h5>
 					<div class="certifikace">
 						<NuxtImg
 							src="/co2.svg"
@@ -128,6 +123,7 @@
 							alt="Clean Advantage - Certifikát o kompenzaci C02"
 							width="130"
 							height="101" />
+						<NuxtImg src="/apek.png" loading="lazy" alt="Apek" width="130" height="101" />
 					</div>
 				</div>
 			</div>
@@ -305,6 +301,9 @@
 				color: $color-accent;
 			}
 		}
+		&__map {
+			flex-shrink: 0;
+		}
 		img {
 			transition: all 0.6s ease-in-out;
 		}
@@ -318,7 +317,7 @@
 	}
 	.footer-middle {
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		gap: 60px;
 		padding-bottom: 50px;
 		margin-bottom: 50px;
@@ -334,6 +333,7 @@
 		@media (max-width: 767px) {
 			text-align: center;
 			gap: 20px;
+			flex-direction: column;
 			.certifikace-wrapper {
 				width: 100%;
 			}
@@ -344,7 +344,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: 50px;
+		gap: 70px;
 		@media (max-width: 767px) {
 			gap: 30px;
 			div {
@@ -353,6 +353,19 @@
 					order: 1000;
 					flex-basis: auto;
 				}
+			}
+		}
+	}
+	.certifikace {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		@media (max-width: 767px) {
+			gap: 30px;
+			div {
+				flex: 1 1 80px;
 			}
 		}
 	}
